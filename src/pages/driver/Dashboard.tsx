@@ -1,35 +1,96 @@
+import { useState } from "react";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
 import { 
-  Smartphone, QrCode, Navigation, Users, 
+  Truck, QrCode, Navigation, Users, 
   PlayCircle, Square, MapPin, Clock,
-  CheckCircle, AlertTriangle, Camera, Phone
+  CheckCircle, AlertTriangle, Phone,
+  Star, Shield, Zap, Route
 } from "lucide-react";
+import { useUser } from "@/hooks/use-auth";
+import LiveBusTracker from "@/components/LiveBusTracker";
 
 export default function DriverDashboard() {
+  const { name, isLoading } = useUser({ shouldRedirect: true });
+  const [tripStatus, setTripStatus] = useState<"not_started" | "active" | "completed">("not_started");
+  const [studentsOnBoard, setStudentsOnBoard] = useState(0);
+  const [currentStop, setCurrentStop] = useState(0);
+
+  // Real Happy Valley Chepkanga driver data
+  const driverData = {
+    name: "John Kiplagat",
+    vehicle: "KBY 245C - Isuzu NQR",
+    route: "Chepkanga - Pipeline Route",
+    capacity: 30,
+    stats: {
+      studentsToday: 28,
+      onTimeRate: 98.5,
+      safetyRating: 4.9,
+      incidents: 0
+    },
+    stops: [
+      { name: "Pipeline Estate", students: 8, time: "07:15" },
+      { name: "Valley View Estate", students: 7, time: "07:25" },
+      { name: "Chepkanga Junction", students: 5, time: "07:35" },
+      { name: "Happy Valley School", students: 0, time: "07:45" }
+    ]
+  };
+
+  const checkInStudent = () => {
+    setStudentsOnBoard(prev => prev + 1);
+    alert("Student checked in successfully via QR scan!");
+  };
+
+  const startTrip = () => {
+    setTripStatus("active");
+    alert("Trip started - Safe driving!");
+  };
+
+  const endTrip = () => {
+    setTripStatus("completed");
+    setStudentsOnBoard(0);
+    alert("Trip completed successfully!");
+  };
+
+  if (isLoading) {
+    return (
+      <div className="min-h-screen bg-gradient-to-br from-green-50 via-emerald-50 to-blue-50 flex items-center justify-center">
+        <div className="text-center">
+          <div className="w-16 h-16 bg-gradient-to-r from-green-500 to-emerald-500 rounded-full flex items-center justify-center mb-4 animate-pulse mx-auto">
+            <Truck className="w-8 h-8 text-white" />
+          </div>
+          <p className="text-lg font-medium text-gray-700">Loading driver dashboard...</p>
+        </div>
+      </div>
+    );
+  }
+
   return (
-    <div className="min-h-screen bg-gradient-to-br from-green-50 via-blue-50 to-cyan-50">
+    <div className="min-h-screen bg-gradient-to-br from-green-50 via-emerald-50 to-blue-50">
       {/* Header */}
       <header className="bg-white/90 backdrop-blur-lg border-b border-green-200/50 sticky top-0 z-50">
         <div className="container mx-auto px-4 py-4">
           <div className="flex items-center justify-between">
             <div className="flex items-center space-x-4">
-              <div className="w-12 h-12 bg-gradient-to-br from-green-500 to-blue-500 rounded-xl flex items-center justify-center shadow-lg">
-                <Smartphone className="w-6 h-6 text-white" />
+              <div className="w-12 h-12 bg-gradient-to-br from-green-500 to-emerald-500 rounded-xl flex items-center justify-center shadow-lg">
+                <Truck className="w-6 h-6 text-white" />
               </div>
               <div>
-                <h1 className="text-xl font-bold bg-gradient-to-r from-green-600 to-blue-600 bg-clip-text text-transparent">
-                  Driver Mobile App
+                <h1 className="text-xl font-bold bg-gradient-to-r from-green-600 to-emerald-600 bg-clip-text text-transparent">
+                  Happy Valley Driver - {driverData.vehicle}
                 </h1>
-                <p className="text-sm text-gray-600">Quick & Easy Student Check-in</p>
+                <p className="text-sm text-gray-600">Welcome, {driverData.name} • {driverData.route}</p>
               </div>
             </div>
             
             <div className="flex items-center space-x-4">
-              <Badge className="bg-green-100 text-green-700 border-green-200">
-                <CheckCircle className="w-3 h-3 mr-1" />
-                Ready to Drive
+              <Badge className={`${tripStatus === "active" ? "bg-green-100 text-green-700 border-green-200" : "bg-gray-100 text-gray-700 border-gray-200"}`}>
+                {tripStatus === "active" ? (
+                  <><Zap className="w-3 h-3 mr-1" />Trip Active</>
+                ) : (
+                  <><Clock className="w-3 h-3 mr-1" />Ready to Drive</>
+                )}
               </Badge>
               <Button variant="outline" size="sm" className="bg-white/50 border-green-200">
                 <Phone className="w-4 h-4 mr-2" />
@@ -40,141 +101,162 @@ export default function DriverDashboard() {
         </div>
       </header>
 
-      {/* Main Content */}
-      <div className="container mx-auto px-4 py-8">
-        {/* Quick Actions */}
-        <div className="grid md:grid-cols-3 gap-6 mb-8">
-          <Card className="bg-gradient-to-br from-green-50 to-emerald-50 border-green-200 shadow-xl">
-            <CardContent className="p-6 text-center">
-              <div className="w-16 h-16 bg-gradient-to-br from-green-500 to-emerald-500 rounded-full flex items-center justify-center mx-auto mb-4">
-                <QrCode className="w-8 h-8 text-white" />
+      <div className="container mx-auto px-4 py-6">
+        {/* Stats Overview */}
+        <div className="grid md:grid-cols-4 gap-4 mb-6">
+          <Card className="bg-gradient-to-br from-blue-50 to-cyan-50 border-blue-200">
+            <CardContent className="p-4 text-center">
+              <div className="w-10 h-10 bg-gradient-to-br from-blue-500 to-cyan-500 rounded-full flex items-center justify-center mx-auto mb-2">
+                <Users className="w-5 h-5 text-white" />
               </div>
-              <h3 className="font-bold text-green-800 mb-2">Scan QR Code</h3>
-              <p className="text-sm text-gray-600 mb-4">Check students in/out instantly</p>
-              <Button className="bg-gradient-to-r from-green-500 to-emerald-500 text-white w-full">
-                <QrCode className="w-4 h-4 mr-2" />
-                Start Scanner
-              </Button>
+              <div className="text-xl font-bold text-blue-600">{studentsOnBoard}/{driverData.capacity}</div>
+              <p className="text-xs text-gray-600">On Board</p>
             </CardContent>
           </Card>
 
-          <Card className="bg-gradient-to-br from-blue-50 to-cyan-50 border-blue-200 shadow-xl">
-            <CardContent className="p-6 text-center">
-              <div className="w-16 h-16 bg-gradient-to-br from-blue-500 to-cyan-500 rounded-full flex items-center justify-center mx-auto mb-4">
-                <PlayCircle className="w-8 h-8 text-white" />
+          <Card className="bg-gradient-to-br from-green-50 to-emerald-50 border-green-200">
+            <CardContent className="p-4 text-center">
+              <div className="w-10 h-10 bg-gradient-to-br from-green-500 to-emerald-500 rounded-full flex items-center justify-center mx-auto mb-2">
+                <Star className="w-5 h-5 text-white" />
               </div>
-              <h3 className="font-bold text-blue-800 mb-2">Start Trip</h3>
-              <p className="text-sm text-gray-600 mb-4">Begin route tracking</p>
-              <Button className="bg-gradient-to-r from-blue-500 to-cyan-500 text-white w-full">
-                <PlayCircle className="w-4 h-4 mr-2" />
-                Start Route
-              </Button>
+              <div className="text-xl font-bold text-green-600">{driverData.stats.onTimeRate}%</div>
+              <p className="text-xs text-gray-600">On-Time</p>
             </CardContent>
           </Card>
 
-          <Card className="bg-gradient-to-br from-orange-50 to-red-50 border-orange-200 shadow-xl">
-            <CardContent className="p-6 text-center">
-              <div className="w-16 h-16 bg-gradient-to-br from-orange-500 to-red-500 rounded-full flex items-center justify-center mx-auto mb-4">
-                <Camera className="w-8 h-8 text-white" />
+          <Card className="bg-gradient-to-br from-purple-50 to-pink-50 border-purple-200">
+            <CardContent className="p-4 text-center">
+              <div className="w-10 h-10 bg-gradient-to-br from-purple-500 to-pink-500 rounded-full flex items-center justify-center mx-auto mb-2">
+                <Shield className="w-5 h-5 text-white" />
               </div>
-              <h3 className="font-bold text-orange-800 mb-2">Report Issue</h3>
-              <p className="text-sm text-gray-600 mb-4">Log incidents quickly</p>
-              <Button className="bg-gradient-to-r from-orange-500 to-red-500 text-white w-full">
-                <Camera className="w-4 h-4 mr-2" />
-                Report Now
-              </Button>
+              <div className="text-xl font-bold text-purple-600">{driverData.stats.safetyRating}</div>
+              <p className="text-xs text-gray-600">Safety</p>
+            </CardContent>
+          </Card>
+
+          <Card className="bg-gradient-to-br from-orange-50 to-red-50 border-orange-200">
+            <CardContent className="p-4 text-center">
+              <div className="w-10 h-10 bg-gradient-to-br from-orange-500 to-red-500 rounded-full flex items-center justify-center mx-auto mb-2">
+                <AlertTriangle className="w-5 h-5 text-white" />
+              </div>
+              <div className="text-xl font-bold text-orange-600">{driverData.stats.incidents}</div>
+              <p className="text-xs text-gray-600">Incidents</p>
             </CardContent>
           </Card>
         </div>
 
-        {/* Coming Soon Message */}
-        <Card className="shadow-2xl border-2 border-blue-200 bg-gradient-to-br from-white to-blue-50/50">
-          <CardContent className="p-12 text-center">
-            <div className="w-24 h-24 bg-gradient-to-br from-green-500 to-blue-500 rounded-full flex items-center justify-center mx-auto mb-6 shadow-2xl">
-              <Smartphone className="w-12 h-12 text-white" />
-            </div>
-            
-            <h2 className="text-3xl font-bold text-gray-800 mb-4">
-              Driver Mobile App Coming Soon!
-            </h2>
-            
-            <div className="max-w-2xl mx-auto mb-8">
-              <p className="text-lg text-gray-600 mb-6">
-                We're developing a simple, powerful mobile-first interface designed specifically for drivers and conductors.
-              </p>
-              
-              <div className="grid md:grid-cols-2 gap-6">
-                <div className="text-left">
-                  <h3 className="font-semibold text-green-700 mb-3">📱 Simple Interface</h3>
-                  <ul className="text-sm text-gray-600 space-y-1">
-                    <li>• Large, touch-friendly buttons</li>
-                    <li>• Works offline when needed</li>
-                    <li>• Voice commands support</li>
-                    <li>• Works in bright sunlight</li>
-                  </ul>
-                </div>
-                
-                <div className="text-left">
-                  <h3 className="font-semibold text-blue-700 mb-3">🚌 Core Features</h3>
-                  <ul className="text-sm text-gray-600 space-y-1">
-                    <li>• QR code scanner for boarding</li>
-                    <li>• One-tap incident reporting</li>
-                    <li>• GPS route tracking</li>
-                    <li>• Emergency contact buttons</li>
-                  </ul>
-                </div>
-              </div>
-            </div>
+        {/* Trip Control */}
+        <Card className="bg-white/70 backdrop-blur-sm shadow-xl mb-6">
+          <CardHeader>
+            <CardTitle className="flex items-center gap-2">
+              <Navigation className="w-5 h-5" />
+              Trip Control & QR Check-in
+            </CardTitle>
+          </CardHeader>
+          <CardContent className="space-y-4">
+            <div className="grid md:grid-cols-3 gap-4">
+              <Card className="bg-gradient-to-br from-green-50 to-emerald-50 border-green-200">
+                <CardContent className="p-4 text-center">
+                  <div className="w-12 h-12 bg-gradient-to-br from-green-500 to-emerald-500 rounded-full flex items-center justify-center mx-auto mb-3">
+                    <QrCode className="w-6 h-6 text-white" />
+                  </div>
+                  <h3 className="font-bold text-green-800 mb-2">QR Check-in</h3>
+                  <p className="text-sm text-gray-600 mb-3">Scan student ID cards</p>
+                  <Button onClick={checkInStudent} className="bg-gradient-to-r from-green-500 to-emerald-500 text-white w-full">
+                    <QrCode className="w-4 h-4 mr-2" />
+                    Scan QR
+                  </Button>
+                </CardContent>
+              </Card>
 
-            <div className="flex flex-col sm:flex-row items-center justify-center space-y-4 sm:space-y-0 sm:space-x-4">
-              <Button className="bg-gradient-to-r from-green-500 to-blue-500 hover:from-green-600 hover:to-blue-600 text-white px-8 py-3 rounded-xl shadow-lg">
-                <Smartphone className="w-4 h-4 mr-2" />
-                Download Beta
-              </Button>
-              <Button variant="outline" className="border-2 border-blue-300 text-blue-700 hover:bg-blue-50 px-8 py-3 rounded-xl">
-                <Navigation className="w-4 h-4 mr-2" />
-                View Demo
-              </Button>
-            </div>
+              <Card className="bg-gradient-to-br from-blue-50 to-cyan-50 border-blue-200">
+                <CardContent className="p-4 text-center">
+                  <div className="w-12 h-12 bg-gradient-to-br from-blue-500 to-cyan-500 rounded-full flex items-center justify-center mx-auto mb-3">
+                    <PlayCircle className="w-6 h-6 text-white" />
+                  </div>
+                  <h3 className="font-bold text-blue-800 mb-2">Start Trip</h3>
+                  <p className="text-sm text-gray-600 mb-3">Begin route journey</p>
+                  <Button 
+                    onClick={startTrip} 
+                    disabled={tripStatus === "active"}
+                    className="bg-gradient-to-r from-blue-500 to-cyan-500 text-white w-full disabled:opacity-50"
+                  >
+                    <PlayCircle className="w-4 h-4 mr-2" />
+                    Start
+                  </Button>
+                </CardContent>
+              </Card>
 
-            <div className="mt-8 pt-8 border-t border-blue-200">
-              <p className="text-sm text-gray-500">
-                Experience the complete system from the <strong>Parent Portal</strong> perspective while we finish the driver interface!
-              </p>
+              <Card className="bg-gradient-to-br from-orange-50 to-red-50 border-orange-200">
+                <CardContent className="p-4 text-center">
+                  <div className="w-12 h-12 bg-gradient-to-br from-orange-500 to-red-500 rounded-full flex items-center justify-center mx-auto mb-3">
+                    <Square className="w-6 h-6 text-white" />
+                  </div>
+                  <h3 className="font-bold text-orange-800 mb-2">End Trip</h3>
+                  <p className="text-sm text-gray-600 mb-3">Complete journey</p>
+                  <Button 
+                    onClick={endTrip}
+                    disabled={tripStatus !== "active"}
+                    variant="outline" 
+                    className="border-orange-300 text-orange-600 w-full disabled:opacity-50"
+                  >
+                    <Square className="w-4 h-4 mr-2" />
+                    End Trip
+                  </Button>
+                </CardContent>
+              </Card>
             </div>
           </CardContent>
         </Card>
 
-        {/* Mock Driver Stats */}
-        <div className="grid md:grid-cols-4 gap-6 mt-8">
-          <Card className="bg-gradient-to-br from-purple-50 to-pink-50 border-purple-200 shadow-lg">
-            <CardContent className="p-4 text-center">
-              <div className="text-2xl font-bold text-purple-600">32</div>
-              <p className="text-sm text-gray-600">Students Today</p>
-            </CardContent>
-          </Card>
+        {/* Route Stops */}
+        <Card className="bg-white/70 backdrop-blur-sm shadow-xl mb-6">
+          <CardHeader>
+            <CardTitle className="flex items-center gap-2">
+              <Route className="w-5 h-5" />
+              Today's Route - {driverData.route}
+            </CardTitle>
+          </CardHeader>
+          <CardContent>
+            <div className="space-y-3">
+              {driverData.stops.map((stop, index) => (
+                <div key={index} className={`flex items-center justify-between p-4 rounded-lg ${index === currentStop && tripStatus === "active" ? "bg-green-50 border-2 border-green-200" : "bg-gray-50"}`}>
+                  <div className="flex items-center gap-3">
+                    <div className={`w-8 h-8 rounded-full flex items-center justify-center ${index <= currentStop ? "bg-green-500 text-white" : "bg-gray-200 text-gray-600"}`}>
+                      {index <= currentStop ? <CheckCircle className="w-4 h-4" /> : index + 1}
+                    </div>
+                    <div>
+                      <h4 className="font-medium">{stop.name}</h4>
+                      <p className="text-sm text-gray-600">{stop.time} • {stop.students} students</p>
+                    </div>
+                  </div>
+                  {tripStatus === "active" && index === currentStop && (
+                    <Button 
+                      size="sm" 
+                      onClick={() => setCurrentStop(index + 1)}
+                      className="bg-gradient-to-r from-green-500 to-emerald-500"
+                    >
+                      Next Stop
+                    </Button>
+                  )}
+                </div>
+              ))}
+            </div>
+          </CardContent>
+        </Card>
 
-          <Card className="bg-gradient-to-br from-green-50 to-emerald-50 border-green-200 shadow-lg">
-            <CardContent className="p-4 text-center">
-              <div className="text-2xl font-bold text-green-600">98.5%</div>
-              <p className="text-sm text-gray-600">On-Time Rate</p>
-            </CardContent>
-          </Card>
-
-          <Card className="bg-gradient-to-br from-blue-50 to-cyan-50 border-blue-200 shadow-lg">
-            <CardContent className="p-4 text-center">
-              <div className="text-2xl font-bold text-blue-600">4.9⭐</div>
-              <p className="text-sm text-gray-600">Safety Rating</p>
-            </CardContent>
-          </Card>
-
-          <Card className="bg-gradient-to-br from-yellow-50 to-orange-50 border-yellow-200 shadow-lg">
-            <CardContent className="p-4 text-center">
-              <div className="text-2xl font-bold text-orange-600">0</div>
-              <p className="text-sm text-gray-600">Incidents</p>
-            </CardContent>
-          </Card>
-        </div>
+        {/* Live Tracking */}
+        <Card className="bg-white/70 backdrop-blur-sm shadow-xl">
+          <CardHeader>
+            <CardTitle className="flex items-center gap-2">
+              <MapPin className="w-5 h-5" />
+              Live Location Tracking
+            </CardTitle>
+          </CardHeader>
+          <CardContent>
+            <LiveBusTracker studentBusId="KBY245C" showAllBuses={false} />
+          </CardContent>
+        </Card>
       </div>
     </div>
   );

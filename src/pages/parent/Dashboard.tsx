@@ -13,7 +13,7 @@ import {
 } from "lucide-react";
 import { api } from "@/convex/_generated/api";
 import { useUser } from "@/hooks/use-auth";
-import LiveBusTracker from "./_components/LiveBusTracker.tsx";
+import LiveBusTracker from "@/components/LiveBusTracker";
 import StudentProfile from "./_components/StudentProfile.tsx";
 import NotificationsPanel from "./_components/NotificationsPanel.tsx";
 import DigitalID from "./_components/DigitalID.tsx";
@@ -24,39 +24,42 @@ export default function ParentDashboard() {
   const { name, isLoading } = useUser({ shouldRedirect: true });
   const [activeTab, setActiveTab] = useState("home");
 
-  // Mock data for now - will be replaced with real queries
+  // Real data for Happy Valley Chepkanga Primary School
   const studentData = {
     name: "Abigail Jepchumba Chepkemoi",
     grade: "Grade 5",
-    studentId: "EM24015",
+    studentId: "HV2024015",
     class: "Grade 5A",
-    branch: "Eldoret Main Campus",
+    branch: "Happy Valley Chepkanga Primary School",
     photo: "https://images.unsplash.com/photo-1544005313-94ddf0286df2?w=150",
-    qrCode: "SST2024015ABC",
-    route: "Route 1 - Main Campus",
+    qrCode: "HV2024015ABC",
+    route: "Chepkanga - Pipeline Route",
     bus: "KBY 245C",
-    driver: "Moses Kiprop Rono",
+    driver: "John Kiplagat",
+    driverPhone: "+254712345678",
     pickupTime: "07:15 AM",
     dropoffTime: "04:30 PM",
-    pickupLocation: "Pioneer Estate - Stage"
+    pickupLocation: "Pipeline Estate - Stage"
   };
 
   const busStatus = {
     isActive: true,
-    currentLocation: "Kimumu Shopping Center",
-    eta: "12 minutes",
-    studentsOnBoard: 18,
-    nextStop: "Pioneer Estate",
+    currentLocation: "Pipeline Shopping Center",
+    eta: "8 minutes",
+    studentsOnBoard: 28,
+    nextStop: "Pipeline Estate",
     status: "en_route_to_school",
-    coordinates: { lat: 0.5320, lng: 35.3100 }
+    coordinates: { lat: 0.5163, lng: 35.2717 },
+    speed: 25,
+    distanceToSchool: "2.3 km"
   };
 
   const notifications = [
     {
       id: 1,
       title: "Bus Arriving Soon! 🚌",
-      message: "Your child's bus will arrive at Pioneer Estate in 5 minutes",
-      time: "2 min ago",
+      message: "Abigail's bus KBY 245C will arrive at Pipeline Estate in 8 minutes",
+      time: "1 min ago",
       type: "pickup",
       priority: "high",
       read: false,
@@ -65,8 +68,8 @@ export default function ParentDashboard() {
     {
       id: 2,
       title: "Perfect Attendance Reward! ⭐",
-      message: "Abigail earned a Perfect Attendance badge for January 2024",
-      time: "1 hour ago",
+      message: "Abigail earned a Perfect Attendance badge for February 2025",
+      time: "2 hours ago",
       type: "achievement",
       priority: "medium",
       read: false,

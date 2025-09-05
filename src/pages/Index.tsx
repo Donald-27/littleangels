@@ -16,9 +16,9 @@ export default function Index() {
             </div>
             <div>
               <h1 className="text-xl font-bold bg-gradient-to-r from-orange-600 to-amber-600 bg-clip-text text-transparent">
-                Smart School Transport
+                Happy Valley Chepkanga Transport
               </h1>
-              <p className="text-xs text-gray-600">Student Safety System</p>
+              <p className="text-xs text-gray-600">Student Safety & Tracking System</p>
             </div>
           </div>
           <div className="flex items-center space-x-4">
@@ -40,22 +40,22 @@ export default function Index() {
         <div className="text-center max-w-4xl mx-auto">
           <div className="inline-flex items-center space-x-2 bg-white/60 backdrop-blur-sm rounded-full px-4 py-2 mb-6 border border-orange-200/50">
             <div className="w-2 h-2 bg-green-500 rounded-full animate-pulse"></div>
-            <span className="text-sm font-medium text-gray-700">Live Tracking • Real-time Safety • 200+ Students Protected</span>
+            <span className="text-sm font-medium text-gray-700">Live Tracking • Real-time Safety • Happy Valley Students Protected</span>
           </div>
           
           <h1 className="text-5xl md:text-7xl font-bold mb-6 leading-tight">
-            <span className="bg-gradient-to-r from-orange-600 via-amber-600 to-yellow-600 bg-clip-text text-transparent">
-              Modern School
+            <span className="bg-gradient-to-r from-emerald-600 via-green-600 to-teal-600 bg-clip-text text-transparent">
+              Happy Valley
             </span>
             <br />
             <span className="bg-gradient-to-r from-blue-600 via-purple-600 to-pink-600 bg-clip-text text-transparent">
-              Transport Safety
+              Smart Transport
             </span>
           </h1>
           
           <p className="text-xl text-gray-600 mb-8 max-w-2xl mx-auto leading-relaxed">
             Revolutionary student safety system with live tracking, QR boarding, and eco-friendly metrics. 
-            Built for parents, admins, and drivers across 3 school branches.
+            Serving Happy Valley Chepkanga Primary School in Eldoret with cutting-edge transport technology.
           </p>
           
           <div className="flex flex-col sm:flex-row items-center justify-center space-y-4 sm:space-y-0 sm:space-x-6">
@@ -142,16 +142,16 @@ export default function Index() {
           <CardContent className="p-8 md:p-12 relative z-10">
             <div className="grid md:grid-cols-4 gap-8 text-center">
               <div>
-                <div className="text-3xl md:text-4xl font-bold text-orange-400 mb-2">200+</div>
+                <div className="text-3xl md:text-4xl font-bold text-emerald-400 mb-2">280+</div>
                 <div className="text-gray-300">Students Protected</div>
               </div>
               <div>
                 <div className="text-3xl md:text-4xl font-bold text-blue-400 mb-2">3</div>
-                <div className="text-gray-300">School Branches</div>
+                <div className="text-gray-300">Active Vehicles</div>
               </div>
               <div>
-                <div className="text-3xl md:text-4xl font-bold text-green-400 mb-2">100%</div>
-                <div className="text-gray-300">Free to Run</div>
+                <div className="text-3xl md:text-4xl font-bold text-green-400 mb-2">98.5%</div>
+                <div className="text-gray-300">On-Time Rate</div>
               </div>
               <div>
                 <div className="text-3xl md:text-4xl font-bold text-purple-400 mb-2">24/7</div>
@@ -193,7 +193,7 @@ export default function Index() {
               <div className="w-8 h-8 bg-gradient-to-br from-orange-500 to-amber-600 rounded-lg flex items-center justify-center">
                 <Bus className="w-4 h-4 text-white" />
               </div>
-              <span className="font-semibold text-gray-800">Smart School Transport</span>
+              <span className="font-semibold text-gray-800">Happy Valley Transport</span>
             </div>
             <div className="text-sm text-gray-600">
               © {new Date().getFullYear()} Built with ❤️ for student safety

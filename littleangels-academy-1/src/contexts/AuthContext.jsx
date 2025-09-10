@@ -1,5 +1,5 @@
 import React, { createContext, useContext, useState, useEffect } from 'react';
-import { supabase, getCurrentUser, getSession } from '../lib/supabase';
+import { supabase, getCurrentUser, getSession, isSupabaseConfigured } from '../lib/supabase';
 import { toast } from 'sonner';
 
 const AuthContext = createContext({});
@@ -18,6 +18,13 @@ export const AuthProvider = ({ children }) => {
   const [isLoading, setIsLoading] = useState(true);
 
   useEffect(() => {
+    // Check if Supabase is configured
+    if (!isSupabaseConfigured()) {
+      console.warn('Supabase not configured. Auth will not work until VITE_SUPABASE_URL and VITE_SUPABASE_ANON_KEY are set.');
+      setIsLoading(false);
+      return;
+    }
+
     // Get initial session
     const initializeAuth = async () => {
       try {
@@ -68,6 +75,11 @@ export const AuthProvider = ({ children }) => {
   }, []);
 
   const signIn = async (email, password) => {
+    if (!isSupabaseConfigured()) {
+      toast.error('Authentication not configured. Please set up Supabase credentials.');
+      return { data: null, error: { message: 'Supabase not configured' } };
+    }
+
     try {
       setIsLoading(true);
       const { data, error } = await supabase.auth.signInWithPassword({
@@ -100,6 +112,12 @@ export const AuthProvider = ({ children }) => {
   };
 
   const signOut = async () => {
+    if (!isSupabaseConfigured()) {
+      setUser(null);
+      setSession(null);
+      return { error: null };
+    }
+
     try {
       const { error } = await supabase.auth.signOut();
       if (error) throw error;

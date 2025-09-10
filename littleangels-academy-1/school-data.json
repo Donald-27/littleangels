@@ -1,0 +1,22 @@
+{
+  "name": "Little Angels School",
+  "address": "Eldoret, Kenya",
+  "phone": "+254712345678",
+  "email": "info@littleangels.ke",
+  "website": "littleangels.ke",
+  "established": "2010",
+  "motto": "Excellence in Education",
+  "settings": {
+    "timeZone": "Africa/Nairobi",
+    "academicYear": "2024",
+    "termDates": {
+      "term1": {"start": "2024-01-15", "end": "2024-04-05"},
+      "term2": {"start": "2024-05-06", "end": "2024-08-02"},
+      "term3": {"start": "2024-09-02", "end": "2024-11-29"}
+    },
+    "currencies": ["KES"],
+    "defaultCurrency": "KES",
+    "languages": ["English", "Swahili"],
+    "defaultLanguage": "English"
+  }
+}

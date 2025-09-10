@@ -16,4 +16,4 @@ const BeautifulInput = ({
   );
 };
 
-export default BeautifulInput;
+export { BeautifulInput };

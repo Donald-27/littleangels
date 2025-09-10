@@ -38,4 +38,4 @@ const BeautifulBadge = ({
   );
 };
 
-export default BeautifulBadge;
+export { BeautifulBadge };

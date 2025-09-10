@@ -47,4 +47,4 @@ const BeautifulButton = ({
   );
 };
 
-export default BeautifulButton;
+export { BeautifulButton };

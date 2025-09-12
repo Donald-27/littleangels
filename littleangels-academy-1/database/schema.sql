@@ -2,7 +2,7 @@
 -- Run this SQL in your Supabase SQL editor
 
 -- Enable Row Level Security
-ALTER DATABASE postgres SET "app.jwt_secret" TO 'BCDOv6ifpmHGXdNCevzmyAVK5EDUwawrgxR0jh/mQi78GKGcb3sKG4NAhWoKewM52b/J7y10lbIcgX3j/qQ4mQ==';
+-- NOTE: JWT secret should be configured in environment variables, not in SQL files
 
 -- Create enum types
 CREATE TYPE user_role AS ENUM ('admin', 'teacher', 'parent', 'driver', 'accounts');

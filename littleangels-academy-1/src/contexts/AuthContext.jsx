@@ -31,14 +31,30 @@ export const AuthProvider = ({ children }) => {
         const session = await getSession();
         setSession(session);
         if (session?.user) {
-          // Get user profile from our custom users table
-          const { data: userProfile } = await supabase
-            .from('users')
-            .select('*')
-            .eq('email', session.user.email)
-            .single();
-          
-          setUser(userProfile);
+          try {
+            // Get user profile from our custom users table
+            const { data: userProfile, error: profileError } = await supabase
+              .from('users')
+              .select('*')
+              .eq('email', session.user.email)
+              .single();
+            
+            if (profileError) {
+              console.warn('User profile not found in database - database may not be set up yet:', profileError.message);
+              // Clear session if user profile doesn't exist
+              await supabase.auth.signOut();
+              setSession(null);
+              setUser(null);
+            } else {
+              setUser(userProfile);
+            }
+          } catch (profileError) {
+            console.warn('Database not set up yet. Please run the schema setup:', profileError.message);
+            // Clear session if database isn't ready
+            await supabase.auth.signOut();
+            setSession(null);
+            setUser(null);
+          }
         }
       } catch (error) {
         console.error('Error initializing auth:', error);
@@ -55,14 +71,24 @@ export const AuthProvider = ({ children }) => {
         setSession(session);
         
         if (session?.user) {
-          // Get user profile from our custom users table
-          const { data: userProfile } = await supabase
-            .from('users')
-            .select('*')
-            .eq('email', session.user.email)
-            .single();
-          
-          setUser(userProfile);
+          try {
+            // Get user profile from our custom users table
+            const { data: userProfile, error: profileError } = await supabase
+              .from('users')
+              .select('*')
+              .eq('email', session.user.email)
+              .single();
+            
+            if (profileError) {
+              console.warn('User profile not found - database may not be set up yet:', profileError.message);
+              setUser(null);
+            } else {
+              setUser(userProfile);
+            }
+          } catch (profileError) {
+            console.warn('Database not ready - please set up the schema:', profileError.message);
+            setUser(null);
+          }
         } else {
           setUser(null);
         }

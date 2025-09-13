@@ -1,0 +1,274 @@
+littleangels:1 [Intervention] Slow network is detected. See https://www.chromestatus.com/feature/5636954674692096 for more details. Fallback font will be used while loading: https://replit.com/public/fonts/ibm-plex-sans-v8-latin-regular.woff2
+The source list for the Content Security Policy directive 'default-src' contains an invalid source: ''unsafe-dynamic''. It will be ignored.
+The source list for the Content Security Policy directive 'default-src' contains an invalid source: ''unsafe-dynamic''. It will be ignored.
+The source list for the Content Security Policy directive 'default-src' contains an invalid source: ''unsafe-dynamic''. It will be ignored.
+The source list for the Content Security Policy directive 'default-src' contains an invalid source: ''unsafe-dynamic''. It will be ignored.
+The source list for the Content Security Policy directive 'default-src' contains an invalid source: ''unsafe-dynamic''. It will be ignored.
+The source list for the Content Security Policy directive 'default-src' contains an invalid source: ''unsafe-dynamic''. It will be ignored.
+The source list for the Content Security Policy directive 'default-src' contains an invalid source: ''unsafe-dynamic''. It will be ignored.
+The source list for the Content Security Policy directive 'default-src' contains an invalid source: ''unsafe-dynamic''. It will be ignored.
+The source list for the Content Security Policy directive 'default-src' contains an invalid source: ''unsafe-dynamic''. It will be ignored.
+The source list for the Content Security Policy directive 'default-src' contains an invalid source: ''unsafe-dynamic''. It will be ignored.
+The Content-Security-Policy directive 'default-src' contains 'report-uri' as a source expression. Did you want to add it as a directive and forget a semicolon?
+The Content-Security-Policy directive 'default-src' contains 'report-uri' as a source expression. Did you want to add it as a directive and forget a semicolon?
+The Content-Security-Policy directive 'default-src' contains 'report-uri' as a source expression. Did you want to add it as a directive and forget a semicolon?
+The Content-Security-Policy directive 'default-src' contains 'report-uri' as a source expression. Did you want to add it as a directive and forget a semicolon?
+The Content-Security-Policy directive 'default-src' contains 'report-uri' as a source expression. Did you want to add it as a directive and forget a semicolon?
+The Content-Security-Policy directive 'default-src' contains 'report-uri' as a source expression. Did you want to add it as a directive and forget a semicolon?
+The Content-Security-Policy directive 'default-src' contains 'report-uri' as a source expression. Did you want to add it as a directive and forget a semicolon?
+The Content-Security-Policy directive 'default-src' contains 'report-uri' as a source expression. Did you want to add it as a directive and forget a semicolon?
+The Content-Security-Policy directive 'default-src' contains 'report-uri' as a source expression. Did you want to add it as a directive and forget a semicolon?
+The Content-Security-Policy directive 'default-src' contains 'report-uri' as a source expression. Did you want to add it as a directive and forget a semicolon?
+The source list for Content Security Policy directive 'default-src' contains a source with an invalid path: '/api/4509669501698048/security/?sentry_key=7eb3d90eb4660416caf507087367e67e'. The query component, including the '?', will be ignored.
+The source list for Content Security Policy directive 'default-src' contains a source with an invalid path: '/api/4509669501698048/security/?sentry_key=7eb3d90eb4660416caf507087367e67e'. The query component, including the '?', will be ignored.
+The source list for Content Security Policy directive 'default-src' contains a source with an invalid path: '/api/4509669501698048/security/?sentry_key=7eb3d90eb4660416caf507087367e67e'. The query component, including the '?', will be ignored.
+The source list for Content Security Policy directive 'default-src' contains a source with an invalid path: '/api/4509669501698048/security/?sentry_key=7eb3d90eb4660416caf507087367e67e'. The query component, including the '?', will be ignored.
+The source list for Content Security Policy directive 'default-src' contains a source with an invalid path: '/api/4509669501698048/security/?sentry_key=7eb3d90eb4660416caf507087367e67e'. The query component, including the '?', will be ignored.
+The source list for Content Security Policy directive 'default-src' contains a source with an invalid path: '/api/4509669501698048/security/?sentry_key=7eb3d90eb4660416caf507087367e67e'. The query component, including the '?', will be ignored.
+The source list for Content Security Policy directive 'default-src' contains a source with an invalid path: '/api/4509669501698048/security/?sentry_key=7eb3d90eb4660416caf507087367e67e'. The query component, including the '?', will be ignored.
+The source list for Content Security Policy directive 'default-src' contains a source with an invalid path: '/api/4509669501698048/security/?sentry_key=7eb3d90eb4660416caf507087367e67e'. The query component, including the '?', will be ignored.
+The source list for Content Security Policy directive 'default-src' contains a source with an invalid path: '/api/4509669501698048/security/?sentry_key=7eb3d90eb4660416caf507087367e67e'. The query component, including the '?', will be ignored.
+The source list for Content Security Policy directive 'default-src' contains a source with an invalid path: '/api/4509669501698048/security/?sentry_key=7eb3d90eb4660416caf507087367e67e'. The query component, including the '?', will be ignored.
+littleangels:1 The source list for the Content Security Policy directive 'default-src' contains an invalid source: ''unsafe-dynamic''. It will be ignored.
+littleangels:1 The Content-Security-Policy directive 'default-src' contains 'report-uri' as a source expression. Did you want to add it as a directive and forget a semicolon?
+littleangels:1 The source list for Content Security Policy directive 'default-src' contains a source with an invalid path: '/api/4509669501698048/security/?sentry_key=7eb3d90eb4660416caf507087367e67e'. The query component, including the '?', will be ignored.
+ stallwart: failed ping 1
+ stallwart: failed ping 2
+ 
+      /////////////////////
+   ///////////////////////////
+  ////////@@@@@@@//////////////
+  ////////@@@@@@@//////////////
+  ////////@@@@@@@//////////////        Curious and driven?
+  ///////////////@@@@@@@///////        Work with us!
+  ///////////////@@@@@@@///////
+  ///////////////@@@@@@@///////        https://join.replit.com/hack.with.us
+  ////////@@@@@@@//////////////
+  ////////@@@@@@@//////////////
+  ////////@@@@@@#//////////////
+   ///////////////////////////
+      /////////////////////
+      
+ [LaunchDarkly] LaunchDarkly client initialized
+ stallwart: failed ping 1
+littleangels:1 Banner not shown: beforeinstallpromptevent.preventDefault() called. The page must call beforeinstallpromptevent.prompt() to show the banner.
+ Error while parsing the 'sandbox' attribute: 'allow-downloads-without-user-activation' is an invalid sandbox flag.
+_ @ framework-87e4a596bb9cb438.js:1
+ Unrecognized feature: 'ambient-light-sensor'.
+_ @ framework-87e4a596bb9cb438.js:1
+ Unrecognized feature: 'battery'.
+_ @ framework-87e4a596bb9cb438.js:1
+ Unrecognized feature: 'execution-while-not-rendered'.
+_ @ framework-87e4a596bb9cb438.js:1
+ Unrecognized feature: 'execution-while-out-of-viewport'.
+_ @ framework-87e4a596bb9cb438.js:1
+ Unrecognized feature: 'layout-animations'.
+_ @ framework-87e4a596bb9cb438.js:1
+ Unrecognized feature: 'legacy-image-formats'.
+_ @ framework-87e4a596bb9cb438.js:1
+ Unrecognized feature: 'navigation-override'.
+_ @ framework-87e4a596bb9cb438.js:1
+ Unrecognized feature: 'oversized-images'.
+_ @ framework-87e4a596bb9cb438.js:1
+ Unrecognized feature: 'publickey-credentials'.
+_ @ framework-87e4a596bb9cb438.js:1
+ Unrecognized feature: 'speaker-selection'.
+_ @ framework-87e4a596bb9cb438.js:1
+ Unrecognized feature: 'unoptimized-images'.
+_ @ framework-87e4a596bb9cb438.js:1
+ Unrecognized feature: 'unsized-media'.
+_ @ framework-87e4a596bb9cb438.js:1
+ Unrecognized feature: 'pointer-lock'.
+_ @ framework-87e4a596bb9cb438.js:1
+ Allow attribute will take precedence over 'allowfullscreen'.
+_ @ framework-87e4a596bb9cb438.js:1
+ Allow attribute will take precedence over 'allowpaymentrequest'.
+_ @ framework-87e4a596bb9cb438.js:1
+workspace_iframe.html?initialPath=%2F&id=%3Ar4o%3A:32 Error while parsing the 'sandbox' attribute: 'allow-downloads-without-user-activation' is an invalid sandbox flag.
+workspace_iframe.html?initialPath=%2F&id=%3Ar4o%3A:32 Unrecognized feature: 'ambient-light-sensor'.
+workspace_iframe.html?initialPath=%2F&id=%3Ar4o%3A:32 Unrecognized feature: 'battery'.
+workspace_iframe.html?initialPath=%2F&id=%3Ar4o%3A:32 Unrecognized feature: 'execution-while-not-rendered'.
+workspace_iframe.html?initialPath=%2F&id=%3Ar4o%3A:32 Unrecognized feature: 'execution-while-out-of-viewport'.
+workspace_iframe.html?initialPath=%2F&id=%3Ar4o%3A:32 Unrecognized feature: 'layout-animations'.
+workspace_iframe.html?initialPath=%2F&id=%3Ar4o%3A:32 Unrecognized feature: 'legacy-image-formats'.
+workspace_iframe.html?initialPath=%2F&id=%3Ar4o%3A:32 Unrecognized feature: 'navigation-override'.
+workspace_iframe.html?initialPath=%2F&id=%3Ar4o%3A:32 Unrecognized feature: 'oversized-images'.
+workspace_iframe.html?initialPath=%2F&id=%3Ar4o%3A:32 Unrecognized feature: 'publickey-credentials'.
+workspace_iframe.html?initialPath=%2F&id=%3Ar4o%3A:32 Unrecognized feature: 'speaker-selection'.
+workspace_iframe.html?initialPath=%2F&id=%3Ar4o%3A:32 Unrecognized feature: 'unoptimized-images'.
+workspace_iframe.html?initialPath=%2F&id=%3Ar4o%3A:32 Unrecognized feature: 'unsized-media'.
+workspace_iframe.html?initialPath=%2F&id=%3Ar4o%3A:32 Allow attribute will take precedence over 'allowfullscreen'.
+workspace_iframe.html?initialPath=%2F&id=%3Ar4o%3A:32 Allow attribute will take precedence over 'allowpaymentrequest'.
+ ⚠️ React Router Future Flag Warning: React Router will begin wrapping state updates in `React.startTransition` in v7. You can use the `v7_startTransition` future flag to opt-in early. For more information, see https://reactrouter.com/v6/upgrading/future#v7_starttransition.
+Mt.forEach.n.<computed> @ eruda.js:2
+ ⚠️ React Router Future Flag Warning: Relative route resolution within Splat routes is changing in v7. You can use the `v7_relativeSplatPath` future flag to opt-in early. For more information, see https://reactrouter.com/v6/upgrading/future#v7_relativesplatpath.
+Mt.forEach.n.<computed> @ eruda.js:2
+ 🔐 SignIn: Starting login process for: kipropdonald27@gmail.com
+ 🔐 SignIn: Calling supabase.auth.signInWithPassword...
+ ✅ Using auth metadata for user profile: admin
+ 🔐 SignIn: Auth response received [object Object]
+ 🔐 SignIn: Auth successful, creating user profile from metadata
+ ✅ SignIn: Login successful, setting user: admin
+ 🔐 SignIn: Setting loading to false
+zvkfuljxidxtuqrmquso.supabase.co/rest/v1/notifications?select=*%2Csender%3Ausers%21notifications_sender_id_fkey%28name%2Crole%29&recipients=cs.%7B967a12e4-8652-485f-94c4-e69d0c32131c%7D&order=created_at.desc&limit=50:1  Failed to load resource: the server responded with a status of 400 ()
+ Error fetching notifications: [object Object]
+Mt.forEach.n.<computed> @ eruda.js:2
+zvkfuljxidxtuqrmquso.supabase.co/rest/v1/vehicles?select=*&school_id=eq.1fd55bdb-517a-4213-a914-8ff59dbfe3ed:1  Failed to load resource: the server responded with a status of 500 ()
+zvkfuljxidxtuqrmquso.supabase.co/rest/v1/trips?select=*&school_id=eq.1fd55bdb-517a-4213-a914-8ff59dbfe3ed&status=eq.in_progress:1  Failed to load resource: the server responded with a status of 500 ()
+zvkfuljxidxtuqrmquso.supabase.co/rest/v1/users?select=*&school_id=eq.1fd55bdb-517a-4213-a914-8ff59dbfe3ed&role=in.%28teacher%2Cdriver%2Cadmin%29:1  Failed to load resource: the server responded with a status of 500 ()
+zvkfuljxidxtuqrmquso.supabase.co/rest/v1/students?select=*&school_id=eq.1fd55bdb-517a-4213-a914-8ff59dbfe3ed:1  Failed to load resource: the server responded with a status of 500 ()
+zvkfuljxidxtuqrmquso.supabase.co/rest/v1/routes?select=*&school_id=eq.1fd55bdb-517a-4213-a914-8ff59dbfe3ed:1  Failed to load resource: the server responded with a status of 500 ()
+zvkfuljxidxtuqrmquso.supabase.co/rest/v1/trips?select=*&school_id=eq.1fd55bdb-517a-4213-a914-8ff59dbfe3ed&status=eq.in_progress:1  Failed to load resource: the server responded with a status of 500 ()
+zvkfuljxidxtuqrmquso.supabase.co/rest/v1/users?select=*&school_id=eq.1fd55bdb-517a-4213-a914-8ff59dbfe3ed&role=in.%28teacher%2Cdriver%2Cadmin%29:1  Failed to load resource: the server responded with a status of 500 ()
+zvkfuljxidxtuqrmquso.supabase.co/rest/v1/routes?select=*&school_id=eq.1fd55bdb-517a-4213-a914-8ff59dbfe3ed:1  Failed to load resource: the server responded with a status of 500 ()
+zvkfuljxidxtuqrmquso.supabase.co/rest/v1/vehicles?select=*&school_id=eq.1fd55bdb-517a-4213-a914-8ff59dbfe3ed:1  Failed to load resource: the server responded with a status of 500 ()
+zvkfuljxidxtuqrmquso.supabase.co/rest/v1/students?select=*&school_id=eq.1fd55bdb-517a-4213-a914-8ff59dbfe3ed:1  Failed to load resource: the server responded with a status of 500 ()
+zvkfuljxidxtuqrmquso.supabase.co/rest/v1/attendance?select=status&school_id=eq.1fd55bdb-517a-4213-a914-8ff59dbfe3ed&date=gte.2025-09-13:1  Failed to load resource: the server responded with a status of 500 ()
+zvkfuljxidxtuqrmquso.supabase.co/rest/v1/vehicles?select=maintenance_info&school_id=eq.1fd55bdb-517a-4213-a914-8ff59dbfe3ed:1  Failed to load resource: the server responded with a status of 500 ()
+zvkfuljxidxtuqrmquso.supabase.co/rest/v1/payments?select=amount%2Cstatus&school_id=eq.1fd55bdb-517a-4213-a914-8ff59dbfe3ed:1  Failed to load resource: the server responded with a status of 500 ()
+zvkfuljxidxtuqrmquso.supabase.co/rest/v1/attendance?select=status&school_id=eq.1fd55bdb-517a-4213-a914-8ff59dbfe3ed&date=gte.2025-09-13:1  Failed to load resource: the server responded with a status of 500 ()
+zvkfuljxidxtuqrmquso.supabase.co/rest/v1/payments?select=amount%2Cstatus&school_id=eq.1fd55bdb-517a-4213-a914-8ff59dbfe3ed:1  Failed to load resource: the server responded with a status of 500 ()
+zvkfuljxidxtuqrmquso.supabase.co/rest/v1/vehicles?select=maintenance_info&school_id=eq.1fd55bdb-517a-4213-a914-8ff59dbfe3ed:1  Failed to load resource: the server responded with a status of 500 ()
+zvkfuljxidxtuqrmquso.supabase.co/rest/v1/attendance?select=*%2Cstudent%3Astudents%28name%29%2Croute%3Aroutes%28name%29&school_id=eq.1fd55bdb-517a-4213-a914-8ff59dbfe3ed&order=created_at.desc&limit=5:1  Failed to load resource: the server responded with a status of 500 ()
+zvkfuljxidxtuqrmquso.supabase.co/rest/v1/attendance?select=*%2Cstudent%3Astudents%28name%29%2Croute%3Aroutes%28name%29&school_id=eq.1fd55bdb-517a-4213-a914-8ff59dbfe3ed&order=created_at.desc&limit=5:1  Failed to load resource: the server responded with a status of 500 ()
+Console.js:61 ⚠️ React Router Future Flag Warning: React Router will begin wrapping state updates in `React.startTransition` in v7. You can use the `v7_startTransition` future flag to opt-in early. For more information, see https://reactrouter.com/v6/upgrading/future#v7_starttransition.
+Mt.forEach.n.<computed> @ Console.js:61
+Console.js:61 ⚠️ React Router Future Flag Warning: Relative route resolution within Splat routes is changing in v7. You can use the `v7_relativeSplatPath` future flag to opt-in early. For more information, see https://reactrouter.com/v6/upgrading/future#v7_relativesplatpath.
+Mt.forEach.n.<computed> @ Console.js:61
+Console.js:61 ✅ Using auth metadata for user profile: admin
+Console.js:61 ✅ Using auth metadata for user profile: admin
+Console.js:61 ✅ Using auth metadata for user profile: admin
+Console.js:61 ✅ Using auth metadata for user profile: admin
+zvkfuljxidxtuqrmquso.supabase.co/rest/v1/notifications?select=*%2Csender%3Ausers%21notifications_sender_id_fkey%28name%2Crole%29&recipients=cs.%7B967a12e4-8652-485f-94c4-e69d0c32131c%7D&order=created_at.desc&limit=50:1  Failed to load resource: the server responded with a status of 400 ()
+Console.js:61 Error fetching notifications: [object Object]
+Mt.forEach.n.<computed> @ Console.js:61
+zvkfuljxidxtuqrmquso.supabase.co/rest/v1/students?select=*&school_id=eq.1fd55bdb-517a-4213-a914-8ff59dbfe3ed:1  Failed to load resource: the server responded with a status of 500 ()
+zvkfuljxidxtuqrmquso.supabase.co/rest/v1/students?select=*&school_id=eq.1fd55bdb-517a-4213-a914-8ff59dbfe3ed:1  Failed to load resource: the server responded with a status of 500 ()
+zvkfuljxidxtuqrmquso.supabase.co/rest/v1/students?select=*&school_id=eq.1fd55bdb-517a-4213-a914-8ff59dbfe3ed:1  Failed to load resource: the server responded with a status of 500 ()
+Console.js:61 Error fetching students: [object Object]
+Mt.forEach.n.<computed> @ Console.js:61
+Console.js:61 Error fetching students: [object Object]
+Mt.forEach.n.<computed> @ Console.js:61
+Console.js:61 Error fetching students: [object Object]
+Mt.forEach.n.<computed> @ Console.js:61
+Console.js:61 Error fetching students: [object Object]
+Mt.forEach.n.<computed> @ Console.js:61
+Console.js:61 Error fetching students: [object Object]
+Mt.forEach.n.<computed> @ Console.js:61
+zvkfuljxidxtuqrmquso.supabase.co/rest/v1/students?select=*&school_id=eq.1fd55bdb-517a-4213-a914-8ff59dbfe3ed:1  Failed to load resource: the server responded with a status of 500 ()
+zvkfuljxidxtuqrmquso.supabase.co/rest/v1/students?select=*&school_id=eq.1fd55bdb-517a-4213-a914-8ff59dbfe3ed:1  Failed to load resource: the server responded with a status of 500 ()
+zvkfuljxidxtuqrmquso.supabase.co/rest/v1/students?select=*&school_id=eq.1fd55bdb-517a-4213-a914-8ff59dbfe3ed&is_active=eq.true:1  Failed to load resource: the server responded with a status of 500 ()
+zvkfuljxidxtuqrmquso.supabase.co/rest/v1/students?select=*&school_id=eq.1fd55bdb-517a-4213-a914-8ff59dbfe3ed&is_active=eq.true:1  Failed to load resource: the server responded with a status of 500 ()
+zvkfuljxidxtuqrmquso.supabase.co/rest/v1/students?select=*&school_id=eq.1fd55bdb-517a-4213-a914-8ff59dbfe3ed&is_active=eq.true:1  Failed to load resource: the server responded with a status of 500 ()
+zvkfuljxidxtuqrmquso.supabase.co/rest/v1/notifications?select=*%2Csender%3Ausers%21notifications_sender_id_fkey%28name%2Crole%29&recipients=cs.%7B967a12e4-8652-485f-94c4-e69d0c32131c%7D&order=created_at.desc&limit=50:1  Failed to load resource: the server responded with a status of 400 ()
+Console.js:61 Error fetching notifications: [object Object]
+Mt.forEach.n.<computed> @ Console.js:61
+zvkfuljxidxtuqrmquso.supabase.co/rest/v1/students?select=*&school_id=eq.1fd55bdb-517a-4213-a914-8ff59dbfe3ed&is_active=eq.true:1  Failed to load resource: the server responded with a status of 500 ()
+zvkfuljxidxtuqrmquso.supabase.co/rest/v1/students?select=*&school_id=eq.1fd55bdb-517a-4213-a914-8ff59dbfe3ed&is_active=eq.true:1  Failed to load resource: the server responded with a status of 500 ()
+zvkfuljxidxtuqrmquso.supabase.co/rest/v1/notifications?select=*%2Csender%3Ausers%21notifications_sender_id_fkey%28name%2Crole%29&recipients=cs.%7B967a12e4-8652-485f-94c4-e69d0c32131c%7D&order=created_at.desc&limit=50:1  Failed to load resource: the server responded with a status of 400 ()
+Console.js:61 Error fetching notifications: [object Object]
+Mt.forEach.n.<computed> @ Console.js:61
+zvkfuljxidxtuqrmquso.supabase.co/rest/v1/students?select=*&school_id=eq.1fd55bdb-517a-4213-a914-8ff59dbfe3ed&route_id=not.is.null:1  Failed to load resource: the server responded with a status of 500 ()
+zvkfuljxidxtuqrmquso.supabase.co/rest/v1/students?select=*&school_id=eq.1fd55bdb-517a-4213-a914-8ff59dbfe3ed&route_id=not.is.null:1  Failed to load resource: the server responded with a status of 500 ()
+zvkfuljxidxtuqrmquso.supabase.co/rest/v1/students?select=*&school_id=eq.1fd55bdb-517a-4213-a914-8ff59dbfe3ed&route_id=not.is.null:1  Failed to load resource: the server responded with a status of 500 ()
+zvkfuljxidxtuqrmquso.supabase.co/rest/v1/students?select=*&school_id=eq.1fd55bdb-517a-4213-a914-8ff59dbfe3ed&route_id=not.is.null:1  Failed to load resource: the server responded with a status of 500 ()
+zvkfuljxidxtuqrmquso.supabase.co/rest/v1/notifications?select=*%2Csender%3Ausers%21notifications_sender_id_fkey%28name%2Crole%29&recipients=cs.%7B967a12e4-8652-485f-94c4-e69d0c32131c%7D&order=created_at.desc&limit=50:1  Failed to load resource: the server responded with a status of 400 ()
+Console.js:61 Error fetching notifications: [object Object]
+Mt.forEach.n.<computed> @ Console.js:61
+zvkfuljxidxtuqrmquso.supabase.co/rest/v1/students?select=*&school_id=eq.1fd55bdb-517a-4213-a914-8ff59dbfe3ed&route_id=not.is.null:1  Failed to load resource: the server responded with a status of 500 ()
+zvkfuljxidxtuqrmquso.supabase.co/rest/v1/students?select=grade&school_id=eq.1fd55bdb-517a-4213-a914-8ff59dbfe3ed&is_active=eq.true:1  Failed to load resource: the server responded with a status of 500 ()
+zvkfuljxidxtuqrmquso.supabase.co/rest/v1/students?select=grade&school_id=eq.1fd55bdb-517a-4213-a914-8ff59dbfe3ed&is_active=eq.true:1  Failed to load resource: the server responded with a status of 500 ()
+zvkfuljxidxtuqrmquso.supabase.co/rest/v1/students?select=grade&school_id=eq.1fd55bdb-517a-4213-a914-8ff59dbfe3ed&is_active=eq.true:1  Failed to load resource: the server responded with a status of 500 ()
+zvkfuljxidxtuqrmquso.supabase.co/rest/v1/students?select=grade&school_id=eq.1fd55bdb-517a-4213-a914-8ff59dbfe3ed&is_active=eq.true:1  Failed to load resource: the server responded with a status of 500 ()
+zvkfuljxidxtuqrmquso.supabase.co/rest/v1/students?select=grade&school_id=eq.1fd55bdb-517a-4213-a914-8ff59dbfe3ed&is_active=eq.true:1  Failed to load resource: the server responded with a status of 500 ()
+zvkfuljxidxtuqrmquso.supabase.co/rest/v1/users?select=*&school_id=eq.1fd55bdb-517a-4213-a914-8ff59dbfe3ed&role=neq.parent:1  Failed to load resource: the server responded with a status of 500 ()
+zvkfuljxidxtuqrmquso.supabase.co/rest/v1/users?select=*&school_id=eq.1fd55bdb-517a-4213-a914-8ff59dbfe3ed&role=neq.parent:1  Failed to load resource: the server responded with a status of 500 ()
+Console.js:61 Error fetching staff: [object Object]
+Mt.forEach.n.<computed> @ Console.js:61
+Console.js:61 Error fetching staff: [object Object]
+Mt.forEach.n.<computed> @ Console.js:61
+zvkfuljxidxtuqrmquso.supabase.co/rest/v1/users?select=*&school_id=eq.1fd55bdb-517a-4213-a914-8ff59dbfe3ed&is_active=eq.true&role=neq.parent:1  Failed to load resource: the server responded with a status of 500 ()
+zvkfuljxidxtuqrmquso.supabase.co/rest/v1/users?select=*&school_id=eq.1fd55bdb-517a-4213-a914-8ff59dbfe3ed&is_active=eq.true&role=neq.parent:1  Failed to load resource: the server responded with a status of 500 ()
+zvkfuljxidxtuqrmquso.supabase.co/rest/v1/users?select=role&school_id=eq.1fd55bdb-517a-4213-a914-8ff59dbfe3ed&is_active=eq.true&role=neq.parent:1  Failed to load resource: the server responded with a status of 500 ()
+zvkfuljxidxtuqrmquso.supabase.co/rest/v1/users?select=role&school_id=eq.1fd55bdb-517a-4213-a914-8ff59dbfe3ed&is_active=eq.true&role=neq.parent:1  Failed to load resource: the server responded with a status of 500 ()
+zvkfuljxidxtuqrmquso.supabase.co/auth/v1/admin/users:1  Failed to load resource: the server responded with a status of 403 ()
+Console.js:61 Error adding staff: AuthApiError: User not allowed
+Mt.forEach.n.<computed> @ Console.js:61
+zvkfuljxidxtuqrmquso.supabase.co/rest/v1/vehicles?select=*%2Cdriver%3Ausers%21vehicles_driver_id_fkey%28name%2Cphone%29%2Cconductor%3Ausers%21vehicles_conductor_id_fkey%28name%2Cphone%29%2Croutes%28name%2Cdescription%29&school_id=eq.1fd55bdb-517a-4213-a914-8ff59dbfe3ed&order=created_at.desc:1  Failed to load resource: the server responded with a status of 500 ()
+zvkfuljxidxtuqrmquso.supabase.co/rest/v1/vehicles?select=*&school_id=eq.1fd55bdb-517a-4213-a914-8ff59dbfe3ed:1  Failed to load resource: the server responded with a status of 500 ()
+zvkfuljxidxtuqrmquso.supabase.co/rest/v1/trips?select=*&school_id=eq.1fd55bdb-517a-4213-a914-8ff59dbfe3ed&status=eq.in_progress:1  Failed to load resource: the server responded with a status of 500 ()
+zvkfuljxidxtuqrmquso.supabase.co/rest/v1/vehicles?select=*&school_id=eq.1fd55bdb-517a-4213-a914-8ff59dbfe3ed:1  Failed to load resource: the server responded with a status of 500 ()
+zvkfuljxidxtuqrmquso.supabase.co/rest/v1/routes?select=*&school_id=eq.1fd55bdb-517a-4213-a914-8ff59dbfe3ed:1  Failed to load resource: the server responded with a status of 500 ()
+zvkfuljxidxtuqrmquso.supabase.co/rest/v1/trips?select=*&school_id=eq.1fd55bdb-517a-4213-a914-8ff59dbfe3ed&status=eq.in_progress:1  Failed to load resource: the server responded with a status of 500 ()
+zvkfuljxidxtuqrmquso.supabase.co/rest/v1/trips?select=*&school_id=eq.1fd55bdb-517a-4213-a914-8ff59dbfe3ed:1  Failed to load resource: the server responded with a status of 500 ()
+zvkfuljxidxtuqrmquso.supabase.co/rest/v1/trips?select=*%2Croute%3Aroutes%28name%29%2Cvehicle%3Avehicles%28plate_number%29%2Cdriver%3Ausers%21trips_driver_id_fkey%28name%29&school_id=eq.1fd55bdb-517a-4213-a914-8ff59dbfe3ed&order=created_at.desc&limit=50:1  Failed to load resource: the server responded with a status of 500 ()
+zvkfuljxidxtuqrmquso.supabase.co/rest/v1/vehicles?select=*%2Cdriver%3Ausers%21vehicles_driver_id_fkey%28name%2Cphone%29%2Cconductor%3Ausers%21vehicles_conductor_id_fkey%28name%2Cphone%29%2Croutes%28name%2Cdescription%29&school_id=eq.1fd55bdb-517a-4213-a914-8ff59dbfe3ed&order=created_at.desc:1  Failed to load resource: the server responded with a status of 500 ()
+zvkfuljxidxtuqrmquso.supabase.co/rest/v1/routes?select=*&school_id=eq.1fd55bdb-517a-4213-a914-8ff59dbfe3ed:1  Failed to load resource: the server responded with a status of 500 ()
+zvkfuljxidxtuqrmquso.supabase.co/rest/v1/trips?select=*&school_id=eq.1fd55bdb-517a-4213-a914-8ff59dbfe3ed:1  Failed to load resource: the server responded with a status of 500 ()
+zvkfuljxidxtuqrmquso.supabase.co/rest/v1/vehicles?select=*&school_id=eq.1fd55bdb-517a-4213-a914-8ff59dbfe3ed&status=eq.active:1  Failed to load resource: the server responded with a status of 500 ()
+zvkfuljxidxtuqrmquso.supabase.co/rest/v1/routes?select=*&school_id=eq.1fd55bdb-517a-4213-a914-8ff59dbfe3ed&is_active=eq.true:1  Failed to load resource: the server responded with a status of 500 ()
+zvkfuljxidxtuqrmquso.supabase.co/rest/v1/vehicles?select=*&school_id=eq.1fd55bdb-517a-4213-a914-8ff59dbfe3ed&status=eq.active:1  Failed to load resource: the server responded with a status of 500 ()
+zvkfuljxidxtuqrmquso.supabase.co/rest/v1/routes?select=*&school_id=eq.1fd55bdb-517a-4213-a914-8ff59dbfe3ed&is_active=eq.true:1  Failed to load resource: the server responded with a status of 500 ()
+zvkfuljxidxtuqrmquso.supabase.co/rest/v1/routes?select=*%2Cvehicle%3Avehicles%28plate_number%2Cmake%2Cmodel%2Ccapacity%29%2Cdriver%3Ausers%21routes_driver_id_fkey%28name%2Cphone%29%2Cconductor%3Ausers%21routes_conductor_id_fkey%28name%2Cphone%29&school_id=eq.1fd55bdb-517a-4213-a914-8ff59dbfe3ed&order=created_at.desc:1  Failed to load resource: the server responded with a status of 500 ()
+Console.js:61 Error fetching transport data: [object Object]
+Mt.forEach.n.<computed> @ Console.js:61
+zvkfuljxidxtuqrmquso.supabase.co/rest/v1/trips?select=*%2Croute%3Aroutes%28name%29%2Cvehicle%3Avehicles%28plate_number%29%2Cdriver%3Ausers%21trips_driver_id_fkey%28name%29&school_id=eq.1fd55bdb-517a-4213-a914-8ff59dbfe3ed&order=created_at.desc&limit=50:1  Failed to load resource: the server responded with a status of 500 ()
+zvkfuljxidxtuqrmquso.supabase.co/rest/v1/routes?select=*%2Cvehicle%3Avehicles%28plate_number%2Cmake%2Cmodel%2Ccapacity%29%2Cdriver%3Ausers%21routes_driver_id_fkey%28name%2Cphone%29%2Cconductor%3Ausers%21routes_conductor_id_fkey%28name%2Cphone%29&school_id=eq.1fd55bdb-517a-4213-a914-8ff59dbfe3ed&order=created_at.desc:1  Failed to load resource: the server responded with a status of 500 ()
+Console.js:61 Error fetching transport data: [object Object]
+Mt.forEach.n.<computed> @ Console.js:61
+zvkfuljxidxtuqrmquso.supabase.co/rest/v1/vehicles?select=maintenance_info&school_id=eq.1fd55bdb-517a-4213-a914-8ff59dbfe3ed:1  Failed to load resource: the server responded with a status of 500 ()
+zvkfuljxidxtuqrmquso.supabase.co/rest/v1/vehicles?select=maintenance_info&school_id=eq.1fd55bdb-517a-4213-a914-8ff59dbfe3ed:1  Failed to load resource: the server responded with a status of 500 ()
+zvkfuljxidxtuqrmquso.supabase.co/rest/v1/students?select=*&school_id=eq.1fd55bdb-517a-4213-a914-8ff59dbfe3ed:1  Failed to load resource: the server responded with a status of 500 ()
+zvkfuljxidxtuqrmquso.supabase.co/rest/v1/users?select=*&school_id=eq.1fd55bdb-517a-4213-a914-8ff59dbfe3ed&role=in.%28teacher%2Cdriver%2Cadmin%29:1  Failed to load resource: the server responded with a status of 500 ()
+zvkfuljxidxtuqrmquso.supabase.co/rest/v1/trips?select=*&school_id=eq.1fd55bdb-517a-4213-a914-8ff59dbfe3ed&status=eq.in_progress:1  Failed to load resource: the server responded with a status of 500 ()
+zvkfuljxidxtuqrmquso.supabase.co/rest/v1/students?select=*&school_id=eq.1fd55bdb-517a-4213-a914-8ff59dbfe3ed:1  Failed to load resource: the server responded with a status of 500 ()
+zvkfuljxidxtuqrmquso.supabase.co/rest/v1/vehicles?select=*&school_id=eq.1fd55bdb-517a-4213-a914-8ff59dbfe3ed:1  Failed to load resource: the server responded with a status of 500 ()
+zvkfuljxidxtuqrmquso.supabase.co/rest/v1/users?select=*&school_id=eq.1fd55bdb-517a-4213-a914-8ff59dbfe3ed&role=in.%28teacher%2Cdriver%2Cadmin%29:1  Failed to load resource: the server responded with a status of 500 ()
+zvkfuljxidxtuqrmquso.supabase.co/rest/v1/routes?select=*&school_id=eq.1fd55bdb-517a-4213-a914-8ff59dbfe3ed:1  Failed to load resource: the server responded with a status of 500 ()
+zvkfuljxidxtuqrmquso.supabase.co/rest/v1/vehicles?select=*&school_id=eq.1fd55bdb-517a-4213-a914-8ff59dbfe3ed:1  Failed to load resource: the server responded with a status of 500 ()
+zvkfuljxidxtuqrmquso.supabase.co/rest/v1/payments?select=amount%2Cstatus&school_id=eq.1fd55bdb-517a-4213-a914-8ff59dbfe3ed:1  Failed to load resource: the server responded with a status of 500 ()
+zvkfuljxidxtuqrmquso.supabase.co/rest/v1/vehicles?select=maintenance_info&school_id=eq.1fd55bdb-517a-4213-a914-8ff59dbfe3ed:1  Failed to load resource: the server responded with a status of 500 ()
+zvkfuljxidxtuqrmquso.supabase.co/rest/v1/routes?select=*&school_id=eq.1fd55bdb-517a-4213-a914-8ff59dbfe3ed:1  Failed to load resource: the server responded with a status of 500 ()
+zvkfuljxidxtuqrmquso.supabase.co/rest/v1/trips?select=*&school_id=eq.1fd55bdb-517a-4213-a914-8ff59dbfe3ed&status=eq.in_progress:1  Failed to load resource: the server responded with a status of 500 ()
+zvkfuljxidxtuqrmquso.supabase.co/rest/v1/payments?select=amount%2Cstatus&school_id=eq.1fd55bdb-517a-4213-a914-8ff59dbfe3ed:1  Failed to load resource: the server responded with a status of 500 ()
+zvkfuljxidxtuqrmquso.supabase.co/rest/v1/vehicles?select=maintenance_info&school_id=eq.1fd55bdb-517a-4213-a914-8ff59dbfe3ed:1  Failed to load resource: the server responded with a status of 500 ()
+zvkfuljxidxtuqrmquso.supabase.co/rest/v1/attendance?select=status&school_id=eq.1fd55bdb-517a-4213-a914-8ff59dbfe3ed&date=gte.2025-09-13:1  Failed to load resource: the server responded with a status of 500 ()
+zvkfuljxidxtuqrmquso.supabase.co/rest/v1/attendance?select=status&school_id=eq.1fd55bdb-517a-4213-a914-8ff59dbfe3ed&date=gte.2025-09-13:1  Failed to load resource: the server responded with a status of 500 ()
+zvkfuljxidxtuqrmquso.supabase.co/rest/v1/attendance?select=*%2Cstudent%3Astudents%28name%29%2Croute%3Aroutes%28name%29&school_id=eq.1fd55bdb-517a-4213-a914-8ff59dbfe3ed&order=created_at.desc&limit=5:1  Failed to load resource: the server responded with a status of 500 ()
+zvkfuljxidxtuqrmquso.supabase.co/rest/v1/attendance?select=*%2Cstudent%3Astudents%28name%29%2Croute%3Aroutes%28name%29&school_id=eq.1fd55bdb-517a-4213-a914-8ff59dbfe3ed&order=created_at.desc&limit=5:1  Failed to load resource: the server responded with a status of 500 ()
+Console.js:61 ⚠️ React Router Future Flag Warning: React Router will begin wrapping state updates in `React.startTransition` in v7. You can use the `v7_startTransition` future flag to opt-in early. For more information, see https://reactrouter.com/v6/upgrading/future#v7_starttransition.
+Mt.forEach.n.<computed> @ Console.js:61
+Console.js:61 ⚠️ React Router Future Flag Warning: Relative route resolution within Splat routes is changing in v7. You can use the `v7_relativeSplatPath` future flag to opt-in early. For more information, see https://reactrouter.com/v6/upgrading/future#v7_relativesplatpath.
+Mt.forEach.n.<computed> @ Console.js:61
+Console.js:61 ✅ Using auth metadata for user profile: admin
+Console.js:61 ✅ Using auth metadata for user profile: admin
+Console.js:61 ✅ Using auth metadata for user profile: admin
+Console.js:61 ✅ Using auth metadata for user profile: admin
+zvkfuljxidxtuqrmquso.supabase.co/rest/v1/notifications?select=*%2Csender%3Ausers%21notifications_sender_id_fkey%28name%2Crole%29&recipients=cs.%7B967a12e4-8652-485f-94c4-e69d0c32131c%7D&order=created_at.desc&limit=50:1  Failed to load resource: the server responded with a status of 400 ()
+Console.js:61 Error fetching notifications: Object
+Mt.forEach.n.<computed> @ Console.js:61
+zvkfuljxidxtuqrmquso.supabase.co/rest/v1/notifications?select=*%2Csender%3Ausers%21notifications_sender_id_fkey%28name%2Crole%29&school_id=eq.1fd55bdb-517a-4213-a914-8ff59dbfe3ed&order=created_at.desc:1  Failed to load resource: the server responded with a status of 400 ()
+zvkfuljxidxtuqrmquso.supabase.co/rest/v1/notifications?select=*%2Csender%3Ausers%21notifications_sender_id_fkey%28name%2Crole%29&recipients=cs.%7B967a12e4-8652-485f-94c4-e69d0c32131c%7D&order=created_at.desc&limit=50:1  Failed to load resource: the server responded with a status of 400 ()
+Console.js:61 Error fetching notifications: Object
+Mt.forEach.n.<computed> @ Console.js:61
+Console.js:61 Error fetching notifications: Object
+Mt.forEach.n.<computed> @ Console.js:61
+zvkfuljxidxtuqrmquso.supabase.co/rest/v1/notifications?select=*%2Csender%3Ausers%21notifications_sender_id_fkey%28name%2Crole%29&school_id=eq.1fd55bdb-517a-4213-a914-8ff59dbfe3ed&order=created_at.desc:1  Failed to load resource: the server responded with a status of 400 ()
+Console.js:61 Error fetching notifications: Object
+Mt.forEach.n.<computed> @ Console.js:61
+zvkfuljxidxtuqrmquso.supabase.co/rest/v1/notifications?select=*%2Csender%3Ausers%21notifications_sender_id_fkey%28name%2Crole%29&recipients=cs.%7B967a12e4-8652-485f-94c4-e69d0c32131c%7D&order=created_at.desc&limit=50:1  Failed to load resource: the server responded with a status of 400 ()
+Console.js:61 Error fetching notifications: Object
+Mt.forEach.n.<computed> @ Console.js:61
+zvkfuljxidxtuqrmquso.supabase.co/rest/v1/notifications?select=*%2Csender%3Ausers%21notifications_sender_id_fkey%28name%2Crole%29&school_id=eq.1fd55bdb-517a-4213-a914-8ff59dbfe3ed&order=created_at.desc:1  Failed to load resource: the server responded with a status of 400 ()
+Console.js:61 Error fetching notifications: Object
+Mt.forEach.n.<computed> @ Console.js:61
+zvkfuljxidxtuqrmquso.supabase.co/rest/v1/notifications?select=*%2Csender%3Ausers%21notifications_sender_id_fkey%28name%2Crole%29&recipients=cs.%7B967a12e4-8652-485f-94c4-e69d0c32131c%7D&order=created_at.desc&limit=50:1  Failed to load resource: the server responded with a status of 400 ()
+Console.js:61 Error fetching notifications: Object
+Mt.forEach.n.<computed> @ Console.js:61
+zvkfuljxidxtuqrmquso.supabase.co/rest/v1/notifications?select=*%2Csender%3Ausers%21notifications_sender_id_fkey%28name%2Crole%29&school_id=eq.1fd55bdb-517a-4213-a914-8ff59dbfe3ed&order=created_at.desc:1  Failed to load resource: the server responded with a status of 400 ()
+Console.js:61 Error fetching notifications: Object
+Mt.forEach.n.<computed> @ Console.js:61
+zvkfuljxidxtuqrmquso.supabase.co/rest/v1/notifications?select=*%2Csender%3Ausers%21notifications_sender_id_fkey%28name%2Crole%29&school_id=eq.1fd55bdb-517a-4213-a914-8ff59dbfe3ed&order=created_at.desc:1  Failed to load resource: the server responded with a status of 400 ()
+Console.js:61 Error fetching notifications: Object
+Mt.forEach.n.<computed> @ Console.js:61
+stallwart.build.js:1 stallwart: failed ping 1

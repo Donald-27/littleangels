@@ -21,7 +21,7 @@
     <meta property="twitter:description" content="Modern school transport management system with real-time tracking, digital payments, and comprehensive safety features.">
     
     <!-- PWA Manifest -->
-    <link rel="manifest" href="/manifest.json">
+    <!-- <link rel="manifest" href="/manifest.json"> -->
     
     <!-- Theme Colors -->
     <meta name="theme-color" content="#3B82F6">
@@ -144,7 +144,7 @@
       // Service Worker Registration for PWA
       if ('serviceWorker' in navigator) {
         window.addEventListener('load', () => {
-          navigator.serviceWorker.register('/sw.js')
+          // navigator.serviceWorker.register('/sw.js')
             .then((registration) => {
               console.log('SW registered: ', registration);
             })

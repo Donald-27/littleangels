@@ -60,5 +60,5 @@ externalPort = 3001
 
 [deployment]
 deploymentTarget = "autoscale"
-run = ["bash", "-c", "cd littleangels-academy-1 && npx serve@latest -s dist -l $PORT"]
-build = ["bash", "-c", "cd littleangels-academy-1 && npm run build"]
+run = ["npm", "run", "preview"]
+build = ["npm", "run", "build"]

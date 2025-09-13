@@ -25,6 +25,7 @@ export const supabase = isSupabaseConfigured()
     })
   : null
 
+
 // Helper to get error when Supabase is not configured
 const getConfigError = () => ({
   error: { message: 'Supabase not configured. Please set VITE_SUPABASE_URL and VITE_SUPABASE_ANON_KEY environment variables.' }

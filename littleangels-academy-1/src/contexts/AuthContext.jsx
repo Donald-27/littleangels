@@ -32,27 +32,44 @@ export const AuthProvider = ({ children }) => {
         setSession(session);
         if (session?.user) {
           try {
-            // Get user profile from our custom users table
-            const { data: userProfile, error: profileError } = await supabase
-              .from('users')
-              .select('*')
-              .eq('email', session.user.email)
-              .single();
+            // Use ONLY app_metadata for authorization - never trust user_metadata for role/school_id
+            const metadata = session.user.user_metadata || {};
+            const appMetadata = session.user.app_metadata || {};
             
-            if (profileError) {
-              console.warn('User profile not found in database - database may not be set up yet:', profileError.message);
-              // Clear session if user profile doesn't exist
+            const allowedRoles = ['admin', 'teacher', 'parent', 'driver', 'accounts'];
+            const role = appMetadata.role;
+            const school_id = appMetadata.school_id;
+            
+            if (!role || !allowedRoles.includes(role)) {
+              console.warn('User missing or invalid role in app_metadata, signing out');
               await supabase.auth.signOut();
               setSession(null);
               setUser(null);
-            } else {
-              setUser(userProfile);
+              return;
             }
+            
+            if (!school_id) {
+              console.warn('User missing school_id in app_metadata, signing out');
+              await supabase.auth.signOut();
+              setSession(null);
+              setUser(null);
+              return;
+            }
+            
+            const userData = {
+              id: session.user.id,
+              email: session.user.email,
+              name: metadata.name || session.user.email.split('@')[0],
+              role: role, // Only from app_metadata
+              school_id: school_id, // Only from app_metadata
+              avatar: metadata.avatar || null,
+              is_active: true
+            };
+            
+            console.log('✅ Using auth metadata for user profile:', userData.role);
+            setUser(userData);
           } catch (profileError) {
-            console.warn('Database not set up yet. Please run the schema setup:', profileError.message);
-            // Clear session if database isn't ready
-            await supabase.auth.signOut();
-            setSession(null);
+            console.warn('Auth initialization error:', profileError.message);
             setUser(null);
           }
         }
@@ -74,21 +91,44 @@ export const AuthProvider = ({ children }) => {
         
         if (session?.user) {
           try {
-            // Get user profile from our custom users table
-            const { data: userProfile, error: profileError } = await supabase
-              .from('users')
-              .select('*')
-              .eq('email', session.user.email)
-              .single();
+            // Use ONLY app_metadata for authorization - never trust user_metadata for role/school_id
+            const metadata = session.user.user_metadata || {};
+            const appMetadata = session.user.app_metadata || {};
             
-            if (profileError) {
-              console.warn('User profile not found - database may not be set up yet:', profileError.message);
+            const allowedRoles = ['admin', 'teacher', 'parent', 'driver', 'accounts'];
+            const role = appMetadata.role;
+            const school_id = appMetadata.school_id;
+            
+            if (!role || !allowedRoles.includes(role)) {
+              console.warn('User missing or invalid role in app_metadata, signing out');
+              await supabase.auth.signOut();
+              setSession(null);
               setUser(null);
-            } else {
-              setUser(userProfile);
+              return;
             }
+            
+            if (!school_id) {
+              console.warn('User missing school_id in app_metadata, signing out');
+              await supabase.auth.signOut();
+              setSession(null);
+              setUser(null);
+              return;
+            }
+            
+            const userData = {
+              id: session.user.id,
+              email: session.user.email,
+              name: metadata.name || session.user.email.split('@')[0],
+              role: role, // Only from app_metadata
+              school_id: school_id, // Only from app_metadata
+              avatar: metadata.avatar || null,
+              is_active: true
+            };
+            
+            console.log('✅ Using auth metadata for user profile:', userData.role);
+            setUser(userData);
           } catch (profileError) {
-            console.warn('Database not ready - please set up the schema:', profileError.message);
+            console.warn('Auth state change error:', profileError.message);
             setUser(null);
           }
         } else {
@@ -127,23 +167,37 @@ export const AuthProvider = ({ children }) => {
         throw error;
       }
 
-      console.log('🔐 SignIn: Auth successful, fetching profile for user ID:', data.user.id);
+      console.log('🔐 SignIn: Auth successful, creating user profile from metadata');
 
-      // Get user profile from database
-      const { data: userProfile, error: profileError } = await supabase
-        .from('users')
-        .select('*')
-        .eq('id', data.user.id)
-        .single();
-
-      console.log('🔐 SignIn: Profile response', { hasProfile: !!userProfile, hasError: !!profileError });
-
-      if (profileError) {
-        console.log('❌ SignIn: Profile error:', profileError.message);
-        // Sign out if no profile found - this indicates seeding issue
+      // Use ONLY app_metadata for authorization - never trust user_metadata for role/school_id
+      const metadata = data.user.user_metadata || {};
+      const appMetadata = data.user.app_metadata || {};
+      
+      const allowedRoles = ['admin', 'teacher', 'parent', 'driver', 'accounts'];
+      const role = appMetadata.role;
+      const school_id = appMetadata.school_id;
+      
+      if (!role || !allowedRoles.includes(role)) {
+        console.warn('User missing or invalid role in app_metadata');
         await supabase.auth.signOut();
-        throw new Error('User profile not found. Please contact administrator.');
+        throw new Error('Account not properly configured. Please contact administrator.');
       }
+      
+      if (!school_id) {
+        console.warn('User missing school_id in app_metadata');
+        await supabase.auth.signOut();
+        throw new Error('Account not properly configured. Please contact administrator.');
+      }
+      
+      const userProfile = {
+        id: data.user.id,
+        email: data.user.email,
+        name: metadata.name || data.user.email.split('@')[0],
+        role: role, // Only from app_metadata
+        school_id: school_id, // Only from app_metadata
+        avatar: metadata.avatar || null,
+        is_active: true
+      };
 
       console.log('✅ SignIn: Login successful, setting user:', userProfile.role);
       setUser(userProfile);

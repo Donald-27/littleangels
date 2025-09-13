@@ -20,7 +20,7 @@
     <meta property="twitter:title" content="Little Angels School - Transport Management System">
     <meta property="twitter:description" content="Modern school transport management system with real-time tracking, digital payments, and comprehensive safety features.">
     
-    <!-- PWA Manifest -->
+    <!-- PWA Manifest (removed - not implemented) -->
     <!-- <link rel="manifest" href="/manifest.json"> -->
     
     <!-- Theme Colors -->
@@ -141,18 +141,8 @@
         }, 1000);
       });
       
-      // Service Worker Registration for PWA
-      if ('serviceWorker' in navigator) {
-        window.addEventListener('load', () => {
-          // navigator.serviceWorker.register('/sw.js')
-            .then((registration) => {
-              console.log('SW registered: ', registration);
-            })
-            .catch((registrationError) => {
-              console.log('SW registration failed: ', registrationError);
-            });
-        });
-      }
+      // Service Worker Registration disabled (no sw.js file exists)
+      // This prevents 503 errors and improves loading performance
     </script>
     
     <script type="module" src="/src/main.jsx"></script>

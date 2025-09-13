@@ -59,10 +59,10 @@ const LoginPage = () => {
   };
 
   const demoCredentials = [
-    { role: 'admin', email: 'admin@school.com', password: 'admin123', name: 'Admin User', color: 'red' },
-    { role: 'teacher', email: 'teacher@school.com', password: 'teacher123', name: 'Teacher', color: 'blue' },
-    { role: 'parent', email: 'parent@school.com', password: 'parent123', name: 'Parent', color: 'green' },
-    { role: 'driver', email: 'driver@school.com', password: 'driver123', name: 'Driver', color: 'yellow' }
+    { role: 'admin', email: 'kipropdonald27@gmail.com', password: 'admin123', name: 'Donald Kiprop', color: 'red' },
+    { role: 'teacher', email: 'teacher1@school.com', password: 'teacher123', name: 'Sarah Mutai', color: 'blue' },
+    { role: 'parent', email: 'weldonkorir305@gmail.com', password: 'parent123', name: 'Weldon Korir', color: 'green' },
+    { role: 'driver', email: 'driver1@school.com', password: 'driver123', name: 'John Mwangi', color: 'yellow' }
   ];
 
   const handleDemoLogin = (credential) => {

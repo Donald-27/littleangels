@@ -122,7 +122,7 @@ export const AuthProvider = ({ children }) => {
       const { data: userProfile, error: profileError } = await supabase
         .from('users')
         .select('*')
-        .eq('email', email)
+        .eq('id', data.user.id)
         .single();
 
       if (profileError) {

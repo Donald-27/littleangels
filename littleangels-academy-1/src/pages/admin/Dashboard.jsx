@@ -68,28 +68,37 @@ const AdminDashboard = () => {
     try {
       setLoading(true);
       const schoolId = user?.school_id;
-      if (!schoolId) return;
+      if (!schoolId) {
+        setLoading(false);
+        return;
+      }
 
-      // For now, use mock data to unblock dashboard analysis
-      // TODO: Fix RLS policies to enable real data access
       console.log('📊 Loading dashboard data for school:', schoolId);
       
-      // Mock data for analysis while RLS is being fixed
-      const studentsCount = 25;
-      const vehiclesCount = 3;
-      const routesCount = 4;
-      const staffCount = 12;
-      const tripsCount = 2;
-      const attendanceToday = [];
-      const payments = [
-        { amount: 5000, status: 'paid' },
-        { amount: 3000, status: 'pending' },
-        { amount: 4500, status: 'paid' }
-      ];
-      const vehicles = [
-        { maintenance_info: JSON.stringify({ nextService: '2025-09-20' }) },
-        { maintenance_info: JSON.stringify({ nextService: '2025-10-15' }) }
-      ];
+      // Fetch real data from database
+      const [studentsResult, vehiclesResult, routesResult, staffResult, tripsResult, paymentsResult, attendanceResult] = await Promise.all([
+        supabase.from('students').select('*', { count: 'exact', head: true }).eq('school_id', schoolId),
+        supabase.from('vehicles').select('*', { count: 'exact', head: true }).eq('school_id', schoolId),
+        supabase.from('routes').select('*', { count: 'exact', head: true }).eq('school_id', schoolId),
+        supabase.from('users').select('*', { count: 'exact', head: true }).eq('school_id', schoolId).in('role', ['teacher', 'driver']),
+        supabase.from('trips').select('*', { count: 'exact', head: true }).eq('school_id', schoolId).eq('status', 'active'),
+        supabase.from('payments').select('*').eq('school_id', schoolId),
+        supabase.from('attendance').select('*').eq('school_id', schoolId).gte('date', new Date().toISOString().split('T')[0])
+      ]);
+
+      const studentsCount = studentsResult.count || 0;
+      const vehiclesCount = vehiclesResult.count || 0;
+      const routesCount = routesResult.count || 0;  
+      const staffCount = staffResult.count || 0;
+      const tripsCount = tripsResult.count || 0;
+      const payments = paymentsResult.data || [];
+      const attendanceToday = attendanceResult.data || [];
+
+      // Get vehicles with maintenance info for alerts
+      const { data: vehicles } = await supabase
+        .from('vehicles')
+        .select('maintenance_info')
+        .eq('school_id', schoolId);
 
       // Calculate attendance rate
       const present = (attendanceToday || []).filter(a => a.status === 'present').length;
@@ -100,12 +109,16 @@ const AdminDashboard = () => {
       const pendingPayments = (payments || []).filter(p => p.status === 'pending').length;
 
       // Calculate maintenance alerts
-      const maintenanceAlerts = (vehicles || []).filter(v => {
-        const maintenance = typeof v.maintenance_info === 'string' ? 
-          JSON.parse(v.maintenance_info) : v.maintenance_info;
-        const nextService = new Date(maintenance.nextService);
-        return nextService <= new Date();
-      }).length;
+      const maintenanceAlerts = (vehicles || []).reduce((count, v) => {
+        try {
+          const maintenance = typeof v.maintenance_info === 'string' ? 
+            JSON.parse(v.maintenance_info) : v.maintenance_info;
+          const nextService = maintenance?.nextService ? new Date(maintenance.nextService) : null;
+          return count + (nextService && !isNaN(nextService.getTime()) && nextService <= new Date() ? 1 : 0);
+        } catch {
+          return count; // Skip invalid maintenance data
+        }
+      }, 0);
 
       // Calculate efficiency (mock calculation)
       const efficiency = Math.round((attendanceRate + (vehiclesCount || 0) * 10 + (routesCount || 0) * 5) / 3);
@@ -137,19 +150,98 @@ const AdminDashboard = () => {
 
       setRecentActivity(activity || []);
 
-      // Mock upcoming events
-      setUpcomingEvents([
-        { id: 1, title: 'Parent-Teacher Meeting', date: '2024-01-15', type: 'meeting' },
-        { id: 2, title: 'School Assembly', date: '2024-01-18', type: 'event' },
-        { id: 3, title: 'Field Trip', date: '2024-01-22', type: 'trip' }
-      ]);
+      // Generate upcoming events from system data
+      const upcomingEvents = [];
+      
+      // Add maintenance due events
+      if (vehicles && vehicles.length > 0) {
+        vehicles.forEach((vehicle, index) => {
+          try {
+            const maintenance = typeof vehicle.maintenance_info === 'string' ? 
+              JSON.parse(vehicle.maintenance_info) : vehicle.maintenance_info;
+            const nextService = maintenance?.nextService ? new Date(maintenance.nextService) : null;
+            
+            if (nextService && !isNaN(nextService.getTime())) {
+              const today = new Date();
+              const diffDays = Math.ceil((nextService - today) / (1000 * 60 * 60 * 24));
+              
+              if (diffDays <= 30 && diffDays > 0) {
+                upcomingEvents.push({
+                  id: `maintenance-${index}`,
+                  title: `Vehicle Maintenance Due`,
+                  date: nextService.toLocaleDateString(),
+                  type: 'maintenance'
+                });
+              }
+            }
+          } catch (error) {
+            console.warn('Invalid maintenance_info for vehicle:', vehicle.id);
+          }
+        });
+      }
+      
+      // Future: Add real events from database when events table is implemented
+      // For now, only show maintenance-related events from actual vehicle data
 
-      // Mock alerts
-      setAlerts([
-        { id: 1, message: 'Bus #001 needs maintenance', type: 'warning', priority: 'high' },
-        { id: 2, message: '3 students absent today', type: 'info', priority: 'medium' },
-        { id: 3, message: 'Payment overdue for 5 families', type: 'error', priority: 'high' }
-      ]);
+      setUpcomingEvents(upcomingEvents);
+
+      // Generate dynamic alerts based on real data
+      const alerts = [];
+      
+      // Maintenance alerts
+      const overdueVehicles = (vehicles || []).filter(v => {
+        try {
+          const maintenance = typeof v.maintenance_info === 'string' ? 
+            JSON.parse(v.maintenance_info) : v.maintenance_info;
+          const nextService = maintenance?.nextService ? new Date(maintenance.nextService) : null;
+          return nextService && !isNaN(nextService.getTime()) && nextService <= new Date();
+        } catch (error) {
+          return false; // Skip invalid maintenance data
+        }
+      }).length;
+      
+      if (overdueVehicles > 0) {
+        alerts.push({
+          id: 'maintenance-overdue',
+          message: `${overdueVehicles} vehicle${overdueVehicles > 1 ? 's' : ''} need${overdueVehicles === 1 ? 's' : ''} maintenance`,
+          type: 'warning',
+          priority: 'high'
+        });
+      }
+      
+      // Attendance alerts
+      const absentCount = attendanceToday.filter(a => a.status === 'absent').length;
+      if (absentCount > 0) {
+        alerts.push({
+          id: 'attendance-low',
+          message: `${absentCount} student${absentCount > 1 ? 's' : ''} absent today`,
+          type: 'info',
+          priority: 'medium'
+        });
+      }
+      
+      // Payment alerts
+      const overduePayments = payments.filter(p => p.status === 'pending').length;
+      if (overduePayments > 0) {
+        alerts.push({
+          id: 'payments-overdue',
+          message: `${overduePayments} payment${overduePayments > 1 ? 's' : ''} overdue`,
+          type: 'error',
+          priority: 'high'
+        });
+      }
+      
+      // No active trips alert
+      if (tripsCount === 0 && vehiclesCount > 0) {
+        alerts.push({
+          id: 'no-active-trips',
+          message: 'No active trips running - check vehicle schedules',
+          type: 'warning',
+          priority: 'medium'
+        });
+      }
+
+      setAlerts(alerts);
 
     } catch (error) {
       console.error('Error fetching dashboard data:', error);

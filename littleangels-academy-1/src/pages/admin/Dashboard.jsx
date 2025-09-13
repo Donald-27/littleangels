@@ -1,7 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { useAuth } from '../../hooks/useAuth';
 import { supabase } from '../../lib/supabase';
-import { supabaseAdmin, adminQuery } from '../../lib/supabase-admin';
 import { 
   Users, 
   Bus, 

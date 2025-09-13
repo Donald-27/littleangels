@@ -103,20 +103,31 @@ export const AuthProvider = ({ children }) => {
   }, []);
 
   const signIn = async (email, password) => {
+    console.log('🔐 SignIn: Starting login process for:', email);
+    
     if (!isSupabaseConfigured()) {
+      console.log('❌ SignIn: Supabase not configured');
       toast.error('Authentication not configured. Please set up Supabase credentials.');
       return { data: null, error: { message: 'Supabase not configured' } };
     }
 
     try {
       setIsLoading(true);
+      console.log('🔐 SignIn: Calling supabase.auth.signInWithPassword...');
       
       const { data, error } = await supabase.auth.signInWithPassword({
         email,
         password,
       });
 
-      if (error) throw error;
+      console.log('🔐 SignIn: Auth response received', { hasData: !!data, hasError: !!error });
+
+      if (error) {
+        console.log('❌ SignIn: Auth error:', error.message);
+        throw error;
+      }
+
+      console.log('🔐 SignIn: Auth successful, fetching profile for user ID:', data.user.id);
 
       // Get user profile from database
       const { data: userProfile, error: profileError } = await supabase
@@ -125,19 +136,25 @@ export const AuthProvider = ({ children }) => {
         .eq('id', data.user.id)
         .single();
 
+      console.log('🔐 SignIn: Profile response', { hasProfile: !!userProfile, hasError: !!profileError });
+
       if (profileError) {
+        console.log('❌ SignIn: Profile error:', profileError.message);
         // Sign out if no profile found - this indicates seeding issue
         await supabase.auth.signOut();
         throw new Error('User profile not found. Please contact administrator.');
       }
 
+      console.log('✅ SignIn: Login successful, setting user:', userProfile.role);
       setUser(userProfile);
       toast.success('Welcome back!');
       return { data, error: null, user: userProfile };
     } catch (error) {
+      console.log('❌ SignIn: Final error:', error.message);
       toast.error(error.message || 'Failed to sign in');
       return { data: null, error };
     } finally {
+      console.log('🔐 SignIn: Setting loading to false');
       setIsLoading(false);
     }
   };

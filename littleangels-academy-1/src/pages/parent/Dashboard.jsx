@@ -57,7 +57,7 @@ const ParentDashboard = () => {
           route:routes(
             name, 
             description,
-            vehicle:vehicles(plate_number, make, model, driver:users(name, phone))
+            vehicle:vehicles(plate_number, make, model, driver:users!vehicles_driver_id_fkey(name, phone))
           )
         `)
         .eq('parent_id', user?.id)

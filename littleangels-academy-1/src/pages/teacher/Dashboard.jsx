@@ -55,7 +55,7 @@ const TeacherDashboard = () => {
         .select(`
           *,
           parent:users!students_parent_id_fkey(name, phone, email),
-          route:routes(name, vehicle:vehicles(plate_number, driver:users(name, phone)))
+          route:routes(name, vehicle:vehicles(plate_number, driver:users!vehicles_driver_id_fkey(name, phone)))
         `)
         .eq('teacher_id', user?.id)
         .eq('is_active', true)

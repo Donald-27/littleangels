@@ -82,7 +82,7 @@ const StudentsDashboard = () => {
           *,
           parent:users!students_parent_id_fkey(name, email, phone),
           teacher:users!students_teacher_id_fkey(name, email),
-          route:routes(name, vehicle:vehicles(plate_number, driver:users(name, phone)))
+          route:routes(name, vehicle:vehicles(plate_number, driver:users!vehicles_driver_id_fkey(name, phone)))
         `)
         .eq('school_id', user?.school_id)
         .order('created_at', { ascending: false });

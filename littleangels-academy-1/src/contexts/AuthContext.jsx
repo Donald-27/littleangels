@@ -28,7 +28,16 @@ export const AuthProvider = ({ children }) => {
     // Get initial session
     const initializeAuth = async () => {
       try {
-        const session = await getSession();
+        // Add timeout to prevent hanging forever
+        const sessionTimeout = new Promise((_, reject) => 
+          setTimeout(() => reject(new Error('Session check timeout')), 5000)
+        );
+        
+        const session = await Promise.race([
+          getSession(),
+          sessionTimeout
+        ]);
+        
         setSession(session);
         if (session?.user) {
           try {
@@ -57,7 +66,14 @@ export const AuthProvider = ({ children }) => {
           }
         }
       } catch (error) {
-        console.error('Error initializing auth:', error);
+        if (error.message === 'Session check timeout') {
+          console.log('Session check timed out - proceeding to login');
+        } else {
+          console.error('Error initializing auth:', error.message);
+        }
+        // Clear any partial state
+        setSession(null);
+        setUser(null);
       } finally {
         setIsLoading(false);
       }

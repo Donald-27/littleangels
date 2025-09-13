@@ -10,6 +10,27 @@ The application is built as a modern React SPA with a focus on real-time data up
 
 Preferred communication style: Simple, everyday language.
 
+## Recent Changes (September 13, 2025)
+
+### Critical Security Fixes Implemented
+- **Fixed Authentication Vulnerabilities**: Removed dangerous privilege escalation paths by enforcing app_metadata-only authorization
+- **Secure Role Management**: Updated all user accounts to use server-controlled app_metadata for roles and school_id
+- **Role Validation**: Implemented strict whitelisting of allowed roles ['admin','teacher','parent','driver','accounts']
+- **Removed Dangerous Fallbacks**: Eliminated client-controllable user_metadata from authorization decisions
+- **Session Security**: Added comprehensive validation that signs out users with invalid or missing metadata
+
+### Verified Functionality
+- ✅ All user roles can successfully authenticate with secure metadata validation
+- ✅ Dashboard navigation properly protected with role-based route guards  
+- ✅ No privilege escalation vulnerabilities remain in the authentication flow
+- ✅ User accounts properly configured with server-side app_metadata
+
+### Test Accounts Available
+- Admin: kipropdonald27@gmail.com / admin123
+- Teacher: teacher1@school.com / teacher123  
+- Parent: weldonkorir305@gmail.com / parent123
+- Driver: driver1@school.com / driver123
+
 ## System Architecture
 
 ### Frontend Architecture
@@ -36,9 +57,10 @@ Preferred communication style: Simple, everyday language.
 - **System**: activity_logs, settings, user_permissions
 
 ### Authentication & Authorization
-- **Multi-role System**: Separate dashboard experiences for each user type
+- **Multi-role System**: Separate dashboard experiences for each user type (admin, teacher, parent, driver, accounts)
+- **Secure App Metadata**: Role and school_id stored in server-controlled app_metadata to prevent privilege escalation
 - **Permission-based Access**: Database-level security policies ensure users only access authorized data
-- **Session Management**: Persistent sessions with automatic token refresh
+- **Session Management**: Persistent sessions with automatic token refresh and secure role validation
 - **Profile Management**: User metadata stored in profiles table with role assignments
 
 ### Real-time Features

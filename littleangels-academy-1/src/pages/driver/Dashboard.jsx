@@ -26,6 +26,7 @@ import { Card, CardContent, CardHeader, CardTitle } from '../../components/ui/ca
 import { Button } from '../../components/ui/button';
 import { Badge } from '../../components/ui/badge';
 import { Tabs, TabsContent, TabsList, TabsTrigger } from '../../components/ui/tabs';
+import LiveTracking from '../../components/LiveTracking';
 import { toast } from 'sonner';
 
 const DriverDashboard = () => {
@@ -369,10 +370,11 @@ const DriverDashboard = () => {
         )}
 
         <Tabs defaultValue="routes" className="space-y-6">
-          <TabsList className="grid w-full grid-cols-4">
+          <TabsList className="grid w-full grid-cols-5">
             <TabsTrigger value="routes">My Routes</TabsTrigger>
             <TabsTrigger value="students">Students</TabsTrigger>
             <TabsTrigger value="attendance">Attendance</TabsTrigger>
+            <TabsTrigger value="tracking">Live Tracking</TabsTrigger>
             <TabsTrigger value="vehicle">Vehicle</TabsTrigger>
           </TabsList>
 
@@ -554,6 +556,24 @@ const DriverDashboard = () => {
                 </div>
               </CardContent>
             </Card>
+          </TabsContent>
+
+          {/* Live Tracking Tab */}
+          <TabsContent value="tracking" className="space-y-6">
+            {assignedVehicle && assignedRoutes.length > 0 ? (
+              <LiveTracking 
+                vehicleId={assignedVehicle.id} 
+                routeId={assignedRoutes[0].id} 
+              />
+            ) : (
+              <Card>
+                <CardContent className="p-12 text-center">
+                  <Navigation className="h-12 w-12 text-gray-400 mx-auto mb-4" />
+                  <h3 className="text-lg font-medium text-gray-900 mb-2">No Vehicle or Route Assigned</h3>
+                  <p className="text-gray-500">Contact the school administration to get a vehicle and route assigned for live tracking.</p>
+                </CardContent>
+              </Card>
+            )}
           </TabsContent>
 
           {/* Vehicle Tab */}

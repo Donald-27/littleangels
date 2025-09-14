@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { useAuth } from '../hooks/useAuth';
+import PasswordReset from '../components/PasswordReset';
 import { 
   Eye, 
   EyeOff, 
@@ -27,6 +28,7 @@ const LoginPage = () => {
   const [password, setPassword] = useState('');
   const [showPassword, setShowPassword] = useState(false);
   const [loading, setLoading] = useState(false);
+  const [showPasswordReset, setShowPasswordReset] = useState(false);
   const { signIn } = useAuth();
   const navigate = useNavigate();
 
@@ -69,6 +71,10 @@ const LoginPage = () => {
     setEmail(credential.email);
     setPassword(credential.password);
   };
+
+  if (showPasswordReset) {
+    return <PasswordReset onBack={() => setShowPasswordReset(false)} />;
+  }
 
   return (
     <div className="min-h-screen bg-gradient-to-br from-blue-400 via-purple-500 to-pink-500 flex items-center justify-center p-4">
@@ -211,6 +217,16 @@ const LoginPage = () => {
                 )}
               </BeautifulButton>
             </form>
+
+            {/* Password Reset Link */}
+            <div className="mt-4 text-center">
+              <button
+                onClick={() => setShowPasswordReset(true)}
+                className="text-white/80 hover:text-white text-sm font-medium transition-colors"
+              >
+                Forgot your password?
+              </button>
+            </div>
 
             {/* Demo Credentials */}
             <div className="mt-8">

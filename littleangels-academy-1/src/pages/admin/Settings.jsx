@@ -1,805 +1,884 @@
 import React, { useState, useEffect } from 'react';
-import { useAuth } from '../../hooks/useAuth';
+import { useAuth } from '../hooks/useAuth';
 import { supabase } from '../../lib/supabase';
-import { 
-  Settings as SettingsIcon, 
-  Save, 
-  Upload, 
-  School, 
-  MapPin, 
-  Phone, 
-  Mail, 
-  Globe, 
-  Calendar,
-  Bell,
-  Palette,
-  Shield,
-  Database,
-  Users,
-  Bus,
-  DollarSign,
-  Clock,
-  Languages,
-  Image as ImageIcon,
-  AlertCircle,
-  CheckCircle
-} from 'lucide-react';
-import { Card, CardContent, CardHeader, CardTitle } from '../../components/ui/card';
-import { Button } from '../../components/ui/button';
-import { Input } from '../../components/ui/input';
-import { Badge } from '../../components/ui/badge';
-import { Tabs, TabsContent, TabsList, TabsTrigger } from '../../components/ui/tabs';
 import { toast } from 'sonner';
+import { 
+  Settings as SettingsIcon,
+  User,
+  Bell,
+  Shield,
+  Palette,
+  Globe,
+  Database,
+  Key,
+  Smartphone,
+  Mail,
+  Phone,
+  MapPin,
+  School,
+  Save,
+  RefreshCw,
+  Check,
+  X,
+  Eye,
+  EyeOff,
+  Upload,
+  Download,
+  Trash2,
+  Plus,
+  Edit,
+  Lock,
+  Unlock,
+  Wifi,
+  WifiOff,
+  Volume2,
+  VolumeX,
+  Sun,
+  Moon,
+  Monitor
+} from 'lucide-react';
 
-const SettingsDashboard = () => {
+const Settings = () => {
   const { user } = useAuth();
+  const [activeTab, setActiveTab] = useState('profile');
   const [loading, setLoading] = useState(false);
-  const [saving, setSaving] = useState(false);
-  const [activeTab, setActiveTab] = useState('general');
-  const [schoolData, setSchoolData] = useState({
-    name: '',
-    address: '',
-    phone: '',
-    email: '',
-    website: '',
-    logo: '',
-    established: '',
-    motto: '',
-    settings: {}
-  });
   const [settings, setSettings] = useState({
-    timeZone: 'Africa/Nairobi',
-    academicYear: new Date().getFullYear().toString(),
-    termDates: {
-      term1: { start: '', end: '' },
-      term2: { start: '', end: '' },
-      term3: { start: '', end: '' }
+    profile: {
+      name: '',
+      email: '',
+      phone: '',
+      avatar: '',
+      bio: '',
+      address: '',
+      emergency_contact: ''
     },
-    currencies: ['KES', 'USD'],
-    defaultCurrency: 'KES',
-    languages: ['English', 'Swahili'],
-    defaultLanguage: 'English',
-    theme: 'light',
     notifications: {
-      email: true,
-      sms: true,
-      push: true,
-      whatsapp: false
+      email_notifications: true,
+      sms_notifications: true,
+      push_notifications: true,
+      whatsapp_notifications: false,
+      bus_arrival_alerts: true,
+      payment_reminders: true,
+      emergency_alerts: true,
+      weekly_reports: false
     },
-    transport: {
-      defaultPickupTime: '06:30',
-      defaultDropoffTime: '16:30',
-      maxLateMinutes: 15,
-      requireParentConfirmation: true
+    appearance: {
+      theme: 'light',
+      language: 'en',
+      font_size: 'medium',
+      color_scheme: 'blue',
+      sidebar_collapsed: false,
+      animations_enabled: true
     },
-    attendance: {
-      markAbsentAfterMinutes: 30,
-      sendAbsentNotifications: true,
-      requireReasonForAbsence: true
+    privacy: {
+      profile_visibility: 'school_only',
+      location_sharing: true,
+      contact_sharing: false,
+      data_analytics: true,
+      marketing_emails: false
     },
-    fees: {
-      transportFeePerTerm: 5000,
-      latePaymentFee: 500,
-      paymentMethods: ['mpesa', 'bank_transfer', 'cash'],
-      dueDateDays: 30
+    security: {
+      two_factor_auth: false,
+      session_timeout: 30,
+      login_notifications: true,
+      password_change_required: false
+    },
+    school: {
+      name: '',
+      address: '',
+      phone: '',
+      email: '',
+      website: '',
+      logo: '',
+      timezone: 'Africa/Nairobi',
+      currency: 'KES',
+      academic_year: '2024',
+      term: 'Term 1'
     }
+  });
+
+  const [passwordForm, setPasswordForm] = useState({
+    current_password: '',
+    new_password: '',
+    confirm_password: ''
+  });
+  const [showPassword, setShowPassword] = useState({
+    current: false,
+    new: false,
+    confirm: false
   });
 
   useEffect(() => {
-    fetchSchoolData();
-    fetchSettings();
+    loadSettings();
   }, [user]);
 
-  const fetchSchoolData = async () => {
+  const loadSettings = async () => {
     try {
-      const { data, error } = await supabase
-        .from('schools')
+      setLoading(true);
+      
+      // Load user profile
+      const { data: userData, error: userError } = await supabase
+        .from('users')
         .select('*')
-        .eq('id', user?.school_id)
+        .eq('id', user.id)
         .single();
 
-      if (error) throw error;
-      
-      if (data) {
-        setSchoolData({
-          ...data,
-          settings: typeof data.settings === 'string' ? JSON.parse(data.settings) : data.settings
-        });
-      }
-    } catch (error) {
-      console.error('Error fetching school data:', error);
-      toast.error('Failed to fetch school data');
-    }
-  };
+      if (userError) throw userError;
 
-  const fetchSettings = async () => {
-    try {
-      const { data, error } = await supabase
+      // Load school settings
+      const { data: schoolData, error: schoolError } = await supabase
+        .from('schools')
+        .select('*')
+        .eq('id', user.school_id)
+        .single();
+
+      if (schoolError) throw schoolError;
+
+      // Load app settings
+      const { data: appSettings, error: settingsError } = await supabase
         .from('settings')
         .select('*')
-        .eq('school_id', user?.school_id);
+        .eq('school_id', user.school_id);
 
-      if (error) throw error;
+      if (settingsError) throw settingsError;
 
-      if (data && data.length > 0) {
-        const settingsObj = {};
-        data.forEach(setting => {
-          settingsObj[setting.key] = setting.value;
-        });
-        setSettings(prev => ({ ...prev, ...settingsObj }));
-      }
+      // Merge settings
+      const mergedSettings = {
+        profile: {
+          name: userData.name || '',
+          email: userData.email || '',
+          phone: userData.phone || '',
+          avatar: userData.avatar || '',
+          bio: userData.bio || '',
+          address: userData.address || '',
+          emergency_contact: userData.emergency_contact || ''
+        },
+        school: {
+          name: schoolData.name || '',
+          address: schoolData.address || '',
+          phone: schoolData.phone || '',
+          email: schoolData.email || '',
+          website: schoolData.website || '',
+          logo: schoolData.logo || '',
+          timezone: schoolData.settings?.timezone || 'Africa/Nairobi',
+          currency: schoolData.settings?.currency || 'KES',
+          academic_year: schoolData.settings?.academic_year || '2024',
+          term: schoolData.settings?.term || 'Term 1'
+        },
+        notifications: {
+          email_notifications: userData.preferences?.notifications?.email ?? true,
+          sms_notifications: userData.preferences?.notifications?.sms ?? true,
+          push_notifications: userData.preferences?.notifications?.push ?? true,
+          whatsapp_notifications: userData.preferences?.notifications?.whatsapp ?? false,
+          bus_arrival_alerts: true,
+          payment_reminders: true,
+          emergency_alerts: true,
+          weekly_reports: false
+        },
+        appearance: {
+          theme: userData.preferences?.theme || 'light',
+          language: userData.preferences?.language || 'en',
+          font_size: 'medium',
+          color_scheme: 'blue',
+          sidebar_collapsed: false,
+          animations_enabled: true
+        },
+        privacy: {
+          profile_visibility: 'school_only',
+          location_sharing: true,
+          contact_sharing: false,
+          data_analytics: true,
+          marketing_emails: false
+        },
+        security: {
+          two_factor_auth: false,
+          session_timeout: 30,
+          login_notifications: true,
+          password_change_required: false
+        }
+      };
+
+      setSettings(mergedSettings);
     } catch (error) {
-      console.error('Error fetching settings:', error);
-      toast.error('Failed to fetch settings');
-    }
-  };
-
-  const saveSchoolData = async () => {
-    try {
-      setSaving(true);
-      const { error } = await supabase
-        .from('schools')
-        .upsert({
-          id: user?.school_id,
-          ...schoolData,
-          settings: JSON.stringify(schoolData.settings)
-        });
-
-      if (error) throw error;
-      
-      toast.success('School information saved successfully');
-    } catch (error) {
-      console.error('Error saving school data:', error);
-      toast.error('Failed to save school information');
+      console.error('Error loading settings:', error);
+      toast.error('Failed to load settings');
     } finally {
-      setSaving(false);
+      setLoading(false);
     }
   };
 
-  const saveSettings = async () => {
+  const saveSettings = async (section) => {
     try {
-      setSaving(true);
-      
-      const settingsToSave = Object.entries(settings).map(([key, value]) => ({
-        key,
-        value: typeof value === 'object' ? JSON.stringify(value) : value,
-        category: getCategoryForKey(key),
-        school_id: user?.school_id
-      }));
+      setLoading(true);
 
-      // Delete existing settings
-      await supabase
-        .from('settings')
-        .delete()
-        .eq('school_id', user?.school_id);
+      if (section === 'profile') {
+        const { error } = await supabase
+          .from('users')
+          .update({
+            name: settings.profile.name,
+            phone: settings.profile.phone,
+            bio: settings.profile.bio,
+            address: settings.profile.address,
+            emergency_contact: settings.profile.emergency_contact,
+            preferences: {
+              ...user.preferences,
+              notifications: settings.notifications,
+              theme: settings.appearance.theme,
+              language: settings.appearance.language
+            }
+          })
+          .eq('id', user.id);
 
-      // Insert new settings
-      const { error } = await supabase
-        .from('settings')
-        .insert(settingsToSave);
+        if (error) throw error;
+      } else if (section === 'school') {
+        const { error } = await supabase
+          .from('schools')
+          .update({
+            name: settings.school.name,
+            address: settings.school.address,
+            phone: settings.school.phone,
+            email: settings.school.email,
+            website: settings.school.website,
+            settings: {
+              timezone: settings.school.timezone,
+              currency: settings.school.currency,
+              academic_year: settings.school.academic_year,
+              term: settings.school.term
+            }
+          })
+          .eq('id', user.school_id);
 
-      if (error) throw error;
-      
-      toast.success('Settings saved successfully');
+        if (error) throw error;
+      }
+
+      toast.success('Settings saved successfully!');
     } catch (error) {
       console.error('Error saving settings:', error);
       toast.error('Failed to save settings');
     } finally {
-      setSaving(false);
+      setLoading(false);
     }
   };
 
-  const getCategoryForKey = (key) => {
-    if (['timeZone', 'academicYear', 'termDates'].includes(key)) return 'academic';
-    if (['currencies', 'defaultCurrency', 'fees'].includes(key)) return 'financial';
-    if (['languages', 'defaultLanguage', 'theme'].includes(key)) return 'appearance';
-    if (['notifications'].includes(key)) return 'notifications';
-    if (['transport', 'attendance'].includes(key)) return 'operations';
-    return 'general';
-  };
+  const changePassword = async () => {
+    if (passwordForm.new_password !== passwordForm.confirm_password) {
+      toast.error('New passwords do not match');
+      return;
+    }
 
-  const handleImageUpload = async (event) => {
-    const file = event.target.files[0];
-    if (!file) return;
+    if (passwordForm.new_password.length < 6) {
+      toast.error('Password must be at least 6 characters long');
+      return;
+    }
 
     try {
-      const fileExt = file.name.split('.').pop();
-      const fileName = `logo-${Date.now()}.${fileExt}`;
+      setLoading(true);
       
-      const { data, error } = await supabase.storage
-        .from('school-assets')
-        .upload(fileName, file);
+      const { error } = await supabase.auth.updateUser({
+        password: passwordForm.new_password
+      });
 
       if (error) throw error;
 
-      const { data: { publicUrl } } = supabase.storage
-        .from('school-assets')
-        .getPublicUrl(fileName);
-
-      setSchoolData(prev => ({ ...prev, logo: publicUrl }));
-      toast.success('Logo uploaded successfully');
+      toast.success('Password changed successfully!');
+      setPasswordForm({
+        current_password: '',
+        new_password: '',
+        confirm_password: ''
+      });
     } catch (error) {
-      console.error('Error uploading logo:', error);
-      toast.error('Failed to upload logo');
+      console.error('Error changing password:', error);
+      toast.error('Failed to change password');
+    } finally {
+      setLoading(false);
     }
   };
 
-  const StatCard = ({ title, value, icon: Icon, color = "blue", description }) => (
-    <Card className="p-6 hover:shadow-md transition-shadow">
-      <div className="flex items-center justify-between">
-        <div>
-          <p className="text-sm font-medium text-gray-600">{title}</p>
-          <p className="text-2xl font-bold text-gray-900">{value}</p>
-          {description && (
-            <p className="text-sm text-gray-500 mt-1">{description}</p>
-          )}
+  const handleFileUpload = async (file, type) => {
+    try {
+      const fileExt = file.name.split('.').pop();
+      const fileName = `${Date.now()}.${fileExt}`;
+      const filePath = `${type}/${fileName}`;
+
+      const { error: uploadError } = await supabase.storage
+        .from('avatars')
+        .upload(filePath, file);
+
+      if (uploadError) throw uploadError;
+
+      const { data: { publicUrl } } = supabase.storage
+        .from('avatars')
+        .getPublicUrl(filePath);
+
+      if (type === 'avatar') {
+        setSettings(prev => ({
+          ...prev,
+          profile: { ...prev.profile, avatar: publicUrl }
+        }));
+      } else if (type === 'logo') {
+        setSettings(prev => ({
+          ...prev,
+          school: { ...prev.school, logo: publicUrl }
+        }));
+      }
+
+      toast.success('File uploaded successfully!');
+    } catch (error) {
+      console.error('Error uploading file:', error);
+      toast.error('Failed to upload file');
+    }
+  };
+
+  const tabs = [
+    { id: 'profile', label: 'Profile', icon: User },
+    { id: 'notifications', label: 'Notifications', icon: Bell },
+    { id: 'appearance', label: 'Appearance', icon: Palette },
+    { id: 'privacy', label: 'Privacy', icon: Shield },
+    { id: 'security', label: 'Security', icon: Lock },
+    { id: 'school', label: 'School', icon: School }
+  ];
+
+  const renderProfileSettings = () => (
+    <div className="space-y-6">
+      <div className="card-modern">
+        <h3 className="text-lg font-semibold text-gray-900 mb-4">Profile Information</h3>
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+          <div>
+            <label className="block text-sm font-medium text-gray-700 mb-2">Full Name</label>
+            <input
+              type="text"
+              value={settings.profile.name}
+              onChange={(e) => setSettings(prev => ({
+                ...prev,
+                profile: { ...prev.profile, name: e.target.value }
+              }))}
+              className="input-modern"
+            />
+          </div>
+          <div>
+            <label className="block text-sm font-medium text-gray-700 mb-2">Email</label>
+            <input
+              type="email"
+              value={settings.profile.email}
+              disabled
+              className="input-modern bg-gray-100"
+            />
+          </div>
+          <div>
+            <label className="block text-sm font-medium text-gray-700 mb-2">Phone Number</label>
+            <input
+              type="tel"
+              value={settings.profile.phone}
+              onChange={(e) => setSettings(prev => ({
+                ...prev,
+                profile: { ...prev.profile, phone: e.target.value }
+              }))}
+              className="input-modern"
+            />
+          </div>
+          <div>
+            <label className="block text-sm font-medium text-gray-700 mb-2">Address</label>
+            <input
+              type="text"
+              value={settings.profile.address}
+              onChange={(e) => setSettings(prev => ({
+                ...prev,
+                profile: { ...prev.profile, address: e.target.value }
+              }))}
+              className="input-modern"
+            />
+          </div>
         </div>
-        <div className={`w-12 h-12 bg-${color}-100 rounded-lg flex items-center justify-center`}>
-          <Icon className={`h-6 w-6 text-${color}-600`} />
+        <div className="mt-6">
+          <label className="block text-sm font-medium text-gray-700 mb-2">Bio</label>
+          <textarea
+            value={settings.profile.bio}
+            onChange={(e) => setSettings(prev => ({
+              ...prev,
+              profile: { ...prev.profile, bio: e.target.value }
+            }))}
+            rows={3}
+            className="input-modern"
+            placeholder="Tell us about yourself..."
+          />
+        </div>
+        <div className="mt-6">
+          <label className="block text-sm font-medium text-gray-700 mb-2">Emergency Contact</label>
+          <input
+            type="text"
+            value={settings.profile.emergency_contact}
+            onChange={(e) => setSettings(prev => ({
+              ...prev,
+              profile: { ...prev.profile, emergency_contact: e.target.value }
+            }))}
+            className="input-modern"
+            placeholder="Emergency contact information"
+          />
+        </div>
+        <div className="mt-6 flex justify-end">
+          <button
+            onClick={() => saveSettings('profile')}
+            disabled={loading}
+            className="btn-modern"
+          >
+            {loading ? <RefreshCw className="h-4 w-4 mr-2 animate-spin" /> : <Save className="h-4 w-4 mr-2" />}
+            Save Profile
+          </button>
         </div>
       </div>
-    </Card>
-  );
 
-  return (
-    <div className="min-h-screen bg-gray-50">
-      <div className="bg-white border-b border-gray-200">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="py-6">
-            <div className="flex items-center justify-between">
-              <div>
-                <h1 className="text-3xl font-bold text-gray-900">Settings & Configuration</h1>
-                <p className="text-gray-600 mt-1">Manage school information and system settings</p>
-              </div>
-              <div className="flex items-center space-x-4">
-                <Button
-                  onClick={activeTab === 'general' ? saveSchoolData : saveSettings}
-                  disabled={saving}
-                  className="bg-blue-600 hover:bg-blue-700"
-                >
-                  <Save className={`h-4 w-4 mr-2 ${saving ? 'animate-spin' : ''}`} />
-                  {saving ? 'Saving...' : 'Save Changes'}
-                </Button>
-              </div>
-            </div>
+      <div className="card-modern">
+        <h3 className="text-lg font-semibold text-gray-900 mb-4">Profile Picture</h3>
+        <div className="flex items-center space-x-6">
+          <div className="w-20 h-20 bg-gradient-to-r from-blue-500 to-purple-600 rounded-full flex items-center justify-center text-white text-2xl font-semibold">
+            {settings.profile.avatar ? (
+              <img src={settings.profile.avatar} alt="Profile" className="w-full h-full rounded-full object-cover" />
+            ) : (
+              settings.profile.name.charAt(0).toUpperCase()
+            )}
+          </div>
+          <div>
+            <input
+              type="file"
+              accept="image/*"
+              onChange={(e) => {
+                if (e.target.files[0]) {
+                  handleFileUpload(e.target.files[0], 'avatar');
+                }
+              }}
+              className="hidden"
+              id="avatar-upload"
+            />
+            <label htmlFor="avatar-upload" className="btn-modern cursor-pointer">
+              <Upload className="h-4 w-4 mr-2" />
+              Upload Photo
+            </label>
+            <p className="text-sm text-gray-500 mt-1">JPG, PNG or GIF. Max size 2MB.</p>
           </div>
         </div>
       </div>
+    </div>
+  );
 
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
-        {/* Quick Stats */}
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mb-8">
-          <StatCard 
-            title="School Status" 
-            value="Active" 
-            icon={CheckCircle} 
-            color="green"
-            description="All systems operational"
-          />
-          <StatCard 
-            title="Academic Year" 
-            value={settings.academicYear} 
-            icon={Calendar} 
-            color="blue"
-            description="Current academic year"
-          />
-          <StatCard 
-            title="Default Currency" 
-            value={settings.defaultCurrency} 
-            icon={DollarSign} 
-            color="yellow"
-            description="Primary currency for fees"
-          />
-          <StatCard 
-            title="Time Zone" 
-            value={settings.timeZone} 
-            icon={Clock} 
-            color="purple"
-            description="School time zone"
+  const renderNotificationSettings = () => (
+    <div className="space-y-6">
+      <div className="card-modern">
+        <h3 className="text-lg font-semibold text-gray-900 mb-4">Notification Preferences</h3>
+        <div className="space-y-4">
+          {Object.entries(settings.notifications).map(([key, value]) => (
+            <div key={key} className="flex items-center justify-between">
+              <div>
+                <h4 className="font-medium text-gray-900 capitalize">
+                  {key.replace(/_/g, ' ')}
+                </h4>
+                <p className="text-sm text-gray-500">
+                  {key.includes('email') && 'Receive notifications via email'}
+                  {key.includes('sms') && 'Receive notifications via SMS'}
+                  {key.includes('push') && 'Receive push notifications'}
+                  {key.includes('whatsapp') && 'Receive WhatsApp notifications'}
+                  {key.includes('bus') && 'Get alerts when bus arrives'}
+                  {key.includes('payment') && 'Get payment reminders'}
+                  {key.includes('emergency') && 'Get emergency alerts'}
+                  {key.includes('weekly') && 'Get weekly reports'}
+                </p>
+              </div>
+              <button
+                onClick={() => setSettings(prev => ({
+                  ...prev,
+                  notifications: { ...prev.notifications, [key]: !value }
+                }))}
+                className={`relative inline-flex h-6 w-11 items-center rounded-full transition-colors ${
+                  value ? 'bg-blue-500' : 'bg-gray-300'
+                }`}
+              >
+                <span className={`inline-block h-4 w-4 transform rounded-full bg-white transition-transform ${
+                  value ? 'translate-x-6' : 'translate-x-1'
+                }`} />
+              </button>
+            </div>
+          ))}
+        </div>
+        <div className="mt-6 flex justify-end">
+          <button
+            onClick={() => saveSettings('notifications')}
+            disabled={loading}
+            className="btn-modern"
+          >
+            {loading ? <RefreshCw className="h-4 w-4 mr-2 animate-spin" /> : <Save className="h-4 w-4 mr-2" />}
+            Save Notifications
+          </button>
+        </div>
+      </div>
+    </div>
+  );
+
+  const renderAppearanceSettings = () => (
+    <div className="space-y-6">
+      <div className="card-modern">
+        <h3 className="text-lg font-semibold text-gray-900 mb-4">Theme & Appearance</h3>
+        <div className="space-y-6">
+          <div>
+            <label className="block text-sm font-medium text-gray-700 mb-3">Theme</label>
+            <div className="grid grid-cols-3 gap-4">
+              {[
+                { id: 'light', label: 'Light', icon: Sun },
+                { id: 'dark', label: 'Dark', icon: Moon },
+                { id: 'auto', label: 'Auto', icon: Monitor }
+              ].map(theme => (
+                <button
+                  key={theme.id}
+                  onClick={() => setSettings(prev => ({
+                    ...prev,
+                    appearance: { ...prev.appearance, theme: theme.id }
+                  }))}
+                  className={`p-4 rounded-xl border-2 transition-all ${
+                    settings.appearance.theme === theme.id
+                      ? 'border-blue-500 bg-blue-50'
+                      : 'border-gray-200 hover:border-gray-300'
+                  }`}
+                >
+                  <theme.icon className="h-6 w-6 mx-auto mb-2" />
+                  <span className="text-sm font-medium">{theme.label}</span>
+                </button>
+              ))}
+            </div>
+          </div>
+
+          <div>
+            <label className="block text-sm font-medium text-gray-700 mb-3">Language</label>
+            <select
+              value={settings.appearance.language}
+              onChange={(e) => setSettings(prev => ({
+                ...prev,
+                appearance: { ...prev.appearance, language: e.target.value }
+              }))}
+              className="input-modern"
+            >
+              <option value="en">English</option>
+              <option value="sw">Swahili</option>
+            </select>
+          </div>
+
+          <div>
+            <label className="block text-sm font-medium text-gray-700 mb-3">Color Scheme</label>
+            <div className="grid grid-cols-4 gap-3">
+              {[
+                { id: 'blue', name: 'Blue', color: 'bg-blue-500' },
+                { id: 'purple', name: 'Purple', color: 'bg-purple-500' },
+                { id: 'green', name: 'Green', color: 'bg-green-500' },
+                { id: 'red', name: 'Red', color: 'bg-red-500' }
+              ].map(scheme => (
+                <button
+                  key={scheme.id}
+                  onClick={() => setSettings(prev => ({
+                    ...prev,
+                    appearance: { ...prev.appearance, color_scheme: scheme.id }
+                  }))}
+                  className={`p-3 rounded-lg border-2 transition-all ${
+                    settings.appearance.color_scheme === scheme.id
+                      ? 'border-blue-500'
+                      : 'border-gray-200'
+                  }`}
+                >
+                  <div className={`w-8 h-8 ${scheme.color} rounded-full mx-auto mb-2`}></div>
+                  <span className="text-xs font-medium">{scheme.name}</span>
+                </button>
+              ))}
+            </div>
+          </div>
+        </div>
+        <div className="mt-6 flex justify-end">
+          <button
+            onClick={() => saveSettings('appearance')}
+            disabled={loading}
+            className="btn-modern"
+          >
+            {loading ? <RefreshCw className="h-4 w-4 mr-2 animate-spin" /> : <Save className="h-4 w-4 mr-2" />}
+            Save Appearance
+          </button>
+        </div>
+      </div>
+    </div>
+  );
+
+  const renderSecuritySettings = () => (
+    <div className="space-y-6">
+      <div className="card-modern">
+        <h3 className="text-lg font-semibold text-gray-900 mb-4">Change Password</h3>
+        <div className="space-y-4">
+          <div>
+            <label className="block text-sm font-medium text-gray-700 mb-2">Current Password</label>
+            <div className="relative">
+              <input
+                type={showPassword.current ? 'text' : 'password'}
+                value={passwordForm.current_password}
+                onChange={(e) => setPasswordForm(prev => ({ ...prev, current_password: e.target.value }))}
+                className="input-modern pr-10"
+              />
+              <button
+                type="button"
+                onClick={() => setShowPassword(prev => ({ ...prev, current: !prev.current }))}
+                className="absolute right-3 top-1/2 transform -translate-y-1/2 text-gray-400"
+              >
+                {showPassword.current ? <EyeOff className="h-4 w-4" /> : <Eye className="h-4 w-4" />}
+              </button>
+            </div>
+          </div>
+          <div>
+            <label className="block text-sm font-medium text-gray-700 mb-2">New Password</label>
+            <div className="relative">
+              <input
+                type={showPassword.new ? 'text' : 'password'}
+                value={passwordForm.new_password}
+                onChange={(e) => setPasswordForm(prev => ({ ...prev, new_password: e.target.value }))}
+                className="input-modern pr-10"
+              />
+              <button
+                type="button"
+                onClick={() => setShowPassword(prev => ({ ...prev, new: !prev.new }))}
+                className="absolute right-3 top-1/2 transform -translate-y-1/2 text-gray-400"
+              >
+                {showPassword.new ? <EyeOff className="h-4 w-4" /> : <Eye className="h-4 w-4" />}
+              </button>
+            </div>
+          </div>
+          <div>
+            <label className="block text-sm font-medium text-gray-700 mb-2">Confirm New Password</label>
+            <div className="relative">
+              <input
+                type={showPassword.confirm ? 'text' : 'password'}
+                value={passwordForm.confirm_password}
+                onChange={(e) => setPasswordForm(prev => ({ ...prev, confirm_password: e.target.value }))}
+                className="input-modern pr-10"
+              />
+              <button
+                type="button"
+                onClick={() => setShowPassword(prev => ({ ...prev, confirm: !prev.confirm }))}
+                className="absolute right-3 top-1/2 transform -translate-y-1/2 text-gray-400"
+              >
+                {showPassword.confirm ? <EyeOff className="h-4 w-4" /> : <Eye className="h-4 w-4" />}
+              </button>
+            </div>
+          </div>
+        </div>
+        <div className="mt-6 flex justify-end">
+          <button
+            onClick={changePassword}
+            disabled={loading || !passwordForm.new_password || !passwordForm.confirm_password}
+            className="btn-modern"
+          >
+            {loading ? <RefreshCw className="h-4 w-4 mr-2 animate-spin" /> : <Key className="h-4 w-4 mr-2" />}
+            Change Password
+          </button>
+        </div>
+      </div>
+
+      <div className="card-modern">
+        <h3 className="text-lg font-semibold text-gray-900 mb-4">Security Settings</h3>
+        <div className="space-y-4">
+          <div className="flex items-center justify-between">
+            <div>
+              <h4 className="font-medium text-gray-900">Two-Factor Authentication</h4>
+              <p className="text-sm text-gray-500">Add an extra layer of security to your account</p>
+            </div>
+            <button
+              onClick={() => setSettings(prev => ({
+                ...prev,
+                security: { ...prev.security, two_factor_auth: !prev.security.two_factor_auth }
+              }))}
+              className={`relative inline-flex h-6 w-11 items-center rounded-full transition-colors ${
+                settings.security.two_factor_auth ? 'bg-blue-500' : 'bg-gray-300'
+              }`}
+            >
+              <span className={`inline-block h-4 w-4 transform rounded-full bg-white transition-transform ${
+                settings.security.two_factor_auth ? 'translate-x-6' : 'translate-x-1'
+              }`} />
+            </button>
+          </div>
+          <div className="flex items-center justify-between">
+            <div>
+              <h4 className="font-medium text-gray-900">Login Notifications</h4>
+              <p className="text-sm text-gray-500">Get notified when someone logs into your account</p>
+            </div>
+            <button
+              onClick={() => setSettings(prev => ({
+                ...prev,
+                security: { ...prev.security, login_notifications: !prev.security.login_notifications }
+              }))}
+              className={`relative inline-flex h-6 w-11 items-center rounded-full transition-colors ${
+                settings.security.login_notifications ? 'bg-blue-500' : 'bg-gray-300'
+              }`}
+            >
+              <span className={`inline-block h-4 w-4 transform rounded-full bg-white transition-transform ${
+                settings.security.login_notifications ? 'translate-x-6' : 'translate-x-1'
+              }`} />
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  );
+
+  const renderSchoolSettings = () => (
+    <div className="space-y-6">
+      <div className="card-modern">
+        <h3 className="text-lg font-semibold text-gray-900 mb-4">School Information</h3>
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+          <div>
+            <label className="block text-sm font-medium text-gray-700 mb-2">School Name</label>
+            <input
+              type="text"
+              value={settings.school.name}
+              onChange={(e) => setSettings(prev => ({
+                ...prev,
+                school: { ...prev.school, name: e.target.value }
+              }))}
+              className="input-modern"
+            />
+          </div>
+          <div>
+            <label className="block text-sm font-medium text-gray-700 mb-2">Phone Number</label>
+            <input
+              type="tel"
+              value={settings.school.phone}
+              onChange={(e) => setSettings(prev => ({
+                ...prev,
+                school: { ...prev.school, phone: e.target.value }
+              }))}
+              className="input-modern"
+            />
+          </div>
+          <div>
+            <label className="block text-sm font-medium text-gray-700 mb-2">Email</label>
+            <input
+              type="email"
+              value={settings.school.email}
+              onChange={(e) => setSettings(prev => ({
+                ...prev,
+                school: { ...prev.school, email: e.target.value }
+              }))}
+              className="input-modern"
+            />
+          </div>
+          <div>
+            <label className="block text-sm font-medium text-gray-700 mb-2">Website</label>
+            <input
+              type="url"
+              value={settings.school.website}
+              onChange={(e) => setSettings(prev => ({
+                ...prev,
+                school: { ...prev.school, website: e.target.value }
+              }))}
+              className="input-modern"
+            />
+          </div>
+        </div>
+        <div className="mt-6">
+          <label className="block text-sm font-medium text-gray-700 mb-2">Address</label>
+          <textarea
+            value={settings.school.address}
+            onChange={(e) => setSettings(prev => ({
+              ...prev,
+              school: { ...prev.school, address: e.target.value }
+            }))}
+            rows={3}
+            className="input-modern"
           />
         </div>
+        <div className="mt-6 flex justify-end">
+          <button
+            onClick={() => saveSettings('school')}
+            disabled={loading}
+            className="btn-modern"
+          >
+            {loading ? <RefreshCw className="h-4 w-4 mr-2 animate-spin" /> : <Save className="h-4 w-4 mr-2" />}
+            Save School Info
+          </button>
+        </div>
+      </div>
 
-        <Tabs value={activeTab} onValueChange={setActiveTab} className="space-y-6">
-          <TabsList className="grid w-full grid-cols-6">
-            <TabsTrigger value="general">General</TabsTrigger>
-            <TabsTrigger value="academic">Academic</TabsTrigger>
-            <TabsTrigger value="financial">Financial</TabsTrigger>
-            <TabsTrigger value="transport">Transport</TabsTrigger>
-            <TabsTrigger value="notifications">Notifications</TabsTrigger>
-            <TabsTrigger value="appearance">Appearance</TabsTrigger>
-          </TabsList>
+      <div className="card-modern">
+        <h3 className="text-lg font-semibold text-gray-900 mb-4">School Logo</h3>
+        <div className="flex items-center space-x-6">
+          <div className="w-20 h-20 bg-gradient-to-r from-blue-500 to-purple-600 rounded-lg flex items-center justify-center text-white text-2xl font-semibold">
+            {settings.school.logo ? (
+              <img src={settings.school.logo} alt="School Logo" className="w-full h-full rounded-lg object-cover" />
+            ) : (
+              settings.school.name.charAt(0).toUpperCase()
+            )}
+          </div>
+          <div>
+            <input
+              type="file"
+              accept="image/*"
+              onChange={(e) => {
+                if (e.target.files[0]) {
+                  handleFileUpload(e.target.files[0], 'logo');
+                }
+              }}
+              className="hidden"
+              id="logo-upload"
+            />
+            <label htmlFor="logo-upload" className="btn-modern cursor-pointer">
+              <Upload className="h-4 w-4 mr-2" />
+              Upload Logo
+            </label>
+            <p className="text-sm text-gray-500 mt-1">JPG, PNG or GIF. Max size 2MB.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  );
 
-          {/* General Settings */}
-          <TabsContent value="general" className="space-y-6">
-            <Card>
-              <CardHeader>
-                <CardTitle className="flex items-center">
-                  <School className="h-5 w-5 mr-2" />
-                  School Information
-                </CardTitle>
-              </CardHeader>
-              <CardContent className="space-y-6">
-                <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-                  <div>
-                    <label className="block text-sm font-medium text-gray-700 mb-2">School Name</label>
-                    <Input
-                      value={schoolData.name}
-                      onChange={(e) => setSchoolData({...schoolData, name: e.target.value})}
-                      placeholder="Enter school name"
-                    />
-                  </div>
-                  <div>
-                    <label className="block text-sm font-medium text-gray-700 mb-2">Established Year</label>
-                    <Input
-                      type="number"
-                      value={schoolData.established}
-                      onChange={(e) => setSchoolData({...schoolData, established: e.target.value})}
-                      placeholder="e.g., 2010"
-                    />
-                  </div>
-                </div>
+  return (
+    <div className="min-h-screen bg-gradient-to-br from-blue-50 via-white to-purple-50">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
+        <div className="mb-8">
+          <h1 className="text-3xl font-bold text-gradient mb-2">Settings</h1>
+          <p className="text-gray-600">Manage your account and application preferences</p>
+        </div>
 
-                <div>
-                  <label className="block text-sm font-medium text-gray-700 mb-2">Address</label>
-                  <Input
-                    value={schoolData.address}
-                    onChange={(e) => setSchoolData({...schoolData, address: e.target.value})}
-                    placeholder="Enter school address"
-                  />
-                </div>
+        <div className="grid grid-cols-1 lg:grid-cols-4 gap-8">
+          {/* Sidebar */}
+          <div className="lg:col-span-1">
+            <div className="card-modern">
+              <nav className="space-y-2">
+                {tabs.map(tab => (
+                  <button
+                    key={tab.id}
+                    onClick={() => setActiveTab(tab.id)}
+                    className={`w-full flex items-center space-x-3 px-4 py-3 rounded-xl transition-all ${
+                      activeTab === tab.id
+                        ? 'bg-blue-50 text-blue-700 border border-blue-200'
+                        : 'text-gray-600 hover:bg-gray-50'
+                    }`}
+                  >
+                    <tab.icon className="h-5 w-5" />
+                    <span className="font-medium">{tab.label}</span>
+                  </button>
+                ))}
+              </nav>
+            </div>
+          </div>
 
-                <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-                  <div>
-                    <label className="block text-sm font-medium text-gray-700 mb-2">Phone</label>
-                    <Input
-                      value={schoolData.phone}
-                      onChange={(e) => setSchoolData({...schoolData, phone: e.target.value})}
-                      placeholder="+254 712 345 678"
-                    />
-                  </div>
-                  <div>
-                    <label className="block text-sm font-medium text-gray-700 mb-2">Email</label>
-                    <Input
-                      type="email"
-                      value={schoolData.email}
-                      onChange={(e) => setSchoolData({...schoolData, email: e.target.value})}
-                      placeholder="info@school.com"
-                    />
-                  </div>
-                  <div>
-                    <label className="block text-sm font-medium text-gray-700 mb-2">Website</label>
-                    <Input
-                      value={schoolData.website}
-                      onChange={(e) => setSchoolData({...schoolData, website: e.target.value})}
-                      placeholder="https://school.com"
-                    />
-                  </div>
-                </div>
-
-                <div>
-                  <label className="block text-sm font-medium text-gray-700 mb-2">Motto</label>
-                  <Input
-                    value={schoolData.motto}
-                    onChange={(e) => setSchoolData({...schoolData, motto: e.target.value})}
-                    placeholder="Enter school motto"
-                  />
-                </div>
-
-                <div>
-                  <label className="block text-sm font-medium text-gray-700 mb-2">School Logo</label>
-                  <div className="flex items-center space-x-4">
-                    {schoolData.logo && (
-                      <img src={schoolData.logo} alt="School Logo" className="h-20 w-20 object-contain border rounded" />
-                    )}
-                    <div>
-                      <input
-                        type="file"
-                        accept="image/*"
-                        onChange={handleImageUpload}
-                        className="hidden"
-                        id="logo-upload"
-                      />
-                      <label
-                        htmlFor="logo-upload"
-                        className="cursor-pointer inline-flex items-center px-4 py-2 border border-gray-300 rounded-md shadow-sm text-sm font-medium text-gray-700 bg-white hover:bg-gray-50"
-                      >
-                        <Upload className="h-4 w-4 mr-2" />
-                        Upload Logo
-                      </label>
-                    </div>
-                  </div>
-                </div>
-              </CardContent>
-            </Card>
-          </TabsContent>
-
-          {/* Academic Settings */}
-          <TabsContent value="academic" className="space-y-6">
-            <Card>
-              <CardHeader>
-                <CardTitle className="flex items-center">
-                  <Calendar className="h-5 w-5 mr-2" />
-                  Academic Configuration
-                </CardTitle>
-              </CardHeader>
-              <CardContent className="space-y-6">
-                <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-                  <div>
-                    <label className="block text-sm font-medium text-gray-700 mb-2">Academic Year</label>
-                    <Input
-                      value={settings.academicYear}
-                      onChange={(e) => setSettings({...settings, academicYear: e.target.value})}
-                      placeholder="2024"
-                    />
-                  </div>
-                  <div>
-                    <label className="block text-sm font-medium text-gray-700 mb-2">Time Zone</label>
-                    <select
-                      value={settings.timeZone}
-                      onChange={(e) => setSettings({...settings, timeZone: e.target.value})}
-                      className="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
-                    >
-                      <option value="Africa/Nairobi">Africa/Nairobi</option>
-                      <option value="Africa/Kampala">Africa/Kampala</option>
-                      <option value="Africa/Dar_es_Salaam">Africa/Dar_es_Salaam</option>
-                      <option value="UTC">UTC</option>
-                    </select>
-                  </div>
-                </div>
-
-                <div>
-                  <h3 className="text-lg font-medium text-gray-900 mb-4">Term Dates</h3>
-                  <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-                    {Object.entries(settings.termDates).map(([term, dates]) => (
-                      <div key={term} className="space-y-2">
-                        <label className="block text-sm font-medium text-gray-700 capitalize">{term.replace('term', 'Term ')}</label>
-                        <div className="space-y-2">
-                          <Input
-                            type="date"
-                            value={dates.start}
-                            onChange={(e) => setSettings({
-                              ...settings,
-                              termDates: {
-                                ...settings.termDates,
-                                [term]: { ...dates, start: e.target.value }
-                              }
-                            })}
-                            placeholder="Start date"
-                          />
-                          <Input
-                            type="date"
-                            value={dates.end}
-                            onChange={(e) => setSettings({
-                              ...settings,
-                              termDates: {
-                                ...settings.termDates,
-                                [term]: { ...dates, end: e.target.value }
-                              }
-                            })}
-                            placeholder="End date"
-                          />
-                        </div>
-                      </div>
-                    ))}
-                  </div>
-                </div>
-              </CardContent>
-            </Card>
-          </TabsContent>
-
-          {/* Financial Settings */}
-          <TabsContent value="financial" className="space-y-6">
-            <Card>
-              <CardHeader>
-                <CardTitle className="flex items-center">
-                  <DollarSign className="h-5 w-5 mr-2" />
-                  Financial Configuration
-                </CardTitle>
-              </CardHeader>
-              <CardContent className="space-y-6">
-                <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-                  <div>
-                    <label className="block text-sm font-medium text-gray-700 mb-2">Default Currency</label>
-                    <select
-                      value={settings.defaultCurrency}
-                      onChange={(e) => setSettings({...settings, defaultCurrency: e.target.value})}
-                      className="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
-                    >
-                      <option value="KES">Kenyan Shilling (KES)</option>
-                      <option value="USD">US Dollar (USD)</option>
-                      <option value="UGX">Ugandan Shilling (UGX)</option>
-                      <option value="TZS">Tanzanian Shilling (TZS)</option>
-                    </select>
-                  </div>
-                  <div>
-                    <label className="block text-sm font-medium text-gray-700 mb-2">Transport Fee per Term</label>
-                    <Input
-                      type="number"
-                      value={settings.fees?.transportFeePerTerm || 0}
-                      onChange={(e) => setSettings({
-                        ...settings,
-                        fees: { ...settings.fees, transportFeePerTerm: parseInt(e.target.value) }
-                      })}
-                      placeholder="5000"
-                    />
-                  </div>
-                </div>
-
-                <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-                  <div>
-                    <label className="block text-sm font-medium text-gray-700 mb-2">Late Payment Fee</label>
-                    <Input
-                      type="number"
-                      value={settings.fees?.latePaymentFee || 0}
-                      onChange={(e) => setSettings({
-                        ...settings,
-                        fees: { ...settings.fees, latePaymentFee: parseInt(e.target.value) }
-                      })}
-                      placeholder="500"
-                    />
-                  </div>
-                  <div>
-                    <label className="block text-sm font-medium text-gray-700 mb-2">Payment Due Days</label>
-                    <Input
-                      type="number"
-                      value={settings.fees?.dueDateDays || 30}
-                      onChange={(e) => setSettings({
-                        ...settings,
-                        fees: { ...settings.fees, dueDateDays: parseInt(e.target.value) }
-                      })}
-                      placeholder="30"
-                    />
-                  </div>
-                </div>
-
-                <div>
-                  <label className="block text-sm font-medium text-gray-700 mb-2">Payment Methods</label>
-                  <div className="space-y-2">
-                    {['mpesa', 'bank_transfer', 'cash', 'cheque', 'card'].map(method => (
-                      <label key={method} className="flex items-center">
-                        <input
-                          type="checkbox"
-                          checked={settings.fees?.paymentMethods?.includes(method) || false}
-                          onChange={(e) => {
-                            const methods = settings.fees?.paymentMethods || [];
-                            if (e.target.checked) {
-                              setSettings({
-                                ...settings,
-                                fees: { ...settings.fees, paymentMethods: [...methods, method] }
-                              });
-                            } else {
-                              setSettings({
-                                ...settings,
-                                fees: { ...settings.fees, paymentMethods: methods.filter(m => m !== method) }
-                              });
-                            }
-                          }}
-                          className="mr-2"
-                        />
-                        <span className="capitalize">{method.replace('_', ' ')}</span>
-                      </label>
-                    ))}
-                  </div>
-                </div>
-              </CardContent>
-            </Card>
-          </TabsContent>
-
-          {/* Transport Settings */}
-          <TabsContent value="transport" className="space-y-6">
-            <Card>
-              <CardHeader>
-                <CardTitle className="flex items-center">
-                  <Bus className="h-5 w-5 mr-2" />
-                  Transport Configuration
-                </CardTitle>
-              </CardHeader>
-              <CardContent className="space-y-6">
-                <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-                  <div>
-                    <label className="block text-sm font-medium text-gray-700 mb-2">Default Pickup Time</label>
-                    <Input
-                      type="time"
-                      value={settings.transport?.defaultPickupTime || '06:30'}
-                      onChange={(e) => setSettings({
-                        ...settings,
-                        transport: { ...settings.transport, defaultPickupTime: e.target.value }
-                      })}
-                    />
-                  </div>
-                  <div>
-                    <label className="block text-sm font-medium text-gray-700 mb-2">Default Dropoff Time</label>
-                    <Input
-                      type="time"
-                      value={settings.transport?.defaultDropoffTime || '16:30'}
-                      onChange={(e) => setSettings({
-                        ...settings,
-                        transport: { ...settings.transport, defaultDropoffTime: e.target.value }
-                      })}
-                    />
-                  </div>
-                </div>
-
-                <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-                  <div>
-                    <label className="block text-sm font-medium text-gray-700 mb-2">Max Late Minutes</label>
-                    <Input
-                      type="number"
-                      value={settings.transport?.maxLateMinutes || 15}
-                      onChange={(e) => setSettings({
-                        ...settings,
-                        transport: { ...settings.transport, maxLateMinutes: parseInt(e.target.value) }
-                      })}
-                      placeholder="15"
-                    />
-                  </div>
-                  <div className="flex items-center">
-                    <input
-                      type="checkbox"
-                      checked={settings.transport?.requireParentConfirmation || false}
-                      onChange={(e) => setSettings({
-                        ...settings,
-                        transport: { ...settings.transport, requireParentConfirmation: e.target.checked }
-                      })}
-                      className="mr-2"
-                    />
-                    <label className="text-sm font-medium text-gray-700">Require Parent Confirmation</label>
-                  </div>
-                </div>
-              </CardContent>
-            </Card>
-          </TabsContent>
-
-          {/* Notifications Settings */}
-          <TabsContent value="notifications" className="space-y-6">
-            <Card>
-              <CardHeader>
-                <CardTitle className="flex items-center">
-                  <Bell className="h-5 w-5 mr-2" />
-                  Notification Preferences
-                </CardTitle>
-              </CardHeader>
-              <CardContent className="space-y-6">
-                <div>
-                  <h3 className="text-lg font-medium text-gray-900 mb-4">Notification Channels</h3>
-                  <div className="space-y-4">
-                    {Object.entries(settings.notifications || {}).map(([channel, enabled]) => (
-                      <div key={channel} className="flex items-center justify-between">
-                        <div>
-                          <label className="text-sm font-medium text-gray-700 capitalize">{channel}</label>
-                          <p className="text-sm text-gray-500">
-                            {channel === 'email' && 'Send notifications via email'}
-                            {channel === 'sms' && 'Send notifications via SMS'}
-                            {channel === 'push' && 'Send push notifications'}
-                            {channel === 'whatsapp' && 'Send notifications via WhatsApp'}
-                          </p>
-                        </div>
-                        <input
-                          type="checkbox"
-                          checked={enabled}
-                          onChange={(e) => setSettings({
-                            ...settings,
-                            notifications: { ...settings.notifications, [channel]: e.target.checked }
-                          })}
-                          className="h-4 w-4 text-blue-600 focus:ring-blue-500 border-gray-300 rounded"
-                        />
-                      </div>
-                    ))}
-                  </div>
-                </div>
-
-                <div>
-                  <h3 className="text-lg font-medium text-gray-900 mb-4">Attendance Notifications</h3>
-                  <div className="space-y-4">
-                    <div className="flex items-center justify-between">
-                      <div>
-                        <label className="text-sm font-medium text-gray-700">Send Absent Notifications</label>
-                        <p className="text-sm text-gray-500">Notify parents when students are marked absent</p>
-                      </div>
-                      <input
-                        type="checkbox"
-                        checked={settings.attendance?.sendAbsentNotifications || false}
-                        onChange={(e) => setSettings({
-                          ...settings,
-                          attendance: { ...settings.attendance, sendAbsentNotifications: e.target.checked }
-                        })}
-                        className="h-4 w-4 text-blue-600 focus:ring-blue-500 border-gray-300 rounded"
-                      />
-                    </div>
-                    <div className="flex items-center justify-between">
-                      <div>
-                        <label className="text-sm font-medium text-gray-700">Require Reason for Absence</label>
-                        <p className="text-sm text-gray-500">Require parents to provide reason for student absence</p>
-                      </div>
-                      <input
-                        type="checkbox"
-                        checked={settings.attendance?.requireReasonForAbsence || false}
-                        onChange={(e) => setSettings({
-                          ...settings,
-                          attendance: { ...settings.attendance, requireReasonForAbsence: e.target.checked }
-                        })}
-                        className="h-4 w-4 text-blue-600 focus:ring-blue-500 border-gray-300 rounded"
-                      />
-                    </div>
-                  </div>
-                </div>
-              </CardContent>
-            </Card>
-          </TabsContent>
-
-          {/* Appearance Settings */}
-          <TabsContent value="appearance" className="space-y-6">
-            <Card>
-              <CardHeader>
-                <CardTitle className="flex items-center">
-                  <Palette className="h-5 w-5 mr-2" />
-                  Appearance & Language
-                </CardTitle>
-              </CardHeader>
-              <CardContent className="space-y-6">
-                <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-                  <div>
-                    <label className="block text-sm font-medium text-gray-700 mb-2">Theme</label>
-                    <select
-                      value={settings.theme || 'light'}
-                      onChange={(e) => setSettings({...settings, theme: e.target.value})}
-                      className="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
-                    >
-                      <option value="light">Light</option>
-                      <option value="dark">Dark</option>
-                      <option value="auto">Auto</option>
-                    </select>
-                  </div>
-                  <div>
-                    <label className="block text-sm font-medium text-gray-700 mb-2">Default Language</label>
-                    <select
-                      value={settings.defaultLanguage || 'English'}
-                      onChange={(e) => setSettings({...settings, defaultLanguage: e.target.value})}
-                      className="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
-                    >
-                      <option value="English">English</option>
-                      <option value="Swahili">Swahili</option>
-                      <option value="French">French</option>
-                    </select>
-                  </div>
-                </div>
-
-                <div>
-                  <label className="block text-sm font-medium text-gray-700 mb-2">Available Languages</label>
-                  <div className="space-y-2">
-                    {['English', 'Swahili', 'French', 'Spanish', 'Arabic'].map(lang => (
-                      <label key={lang} className="flex items-center">
-                        <input
-                          type="checkbox"
-                          checked={settings.languages?.includes(lang) || false}
-                          onChange={(e) => {
-                            const languages = settings.languages || [];
-                            if (e.target.checked) {
-                              setSettings({
-                                ...settings,
-                                languages: [...languages, lang]
-                              });
-                            } else {
-                              setSettings({
-                                ...settings,
-                                languages: languages.filter(l => l !== lang)
-                              });
-                            }
-                          }}
-                          className="mr-2"
-                        />
-                        <span>{lang}</span>
-                      </label>
-                    ))}
-                  </div>
-                </div>
-              </CardContent>
-            </Card>
-          </TabsContent>
-        </Tabs>
+          {/* Main Content */}
+          <div className="lg:col-span-3">
+            {activeTab === 'profile' && renderProfileSettings()}
+            {activeTab === 'notifications' && renderNotificationSettings()}
+            {activeTab === 'appearance' && renderAppearanceSettings()}
+            {activeTab === 'privacy' && (
+              <div className="card-modern">
+                <h3 className="text-lg font-semibold text-gray-900 mb-4">Privacy Settings</h3>
+                <p className="text-gray-600">Privacy settings coming soon...</p>
+              </div>
+            )}
+            {activeTab === 'security' && renderSecuritySettings()}
+            {activeTab === 'school' && renderSchoolSettings()}
+          </div>
+        </div>
       </div>
     </div>
   );
 };
 
-export default SettingsDashboard;
+export default Settings;

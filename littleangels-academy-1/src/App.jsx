@@ -22,6 +22,7 @@ import AnalyticsDashboard from './pages/admin/Analytics';
 import ReportsDashboard from './pages/admin/Reports';
 import NotificationsDashboard from './pages/admin/Notifications';
 import SettingsDashboard from './pages/admin/Settings';
+import MessagingPage from './pages/Messaging';
 import ParentDashboard from './pages/parent/Dashboard';
 import TeacherDashboard from './pages/teacher/Dashboard';
 import DriverDashboard from './pages/driver/Dashboard';
@@ -87,6 +88,7 @@ function AppRoutes() {
         <Route path="transport" element={<TransportDashboard />} />
         <Route path="analytics" element={<AnalyticsDashboard />} />
         <Route path="reports" element={<ReportsDashboard />} />
+        <Route path="messages" element={<MessagingPage />} />
         <Route path="notifications" element={<NotificationsDashboard />} />
         <Route path="settings" element={<SettingsDashboard />} />
       </Route>
@@ -106,6 +108,7 @@ function AppRoutes() {
         <Route path="transport" element={<TransportDashboard />} />
         <Route path="analytics" element={<AnalyticsDashboard />} />
         <Route path="reports" element={<ReportsDashboard />} />
+        <Route path="messages" element={<MessagingPage />} />
         <Route path="notifications" element={<NotificationsDashboard />} />
         <Route path="settings" element={<SettingsDashboard />} />
       </Route>

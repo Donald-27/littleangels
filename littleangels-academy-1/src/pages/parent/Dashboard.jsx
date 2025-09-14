@@ -25,6 +25,7 @@ import { Card, CardContent, CardHeader, CardTitle } from '../../components/ui/ca
 import { Button } from '../../components/ui/button';
 import { Badge } from '../../components/ui/badge';
 import { Tabs, TabsContent, TabsList, TabsTrigger } from '../../components/ui/tabs';
+import ParentTracking from '../../components/ParentTracking';
 import { toast } from 'sonner';
 
 const ParentDashboard = () => {
@@ -227,10 +228,11 @@ const ParentDashboard = () => {
         </div>
 
         <Tabs defaultValue="children" className="space-y-6">
-          <TabsList className="grid w-full grid-cols-4">
+          <TabsList className="grid w-full grid-cols-5">
             <TabsTrigger value="children">My Children</TabsTrigger>
             <TabsTrigger value="attendance">Attendance</TabsTrigger>
             <TabsTrigger value="transport">Transport</TabsTrigger>
+            <TabsTrigger value="tracking">Live Tracking</TabsTrigger>
             <TabsTrigger value="notifications">Notifications</TabsTrigger>
           </TabsList>
 
@@ -413,6 +415,11 @@ const ParentDashboard = () => {
                 </CardContent>
               </Card>
             )}
+          </TabsContent>
+
+          {/* Live Tracking Tab */}
+          <TabsContent value="tracking" className="space-y-6">
+            <ParentTracking />
           </TabsContent>
 
           {/* Notifications Tab */}

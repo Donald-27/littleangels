@@ -16,7 +16,8 @@ import {
   BarChart3,
   MapPin,
   Calendar,
-  Shield
+  Shield,
+  MessageCircle
 } from 'lucide-react';
 import NotificationBell from '../components/ui/notification-bell';
 import { Button } from '../components/ui/button';
@@ -37,6 +38,7 @@ const AdminLayout = () => {
     { name: 'Transport', href: '/admin/transport', icon: Bus, current: location.pathname === '/admin/transport' },
     { name: 'Analytics', href: '/admin/analytics', icon: BarChart3, current: location.pathname === '/admin/analytics' },
     { name: 'Reports', href: '/admin/reports', icon: FileText, current: location.pathname === '/admin/reports' },
+    { name: 'Messages', href: '/admin/messages', icon: MessageCircle, current: location.pathname === '/admin/messages' },
     { name: 'Notifications', href: '/admin/notifications', icon: Bell, current: location.pathname === '/admin/notifications' },
     { name: 'Settings', href: '/admin/settings', icon: Settings, current: location.pathname === '/admin/settings' },
   ];

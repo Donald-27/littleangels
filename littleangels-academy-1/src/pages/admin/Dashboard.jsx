@@ -54,15 +54,187 @@ const AdminDashboard = () => {
     totalStaff: 0,
     maintenanceAlerts: 0,
     pendingPayments: 0,
-    efficiency: 0
+    efficiency: 0,
+    // Enhanced stats
+    monthlyRevenue: 0,
+    averageGrade: 0,
+    studentSatisfaction: 0,
+    fuelConsumption: 0,
+    safetyIncidents: 0,
+    parentEngagement: 0,
+    operationalCosts: 0,
+    carbonFootprint: 0
   });
   const [recentActivity, setRecentActivity] = useState([]);
   const [upcomingEvents, setUpcomingEvents] = useState([]);
   const [alerts, setAlerts] = useState([]);
+  // Enhanced dashboard state
+  const [weatherData, setWeatherData] = useState(null);
+  const [performanceMetrics, setPerformanceMetrics] = useState([]);
+  const [financialTrends, setFinancialTrends] = useState([]);
+  const [timeRange, setTimeRange] = useState('7d');
+  const [quickActions, setQuickActions] = useState([]);
 
   useEffect(() => {
     fetchDashboardData();
   }, [user]);
+
+  // Enhanced helper functions
+  const fetchPerformanceMetrics = async (schoolId) => {
+    try {
+      // Get attendance trends for the last 30 days
+      const thirtyDaysAgo = new Date();
+      thirtyDaysAgo.setDate(thirtyDaysAgo.getDate() - 30);
+      
+      const { data: attendanceData } = await supabase
+        .from('attendance')
+        .select('date, status')
+        .eq('school_id', schoolId)
+        .gte('date', thirtyDaysAgo.toISOString().split('T')[0]);
+      
+      // Process attendance data for charts
+      const attendanceByDate = {};
+      (attendanceData || []).forEach(record => {
+        const date = record.date;
+        if (!attendanceByDate[date]) {
+          attendanceByDate[date] = { present: 0, absent: 0, late: 0 };
+        }
+        attendanceByDate[date][record.status] = (attendanceByDate[date][record.status] || 0) + 1;
+      });
+      
+      const metrics = Object.entries(attendanceByDate).map(([date, counts]) => ({
+        date,
+        attendanceRate: ((counts.present || 0) / ((counts.present || 0) + (counts.absent || 0) + (counts.late || 0))) * 100,
+        present: counts.present || 0,
+        absent: counts.absent || 0,
+        late: counts.late || 0
+      })).sort((a, b) => new Date(a.date) - new Date(b.date));
+      
+      setPerformanceMetrics(metrics);
+    } catch (error) {
+      console.error('Error fetching performance metrics:', error);
+    }
+  };
+
+  const fetchFinancialTrends = async (schoolId) => {
+    try {
+      const { data: payments } = await supabase
+        .from('payments')
+        .select('amount, created_at, status, type')
+        .eq('school_id', schoolId)
+        .order('created_at', { ascending: false })
+        .limit(100);
+      
+      // Group payments by month
+      const monthlyData = {};
+      (payments || []).forEach(payment => {
+        const date = new Date(payment.created_at);
+        const monthKey = `${date.getFullYear()}-${String(date.getMonth() + 1).padStart(2, '0')}`;
+        
+        if (!monthlyData[monthKey]) {
+          monthlyData[monthKey] = { revenue: 0, pending: 0, completed: 0 };
+        }
+        
+        if (payment.status === 'completed') {
+          monthlyData[monthKey].revenue += payment.amount || 0;
+          monthlyData[monthKey].completed += 1;
+        } else if (payment.status === 'pending') {
+          monthlyData[monthKey].pending += 1;
+        }
+      });
+      
+      const trends = Object.entries(monthlyData).map(([month, data]) => ({
+        month,
+        revenue: data.revenue,
+        completedPayments: data.completed,
+        pendingPayments: data.pending
+      })).sort();
+      
+      setFinancialTrends(trends);
+    } catch (error) {
+      console.error('Error fetching financial trends:', error);
+    }
+  };
+
+  const fetchWeatherData = async () => {
+    try {
+      // Mock weather data for Eldoret, Kenya
+      // In production, this would integrate with a weather API
+      const mockWeather = {
+        location: 'Eldoret, Kenya',
+        temperature: 22,
+        condition: 'Partly Cloudy',
+        humidity: 65,
+        windSpeed: 12,
+        visibility: 10,
+        uvIndex: 6,
+        precipitation: 0
+      };
+      
+      setWeatherData(mockWeather);
+    } catch (error) {
+      console.error('Error fetching weather data:', error);
+    }
+  };
+
+  const generateQuickActions = async (schoolId) => {
+    try {
+      const actions = [
+        {
+          id: 'send-announcement',
+          title: 'Send School Announcement',
+          description: 'Broadcast message to all parents',
+          icon: Bell,
+          color: 'blue',
+          urgent: false
+        },
+        {
+          id: 'emergency-alert',
+          title: 'Emergency Alert System',
+          description: 'Send emergency notification',
+          icon: AlertTriangle,
+          color: 'red',
+          urgent: true
+        },
+        {
+          id: 'generate-reports',
+          title: 'Generate Monthly Reports',
+          description: 'Create comprehensive school reports',
+          icon: BarChart3,
+          color: 'green',
+          urgent: false
+        },
+        {
+          id: 'schedule-maintenance',
+          title: 'Schedule Vehicle Maintenance',
+          description: 'Plan upcoming vehicle services',
+          icon: Wrench,
+          color: 'orange',
+          urgent: stats.maintenanceAlerts > 0
+        },
+        {
+          id: 'review-finances',
+          title: 'Review Financial Status',
+          description: 'Check payments and expenses',
+          icon: DollarSign,
+          color: 'purple',
+          urgent: stats.pendingPayments > 5
+        },
+        {
+          id: 'update-routes',
+          title: 'Optimize Transport Routes',
+          description: 'Review and update bus routes',
+          icon: Route,
+          color: 'teal',
+          urgent: false
+        }
+      ];
+      
+      setQuickActions(actions);
+    } catch (error) {
+      console.error('Error generating quick actions:', error);
+    }
+  };
 
   const fetchDashboardData = async () => {
     try {
@@ -123,6 +295,17 @@ const AdminDashboard = () => {
       // Calculate efficiency (mock calculation)
       const efficiency = Math.round((attendanceRate + (vehiclesCount || 0) * 10 + (routesCount || 0) * 5) / 3);
 
+      // Enhanced calculations for comprehensive metrics
+      const thisMonth = new Date();
+      thisMonth.setDate(1);
+      const monthlyPayments = payments.filter(p => new Date(p.created_at) >= thisMonth);
+      const monthlyRevenue = monthlyPayments.reduce((sum, p) => sum + (p.amount || 0), 0);
+      
+      // Calculate operational metrics
+      const fuelConsumption = vehiclesCount * 45.5; // Mock calculation: avg 45.5L per vehicle
+      const operationalCosts = vehiclesCount * 15000 + staffCount * 45000; // Mock monthly costs
+      const carbonFootprint = fuelConsumption * 2.31; // Mock CO2 calculation
+      
       setStats({
         totalStudents: studentsCount || 0,
         totalVehicles: vehiclesCount || 0,
@@ -133,8 +316,23 @@ const AdminDashboard = () => {
         totalStaff: staffCount || 0,
         maintenanceAlerts,
         pendingPayments,
-        efficiency
+        efficiency,
+        // Enhanced metrics
+        monthlyRevenue,
+        averageGrade: 85.4, // Mock data - would come from grades table
+        studentSatisfaction: 92.1, // Mock data - would come from surveys
+        fuelConsumption: Math.round(fuelConsumption * 100) / 100,
+        safetyIncidents: 0, // Mock data - would come from incidents table
+        parentEngagement: 78.9, // Mock data - would come from communication logs
+        operationalCosts: Math.round(operationalCosts),
+        carbonFootprint: Math.round(carbonFootprint * 100) / 100
       });
+      
+      // Fetch enhanced performance metrics for charts
+      await fetchPerformanceMetrics(schoolId);
+      await fetchFinancialTrends(schoolId);
+      await fetchWeatherData();
+      await generateQuickActions(schoolId);
 
       // Fetch recent activity
       const { data: activity } = await supabase

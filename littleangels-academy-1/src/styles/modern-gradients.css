@@ -1,0 +1,420 @@
+/* =============================================================================
+   LITTLE ANGELS ACADEMY - MODERN TEAL→VIOLET→CORAL DESIGN SYSTEM
+   Enhanced glassmorphism, micro-interactions, and colorful gradients
+   ============================================================================= */
+
+/* Teal→Violet→Coral Color Variables */
+:root {
+  /* Primary Gradient Theme (Teal→Violet→Coral) */
+  --gradient-primary-new: linear-gradient(135deg, #14b8a6 0%, #8b5cf6 50%, #f97316 100%);
+  --gradient-teal-violet: linear-gradient(135deg, #0d9488 0%, #7c3aed 100%);
+  --gradient-violet-coral: linear-gradient(135deg, #8b5cf6 0%, #f97316 100%);
+  --gradient-teal-coral: linear-gradient(135deg, #14b8a6 0%, #f97316 100%);
+  
+  /* Individual Color Gradients */
+  --gradient-teal: linear-gradient(135deg, #0f766e 0%, #14b8a6 100%);
+  --gradient-violet: linear-gradient(135deg, #6d28d9 0%, #8b5cf6 100%);
+  --gradient-coral: linear-gradient(135deg, #ea580c 0%, #f97316 100%);
+  
+  /* Glassmorphism Backgrounds */
+  --glass-teal: rgba(20, 184, 166, 0.08);
+  --glass-violet: rgba(139, 92, 246, 0.08);
+  --glass-coral: rgba(249, 115, 22, 0.08);
+  --glass-white: rgba(255, 255, 255, 0.15);
+  --glass-dark: rgba(0, 0, 0, 0.05);
+  
+  /* Enhanced Shadows & Glows */
+  --shadow-glow-teal: 0 8px 32px rgba(20, 184, 166, 0.2);
+  --shadow-glow-violet: 0 8px 32px rgba(139, 92, 246, 0.2);
+  --shadow-glow-coral: 0 8px 32px rgba(249, 115, 22, 0.2);
+  --shadow-elevated: 0 20px 60px rgba(0, 0, 0, 0.1);
+  --shadow-floating: 0 32px 80px rgba(0, 0, 0, 0.08);
+  
+  /* Micro-interaction Timing */
+  --timing-quick: 0.15s;
+  --timing-normal: 0.3s;
+  --timing-slow: 0.5s;
+  --timing-bounce: cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  --timing-smooth: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+/* =============================================================================
+   ENHANCED GRADIENT BACKGROUNDS
+   ============================================================================= */
+.bg-gradient-primary-new { background: var(--gradient-primary-new); }
+.bg-gradient-teal-violet { background: var(--gradient-teal-violet); }
+.bg-gradient-violet-coral { background: var(--gradient-violet-coral); }
+.bg-gradient-teal-coral { background: var(--gradient-teal-coral); }
+.bg-gradient-teal { background: var(--gradient-teal); }
+.bg-gradient-violet { background: var(--gradient-violet); }
+.bg-gradient-coral { background: var(--gradient-coral); }
+
+/* =============================================================================
+   ENHANCED GLASSMORPHISM CARDS
+   ============================================================================= */
+.glass-card-modern {
+  background: var(--glass-white);
+  backdrop-filter: blur(24px);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 20px;
+  box-shadow: var(--shadow-elevated);
+  transition: all var(--timing-normal) var(--timing-smooth);
+}
+
+.glass-card-modern:hover {
+  transform: translateY(-8px) scale(1.02);
+  box-shadow: var(--shadow-floating);
+  border-color: rgba(255, 255, 255, 0.3);
+}
+
+.glass-card-teal {
+  background: var(--glass-teal);
+  backdrop-filter: blur(24px);
+  border: 1px solid rgba(20, 184, 166, 0.2);
+  box-shadow: var(--shadow-glow-teal);
+}
+
+.glass-card-violet {
+  background: var(--glass-violet);
+  backdrop-filter: blur(24px);
+  border: 1px solid rgba(139, 92, 246, 0.2);
+  box-shadow: var(--shadow-glow-violet);
+}
+
+.glass-card-coral {
+  background: var(--glass-coral);
+  backdrop-filter: blur(24px);
+  border: 1px solid rgba(249, 115, 22, 0.2);
+  box-shadow: var(--shadow-glow-coral);
+}
+
+/* =============================================================================
+   ENHANCED MICRO-INTERACTIONS
+   ============================================================================= */
+@keyframes float-gentle {
+  0%, 100% { transform: translateY(0px); }
+  50% { transform: translateY(-6px); }
+}
+
+@keyframes pulse-glow-teal {
+  0%, 100% { box-shadow: var(--shadow-glow-teal); }
+  50% { box-shadow: 0 12px 48px rgba(20, 184, 166, 0.35); }
+}
+
+@keyframes pulse-glow-violet {
+  0%, 100% { box-shadow: var(--shadow-glow-violet); }
+  50% { box-shadow: 0 12px 48px rgba(139, 92, 246, 0.35); }
+}
+
+@keyframes pulse-glow-coral {
+  0%, 100% { box-shadow: var(--shadow-glow-coral); }
+  50% { box-shadow: 0 12px 48px rgba(249, 115, 22, 0.35); }
+}
+
+@keyframes shimmer {
+  0% { transform: translateX(-100%); }
+  100% { transform: translateX(100%); }
+}
+
+@keyframes scale-bounce {
+  0% { transform: scale(1); }
+  50% { transform: scale(1.05); }
+  100% { transform: scale(1); }
+}
+
+/* =============================================================================
+   INTERACTIVE ELEMENT CLASSES
+   ============================================================================= */
+.animate-float-gentle {
+  animation: float-gentle 4s ease-in-out infinite;
+}
+
+.animate-pulse-glow-teal {
+  animation: pulse-glow-teal 3s ease-in-out infinite;
+}
+
+.animate-pulse-glow-violet {
+  animation: pulse-glow-violet 3s ease-in-out infinite;
+}
+
+.animate-pulse-glow-coral {
+  animation: pulse-glow-coral 3s ease-in-out infinite;
+}
+
+.animate-scale-bounce {
+  animation: scale-bounce var(--timing-normal) var(--timing-bounce);
+}
+
+/* Hover Interactions */
+.hover-lift {
+  transition: transform var(--timing-normal) var(--timing-smooth);
+}
+
+.hover-lift:hover {
+  transform: translateY(-4px);
+}
+
+.hover-lift-strong {
+  transition: all var(--timing-normal) var(--timing-smooth);
+}
+
+.hover-lift-strong:hover {
+  transform: translateY(-8px) scale(1.02);
+}
+
+.hover-glow-teal:hover {
+  box-shadow: var(--shadow-glow-teal);
+}
+
+.hover-glow-violet:hover {
+  box-shadow: var(--shadow-glow-violet);
+}
+
+.hover-glow-coral:hover {
+  box-shadow: var(--shadow-glow-coral);
+}
+
+/* =============================================================================
+   MODERN BUTTON VARIANTS
+   ============================================================================= */
+.btn-modern-teal {
+  background: var(--gradient-teal);
+  color: white;
+  border: none;
+  border-radius: 16px;
+  padding: 12px 24px;
+  font-weight: 600;
+  transition: all var(--timing-normal) var(--timing-smooth);
+  position: relative;
+  overflow: hidden;
+}
+
+.btn-modern-teal::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.3), transparent);
+  transition: left var(--timing-slow);
+}
+
+.btn-modern-teal:hover {
+  transform: translateY(-2px);
+  box-shadow: var(--shadow-glow-teal);
+}
+
+.btn-modern-teal:hover::before {
+  left: 100%;
+}
+
+.btn-modern-teal:active {
+  transform: translateY(0) scale(0.98);
+}
+
+.btn-modern-violet {
+  background: var(--gradient-violet);
+  color: white;
+  border: none;
+  border-radius: 16px;
+  padding: 12px 24px;
+  font-weight: 600;
+  transition: all var(--timing-normal) var(--timing-smooth);
+  position: relative;
+  overflow: hidden;
+}
+
+.btn-modern-violet::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.3), transparent);
+  transition: left var(--timing-slow);
+}
+
+.btn-modern-violet:hover {
+  transform: translateY(-2px);
+  box-shadow: var(--shadow-glow-violet);
+}
+
+.btn-modern-violet:hover::before {
+  left: 100%;
+}
+
+.btn-modern-violet:active {
+  transform: translateY(0) scale(0.98);
+}
+
+.btn-modern-coral {
+  background: var(--gradient-coral);
+  color: white;
+  border: none;
+  border-radius: 16px;
+  padding: 12px 24px;
+  font-weight: 600;
+  transition: all var(--timing-normal) var(--timing-smooth);
+  position: relative;
+  overflow: hidden;
+}
+
+.btn-modern-coral::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.3), transparent);
+  transition: left var(--timing-slow);
+}
+
+.btn-modern-coral:hover {
+  transform: translateY(-2px);
+  box-shadow: var(--shadow-glow-coral);
+}
+
+.btn-modern-coral:hover::before {
+  left: 100%;
+}
+
+.btn-modern-coral:active {
+  transform: translateY(0) scale(0.98);
+}
+
+/* Glass Button Variant */
+.btn-glass {
+  background: var(--glass-white);
+  backdrop-filter: blur(24px);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  border-radius: 16px;
+  padding: 12px 24px;
+  font-weight: 600;
+  transition: all var(--timing-normal) var(--timing-smooth);
+  color: rgba(0, 0, 0, 0.8);
+}
+
+.btn-glass:hover {
+  transform: translateY(-2px);
+  background: rgba(255, 255, 255, 0.25);
+  border-color: rgba(255, 255, 255, 0.4);
+  box-shadow: var(--shadow-elevated);
+}
+
+/* =============================================================================
+   TEXT GRADIENTS
+   ============================================================================= */
+.text-gradient-primary-new {
+  background: var(--gradient-primary-new);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.text-gradient-teal {
+  background: var(--gradient-teal);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.text-gradient-violet {
+  background: var(--gradient-violet);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.text-gradient-coral {
+  background: var(--gradient-coral);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+/* =============================================================================
+   ENHANCED INPUT STYLES
+   ============================================================================= */
+.input-glass {
+  background: var(--glass-white);
+  backdrop-filter: blur(24px);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  border-radius: 16px;
+  padding: 16px 20px;
+  transition: all var(--timing-normal) var(--timing-smooth);
+  color: rgba(0, 0, 0, 0.8);
+}
+
+.input-glass:focus {
+  outline: none;
+  border-color: var(--violet-500);
+  box-shadow: 0 0 0 3px rgba(139, 92, 246, 0.1);
+  background: rgba(255, 255, 255, 0.2);
+}
+
+.input-glass::placeholder {
+  color: rgba(0, 0, 0, 0.5);
+}
+
+/* =============================================================================
+   MODERN UTILITY CLASSES
+   ============================================================================= */
+.rounded-modern { border-radius: 20px; }
+.rounded-soft { border-radius: 16px; }
+.rounded-gentle { border-radius: 12px; }
+
+.blur-light { backdrop-filter: blur(12px); }
+.blur-medium { backdrop-filter: blur(24px); }
+.blur-strong { backdrop-filter: blur(40px); }
+
+.transition-smooth { transition: all var(--timing-normal) var(--timing-smooth); }
+.transition-bounce { transition: all var(--timing-normal) var(--timing-bounce); }
+.transition-quick { transition: all var(--timing-quick) var(--timing-smooth); }
+
+/* =============================================================================
+   RESPONSIVE ENHANCEMENTS
+   ============================================================================= */
+@media (max-width: 768px) {
+  .glass-card-modern {
+    border-radius: 16px;
+    padding: 16px;
+  }
+  
+  .btn-modern-teal,
+  .btn-modern-violet,
+  .btn-modern-coral {
+    padding: 10px 20px;
+    border-radius: 12px;
+  }
+  
+  .input-glass {
+    padding: 12px 16px;
+    border-radius: 12px;
+  }
+}
+
+/* =============================================================================
+   ACCESSIBILITY ENHANCEMENTS
+   ============================================================================= */
+@media (prefers-reduced-motion: reduce) {
+  .animate-float-gentle,
+  .animate-pulse-glow-teal,
+  .animate-pulse-glow-violet,
+  .animate-pulse-glow-coral,
+  .animate-scale-bounce {
+    animation: none;
+  }
+  
+  .hover-lift,
+  .hover-lift-strong,
+  .btn-modern-teal,
+  .btn-modern-violet,
+  .btn-modern-coral,
+  .btn-glass,
+  .input-glass {
+    transition: none;
+  }
+}

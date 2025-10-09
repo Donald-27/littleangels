@@ -1,0 +1,84 @@
+You are an autonomous full-stack engineer with complete read/write access to this repository in the Replit workspace. Your mission: finish this school web app so it has no dead-ends, all key features work end-to-end, all dashboards are integrated (actions in one reflect in others), the app is seeded with realistic initial data, and automated verification proves the app is ready for deployment. Do not stop until the app meets the acceptance criteria below. Do not ask clarifying questions — make best-effort assumptions and document them.
+
+Workflow & git rules
+1. Create and switch to a new branch named: fix/finalize-and-seed. Do not force-push to main. Push progress frequently.
+2. Commit atomic changes with clear messages. Keep a running `REPO_CHANGES.md` changelog and a `COMMIT_SUMMARY.md` showing key commits and why.
+3. Back up any .env files before touching them (copy to `.env.bak` but do NOT print secrets).
+
+High-level goals
+- Remove dead ends: make every visible feature actionable and complete (settings, reports, notifications, PDFs, transport, staff, students, attendance, search, etc.).
+- Ensure navigation and UX: add a visible logout button on every dashboard and any persistent header/nav; make settings fully functional (save/load/validate).
+- Synchronize data: changes (create/update/delete) to students, staff, transport, notifications, reports, attendance, etc., must reflect across all dashboards within 2 seconds using a shared state or real-time mechanism.
+- Seed comprehensive realistic initial data that sufficiently exercises all features and relationships.
+- Add verification scripts that programmatically test key flows and fail loudly if anything is broken.
+
+What to inspect & fix automatically (no permission prompts)
+- Scan repository to detect stack(s), run scripts, env usage, Supabase or other DB clients, and any backend API routes.
+- Fix broken imports, missing named exports, syntax/compile/runtime errors, and React component issues (icons, missing exports from lucide-react, etc.).
+- Standardize on one auth flow: if Supabase is present, ensure all pages use `src/lib/supabase` (or equivalent) and Supabase session listeners. If JWT backend is used instead, ensure token storage/refresh is consistent.
+- Consolidate shared entities into a single source-of-truth: implement/refactor a shared hook/service (e.g., `useStudents()` or `services/students.js`) so every dashboard uses it. Replace duplicate fetch logic with the shared service.
+- Implement real-time updates: use Supabase realtime listeners or socket.io. If neither present, implement a reliable short-poll fallback (1–2s) until realtime is configured.
+- Make settings UI save to persistent storage (DB or API) and load on page load. Validate inputs and show success/error toasts.
+- Add logout everywhere: include a logout button in header and in each dashboard page; ensure logout clears sessions/tokens and redirects to login.
+- Ensure forms include email and phone where appropriate (students, staff, parents). If DB lacks columns, add migrations/schema updates or store optional fields and mark 'N/A' if empty.
+- Fix PDF/doc generators so signatures/watermarks behave and include email in the footer if available.
+
+Seeding: create robust initial dataset
+- Create a `scripts/seed_data.(js|ts|py|sql)` depending on the stack that seeds the following minimum:
+  - 40 students (spread across at least 6 classes/grades), each with name, DOB, class, guardian_id, email, phone, photo placeholder.
+  - 20 parents/guardians (linked to students).
+  - 10 teachers (with subjects and emails).
+  - 5 admins (with different roles/permissions).
+  - 4 drivers, 4 vehicles, 6 routes (with stops).
+  - 200 attendance records spanning multiple days.
+  - 30 notifications (mix of system and manual).
+  - 10 reports (discipline/academic).
+  - 20 timetable/class schedule entries.
+  - 5 sample PDF doctor notes (if that feature exists).
+- Seed script must be idempotent (safe to run multiple times without duplicating data) or provide a `--reset` option to wipe and reseed.
+- Provide `README_SEEDING.md` with exact env vars required (e.g., SUPABASE_URL, SUPABASE_KEY, DATABASE_URL) and how to run the seed.
+
+Verification & automated checks
+- Add `scripts/verify_app.(js|py)` that performs programmatic checks (using Supabase client or direct DB or HTTP):
+  1. Create a student via API or DB insert and assert it appears in `students` table and in admin/teacher/parent/driver dashboards (query same endpoints or shared service).
+  2. Update that student and assert the update is visible everywhere.
+  3. Delete the student and assert removal everywhere.
+  4. Create a notification and assert it shows up in notifications endpoints and UI data.
+  5. Check settings save/load works: change a setting, reload app state, and assert persisted value.
+  6. Check logout: simulate logout and ensure session invalidation (session token removed / Supabase signOut called).
+- Verification should return non-zero exit code and descriptive errors when checks fail.
+
+UX & small feature enhancements (minimum)
+- Add a persistent header with app name, current user role, and logout.
+- Add client-side validation and server-side validation for forms.
+- Add search/filter to Students, Staff, and Transport lists.
+- Add a simple responsive mobile-friendly layout fix if dashboard breaks on narrow screens.
+- Improve error handling: use toasts or inline messages for network/API errors.
+- If a PDF generator exists, include seeded sample PDFs in `sample_output/`.
+
+Documentation & deliverables
+- `REPO_ANALYSIS.md`: detected stack, run commands, ports, key files, where to look for issues.
+- `REPO_CHANGES.md` and `COMMIT_SUMMARY.md`
+- `DEPLOY_READY.md`: exact commands to run locally, environment variables, build steps, and suggested hosting (Vercel/Render/Heroku) with config examples.
+- `READY_CHECKLIST.md`: acceptance criteria with PASS/FAIL and notes.
+- `BLOCKERS.md`: any items you could not auto-fix after 3 attempts (with exact error text and reproduction steps).
+- `scripts/seed_data.*` and `scripts/verify_app.*`
+- `README_SEEDING.md`
+- Push the `fix/finalize-and-seed` branch.
+
+Acceptance criteria — stop only when all PASS
+1. App starts in dev mode for frontend and backend (if present) and loads main dashboards without console/runtime errors.
+2. Settings page: can edit and persist settings; changes are loaded on refresh.
+3. Logout button present and working on every dashboard and header.
+4. Create/update/delete student actions reflect across all dashboards within 2 seconds (via realtime or consistent shared state).
+5. Seed script runs and creates the dataset listed above; `verify_app` passes.
+6. Automated verification scripts for core flows all pass.
+7. Code pushed to branch `fix/finalize-and-seed` with clear commits and changelog.
+8. All required documentation files present.
+
+Strict constraints
+- Never print or commit secrets. If running seeds needs secrets, instruct the user to set them in env and reference them by name only.
+- If a change could destructively overwrite remote history or production data, stop and create a patch branch; document what was found in `BLOCKERS.md`.
+- If a fix is not possible after 3 attempts, document in `BLOCKERS.md` with logs and exact commands used.
+
+Start immediately. First output: create branch `fix/finalize-and-seed`, run a repo analysis and produce `REPO_ANALYSIS.md`, commit it, and push the branch. Continue working until all acceptance criteria pass and verification scripts succeed.

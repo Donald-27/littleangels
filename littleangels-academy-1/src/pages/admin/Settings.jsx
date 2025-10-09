@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+import DashboardHeader from '../../components/DashboardHeader';
 import { useAuth } from '../../hooks/useAuth';
 import { supabase } from '../../lib/supabase';
 import { toast } from 'sonner';
@@ -1577,6 +1578,7 @@ const Badge = ({ variant = 'default', children }) => {
     info: 'bg-blue-100 text-blue-800'
   };
 
+    <DashboardHeader title="System Settings" subtitle="Configure application preferences and school settings" />
   return (
     <span className={`inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium ${variants[variant]}`}>
       {children}

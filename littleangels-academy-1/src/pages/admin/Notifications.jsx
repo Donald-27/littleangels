@@ -1,4 +1,5 @@
 import React, { useState, useEffect, useMemo } from 'react';
+import DashboardHeader from '../../components/DashboardHeader';
 import { useAuth } from '../../hooks/useAuth';
 import { supabase } from '../../lib/supabase';
 import { 
@@ -600,6 +601,7 @@ const NotificationsDashboard = () => {
     );
   }
 
+    <DashboardHeader title="Notifications Center" subtitle="Manage and send notifications to all stakeholders" />
   return (
     <div className="min-h-screen bg-gradient-to-br from-indigo-400 via-purple-500 to-pink-500">
       <div className="bg-white/10 backdrop-blur-lg border-b border-white/20">

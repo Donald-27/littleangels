@@ -1,4 +1,5 @@
 import React, { useState, useEffect, useMemo, useCallback } from 'react';
+import DashboardHeader from '../../components/DashboardHeader';
 import { useAuth } from '../../hooks/useAuth';
 import { supabase } from '../../lib/supabase';
 import { 
@@ -108,6 +109,7 @@ const BarChartSimple = ({ data, color = "#ffffff", height = 120 }) => {
   
   const maxValue = Math.max(...data.map(d => d.value));
   
+    <DashboardHeader title="Analytics Dashboard" subtitle="Real-time insights and performance metrics" />
   return (
     <div className="w-full h-full flex items-end justify-between space-x-1 px-2">
       {data.map((item, index) => (

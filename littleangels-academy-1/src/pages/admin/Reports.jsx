@@ -1,4 +1,5 @@
 import React, { useState, useEffect, useMemo } from 'react';
+import DashboardHeader from '../../components/DashboardHeader';
 import { useAuth } from '../../hooks/useAuth';
 import { supabase } from '../../lib/supabase';
 import { 
@@ -679,6 +680,7 @@ const ReportsDashboard = () => {
     );
   };
 
+    <DashboardHeader title="Reports Center" subtitle="Generate and manage comprehensive reports" />
   return (
     <div className="min-h-screen bg-gradient-to-br from-blue-50 to-indigo-100">
       <div className="bg-white/80 backdrop-blur-sm border-b border-gray-200/50 sticky top-0 z-10">

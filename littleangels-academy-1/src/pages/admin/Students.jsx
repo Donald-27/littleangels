@@ -33,6 +33,7 @@ import { Input } from '../../components/ui/input';
 import { Badge } from '../../components/ui/badge';
 import { Table } from '../../components/ui/table';
 import { Tabs, TabsContent, TabsList, TabsTrigger } from '../../components/ui/tabs';
+import DashboardHeader from '../../components/DashboardHeader';
 import { toast } from 'sonner';
 
 const StudentsDashboard = () => {
@@ -499,6 +500,7 @@ const StudentsDashboard = () => {
     );
   }
 
+    <DashboardHeader title="Students Management" subtitle="Manage student records, attendance, and transport assignments" />
   return (
     <div className="min-h-screen bg-gradient-to-br from-blue-50 to-indigo-100">
       {/* Header */}

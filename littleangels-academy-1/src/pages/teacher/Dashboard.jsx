@@ -1,4 +1,5 @@
 import React, { useState, useEffect, useMemo, useCallback } from 'react';
+import DashboardHeader from '../../components/DashboardHeader';
 import { useAuth } from '../../hooks/useAuth';
 import { supabase } from '../../lib/supabase';
 import { 
@@ -88,6 +89,7 @@ const LineChartSimple = ({ data, color = "#3b82f6", height = 80, title }) => {
   }).join(' ');
 
   return (
+    <DashboardHeader />
     <div className="w-full h-full">
       {title && <p className="text-gray-600 text-xs mb-1 font-medium">{title}</p>}
       <svg width="100%" height={height} viewBox="0 0 100 100" preserveAspectRatio="none">

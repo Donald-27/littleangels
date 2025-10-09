@@ -1,4 +1,5 @@
 // src/pages/admin/TransportDashboard.jsx
+import DashboardHeader from '../../components/DashboardHeader';
 import React, { useState, useEffect } from 'react';
 import { useAuth } from '../../hooks/useAuth';
 import { supabase } from '../../lib/supabase';
@@ -909,6 +910,7 @@ const TransportDashboard = () => {
     const daysUntilDue = Math.ceil((nextService - today) / (1000 * 60 * 60 * 24));
     
     if (daysUntilDue <= 0) {
+    <DashboardHeader title="Transport Management" subtitle="Manage vehicles, routes, and transportation logistics" />
       return (
         <Badge variant="destructive" className="flex items-center">
           <AlertCircle className="h-3 w-3 mr-1" />

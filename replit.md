@@ -25,11 +25,14 @@ Preferred communication style: Simple, everyday language.
 - ✅ No privilege escalation vulnerabilities remain in the authentication flow
 - ✅ User accounts properly configured with server-side app_metadata
 
-### Test Accounts Available
-- Admin: kipropdonald27@gmail.com / admin123
-- Teacher: teacher1@school.com / teacher123  
-- Parent: weldonkorir305@gmail.com / parent123
-- Driver: driver1@school.com / driver123
+### Test Accounts Available (Verified Working)
+- **Admin:** kipropdonald27@gmail.com / admin123
+- **Parent:** weldonkorir305@gmail.com / parent123
+- **Teacher:** teacher1@school.com / teacher123  
+- **Driver:** driver1@school.com / driver123
+- **Accounts:** accounts@school.com / accounts123
+
+**Note:** All passwords follow the pattern `[role]123`. See LOGIN_CREDENTIALS.md for complete list.
 
 ## System Architecture
 

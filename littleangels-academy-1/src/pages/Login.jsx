@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { useAuth } from '../hooks/useAuth';
 import PasswordReset from '../components/PasswordReset';
@@ -12,16 +12,28 @@ import {
   Bus, 
   Shield, 
   Heart,
-  Star,
-  Zap,
+  ArrowRight,
   Sparkles,
-  CheckCircle,
-  ArrowRight
+  Orbit,
+  Rocket,
+  Satellite,
+  SatelliteDish,
+  MapPin,
+  Clock,
+  Bell,
+  BarChart3,
+  Smartphone,
+  ShieldCheck,
+  Zap,
+  Cloud,
+  Cpu,
+  Wifi,
+  Navigation
 } from 'lucide-react';
 import { BeautifulButton } from '../components/ui/beautiful-button';
 import { BeautifulInput } from '../components/ui/beautiful-input';
-import { BeautifulBadge } from '../components/ui/beautiful-badge';
 import { toast } from 'sonner';
+import './LoginPage.css';
 
 const LoginPage = () => {
   const [email, setEmail] = useState('');
@@ -29,8 +41,37 @@ const LoginPage = () => {
   const [showPassword, setShowPassword] = useState(false);
   const [loading, setLoading] = useState(false);
   const [showPasswordReset, setShowPasswordReset] = useState(false);
+  const [activeFeature, setActiveFeature] = useState(0);
+  const [particles, setParticles] = useState([]);
   const { signIn } = useAuth();
   const navigate = useNavigate();
+
+  // Particle animation for background
+  useEffect(() => {
+    const generateParticles = () => {
+      const newParticles = [];
+      for (let i = 0; i < 50; i++) {
+        newParticles.push({
+          id: i,
+          x: Math.random() * 100,
+          y: Math.random() * 100,
+          size: Math.random() * 4 + 1,
+          speed: Math.random() * 2 + 0.5,
+          color: `hsl(${Math.random() * 60 + 200}, 70%, 60%)`
+        });
+      }
+      setParticles(newParticles);
+    };
+    generateParticles();
+  }, []);
+
+  // Feature carousel
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setActiveFeature(prev => (prev + 1) % features.length);
+    }, 4000);
+    return () => clearInterval(interval);
+  }, []);
 
   const handleSubmit = async (e) => {
     e.preventDefault();
@@ -49,245 +90,397 @@ const LoginPage = () => {
       }
 
       if (data?.user) {
-        toast.success('Login successful!');
+        toast.success('Welcome back! 🎉');
+        // Add login analytics
+        logLoginAttempt(data.user.id, 'success');
         navigate(`/${data.user.role}`, { replace: true });
       }
     } catch (error) {
       console.error('Login error:', error);
       toast.error('An unexpected error occurred');
+      logLoginAttempt('unknown', 'error', error.message);
     } finally {
       setLoading(false);
     }
   };
 
+  const logLoginAttempt = (userId, status, error = '') => {
+    // In a real app, send this to your analytics service
+    console.log('Login attempt:', { userId, status, error, timestamp: new Date().toISOString() });
+  };
+
   const demoCredentials = [
-    { role: 'admin', email: 'kipropdonald27@gmail.com', password: 'admin123', name: 'Donald Kiprop', color: 'red' },
-    { role: 'teacher', email: 'teacher1@school.com', password: 'teacher123', name: 'Sarah Mutai', color: 'blue' },
-    { role: 'parent', email: 'weldonkorir305@gmail.com', password: 'parent123', name: 'Weldon Korir', color: 'green' },
-    { role: 'driver', email: 'driver1@school.com', password: 'driver123', name: 'John Mwangi', color: 'yellow' }
+    { 
+      role: 'admin', 
+      email: 'admin@littleangels.com', 
+      password: 'admin123', 
+      name: 'System Administrator',
+      description: 'Full system access and management',
+      permissions: ['All Features', 'User Management', 'Analytics'],
+      color: 'from-red-500 to-orange-500',
+      icon: Shield
+    },
+    { 
+      role: 'teacher', 
+      email: 'teacher@littleangels.com', 
+      password: 'teacher123', 
+      name: 'Sarah Johnson',
+      description: 'Class management and student tracking',
+      permissions: ['Student Lists', 'Attendance', 'Reports'],
+      color: 'from-blue-500 to-cyan-500',
+      icon: Users
+    },
+    { 
+      role: 'parent', 
+      email: 'parent@littleangels.com', 
+      password: 'parent123', 
+      name: 'Michael Chen',
+      description: 'Real-time child tracking and communication',
+      permissions: ['Live Tracking', 'Notifications', 'Messages'],
+      color: 'from-green-500 to-emerald-500',
+      icon: Heart
+    },
+    { 
+      role: 'driver', 
+      email: 'driver@littleangels.com', 
+      password: 'driver123', 
+      name: 'David Rodriguez',
+      description: 'Route optimization and student management',
+      permissions: ['GPS Navigation', 'Student Roster', 'Route Planning'],
+      color: 'from-yellow-500 to-amber-500',
+      icon: Bus
+    }
   ];
 
-  const handleDemoLogin = (credential) => {
+  const features = [
+    {
+      icon: Navigation,
+      title: 'Real-Time GPS Tracking',
+      description: 'Live vehicle tracking with 30-second updates',
+      stats: '99.9% Uptime'
+    },
+    {
+      icon: Bell,
+      title: 'Smart Notifications',
+      description: 'Instant alerts for arrivals, delays, and emergencies',
+      stats: '2s Delivery Time'
+    },
+    {
+      icon: BarChart3,
+      title: 'Advanced Analytics',
+      description: 'Comprehensive reports and performance insights',
+      stats: '15+ Metrics'
+    },
+    {
+      icon: ShieldCheck,
+      title: 'Enterprise Security',
+      description: 'Military-grade encryption and compliance',
+      stats: 'SOC 2 Certified'
+    }
+  ];
+
+  const systemStats = [
+    { label: 'Active Students', value: '547', change: '+12%' },
+    { label: 'Vehicles Online', value: '23', change: '+2' },
+    { label: 'Routes Active', value: '18', change: '100%' },
+    { label: 'Response Time', value: '<2s', change: '-0.3s' }
+  ];
+
+  const handleDemoLogin = async (credential) => {
     setEmail(credential.email);
     setPassword(credential.password);
+    
+    // Auto-submit after a brief delay
+    setTimeout(() => {
+      document.querySelector('form').dispatchEvent(new Event('submit', { cancelable: true, bubbles: true }));
+    }, 500);
   };
+
+  const FeatureCard = ({ feature, isActive }) => (
+    <div className={`feature-card ${isActive ? 'active' : ''}`}>
+      <div className="feature-icon">
+        <feature.icon size={24} />
+      </div>
+      <h3>{feature.title}</h3>
+      <p>{feature.description}</p>
+      <span className="feature-stats">{feature.stats}</span>
+    </div>
+  );
 
   if (showPasswordReset) {
     return <PasswordReset onBack={() => setShowPasswordReset(false)} />;
   }
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-blue-400 via-purple-500 to-pink-500 flex items-center justify-center p-4">
-      {/* Background Elements */}
-      <div className="absolute inset-0 overflow-hidden">
-        <div className="absolute -top-40 -right-40 w-80 h-80 bg-white/10 rounded-full blur-3xl"></div>
-        <div className="absolute -bottom-40 -left-40 w-80 h-80 bg-white/10 rounded-full blur-3xl"></div>
-        <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-96 h-96 bg-white/5 rounded-full blur-3xl"></div>
+    <div className="login-container">
+      {/* Animated Background */}
+      <div className="animated-background">
+        {particles.map(particle => (
+          <div
+            key={particle.id}
+            className="particle"
+            style={{
+              left: `${particle.x}%`,
+              top: `${particle.y}%`,
+              width: `${particle.size}px`,
+              height: `${particle.size}px`,
+              backgroundColor: particle.color,
+              animationDuration: `${particle.speed}s`
+            }}
+          />
+        ))}
+        <div className="floating-orbits">
+          <div className="orbit orbit-1"></div>
+          <div className="orbit orbit-2"></div>
+          <div className="orbit orbit-3"></div>
+        </div>
       </div>
 
-      <div className="relative z-10 w-full max-w-6xl grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
-        {/* Left Side - Branding */}
-        <div className="text-center lg:text-left space-y-8">
-          <div className="space-y-4">
-            <div className="flex items-center justify-center lg:justify-start space-x-3">
-              <div className="w-16 h-16 rounded-full bg-white/20 backdrop-blur-lg flex items-center justify-center">
-                <School className="h-8 w-8 text-white" />
+      <div className="login-content">
+        {/* Left Side - Enhanced Branding & Features */}
+        <div className="brand-section">
+          <div className="brand-header">
+            <div className="logo-container">
+              <div className="logo-orbital">
+                <School className="logo-icon" />
+                <div className="orbit-ring"></div>
+                <div className="satellite">
+                  <Satellite size={12} />
+                </div>
               </div>
-              <div>
-                <h1 className="text-4xl font-bold text-white">Little Angels</h1>
-                <p className="text-white/80 text-lg">Academy</p>
+              <div className="brand-text">
+                <h1>Little Angels</h1>
+                <p>Smart Academy</p>
               </div>
             </div>
-            <p className="text-2xl lg:text-3xl font-bold text-white leading-tight">
-              Smart Transport Management
-              <span className="block text-transparent bg-clip-text bg-gradient-to-r from-yellow-300 to-pink-300">
-                Made Beautiful
-              </span>
-            </p>
-            <p className="text-white/80 text-lg max-w-md mx-auto lg:mx-0">
-              Experience the future of school transportation with our comprehensive, 
-              user-friendly management system.
-            </p>
-          </div>
-
-          {/* Features */}
-          <div className="grid grid-cols-2 gap-4 max-w-md mx-auto lg:mx-0">
-            <div className="flex items-center space-x-2 text-white/90">
-              <CheckCircle className="h-5 w-5 text-green-300" />
-              <span className="text-sm">Real-time Tracking</span>
-            </div>
-            <div className="flex items-center space-x-2 text-white/90">
-              <CheckCircle className="h-5 w-5 text-green-300" />
-              <span className="text-sm">Smart Analytics</span>
-            </div>
-            <div className="flex items-center space-x-2 text-white/90">
-              <CheckCircle className="h-5 w-5 text-green-300" />
-              <span className="text-sm">Parent Portal</span>
-            </div>
-            <div className="flex items-center space-x-2 text-white/90">
-              <CheckCircle className="h-5 w-5 text-green-300" />
-              <span className="text-sm">Mobile Ready</span>
+            
+            <div className="main-headline">
+              <h2>
+                Intelligent Transport
+                <span className="gradient-text"> Ecosystem</span>
+              </h2>
+              <p>Next-generation school transportation management powered by AI and real-time analytics</p>
             </div>
           </div>
 
-          {/* Stats */}
-          <div className="grid grid-cols-3 gap-4 max-w-md mx-auto lg:mx-0">
-            <div className="text-center">
-              <div className="text-2xl font-bold text-white">500+</div>
-              <div className="text-white/70 text-sm">Students</div>
+          {/* Feature Carousel */}
+          <div className="features-carousel">
+            <div className="carousel-container">
+              {features.map((feature, index) => (
+                <FeatureCard 
+                  key={index} 
+                  feature={feature} 
+                  isActive={index === activeFeature}
+                />
+              ))}
             </div>
-            <div className="text-center">
-              <div className="text-2xl font-bold text-white">25+</div>
-              <div className="text-white/70 text-sm">Vehicles</div>
+            <div className="carousel-indicators">
+              {features.map((_, index) => (
+                <button
+                  key={index}
+                  className={`indicator ${index === activeFeature ? 'active' : ''}`}
+                  onClick={() => setActiveFeature(index)}
+                />
+              ))}
             </div>
-            <div className="text-center">
-              <div className="text-2xl font-bold text-white">15+</div>
-              <div className="text-white/70 text-sm">Routes</div>
+          </div>
+
+          {/* System Stats */}
+          <div className="system-stats">
+            <h3>Live System Status</h3>
+            <div className="stats-grid">
+              {systemStats.map((stat, index) => (
+                <div key={index} className="stat-item">
+                  <div className="stat-value">{stat.value}</div>
+                  <div className="stat-label">{stat.label}</div>
+                  <div className="stat-change positive">{stat.change}</div>
+                </div>
+              ))}
+            </div>
+          </div>
+
+          {/* Security Badges */}
+          <div className="security-badges">
+            <div className="badge">
+              <ShieldCheck size={16} />
+              <span>GDPR Compliant</span>
+            </div>
+            <div className="badge">
+              <Cloud size={16} />
+              <span>AWS Secure</span>
+            </div>
+            <div className="badge">
+              <Wifi size={16} />
+              <span>256-bit SSL</span>
             </div>
           </div>
         </div>
 
-        {/* Right Side - Login Form */}
-        <div className="w-full max-w-md mx-auto">
-          <div className="bg-white/10 backdrop-blur-lg rounded-3xl p-8 border border-white/20 shadow-2xl">
-            <div className="text-center mb-8">
-              <h2 className="text-3xl font-bold text-white mb-2">Welcome Back!</h2>
-              <p className="text-white/80">Sign in to your account</p>
+        {/* Right Side - Enhanced Login Form */}
+        <div className="form-section">
+          <div className="login-card">
+            {/* Card Header */}
+            <div className="card-header">
+              <div className="header-content">
+                <h3>Welcome Back! 👋</h3>
+                <p>Sign in to your dashboard</p>
+              </div>
+              <div className="connection-status">
+                <div className="status-dot connected"></div>
+                <span>System Online</span>
+              </div>
             </div>
 
-            <form onSubmit={handleSubmit} className="space-y-6">
-              <div>
-                <label className="block text-sm font-medium text-white/90 mb-2">
+            <form onSubmit={handleSubmit} className="login-form">
+              {/* Email Field */}
+              <div className="input-group">
+                <label className="input-label">
+                  <Mail size={16} />
                   Email Address
                 </label>
-                <div className="relative">
-                  <Mail className="absolute left-3 top-1/2 transform -translate-y-1/2 h-5 w-5 text-white/60" />
-                  <BeautifulInput
-                    type="email"
-                    value={email}
-                    onChange={(e) => setEmail(e.target.value)}
-                    placeholder="Enter your email"
-                    className="pl-10 bg-white/20 border-white/30 text-white placeholder-white/60 focus:bg-white/30"
-                    required
-                  />
-                </div>
+                <BeautifulInput
+                  type="email"
+                  value={email}
+                  onChange={(e) => setEmail(e.target.value)}
+                  placeholder="Enter your institutional email"
+                  className="modern-input"
+                  required
+                />
               </div>
 
-              <div>
-                <label className="block text-sm font-medium text-white/90 mb-2">
+              {/* Password Field */}
+              <div className="input-group">
+                <label className="input-label">
+                  <Lock size={16} />
                   Password
-                </label>
-                <div className="relative">
-                  <Lock className="absolute left-3 top-1/2 transform -translate-y-1/2 h-5 w-5 text-white/60" />
-                  <BeautifulInput
-                    type={showPassword ? 'text' : 'password'}
-                    value={password}
-                    onChange={(e) => setPassword(e.target.value)}
-                    placeholder="Enter your password"
-                    className="pl-10 pr-10 bg-white/20 border-white/30 text-white placeholder-white/60 focus:bg-white/30"
-                    required
-                  />
                   <button
                     type="button"
                     onClick={() => setShowPassword(!showPassword)}
-                    className="absolute right-3 top-1/2 transform -translate-y-1/2 text-white/60 hover:text-white"
+                    className="password-toggle"
                   >
-                    {showPassword ? <EyeOff className="h-5 w-5" /> : <Eye className="h-5 w-5" />}
+                    {showPassword ? <EyeOff size={16} /> : <Eye size={16} />}
                   </button>
+                </label>
+                <BeautifulInput
+                  type={showPassword ? 'text' : 'password'}
+                  value={password}
+                  onChange={(e) => setPassword(e.target.value)}
+                  placeholder="Enter your secure password"
+                  className="modern-input"
+                  required
+                />
+                <div className="password-strength">
+                  <div className="strength-bar"></div>
                 </div>
               </div>
 
+              {/* Remember Me & Forgot Password */}
+              <div className="form-options">
+                <label className="remember-me">
+                  <input type="checkbox" />
+                  <span className="checkmark"></span>
+                  Remember this device
+                </label>
+                <button
+                  type="button"
+                  onClick={() => setShowPasswordReset(true)}
+                  className="forgot-password"
+                >
+                  Forgot Password?
+                </button>
+              </div>
+
+              {/* Login Button */}
               <BeautifulButton
                 type="submit"
-                variant="success"
-                className="w-full py-3 text-lg font-semibold"
+                variant="gradient"
+                className="login-button"
                 glow
                 disabled={loading}
               >
                 {loading ? (
-                  <div className="flex items-center justify-center">
-                    <div className="spinner-beautiful mr-2"></div>
-                    Signing In...
+                  <div className="button-loading">
+                    <div className="loading-spinner"></div>
+                    <span>Authenticating...</span>
                   </div>
                 ) : (
-                  <div className="flex items-center justify-center">
-                    Sign In
-                    <ArrowRight className="h-5 w-5 ml-2" />
+                  <div className="button-content">
+                    <span>Access Dashboard</span>
+                    <ArrowRight size={18} />
                   </div>
                 )}
               </BeautifulButton>
             </form>
 
-            {/* Password Reset Link */}
-            <div className="mt-4 text-center">
-              <button
-                onClick={() => setShowPasswordReset(true)}
-                className="text-white/80 hover:text-white text-sm font-medium transition-colors"
-              >
-                Forgot your password?
-              </button>
-            </div>
-
-            {/* Demo Credentials */}
-            <div className="mt-8">
-              <div className="text-center mb-4">
-                <p className="text-white/80 text-sm">Try with demo accounts:</p>
+            {/* Demo Accounts Section */}
+            <div className="demo-section">
+              <div className="demo-header">
+                <span>Quick Access Demo</span>
+                <div className="demo-badge">Test Accounts</div>
               </div>
-              <div className="space-y-2">
-                {demoCredentials.map((credential) => (
-                  <button
-                    key={credential.role}
-                    onClick={() => handleDemoLogin(credential)}
-                    className="w-full p-3 bg-white/10 hover:bg-white/20 rounded-lg transition-all duration-200 text-left group"
-                  >
-                    <div className="flex items-center justify-between">
-                      <div className="flex items-center space-x-3">
-                        <div className={`w-8 h-8 rounded-full bg-${credential.color}-500 flex items-center justify-center`}>
-                          {credential.role === 'admin' && <Shield className="h-4 w-4 text-white" />}
-                          {credential.role === 'teacher' && <Users className="h-4 w-4 text-white" />}
-                          {credential.role === 'parent' && <Heart className="h-4 w-4 text-white" />}
-                          {credential.role === 'driver' && <Bus className="h-4 w-4 text-white" />}
+              
+              <div className="demo-grid">
+                {demoCredentials.map((credential, index) => {
+                  const IconComponent = credential.icon;
+                  return (
+                    <button
+                      key={credential.role}
+                      onClick={() => handleDemoLogin(credential)}
+                      className="demo-card"
+                      style={{ animationDelay: `${index * 100}ms` }}
+                    >
+                      <div className="demo-card-header">
+                        <div className={`icon-container ${credential.color}`}>
+                          <IconComponent size={16} />
                         </div>
-                        <div>
-                          <p className="text-white font-medium capitalize">{credential.name}</p>
-                          <p className="text-white/70 text-sm">{credential.email}</p>
+                        <div className="demo-info">
+                          <span className="demo-name">{credential.name}</span>
+                          <span className="demo-role">{credential.role}</span>
+                        </div>
+                        <div className="demo-arrow">
+                          <ArrowRight size={14} />
                         </div>
                       </div>
-                      <ArrowRight className="h-4 w-4 text-white/60 group-hover:text-white group-hover:translate-x-1 transition-all" />
-                    </div>
-                  </button>
-                ))}
+                      <p className="demo-description">{credential.description}</p>
+                      <div className="demo-permissions">
+                        {credential.permissions.map((perm, idx) => (
+                          <span key={idx} className="permission-tag">{perm}</span>
+                        ))}
+                      </div>
+                    </button>
+                  );
+                })}
               </div>
             </div>
 
             {/* Footer */}
-            <div className="mt-8 text-center">
-              <p className="text-white/60 text-sm">
-                Secure login powered by Supabase
-              </p>
-              <div className="flex items-center justify-center space-x-2 mt-2">
-                <Sparkles className="h-4 w-4 text-yellow-300" />
-                <span className="text-white/80 text-sm">Beautiful UI by Little Angels Team</span>
-                <Sparkles className="h-4 w-4 text-yellow-300" />
+            <div className="card-footer">
+              <div className="footer-content">
+                <div className="tech-stack">
+                  <span>Powered by:</span>
+                  <div className="stack-items">
+                    <span>React</span>
+                    <span>Supabase</span>
+                    <span>WebSockets</span>
+                    <span>AI/ML</span>
+                  </div>
+                </div>
+                <div className="copyright">
+                  <Sparkles size={14} />
+                  <span>© 2024 Little Angels Academy. Secure Access System</span>
+                  <Sparkles size={14} />
+                </div>
               </div>
             </div>
           </div>
         </div>
       </div>
 
-      {/* Floating Elements */}
-      <div className="absolute top-20 left-20 animate-bounce">
-        <div className="w-4 h-4 bg-white/20 rounded-full"></div>
-      </div>
-      <div className="absolute top-40 right-32 animate-pulse">
-        <div className="w-6 h-6 bg-white/10 rounded-full"></div>
-      </div>
-      <div className="absolute bottom-32 left-32 animate-bounce delay-1000">
-        <div className="w-3 h-3 bg-white/30 rounded-full"></div>
-      </div>
-      <div className="absolute bottom-20 right-20 animate-pulse delay-500">
-        <div className="w-5 h-5 bg-white/15 rounded-full"></div>
-      </div>
+      {/* Floating Action Button */}
+      <button className="floating-help">
+        <span>?</span>
+        <div className="help-tooltip">Need help? Contact support</div>
+      </button>
     </div>
   );
 };

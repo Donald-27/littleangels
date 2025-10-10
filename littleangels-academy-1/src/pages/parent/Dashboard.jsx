@@ -53,6 +53,7 @@ import { Tabs, TabsContent, TabsList, TabsTrigger } from '../../components/ui/ta
 import { Progress } from '../../components/ui/progress';
 import ParentTracking from '../../components/ParentTracking';
 import { toast } from 'sonner';
+import FloatingChat from '../../components/FloatingChat';
 
 // Simple chart components for parent metrics
 const LineChartSimple = ({ data, color = "#3b82f6", height = 80, title }) => {
@@ -1272,6 +1273,8 @@ const ParentDashboard = () => {
           </div>
         </div>
       </div>
+      {/* Floating Chat - WhatsApp-like messaging */}
+      <FloatingChat />
     </div>
   );
 };

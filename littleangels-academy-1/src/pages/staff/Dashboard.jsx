@@ -11,6 +11,7 @@ import {
 import TeacherAttendance from '../../components/TeacherAttendance';
 import DashboardHeader from '../../components/DashboardHeader';
 import { toast } from 'sonner';
+import FloatingChat from '../../components/FloatingChat';
 
 const StaffDashboard = () => {
   const { user } = useAuth();
@@ -315,6 +316,9 @@ const StaffDashboard = () => {
           </CardContent>
         </Card>
       </div>
+
+      {/* Floating Chat - WhatsApp-like messaging */}
+      <FloatingChat />
     </div>
   );
 };

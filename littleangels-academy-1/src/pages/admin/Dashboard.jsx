@@ -72,6 +72,7 @@ import { BeautifulBadge } from '../../components/ui/beautiful-badge';
 import { Table } from '../../components/ui/table';
 import { Tabs, TabsContent, TabsList, TabsTrigger } from '../../components/ui/tabs';
 import { toast } from 'sonner';
+import FloatingChat from '../../components/FloatingChat';
 
 // Simple SVG chart components for real data visualization
 const LineChartSimple = ({ data, color = "#ffffff", height = 120, title }) => {
@@ -1313,6 +1314,9 @@ const AdminDashboard = () => {
           </div>
         </div>
       </div>
+
+      {/* Floating Chat - WhatsApp-like messaging */}
+      <FloatingChat />
     </div>
   );
 };

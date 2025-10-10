@@ -66,6 +66,7 @@ import { Badge } from '../../components/ui/badge';
 import { Tabs, TabsContent, TabsList, TabsTrigger } from '../../components/ui/tabs';
 import { Progress } from '../../components/ui/progress';
 import { toast } from 'sonner';
+import FloatingChat from '../../components/FloatingChat';
 
 // Simple chart components for teacher metrics
 const LineChartSimple = ({ data, color = "#3b82f6", height = 80, title }) => {
@@ -2343,6 +2344,8 @@ const TeacherDashboard = () => {
           </div>
         </div>
       )}
+      {/* Floating Chat - WhatsApp-like messaging */}
+      <FloatingChat />
     </div>
   );
 };

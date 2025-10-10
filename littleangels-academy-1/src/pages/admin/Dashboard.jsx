@@ -176,11 +176,8 @@ const AdminDashboard = () => {
     pendingPayments: 0,
     efficiency: 0,
     monthlyRevenue: 0,
-    averageGrade: 0,
-    studentSatisfaction: 0,
     fuelConsumption: 0,
     safetyIncidents: 0,
-    parentEngagement: 0,
     operationalCosts: 0,
     carbonFootprint: 0,
     onlineVehicles: 0,
@@ -191,7 +188,6 @@ const AdminDashboard = () => {
   const [recentActivity, setRecentActivity] = useState([]);
   const [upcomingEvents, setUpcomingEvents] = useState([]);
   const [alerts, setAlerts] = useState([]);
-  const [weatherData, setWeatherData] = useState(null);
   const [performanceMetrics, setPerformanceMetrics] = useState([]);
   const [financialTrends, setFinancialTrends] = useState([]);
   const [timeRange, setTimeRange] = useState('7d');
@@ -371,31 +367,6 @@ const AdminDashboard = () => {
     }
   };
 
-  const fetchWeatherData = async () => {
-    try {
-      // Enhanced mock weather data with real-time feel
-      const conditions = ['Sunny', 'Partly Cloudy', 'Cloudy', 'Light Rain'];
-      const randomCondition = conditions[Math.floor(Math.random() * conditions.length)];
-      
-      const mockWeather = {
-        location: 'Eldoret, Kenya',
-        temperature: Math.floor(Math.random() * 10) + 18, // 18-28°C
-        condition: randomCondition,
-        humidity: Math.floor(Math.random() * 30) + 50, // 50-80%
-        windSpeed: Math.floor(Math.random() * 15) + 5, // 5-20 km/h
-        visibility: 10,
-        uvIndex: Math.floor(Math.random() * 4) + 3, // 3-7
-        precipitation: randomCondition === 'Light Rain' ? Math.floor(Math.random() * 30) + 10 : 0,
-        feelsLike: Math.floor(Math.random() * 8) + 20,
-        sunrise: '06:30 AM',
-        sunset: '06:45 PM'
-      };
-      
-      setWeatherData(mockWeather);
-    } catch (error) {
-      console.error('Error fetching weather data:', error);
-    }
-  };
 
   const generateQuickActions = async (schoolId, currentStats) => {
     try {
@@ -542,9 +513,9 @@ const AdminDashboard = () => {
       const monthlyRevenue = monthlyPayments.reduce((sum, p) => sum + (p.amount || 0), 0);
       
       // Calculate operational metrics from real data
-      const fuelConsumption = vehiclesCount * 45.5;
-      const operationalCosts = vehiclesCount * 15000 + staffCount * 45000;
-      const carbonFootprint = fuelConsumption * 2.31;
+      const fuelConsumption = 0; // To be calculated from actual fuel records when implemented
+      const operationalCosts = 0; // To be calculated from actual cost records when implemented
+      const carbonFootprint = 0; // To be calculated from actual fuel consumption data when implemented
       
       // Calculate system health based on various factors
       const systemHealth = Math.max(0, 100 - 
@@ -565,11 +536,8 @@ const AdminDashboard = () => {
         pendingPayments,
         efficiency,
         monthlyRevenue,
-        averageGrade: 85.4,
-        studentSatisfaction: 92.1,
         fuelConsumption: Math.round(fuelConsumption * 100) / 100,
         safetyIncidents: systemAlerts.filter(a => a.type === 'safety').length,
-        parentEngagement: 78.9,
         operationalCosts: Math.round(operationalCosts),
         carbonFootprint: Math.round(carbonFootprint * 100) / 100,
         onlineVehicles: realTimeData.onlineVehicles,
@@ -580,7 +548,6 @@ const AdminDashboard = () => {
       // Fetch enhanced data
       await fetchPerformanceMetrics(schoolId);
       await fetchFinancialTrends(schoolId);
-      await fetchWeatherData();
       await generateQuickActions(schoolId, stats);
 
       // Enhanced recent activity with more data types

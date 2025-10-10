@@ -34,6 +34,7 @@ import { Badge } from '../../components/ui/badge';
 import { Table } from '../../components/ui/table';
 import { Tabs, TabsContent, TabsList, TabsTrigger } from '../../components/ui/tabs';
 import DashboardHeader from '../../components/DashboardHeader';
+import LocationPicker from '../../components/LocationPicker';
 import { toast } from 'sonner';
 
 const StudentsDashboard = () => {
@@ -832,15 +833,11 @@ const StudentsDashboard = () => {
                 </div>
 
                 <div className="md:col-span-2">
-                  <label className="block text-sm font-medium text-gray-700 mb-2">Address</label>
-                  <Input
+                  <LocationPicker
                     value={formData.address}
-                    onChange={(e) => setFormData({...formData, address: e.target.value})}
-                    placeholder="Full residential address"
+                    onChange={(location) => setFormData({...formData, address: location})}
                   />
-                </div>
-
-                <div className="md:col-span-2">
+                  <p className="mt-1 text-xs text-gray-500">💡 Click the map button to select student's home location for proximity alerts</p>
                   <label className="block text-sm font-medium text-gray-700 mb-2">Medical Information</label>
                   <textarea
                     value={formData.medical_info}

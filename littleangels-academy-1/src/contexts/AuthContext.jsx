@@ -146,6 +146,8 @@ export const AuthProvider = ({ children }) => {
     } catch (error) {
       console.error('❌ Error initializing auth:', error);
       setError(error.message);
+    } finally {
+      console.log('🔐 Auth initialization complete, setting isLoading to false');
       setIsLoading(false);
     }
   };
@@ -186,9 +188,14 @@ export const AuthProvider = ({ children }) => {
               console.log('✅ Password recovery initiated');
               break;
               
+            case 'INITIAL_SESSION':
+              console.log('✅ Initial session loaded');
+              setIsLoading(false);
+              break;
+              
             default:
               console.log(`🔐 Unknown auth event: ${event}`);
-              await updateAuthState(session);
+              setIsLoading(false);
           }
         }
       );

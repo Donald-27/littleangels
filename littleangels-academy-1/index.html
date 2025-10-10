@@ -135,10 +135,14 @@
     <!-- Scripts -->
     <script>
       // Hide loading screen when React app is ready
+      window.addEventListener('DOMContentLoaded', function() {
+        // Hide immediately when DOM is ready
+        document.body.classList.add('app-loaded');
+      });
+      
+      // Fallback: also hide on load event
       window.addEventListener('load', function() {
-        setTimeout(function() {
-          document.body.classList.add('app-loaded');
-        }, 1000);
+        document.body.classList.add('app-loaded');
       });
       
       // Service Worker Registration disabled (no sw.js file exists)

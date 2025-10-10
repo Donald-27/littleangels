@@ -118,12 +118,19 @@ export default function LocationPicker({ value, onChange, className = '' }) {
             </button>
             <MapContainer
               center={position}
-              zoom={13}
+              zoom={17}
               style={{ height: '100%', width: '100%' }}
             >
               <TileLayer
-                attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
+                attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors | &copy; <a href="https://www.mapbox.com/">Mapbox</a>'
                 url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
+                maxZoom={19}
+              />
+              <TileLayer
+                attribution='Satellite imagery'
+                url="https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/tile/{z}/{y}/{x}"
+                opacity={0.5}
+                maxZoom={19}
               />
               <LocationMarker position={position} setPosition={handlePositionChange} />
             </MapContainer>

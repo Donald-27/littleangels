@@ -26,6 +26,7 @@ import MessagingPage from './pages/Messaging';
 import ParentDashboard from './pages/parent/Dashboard';
 import TeacherDashboard from './pages/teacher/Dashboard';
 import DriverDashboard from './pages/driver/Dashboard';
+import StaffUserDashboard from './pages/staff/Dashboard';
 
 // Protected Route wrapper
 function ProtectedRoute({ children, requiredRole = null }) {
@@ -129,6 +130,16 @@ function AppRoutes() {
         element={
           <ProtectedRoute requiredRole="teacher">
             <TeacherDashboard />
+          </ProtectedRoute>
+        }
+      />
+
+      {/* Staff routes */}
+      <Route
+        path="/staff/*"
+        element={
+          <ProtectedRoute requiredRole="staff">
+            <StaffUserDashboard />
           </ProtectedRoute>
         }
       />

@@ -830,7 +830,7 @@ const AdminDashboard = () => {
             </div>
             <div className="flex items-center mt-2">
               <div className="w-2 h-2 bg-blue-400 rounded-full mr-2"></div>
-              <span className="text-blue-200 text-sm">{Math.round((stats.onlineVehicles / stats.totalVehicles) * 100)}% online</span>
+              <span className="text-blue-200 text-sm">{stats.totalVehicles > 0 ? Math.round((stats.onlineVehicles / stats.totalVehicles) * 100) : 0}% online</span>
             </div>
           </div>
 
@@ -895,7 +895,6 @@ const AdminDashboard = () => {
                 value={stats.totalStudents}
                 icon={Users}
                 gradient="blue"
-                trend={5.2}
                 description="Active enrollment"
                 glow
                 expandable
@@ -907,7 +906,6 @@ const AdminDashboard = () => {
                 value={`${stats.attendanceRate}%`}
                 icon={CheckCircle}
                 gradient="success"
-                trend={2.1}
                 description="Today's performance"
                 expandable
                 isExpanded={expandedCards.attendance}
@@ -918,7 +916,6 @@ const AdminDashboard = () => {
                 value={`${stats.onlineVehicles}/${stats.totalVehicles}`}
                 icon={Bus}
                 gradient="warning"
-                trend={-1.3}
                 description="Fleet status"
                 expandable
                 isExpanded={expandedCards.vehicles}
@@ -929,7 +926,6 @@ const AdminDashboard = () => {
                 value={`$${stats.monthlyRevenue.toLocaleString()}`}
                 icon={DollarSign}
                 gradient="danger"
-                trend={8.7}
                 description="Current month"
                 glow
                 expandable

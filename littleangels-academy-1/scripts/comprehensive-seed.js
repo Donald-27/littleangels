@@ -250,30 +250,30 @@ async function seed() {
       drivers.push(driver)
     }
 
-    // 3 Cooks
+    // 3 Cooks (using teacher role for staff members)
     const cookNames = ['Grace Achieng', 'Faith Wanjiku', 'Elizabeth Chebet']
     const cooks = []
     for (let i = 0; i < 3; i++) {
       const cook = await createOrUpdateUser(
         `cook${i + 1}@littleangels.com`,
-        'cook123',
+        'staff123',
         cookNames[i],
-        'support',
+        'teacher', // Using teacher role for all staff
         schoolId,
         `+25471234501${i}`
       )
       cooks.push(cook)
     }
 
-    // 4 Cleaners
+    // 4 Cleaners (using teacher role for staff members)
     const cleanerNames = ['Sarah Mwangi', 'Agnes Nyambura', 'Jane Wanjiru', 'Lucy Achieng']
     const cleaners = []
     for (let i = 0; i < 4; i++) {
       const cleaner = await createOrUpdateUser(
         `cleaner${i + 1}@littleangels.com`,
-        'cleaner123',
+        'staff123',
         cleanerNames[i],
-        'support',
+        'teacher', // Using teacher role for all staff
         schoolId,
         `+25471234512${i}`
       )

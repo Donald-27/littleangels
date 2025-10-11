@@ -1,4 +1,189 @@
-z 8 characters long');
+import React, { useState, useEffect } from 'react';
+import { useAuth } from '../../hooks/useAuth';
+import { supabase } from '../../lib/supabase';
+import { 
+  Settings as SettingsIcon,
+  User,
+  Bell,
+  Lock,
+  Eye,
+  Shield,
+  Save,
+  Upload,
+  Trash2,
+  RefreshCw,
+  Database,
+  Globe,
+  Mail,
+  Phone,
+  CreditCard,
+  Zap,
+  Code,
+  Package,
+  Plus,
+  X,
+  Check,
+  AlertCircle,
+  Download,
+  UploadCloud
+} from 'lucide-react';
+import { toast } from 'sonner';
+import { Badge } from '../../components/ui/badge';
+
+export default function Settings() {
+  const { user } = useAuth();
+  const [activeTab, setActiveTab] = useState('profile');
+  const [saving, setSaving] = useState(false);
+  const [uploading, setUploading] = useState(false);
+  const [backupProgress, setBackupProgress] = useState(0);
+  
+  const [settings, setSettings] = useState({
+    profile: {
+      name: user?.user_metadata?.name || '',
+      email: user?.email || '',
+      phone: '',
+      position: '',
+      department: '',
+      employee_id: '',
+      bio: '',
+      address: '',
+      emergency_contact: '',
+      avatar: '',
+      signature: ''
+    },
+    notifications: {
+      email: true,
+      sms: true,
+      push: true,
+      updates: true
+    },
+    appearance: {
+      theme: 'light',
+      language: 'en'
+    },
+    privacy: {
+      profile_visible: true,
+      show_email: false
+    },
+    school: {
+      name: 'Little Angels School',
+      logo: '',
+      favicon: '',
+      address: '',
+      phone: '',
+      email: ''
+    },
+    communication: {
+      smtp_host: '',
+      smtp_port: '',
+      smtp_user: '',
+      smtp_pass: ''
+    },
+    payment: {
+      mpesa_consumer_key: '',
+      mpesa_consumer_secret: '',
+      mpesa_passkey: '',
+      mpesa_shortcode: ''
+    },
+    advertisements: {
+      enabled: false,
+      rotation_interval: 30,
+      max_ads_per_page: 3,
+      targeting: {
+        location_based: false,
+        interest_based: false,
+        behavior_based: false
+      },
+      ads: []
+    },
+    integrations: {
+      google_analytics: '',
+      facebook_pixel: '',
+      maps_api_key: ''
+    },
+    system: {
+      maintenance_mode: false,
+      debug_mode: false,
+      cache_enabled: true
+    },
+    advanced: {
+      api_rate_limit: 100,
+      max_upload_size: 10,
+      session_timeout: 30
+    }
+  });
+
+  const [passwordForm, setPasswordForm] = useState({
+    current_password: '',
+    new_password: '',
+    confirm_password: ''
+  });
+
+  const [newAd, setNewAd] = useState({
+    title: '',
+    description: '',
+    image: null,
+    target_url: '',
+    start_date: '',
+    end_date: '',
+    budget: 0,
+    category: 'transport'
+  });
+
+  useEffect(() => {
+    loadSettings();
+  }, []);
+
+  const loadSettings = async () => {
+    try {
+      // Load user profile
+      const { data: profile } = await supabase
+        .from('users')
+        .select('*')
+        .eq('id', user?.id)
+        .single();
+
+      if (profile) {
+        setSettings(prev => ({
+          ...prev,
+          profile: { ...prev.profile, ...profile }
+        }));
+      }
+    } catch (error) {
+      console.error('Error loading settings:', error);
+    }
+  };
+
+  const saveSettings = async (section) => {
+    try {
+      setSaving(true);
+      
+      if (section === 'profile') {
+        const { error } = await supabase
+          .from('users')
+          .update(settings.profile)
+          .eq('id', user?.id);
+
+        if (error) throw error;
+      }
+
+      toast.success('Settings saved successfully!');
+    } catch (error) {
+      console.error('Error saving settings:', error);
+      toast.error('Failed to save settings');
+    } finally {
+      setSaving(false);
+    }
+  };
+
+  const changePassword = async () => {
+    if (passwordForm.new_password.length < 8) {
+      toast.error('Password must be at least 8 characters long');
+      return;
+    }
+
+    if (passwordForm.new_password !== passwordForm.confirm_password) {
+      toast.error('Passwords do not match');
       return;
     }
 
@@ -954,7 +1139,7 @@ z 8 characters long');
   );
 };
 
-// Additional render functions for other tabs
+// Additional render functions for other tabs (placeholders)
 const renderNotificationSettings = () => <div>Notification Settings</div>;
 const renderAppearanceSettings = () => <div>Appearance Settings</div>;
 const renderPrivacySettings = () => <div>Privacy Settings</div>;
@@ -964,23 +1149,3 @@ const renderCommunicationSettings = () => <div>Communication Settings</div>;
 const renderPaymentSettings = () => <div>Payment Settings</div>;
 const renderIntegrationSettings = () => <div>Integration Settings</div>;
 const renderAdvancedSettings = () => <div>Advanced Settings</div>;
-
-// Helper components
-const Badge = ({ variant = 'default', children }) => {
-  const variants = {
-    default: 'bg-gray-100 text-gray-800',
-    success: 'bg-green-100 text-green-800',
-    danger: 'bg-red-100 text-red-800',
-    warning: 'bg-yellow-100 text-yellow-800',
-    info: 'bg-blue-100 text-blue-800'
-  };
-
-    <DashboardHeader title="System Settings" subtitle="Configure application preferences and school settings" />
-  return (
-    <span className={`inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium ${variants[variant]}`}>
-      {children}
-    </span>
-  );
-};
-
-export default Settings;

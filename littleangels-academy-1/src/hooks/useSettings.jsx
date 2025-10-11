@@ -70,10 +70,12 @@ export const SettingsProvider = ({ children }) => {
         language: updates.language || settings.user.language
       };
 
-      await supabase
+      const { error } = await supabase
         .from('users')
         .update({ preferences: newPrefs })
         .eq('id', user.id);
+
+      if (error) throw error;
 
       setSettings(prev => ({
         ...prev,
@@ -98,13 +100,15 @@ export const SettingsProvider = ({ children }) => {
         term: updates.term || settings.school.term
       };
 
-      await supabase
+      const { error } = await supabase
         .from('schools')
         .update({
           ...updates,
           settings: newSettings
         })
         .eq('id', user.school_id);
+
+      if (error) throw error;
 
       setSettings(prev => ({
         ...prev,

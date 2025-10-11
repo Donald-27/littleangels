@@ -2,6 +2,7 @@ import React from 'react';
 import { Routes, Route, Navigate } from 'react-router-dom';
 import { AuthProvider } from './contexts/AuthContext';
 import { NotificationProvider } from './contexts/NotificationContext';
+import { SettingsProvider } from './hooks/useSettings';
 import { useAuth } from './hooks/useAuth';
 import ErrorBoundary from './components/ui/error-boundary';
 import LoadingScreen from './components/ui/loading-screen';
@@ -164,11 +165,13 @@ function App() {
   return (
     <ErrorBoundary>
       <AuthProvider>
+        <SettingsProvider>
         <NotificationProvider>
           <div className="App">
             <AppRoutes />
           </div>
         </NotificationProvider>
+        </SettingsProvider>
       </AuthProvider>
     </ErrorBoundary>
   );

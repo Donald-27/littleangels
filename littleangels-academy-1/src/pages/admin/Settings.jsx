@@ -563,6 +563,42 @@ const Settings = () => {
           .eq('id', user.school_id);
 
         if (error) throw error;
+      } else if (section === 'notifications' || section === 'appearance' || section === 'privacy' || section === 'security') {
+        // Save user preferences (notifications, appearance, privacy, security)
+        const { error } = await supabase
+          .from('users')
+          .update({
+            preferences: {
+              notifications: settings.notifications,
+              appearance: settings.appearance,
+              privacy: settings.privacy,
+              security: settings.security,
+              theme: settings.appearance.theme,
+              language: settings.appearance.language
+            }
+          })
+          .eq('id', user.id);
+
+        if (error) throw error;
+      } else if (section === 'communication' || section === 'payment' || section === 'system') {
+        // Save school-level settings (communication, payment, system)
+        const { error } = await supabase
+          .from('schools')
+          .update({
+            settings: {
+              ...user.school?.settings,
+              communication: settings.communication,
+              payment: settings.payment,
+              system: settings.system,
+              timezone: settings.school.timezone,
+              currency: settings.school.currency,
+              academic_year: settings.school.academic_year,
+              term: settings.school.term
+            }
+          })
+          .eq('id', user.school_id);
+
+        if (error) throw error;
       } else if (section === 'advertisements') {
         // Save advertisements
         for (const ad of settings.advertisements.ads) {

@@ -1,0 +1,1478 @@
+The source list for the Content Security Policy directive 'default-src' contains an invalid source: ''unsafe-dynamic''. It will be ignored.
+The source list for the Content Security Policy directive 'default-src' contains an invalid source: ''unsafe-dynamic''. It will be ignored.
+The source list for the Content Security Policy directive 'default-src' contains an invalid source: ''unsafe-dynamic''. It will be ignored.
+The source list for the Content Security Policy directive 'default-src' contains an invalid source: ''unsafe-dynamic''. It will be ignored.
+The source list for the Content Security Policy directive 'default-src' contains an invalid source: ''unsafe-dynamic''. It will be ignored.
+The source list for the Content Security Policy directive 'default-src' contains an invalid source: ''unsafe-dynamic''. It will be ignored.
+The source list for the Content Security Policy directive 'default-src' contains an invalid source: ''unsafe-dynamic''. It will be ignored.
+The source list for the Content Security Policy directive 'default-src' contains an invalid source: ''unsafe-dynamic''. It will be ignored.
+The source list for the Content Security Policy directive 'default-src' contains an invalid source: ''unsafe-dynamic''. It will be ignored.
+The Content-Security-Policy directive 'default-src' contains 'report-uri' as a source expression. Did you want to add it as a directive and forget a semicolon?
+The Content-Security-Policy directive 'default-src' contains 'report-uri' as a source expression. Did you want to add it as a directive and forget a semicolon?
+The Content-Security-Policy directive 'default-src' contains 'report-uri' as a source expression. Did you want to add it as a directive and forget a semicolon?
+The Content-Security-Policy directive 'default-src' contains 'report-uri' as a source expression. Did you want to add it as a directive and forget a semicolon?
+The Content-Security-Policy directive 'default-src' contains 'report-uri' as a source expression. Did you want to add it as a directive and forget a semicolon?
+The Content-Security-Policy directive 'default-src' contains 'report-uri' as a source expression. Did you want to add it as a directive and forget a semicolon?
+The Content-Security-Policy directive 'default-src' contains 'report-uri' as a source expression. Did you want to add it as a directive and forget a semicolon?
+The Content-Security-Policy directive 'default-src' contains 'report-uri' as a source expression. Did you want to add it as a directive and forget a semicolon?
+The Content-Security-Policy directive 'default-src' contains 'report-uri' as a source expression. Did you want to add it as a directive and forget a semicolon?
+The source list for Content Security Policy directive 'default-src' contains a source with an invalid path: '/api/4509669501698048/security/?sentry_key=7eb3d90eb4660416caf507087367e67e'. The query component, including the '?', will be ignored.
+The source list for Content Security Policy directive 'default-src' contains a source with an invalid path: '/api/4509669501698048/security/?sentry_key=7eb3d90eb4660416caf507087367e67e'. The query component, including the '?', will be ignored.
+The source list for Content Security Policy directive 'default-src' contains a source with an invalid path: '/api/4509669501698048/security/?sentry_key=7eb3d90eb4660416caf507087367e67e'. The query component, including the '?', will be ignored.
+The source list for Content Security Policy directive 'default-src' contains a source with an invalid path: '/api/4509669501698048/security/?sentry_key=7eb3d90eb4660416caf507087367e67e'. The query component, including the '?', will be ignored.
+The source list for Content Security Policy directive 'default-src' contains a source with an invalid path: '/api/4509669501698048/security/?sentry_key=7eb3d90eb4660416caf507087367e67e'. The query component, including the '?', will be ignored.
+The source list for Content Security Policy directive 'default-src' contains a source with an invalid path: '/api/4509669501698048/security/?sentry_key=7eb3d90eb4660416caf507087367e67e'. The query component, including the '?', will be ignored.
+The source list for Content Security Policy directive 'default-src' contains a source with an invalid path: '/api/4509669501698048/security/?sentry_key=7eb3d90eb4660416caf507087367e67e'. The query component, including the '?', will be ignored.
+The source list for Content Security Policy directive 'default-src' contains a source with an invalid path: '/api/4509669501698048/security/?sentry_key=7eb3d90eb4660416caf507087367e67e'. The query component, including the '?', will be ignored.
+The source list for Content Security Policy directive 'default-src' contains a source with an invalid path: '/api/4509669501698048/security/?sentry_key=7eb3d90eb4660416caf507087367e67e'. The query component, including the '?', will be ignored.
+littleangels:1 The source list for the Content Security Policy directive 'default-src' contains an invalid source: ''unsafe-dynamic''. It will be ignored.
+littleangels:1 The Content-Security-Policy directive 'default-src' contains 'report-uri' as a source expression. Did you want to add it as a directive and forget a semicolon?
+littleangels:1 The source list for Content Security Policy directive 'default-src' contains a source with an invalid path: '/api/4509669501698048/security/?sentry_key=7eb3d90eb4660416caf507087367e67e'. The query component, including the '?', will be ignored.
+stallwart.build.js:1 stallwart: failed ping 1
+stallwart.build.js:1 stallwart: failed ping 2
+_app-4f38a9c7d036feda.js:28 
+      /////////////////////
+   ///////////////////////////
+  ////////@@@@@@@//////////////
+  ////////@@@@@@@//////////////
+  ////////@@@@@@@//////////////        Curious and driven?
+  ///////////////@@@@@@@///////        Work with us!
+  ///////////////@@@@@@@///////
+  ///////////////@@@@@@@///////        https://join.replit.com/hack.with.us
+  ////////@@@@@@@//////////////
+  ////////@@@@@@@//////////////
+  ////////@@@@@@#//////////////
+   ///////////////////////////
+      /////////////////////
+      
+_app-4f38a9c7d036feda.js:28 [LaunchDarkly] LaunchDarkly client initialized
+5144-8f898c767498fa4c.js:1 [Intervention] Slow network is detected. See https://www.chromestatus.com/feature/5636954674692096 for more details. Fallback font will be used while loading: https://replit.com/public/fonts/replit-icons.woff
+Error while parsing the 'sandbox' attribute: 'allow-downloads-without-user-activation' is an invalid sandbox flag.
+Error while parsing the 'sandbox' attribute: 'allow-downloads-without-user-activation' is an invalid sandbox flag.
+Error while parsing the 'sandbox' attribute: 'allow-downloads-without-user-activation' is an invalid sandbox flag.
+Error while parsing the 'sandbox' attribute: 'allow-downloads-without-user-activation' is an invalid sandbox flag.
+Error while parsing the 'sandbox' attribute: 'allow-downloads-without-user-activation' is an invalid sandbox flag.
+Error while parsing the 'sandbox' attribute: 'allow-downloads-without-user-activation' is an invalid sandbox flag.
+Error while parsing the 'sandbox' attribute: 'allow-downloads-without-user-activation' is an invalid sandbox flag.
+framework-feb8d59901280d4c.js:1 Unrecognized feature: 'ambient-light-sensor'.
+_ @ framework-feb8d59901280d4c.js:1
+framework-feb8d59901280d4c.js:1 Unrecognized feature: 'battery'.
+_ @ framework-feb8d59901280d4c.js:1
+framework-feb8d59901280d4c.js:1 Unrecognized feature: 'execution-while-not-rendered'.
+_ @ framework-feb8d59901280d4c.js:1
+framework-feb8d59901280d4c.js:1 Unrecognized feature: 'execution-while-out-of-viewport'.
+_ @ framework-feb8d59901280d4c.js:1
+framework-feb8d59901280d4c.js:1 Unrecognized feature: 'layout-animations'.
+_ @ framework-feb8d59901280d4c.js:1
+framework-feb8d59901280d4c.js:1 Unrecognized feature: 'legacy-image-formats'.
+_ @ framework-feb8d59901280d4c.js:1
+framework-feb8d59901280d4c.js:1 Unrecognized feature: 'navigation-override'.
+_ @ framework-feb8d59901280d4c.js:1
+framework-feb8d59901280d4c.js:1 Unrecognized feature: 'oversized-images'.
+_ @ framework-feb8d59901280d4c.js:1
+framework-feb8d59901280d4c.js:1 Unrecognized feature: 'publickey-credentials'.
+_ @ framework-feb8d59901280d4c.js:1
+framework-feb8d59901280d4c.js:1 Unrecognized feature: 'speaker-selection'.
+_ @ framework-feb8d59901280d4c.js:1
+framework-feb8d59901280d4c.js:1 Unrecognized feature: 'unoptimized-images'.
+_ @ framework-feb8d59901280d4c.js:1
+framework-feb8d59901280d4c.js:1 Unrecognized feature: 'unsized-media'.
+_ @ framework-feb8d59901280d4c.js:1
+framework-feb8d59901280d4c.js:1 Unrecognized feature: 'pointer-lock'.
+_ @ framework-feb8d59901280d4c.js:1
+framework-feb8d59901280d4c.js:1 Allow attribute will take precedence over 'allowfullscreen'.
+_ @ framework-feb8d59901280d4c.js:1
+framework-feb8d59901280d4c.js:1 Allow attribute will take precedence over 'allowpaymentrequest'.
+_ @ framework-feb8d59901280d4c.js:1
+workspace_iframe.html?initialPath=%2F&id=%3Ar4k%3A:32 Unrecognized feature: 'ambient-light-sensor'.
+7d141737-ac6c-4cab-9614-b21b611b3ed8-00-2hg41d2ekxh72.worf.replit.dev/__replco/workspace_iframe.html?initialPath=%2F&id=%3Ar4k%3A:32 Unrecognized feature: 'ambient-light-sensor'.
+7d141737-ac6c-4cab-9614-b21b611b3ed8-00-2hg41d2ekxh72.worf.replit.dev/__replco/workspace_iframe.html?initialPath=%2F&id=%3Ar4k%3A:32 Unrecognized feature: 'ambient-light-sensor'.
+workspace_iframe.html?initialPath=%2F&id=%3Ar4k%3A:32 Unrecognized feature: 'battery'.
+7d141737-ac6c-4cab-9614-b21b611b3ed8-00-2hg41d2ekxh72.worf.replit.dev/__replco/workspace_iframe.html?initialPath=%2F&id=%3Ar4k%3A:32 Unrecognized feature: 'battery'.
+7d141737-ac6c-4cab-9614-b21b611b3ed8-00-2hg41d2ekxh72.worf.replit.dev/__replco/workspace_iframe.html?initialPath=%2F&id=%3Ar4k%3A:32 Unrecognized feature: 'battery'.
+workspace_iframe.html?initialPath=%2F&id=%3Ar4k%3A:32 Unrecognized feature: 'execution-while-not-rendered'.
+7d141737-ac6c-4cab-9614-b21b611b3ed8-00-2hg41d2ekxh72.worf.replit.dev/__replco/workspace_iframe.html?initialPath=%2F&id=%3Ar4k%3A:32 Unrecognized feature: 'execution-while-not-rendered'.
+7d141737-ac6c-4cab-9614-b21b611b3ed8-00-2hg41d2ekxh72.worf.replit.dev/__replco/workspace_iframe.html?initialPath=%2F&id=%3Ar4k%3A:32 Unrecognized feature: 'execution-while-not-rendered'.
+workspace_iframe.html?initialPath=%2F&id=%3Ar4k%3A:32 Unrecognized feature: 'execution-while-out-of-viewport'.
+7d141737-ac6c-4cab-9614-b21b611b3ed8-00-2hg41d2ekxh72.worf.replit.dev/__replco/workspace_iframe.html?initialPath=%2F&id=%3Ar4k%3A:32 Unrecognized feature: 'execution-while-out-of-viewport'.
+7d141737-ac6c-4cab-9614-b21b611b3ed8-00-2hg41d2ekxh72.worf.replit.dev/__replco/workspace_iframe.html?initialPath=%2F&id=%3Ar4k%3A:32 Unrecognized feature: 'execution-while-out-of-viewport'.
+workspace_iframe.html?initialPath=%2F&id=%3Ar4k%3A:32 Unrecognized feature: 'layout-animations'.
+7d141737-ac6c-4cab-9614-b21b611b3ed8-00-2hg41d2ekxh72.worf.replit.dev/__replco/workspace_iframe.html?initialPath=%2F&id=%3Ar4k%3A:32 Unrecognized feature: 'layout-animations'.
+7d141737-ac6c-4cab-9614-b21b611b3ed8-00-2hg41d2ekxh72.worf.replit.dev/__replco/workspace_iframe.html?initialPath=%2F&id=%3Ar4k%3A:32 Unrecognized feature: 'layout-animations'.
+workspace_iframe.html?initialPath=%2F&id=%3Ar4k%3A:32 Unrecognized feature: 'legacy-image-formats'.
+7d141737-ac6c-4cab-9614-b21b611b3ed8-00-2hg41d2ekxh72.worf.replit.dev/__replco/workspace_iframe.html?initialPath=%2F&id=%3Ar4k%3A:32 Unrecognized feature: 'legacy-image-formats'.
+7d141737-ac6c-4cab-9614-b21b611b3ed8-00-2hg41d2ekxh72.worf.replit.dev/__replco/workspace_iframe.html?initialPath=%2F&id=%3Ar4k%3A:32 Unrecognized feature: 'legacy-image-formats'.
+workspace_iframe.html?initialPath=%2F&id=%3Ar4k%3A:32 Unrecognized feature: 'navigation-override'.
+7d141737-ac6c-4cab-9614-b21b611b3ed8-00-2hg41d2ekxh72.worf.replit.dev/__replco/workspace_iframe.html?initialPath=%2F&id=%3Ar4k%3A:32 Unrecognized feature: 'navigation-override'.
+7d141737-ac6c-4cab-9614-b21b611b3ed8-00-2hg41d2ekxh72.worf.replit.dev/__replco/workspace_iframe.html?initialPath=%2F&id=%3Ar4k%3A:32 Unrecognized feature: 'navigation-override'.
+workspace_iframe.html?initialPath=%2F&id=%3Ar4k%3A:32 Unrecognized feature: 'oversized-images'.
+7d141737-ac6c-4cab-9614-b21b611b3ed8-00-2hg41d2ekxh72.worf.replit.dev/__replco/workspace_iframe.html?initialPath=%2F&id=%3Ar4k%3A:32 Unrecognized feature: 'oversized-images'.
+7d141737-ac6c-4cab-9614-b21b611b3ed8-00-2hg41d2ekxh72.worf.replit.dev/__replco/workspace_iframe.html?initialPath=%2F&id=%3Ar4k%3A:32 Unrecognized feature: 'oversized-images'.
+workspace_iframe.html?initialPath=%2F&id=%3Ar4k%3A:32 Unrecognized feature: 'publickey-credentials'.
+7d141737-ac6c-4cab-9614-b21b611b3ed8-00-2hg41d2ekxh72.worf.replit.dev/__replco/workspace_iframe.html?initialPath=%2F&id=%3Ar4k%3A:32 Unrecognized feature: 'publickey-credentials'.
+7d141737-ac6c-4cab-9614-b21b611b3ed8-00-2hg41d2ekxh72.worf.replit.dev/__replco/workspace_iframe.html?initialPath=%2F&id=%3Ar4k%3A:32 Unrecognized feature: 'publickey-credentials'.
+workspace_iframe.html?initialPath=%2F&id=%3Ar4k%3A:32 Unrecognized feature: 'speaker-selection'.
+7d141737-ac6c-4cab-9614-b21b611b3ed8-00-2hg41d2ekxh72.worf.replit.dev/__replco/workspace_iframe.html?initialPath=%2F&id=%3Ar4k%3A:32 Unrecognized feature: 'speaker-selection'.
+7d141737-ac6c-4cab-9614-b21b611b3ed8-00-2hg41d2ekxh72.worf.replit.dev/__replco/workspace_iframe.html?initialPath=%2F&id=%3Ar4k%3A:32 Unrecognized feature: 'speaker-selection'.
+workspace_iframe.html?initialPath=%2F&id=%3Ar4k%3A:32 Unrecognized feature: 'unoptimized-images'.
+7d141737-ac6c-4cab-9614-b21b611b3ed8-00-2hg41d2ekxh72.worf.replit.dev/__replco/workspace_iframe.html?initialPath=%2F&id=%3Ar4k%3A:32 Unrecognized feature: 'unoptimized-images'.
+7d141737-ac6c-4cab-9614-b21b611b3ed8-00-2hg41d2ekxh72.worf.replit.dev/__replco/workspace_iframe.html?initialPath=%2F&id=%3Ar4k%3A:32 Unrecognized feature: 'unoptimized-images'.
+workspace_iframe.html?initialPath=%2F&id=%3Ar4k%3A:32 Unrecognized feature: 'unsized-media'.
+7d141737-ac6c-4cab-9614-b21b611b3ed8-00-2hg41d2ekxh72.worf.replit.dev/__replco/workspace_iframe.html?initialPath=%2F&id=%3Ar4k%3A:32 Unrecognized feature: 'unsized-media'.
+7d141737-ac6c-4cab-9614-b21b611b3ed8-00-2hg41d2ekxh72.worf.replit.dev/__replco/workspace_iframe.html?initialPath=%2F&id=%3Ar4k%3A:32 Unrecognized feature: 'unsized-media'.
+workspace_iframe.html?initialPath=%2F&id=%3Ar4k%3A:32 Allow attribute will take precedence over 'allowfullscreen'.
+7d141737-ac6c-4cab-9614-b21b611b3ed8-00-2hg41d2ekxh72.worf.replit.dev/__replco/workspace_iframe.html?initialPath=%2F&id=%3Ar4k%3A:32 Allow attribute will take precedence over 'allowfullscreen'.
+7d141737-ac6c-4cab-9614-b21b611b3ed8-00-2hg41d2ekxh72.worf.replit.dev/__replco/workspace_iframe.html?initialPath=%2F&id=%3Ar4k%3A:32 Allow attribute will take precedence over 'allowfullscreen'.
+workspace_iframe.html?initialPath=%2F&id=%3Ar4k%3A:32 Allow attribute will take precedence over 'allowpaymentrequest'.
+7d141737-ac6c-4cab-9614-b21b611b3ed8-00-2hg41d2ekxh72.worf.replit.dev/__replco/workspace_iframe.html?initialPath=%2F&id=%3Ar4k%3A:32 Allow attribute will take precedence over 'allowpaymentrequest'.
+7d141737-ac6c-4cab-9614-b21b611b3ed8-00-2hg41d2ekxh72.worf.replit.dev/__replco/workspace_iframe.html?initialPath=%2F&id=%3Ar4k%3A:32 Allow attribute will take precedence over 'allowpaymentrequest'.
+injected.js:27 🔧 Supabase Configuration: [object Object]
+injected.js:27 🔔 NotificationProvider: No user, clearing notifications
+injected.js:27 🔐 Initializing auth state...
+injected.js:27 🔔 NotificationProvider: No user, clearing notifications
+injected.js:27 🔐 Initializing auth state...
+littleangels:1 Banner not shown: beforeinstallpromptevent.preventDefault() called. The page must call beforeinstallpromptevent.prompt() to show the banner.
+injected.js:27 🔐 Auth state change: TOKEN_REFRESHED admin@littleangels.com
+injected.js:27 ✅ Token refreshed
+injected.js:27 ✅ Supabase connected successfully!
+injected.js:27 📧 Current session: User: admin@littleangels.com
+injected.js:27 👤 Found existing session for: admin@littleangels.com
+injected.js:27 ✅ Created user profile: [object Object]
+injected.js:27 🔐 Auth initialization complete, setting isLoading to false
+injected.js:27 🔔 NotificationProvider: User detected, fetching notifications...
+injected.js:27 🔔 Fetching notifications for user: 4de6be47-47ba-4156-82b9-e3506f7afd49
+injected.js:27 🔔 Subscribing to notifications realtime...
+injected.js:27 👤 Found existing session for: admin@littleangels.com
+injected.js:27 ✅ Created user profile: [object Object]
+injected.js:27 🔐 Auth initialization complete, setting isLoading to false
+injected.js:27 🔔 NotificationProvider: User detected, fetching notifications...
+injected.js:27 🔔 Fetching notifications for user: 4de6be47-47ba-4156-82b9-e3506f7afd49
+injected.js:27 🔔 Subscribing to notifications realtime...
+injected.js:27 🔐 Auth state change: INITIAL_SESSION admin@littleangels.com
+injected.js:27 ✅ Initial session loaded
+injected.js:27 ✅ Fetched 3 notifications
+injected.js:27 🔔 Realtime subscription status: CLOSED
+injected.js:27 🔔 Realtime subscription status: CHANNEL_ERROR
+injected.js:27 ✅ Fetched 3 notifications
+stallwart.build.js:1 stallwart: failed ping 1
+stallwart.build.js:1 stallwart: failed ping 1
+stallwart.build.js:1 stallwart: failed ping 2
+stallwart.build.js:1 stallwart: failed ping 3
+stallwart.build.js:1 stallwart: failed ping 4
+stallwart.build.js:1 stallwart: failed ping 5
+stallwart.build.js:1 stallwart: session stalled
+injected.js:27 🔐 Auth state change: SIGNED_IN admin@littleangels.com
+injected.js:27 ✅ User signed in
+injected.js:27 ✅ Created user profile: [object Object]
+injected.js:27 🔔 NotificationProvider: User detected, fetching notifications...
+injected.js:27 🔔 Fetching notifications for user: 4de6be47-47ba-4156-82b9-e3506f7afd49
+injected.js:27 🔔 Subscribing to notifications realtime...
+injected.js:27 🔔 Realtime subscription status: SUBSCRIBED
+injected.js:27 ✅ Fetched 3 notifications
+injected.js:27 🔐 Auth state change: SIGNED_IN admin@littleangels.com
+injected.js:27 ✅ User signed in
+injected.js:27 ✅ Created user profile: [object Object]
+injected.js:27 🔔 NotificationProvider: User detected, fetching notifications...
+injected.js:27 🔔 Fetching notifications for user: 4de6be47-47ba-4156-82b9-e3506f7afd49
+injected.js:27 🔔 Subscribing to notifications realtime...
+injected.js:27 ✅ Fetched 3 notifications
+injected.js:27 📊 Loading comprehensive dashboard data for school: 1fd55bdb-517a-4213-a914-8ff59dbfe3ed
+injected.js:27 📊 Loading comprehensive dashboard data for school: 1fd55bdb-517a-4213-a914-8ff59dbfe3ed
+zvkfuljxidxtuqrmquso.supabase.co/rest/v1/vehicles?select=id%2Clast_gps_update&school_id=eq.1fd55bdb-517a-4213-a914-8ff59dbfe3ed&status=eq.active:1  Failed to load resource: the server responded with a status of 400 ()
+zvkfuljxidxtuqrmquso.supabase.co/rest/v1/vehicles?select=id%2Clast_gps_update&school_id=eq.1fd55bdb-517a-4213-a914-8ff59dbfe3ed&status=eq.active:1  Failed to load resource: the server responded with a status of 400 ()
+zvkfuljxidxtuqrmquso.supabase.co/rest/v1/vehicles?select=id%2Clast_gps_update&school_id=eq.1fd55bdb-517a-4213-a914-8ff59dbfe3ed&status=eq.active:1  Failed to load resource: the server responded with a status of 400 ()
+zvkfuljxidxtuqrmquso.supabase.co/rest/v1/trips?select=*&school_id=eq.1fd55bdb-517a-4213-a914-8ff59dbfe3ed&status=eq.active:1  Failed to load resource: the server responded with a status of 400 ()
+zvkfuljxidxtuqrmquso.supabase.co/rest/v1/trips?select=*&school_id=eq.1fd55bdb-517a-4213-a914-8ff59dbfe3ed&status=eq.active:1  Failed to load resource: the server responded with a status of 400 ()
+zvkfuljxidxtuqrmquso.supabase.co/rest/v1/trips?select=*&school_id=eq.1fd55bdb-517a-4213-a914-8ff59dbfe3ed&status=eq.active:1  Failed to load resource: the server responded with a status of 400 ()
+zvkfuljxidxtuqrmquso.supabase.co/rest/v1/maintenance_logs?select=*&school_id=eq.1fd55bdb-517a-4213-a914-8ff59dbfe3ed&status=eq.pending:1  Failed to load resource: the server responded with a status of 404 ()
+zvkfuljxidxtuqrmquso.supabase.co/rest/v1/maintenance_logs?select=*&school_id=eq.1fd55bdb-517a-4213-a914-8ff59dbfe3ed&status=eq.pending:1  Failed to load resource: the server responded with a status of 404 ()
+zvkfuljxidxtuqrmquso.supabase.co/rest/v1/maintenance_logs?select=*&school_id=eq.1fd55bdb-517a-4213-a914-8ff59dbfe3ed&status=eq.pending:1  Failed to load resource: the server responded with a status of 404 ()
+zvkfuljxidxtuqrmquso.supabase.co/rest/v1/trips?select=*&school_id=eq.1fd55bdb-517a-4213-a914-8ff59dbfe3ed&status=eq.active:1  Failed to load resource: the server responded with a status of 400 ()
+zvkfuljxidxtuqrmquso.supabase.co/rest/v1/trips?select=*&school_id=eq.1fd55bdb-517a-4213-a914-8ff59dbfe3ed&status=eq.active:1  Failed to load resource: the server responded with a status of 400 ()
+zvkfuljxidxtuqrmquso.supabase.co/rest/v1/trips?select=*&school_id=eq.1fd55bdb-517a-4213-a914-8ff59dbfe3ed&status=eq.active:1  Failed to load resource: the server responded with a status of 400 ()
+zvkfuljxidxtuqrmquso.supabase.co/rest/v1/alerts?select=*&school_id=eq.1fd55bdb-517a-4213-a914-8ff59dbfe3ed&resolved=eq.false&order=created_at.desc&limit=10:1  Failed to load resource: the server responded with a status of 404 ()
+zvkfuljxidxtuqrmquso.supabase.co/rest/v1/alerts?select=*&school_id=eq.1fd55bdb-517a-4213-a914-8ff59dbfe3ed&resolved=eq.false&order=created_at.desc&limit=10:1  Failed to load resource: the server responded with a status of 404 ()
+zvkfuljxidxtuqrmquso.supabase.co/rest/v1/alerts?select=*&school_id=eq.1fd55bdb-517a-4213-a914-8ff59dbfe3ed&resolved=eq.false&order=created_at.desc&limit=10:1  Failed to load resource: the server responded with a status of 404 ()
+zvkfuljxidxtuqrmquso.supabase.co/rest/v1/gps_data?select=*&school_id=eq.1fd55bdb-517a-4213-a914-8ff59dbfe3ed&order=timestamp.desc&limit=50:1  Failed to load resource: the server responded with a status of 404 ()
+zvkfuljxidxtuqrmquso.supabase.co/rest/v1/gps_data?select=*&school_id=eq.1fd55bdb-517a-4213-a914-8ff59dbfe3ed&order=timestamp.desc&limit=50:1  Failed to load resource: the server responded with a status of 404 ()
+zvkfuljxidxtuqrmquso.supabase.co/rest/v1/gps_data?select=*&school_id=eq.1fd55bdb-517a-4213-a914-8ff59dbfe3ed&order=timestamp.desc&limit=50:1  Failed to load resource: the server responded with a status of 404 ()
+zvkfuljxidxtuqrmquso.supabase.co/rest/v1/vehicles?select=id%2Clast_gps_update&school_id=eq.1fd55bdb-517a-4213-a914-8ff59dbfe3ed&status=eq.active:1  Failed to load resource: the server responded with a status of 400 ()
+zvkfuljxidxtuqrmquso.supabase.co/rest/v1/vehicles?select=id%2Clast_gps_update&school_id=eq.1fd55bdb-517a-4213-a914-8ff59dbfe3ed&status=eq.active:1  Failed to load resource: the server responded with a status of 400 ()
+zvkfuljxidxtuqrmquso.supabase.co/rest/v1/vehicles?select=id%2Clast_gps_update&school_id=eq.1fd55bdb-517a-4213-a914-8ff59dbfe3ed&status=eq.active:1  Failed to load resource: the server responded with a status of 400 ()
+zvkfuljxidxtuqrmquso.supabase.co/rest/v1/maintenance_logs?select=*&school_id=eq.1fd55bdb-517a-4213-a914-8ff59dbfe3ed&status=eq.pending:1  Failed to load resource: the server responded with a status of 404 ()
+zvkfuljxidxtuqrmquso.supabase.co/rest/v1/maintenance_logs?select=*&school_id=eq.1fd55bdb-517a-4213-a914-8ff59dbfe3ed&status=eq.pending:1  Failed to load resource: the server responded with a status of 404 ()
+zvkfuljxidxtuqrmquso.supabase.co/rest/v1/maintenance_logs?select=*&school_id=eq.1fd55bdb-517a-4213-a914-8ff59dbfe3ed&status=eq.pending:1  Failed to load resource: the server responded with a status of 404 ()
+zvkfuljxidxtuqrmquso.supabase.co/rest/v1/gps_data?select=*&school_id=eq.1fd55bdb-517a-4213-a914-8ff59dbfe3ed&order=timestamp.desc&limit=50:1  Failed to load resource: the server responded with a status of 404 ()
+zvkfuljxidxtuqrmquso.supabase.co/rest/v1/gps_data?select=*&school_id=eq.1fd55bdb-517a-4213-a914-8ff59dbfe3ed&order=timestamp.desc&limit=50:1  Failed to load resource: the server responded with a status of 404 ()
+zvkfuljxidxtuqrmquso.supabase.co/rest/v1/gps_data?select=*&school_id=eq.1fd55bdb-517a-4213-a914-8ff59dbfe3ed&order=timestamp.desc&limit=50:1  Failed to load resource: the server responded with a status of 404 ()
+zvkfuljxidxtuqrmquso.supabase.co/rest/v1/alerts?select=*&school_id=eq.1fd55bdb-517a-4213-a914-8ff59dbfe3ed&resolved=eq.false&order=created_at.desc&limit=10:1  Failed to load resource: the server responded with a status of 404 ()
+zvkfuljxidxtuqrmquso.supabase.co/rest/v1/alerts?select=*&school_id=eq.1fd55bdb-517a-4213-a914-8ff59dbfe3ed&resolved=eq.false&order=created_at.desc&limit=10:1  Failed to load resource: the server responded with a status of 404 ()
+zvkfuljxidxtuqrmquso.supabase.co/rest/v1/alerts?select=*&school_id=eq.1fd55bdb-517a-4213-a914-8ff59dbfe3ed&resolved=eq.false&order=created_at.desc&limit=10:1  Failed to load resource: the server responded with a status of 404 ()
+zvkfuljxidxtuqrmquso.supabase.co/rest/v1/tasks?select=*&school_id=eq.1fd55bdb-517a-4213-a914-8ff59dbfe3ed&completed=eq.false&limit=5:1  Failed to load resource: the server responded with a status of 404 ()
+zvkfuljxidxtuqrmquso.supabase.co/rest/v1/tasks?select=*&school_id=eq.1fd55bdb-517a-4213-a914-8ff59dbfe3ed&completed=eq.false&limit=5:1  Failed to load resource: the server responded with a status of 404 ()
+zvkfuljxidxtuqrmquso.supabase.co/rest/v1/tasks?select=*&school_id=eq.1fd55bdb-517a-4213-a914-8ff59dbfe3ed&completed=eq.false&limit=5:1  Failed to load resource: the server responded with a status of 404 ()
+zvkfuljxidxtuqrmquso.supabase.co/rest/v1/tasks?select=*&school_id=eq.1fd55bdb-517a-4213-a914-8ff59dbfe3ed&completed=eq.false&limit=5:1  Failed to load resource: the server responded with a status of 404 ()
+zvkfuljxidxtuqrmquso.supabase.co/rest/v1/tasks?select=*&school_id=eq.1fd55bdb-517a-4213-a914-8ff59dbfe3ed&completed=eq.false&limit=5:1  Failed to load resource: the server responded with a status of 404 ()
+zvkfuljxidxtuqrmquso.supabase.co/rest/v1/tasks?select=*&school_id=eq.1fd55bdb-517a-4213-a914-8ff59dbfe3ed&completed=eq.false&limit=5:1  Failed to load resource: the server responded with a status of 404 ()
+zvkfuljxidxtuqrmquso.supabase.co/rest/v1/audit_logs?select=*%2Cstudent%3Astudents%28name%29%2Cuser%3Ausers%28name%29%2Croute%3Aroutes%28name%29&school_id=eq.1fd55bdb-517a-4213-a914-8ff59dbfe3ed&order=created_at.desc&limit=8:1  Failed to load resource: the server responded with a status of 404 ()
+zvkfuljxidxtuqrmquso.supabase.co/rest/v1/audit_logs?select=*%2Cstudent%3Astudents%28name%29%2Cuser%3Ausers%28name%29%2Croute%3Aroutes%28name%29&school_id=eq.1fd55bdb-517a-4213-a914-8ff59dbfe3ed&order=created_at.desc&limit=8:1  Failed to load resource: the server responded with a status of 404 ()
+zvkfuljxidxtuqrmquso.supabase.co/rest/v1/audit_logs?select=*%2Cstudent%3Astudents%28name%29%2Cuser%3Ausers%28name%29%2Croute%3Aroutes%28name%29&school_id=eq.1fd55bdb-517a-4213-a914-8ff59dbfe3ed&order=created_at.desc&limit=8:1  Failed to load resource: the server responded with a status of 404 ()
+chunk-UPELNCPK.js?v=4e2b4369:1232 Error: <polyline> attribute points: Expected number, "NaN,100".
+setValueForProperty @ chunk-UPELNCPK.js?v=4e2b4369:1232
+ Error: <polyline> attribute points: Expected number, "NaN,100".
+setValueForProperty @ 7d141737-ac6c-4cab-9….js?v=4e2b4369:1232
+ Error: <polyline> attribute points: Expected number, "NaN,100".
+setValueForProperty @ 7d141737-ac6c-4cab-9….js?v=4e2b4369:1232
+injected.js:27 Warning: Received NaN for the `%s` attribute. If this is expected, cast the value to a string.%s cx 
+    at 7d141737-ac6c-4cab-9614-b21b611b3ed8-00-2hg41d2ekxh72.worf.replit.dev/__replco/circle
+    at 7d141737-ac6c-4cab-9614-b21b611b3ed8-00-2hg41d2ekxh72.worf.replit.dev/__replco/svg
+    at 7d141737-ac6c-4cab-9614-b21b611b3ed8-00-2hg41d2ekxh72.worf.replit.dev/__replco/div
+    at LineChartSimple (Dashboard.jsx:78:28)
+    at 7d141737-ac6c-4cab-9614-b21b611b3ed8-00-2hg41d2ekxh72.worf.replit.dev/__replco/div
+    at 7d141737-ac6c-4cab-9614-b21b611b3ed8-00-2hg41d2ekxh72.worf.replit.dev/__replco/div
+    at 7d141737-ac6c-4cab-9614-b21b611b3ed8-00-2hg41d2ekxh72.worf.replit.dev/__replco/div
+    at _c9 (card.jsx:61:41)
+    at BeautifulCardContent (beautiful-card.jsx:55:33)
+    at 7d141737-ac6c-4cab-9614-b21b611b3ed8-00-2hg41d2ekxh72.worf.replit.dev/__replco/div
+    at _c (card.jsx:4:34)
+    at BeautifulCard (beautiful-card.jsx:5:3)
+    at 7d141737-ac6c-4cab-9614-b21b611b3ed8-00-2hg41d2ekxh72.worf.replit.dev/__replco/div
+    at 7d141737-ac6c-4cab-9614-b21b611b3ed8-00-2hg41d2ekxh72.worf.replit.dev/__replco/div
+    at 7d141737-ac6c-4cab-9614-b21b611b3ed8-00-2hg41d2ekxh72.worf.replit.dev/__replco/div
+    at AdminDashboard (Dashboard.jsx:165:20)
+    at RenderedRoute (react-router-dom.js?v=4e2b4369:4088:5)
+    at Outlet (react-router-dom.js?v=4e2b4369:4494:26)
+    at 7d141737-ac6c-4cab-9614-b21b611b3ed8-00-2hg41d2ekxh72.worf.replit.dev/__replco/div
+    at 7d141737-ac6c-4cab-9614-b21b611b3ed8-00-2hg41d2ekxh72.worf.replit.dev/__replco/main
+    at 7d141737-ac6c-4cab-9614-b21b611b3ed8-00-2hg41d2ekxh72.worf.replit.dev/__replco/div
+    at 7d141737-ac6c-4cab-9614-b21b611b3ed8-00-2hg41d2ekxh72.worf.replit.dev/__replco/div
+    at AdminLayout (AdminLayout.jsx:29:29)
+    at ProtectedRoute (App.jsx:32:27)
+    at RenderedRoute (react-router-dom.js?v=4e2b4369:4088:5)
+    at Routes (react-router-dom.js?v=4e2b4369:4558:5)
+    at AppRoutes (App.jsx:51:31)
+    at 7d141737-ac6c-4cab-9614-b21b611b3ed8-00-2hg41d2ekxh72.worf.replit.dev/__replco/div
+    at NotificationProvider (NotificationContext.jsx:17:40)
+    at AuthProvider (AuthContext.jsx:16:32)
+    at ErrorBoundary (error-boundary.jsx:8:5)
+    at 7d141737-ac6c-4cab-9614-b21b611b3ed8-00-2hg41d2ekxh72.worf.replit.dev/__replco/App
+    at Router (react-router-dom.js?v=4e2b4369:4501:15)
+    at BrowserRouter (react-router-dom.js?v=4e2b4369:5247:5)
+    at QueryClientProvider (@tanstack_react-query.js?v=4e2b4369:3022:3)
+(anonymous) @ injected.js:27
+Error: <circle> attribute cx: Expected length, "NaN".
+Error: <circle> attribute cx: Expected length, "NaN".
+Error: <circle> attribute cx: Expected length, "NaN".
+Error: <circle> attribute cx: Expected length, "NaN".
+Error: <circle> attribute cx: Expected length, "NaN".
+Error: <circle> attribute cx: Expected length, "NaN".
+Error: <circle> attribute cx: Expected length, "NaN".
+Error: <circle> attribute cx: Expected length, "NaN".
+Error: <circle> attribute cx: Expected length, "NaN".
+Error: <circle> attribute cx: Expected length, "NaN".
+Error: <circle> attribute cx: Expected length, "NaN".
+Error: <circle> attribute cx: Expected length, "NaN".
+Error: <circle> attribute cx: Expected length, "NaN".
+Error: <circle> attribute cx: Expected length, "NaN".
+Error: <circle> attribute cx: Expected length, "NaN".
+Error: <circle> attribute cx: Expected length, "NaN".
+Error: <circle> attribute cx: Expected length, "NaN".
+Error: <circle> attribute cx: Expected length, "NaN".
+Error: <circle> attribute cx: Expected length, "NaN".
+Error: <circle> attribute cx: Expected length, "NaN".
+Error: <circle> attribute cx: Expected length, "NaN".
+zvkfuljxidxtuqrmquso.supabase.co/rest/v1/audit_logs?select=*%2Cstudent%3Astudents%28name%29%2Cuser%3Ausers%28name%29%2Croute%3Aroutes%28name%29&school_id=eq.1fd55bdb-517a-4213-a914-8ff59dbfe3ed&order=created_at.desc&limit=8:1  Failed to load resource: the server responded with a status of 404 ()
+zvkfuljxidxtuqrmquso.supabase.co/rest/v1/audit_logs?select=*%2Cstudent%3Astudents%28name%29%2Cuser%3Ausers%28name%29%2Croute%3Aroutes%28name%29&school_id=eq.1fd55bdb-517a-4213-a914-8ff59dbfe3ed&order=created_at.desc&limit=8:1  Failed to load resource: the server responded with a status of 404 ()
+zvkfuljxidxtuqrmquso.supabase.co/rest/v1/audit_logs?select=*%2Cstudent%3Astudents%28name%29%2Cuser%3Ausers%28name%29%2Croute%3Aroutes%28name%29&school_id=eq.1fd55bdb-517a-4213-a914-8ff59dbfe3ed&order=created_at.desc&limit=8:1  Failed to load resource: the server responded with a status of 404 ()
+injected.js:27 🔧 Supabase Configuration: Object
+injected.js:27 🔔 NotificationProvider: No user, clearing notifications
+injected.js:27 🔐 Initializing auth state...
+injected.js:27 🔔 NotificationProvider: No user, clearing notifications
+injected.js:27 🔐 Initializing auth state...
+injected.js:27 ✅ Supabase connected successfully!
+injected.js:27 📧 Current session: User: admin@littleangels.com
+injected.js:27 👤 Found existing session for: admin@littleangels.com
+injected.js:27 ✅ Created user profile: Object
+injected.js:27 🔐 Auth initialization complete, setting isLoading to false
+injected.js:27 🔔 NotificationProvider: User detected, fetching notifications...
+injected.js:27 🔔 Fetching notifications for user: 4de6be47-47ba-4156-82b9-e3506f7afd49
+injected.js:27 🔔 Subscribing to notifications realtime...
+injected.js:27 👤 Found existing session for: admin@littleangels.com
+injected.js:27 ✅ Created user profile: Object
+injected.js:27 🔐 Auth initialization complete, setting isLoading to false
+injected.js:27 🔔 NotificationProvider: User detected, fetching notifications...
+injected.js:27 🔔 Fetching notifications for user: 4de6be47-47ba-4156-82b9-e3506f7afd49
+injected.js:27 🔔 Subscribing to notifications realtime...
+injected.js:27 🔐 Auth state change: INITIAL_SESSION admin@littleangels.com
+injected.js:27 ✅ Initial session loaded
+injected.js:27 ✅ Fetched 3 notifications
+injected.js:27 ✅ Fetched 3 notifications
+injected.js:27 🔔 Realtime subscription status: CLOSED
+injected.js:27 🔔 Realtime subscription status: CHANNEL_ERROR
+injected.js:27 📚 Fetching students for school: 1fd55bdb-517a-4213-a914-8ff59dbfe3ed
+injected.js:27 📚 Fetching students for school: 1fd55bdb-517a-4213-a914-8ff59dbfe3ed
+injected.js:27 ✅ Fetched 100 students
+injected.js:27 ✅ Fetched 100 students
+injected.js:27 📝 Adding student: Object
+zvkfuljxidxtuqrmquso.supabase.co/rest/v1/students?columns=%22student_id%22%2C%22name%22%2C%22date_of_birth%22%2C%22grade%22%2C%22class%22%2C%22gender%22%2C%22address%22%2C%22medical_info%22%2C%22emergency_contact%22%2C%22parent_name%22%2C%22parent_phone%22%2C%22parent_email%22%2C%22needs_transport%22%2C%22transport_notes%22%2C%22school_id%22%2C%22is_active%22%2C%22created_at%22%2C%22updated_at%22&select=*:1  Failed to load resource: the server responded with a status of 400 ()
+zvkfuljxidxtuqrmquso.supabase.co/rest/v1/students?columns=%22student_id%22%2C%22name%22%2C%22date_of_birth%22%2C%22grade%22%2C%22class%22%2C%22gender%22%2C%22address%22%2C%22medical_info%22%2C%22emergency_contact%22%2C%22parent_name%22%2C%22parent_phone%22%2C%22parent_email%22%2C%22needs_transport%22%2C%22transport_notes%22%2C%22school_id%22%2C%22is_active%22%2C%22created_at%22%2C%22updated_at%22&select=*:1  Failed to load resource: the server responded with a status of 400 ()
+zvkfuljxidxtuqrmquso.supabase.co/rest/v1/students?columns=%22student_id%22%2C%22name%22%2C%22date_of_birth%22%2C%22grade%22%2C%22class%22%2C%22gender%22%2C%22address%22%2C%22medical_info%22%2C%22emergency_contact%22%2C%22parent_name%22%2C%22parent_phone%22%2C%22parent_email%22%2C%22needs_transport%22%2C%22transport_notes%22%2C%22school_id%22%2C%22is_active%22%2C%22created_at%22%2C%22updated_at%22&select=*:1  Failed to load resource: the server responded with a status of 400 ()
+injected.js:27 📋 Database insert failed, adding to local state
+injected.js:27 ❌ Error adding student: Error: Database not available - using demo mode
+    at handleAddStudent (Students.jsx:263:17)
+(anonymous) @ injected.js:27
+zvkfuljxidxtuqrmquso.supabase.co/rest/v1/students?id=eq.25b38ad6-7ad7-46aa-9382-e0e5de1b7a00:1  Failed to load resource: the server responded with a status of 409 ()
+zvkfuljxidxtuqrmquso.supabase.co/rest/v1/students?id=eq.25b38ad6-7ad7-46aa-9382-e0e5de1b7a00:1  Failed to load resource: the server responded with a status of 409 ()
+zvkfuljxidxtuqrmquso.supabase.co/rest/v1/students?id=eq.25b38ad6-7ad7-46aa-9382-e0e5de1b7a00:1  Failed to load resource: the server responded with a status of 409 ()
+injected.js:27 ❌ Error deleting student: Object
+(anonymous) @ injected.js:27
+injected.js:27 👥 Fetching staff for school: 1fd55bdb-517a-4213-a914-8ff59dbfe3ed
+injected.js:27 👥 Fetching staff for school: 1fd55bdb-517a-4213-a914-8ff59dbfe3ed
+injected.js:27 ✅ Fetched 1 staff members
+injected.js:27 ✅ Fetched 1 staff members
+injected.js:27 👥 Adding staff member: {name: 'xxcec', email: 'xec3@gmail.com', phone: '254724779523', role: 'teacher', address: 'cw wdoei', …}
+injected.js:204  POST https://zvkfuljxidxtuqrmquso.supabase.co/rest/v1/users?columns=%22name%22%2C%22email%22%2C%22phone%22%2C%22role%22%2C%22address%22%2C%22national_id%22%2C%22emergency_contact%22%2C%22qualifications%22%2C%22experience%22%2C%22specialization%22%2C%22salary%22%2C%22join_date%22%2C%22is_active%22%2C%22performance_rating%22%2C%22notes%22%2C%22school_id%22%2C%22created_at%22%2C%22updated_at%22&select=* 400 (Bad Request)
+apply @ injected.js:204
+(anonymous) @ @supabase_supabase-js.js?v=4e2b4369:4220
+(anonymous) @ @supabase_supabase-js.js?v=4e2b4369:4241
+fulfilled @ @supabase_supabase-js.js?v=4e2b4369:4193
+Promise.then
+step @ @supabase_supabase-js.js?v=4e2b4369:4206
+(anonymous) @ @supabase_supabase-js.js?v=4e2b4369:4208
+__awaiter6 @ @supabase_supabase-js.js?v=4e2b4369:4190
+(anonymous) @ @supabase_supabase-js.js?v=4e2b4369:4231
+then @ @supabase_supabase-js.js?v=4e2b4369:90
+  POST https://zvkfuljxidxtuqrmquso.supabase.co/rest/v1/users?columns=%22name%22%2C%22email%22%2C%22phone%22%2C%22role%22%2C%22address%22%2C%22national_id%22%2C%22emergency_contact%22%2C%22qualifications%22%2C%22experience%22%2C%22specialization%22%2C%22salary%22%2C%22join_date%22%2C%22is_active%22%2C%22performance_rating%22%2C%22notes%22%2C%22school_id%22%2C%22created_at%22%2C%22updated_at%22&select=* 400 (Bad Request)
+apply @ injected.js:204
+(anonymous) @ 7d141737-ac6c-4cab-9….js?v=4e2b4369:4220
+(anonymous) @ 7d141737-ac6c-4cab-9….js?v=4e2b4369:4241
+fulfilled @ 7d141737-ac6c-4cab-9….js?v=4e2b4369:4193
+Promise.then
+step @ 7d141737-ac6c-4cab-9….js?v=4e2b4369:4206
+(anonymous) @ 7d141737-ac6c-4cab-9….js?v=4e2b4369:4208
+__awaiter6 @ 7d141737-ac6c-4cab-9….js?v=4e2b4369:4190
+(anonymous) @ 7d141737-ac6c-4cab-9….js?v=4e2b4369:4231
+then @ 7d141737-ac6c-4cab-9…js.js?v=4e2b4369:90
+  POST https://zvkfuljxidxtuqrmquso.supabase.co/rest/v1/users?columns=%22name%22%2C%22email%22%2C%22phone%22%2C%22role%22%2C%22address%22%2C%22national_id%22%2C%22emergency_contact%22%2C%22qualifications%22%2C%22experience%22%2C%22specialization%22%2C%22salary%22%2C%22join_date%22%2C%22is_active%22%2C%22performance_rating%22%2C%22notes%22%2C%22school_id%22%2C%22created_at%22%2C%22updated_at%22&select=* 400 (Bad Request)
+apply @ injected.js:204
+(anonymous) @ 7d141737-ac6c-4cab-9….js?v=4e2b4369:4220
+(anonymous) @ 7d141737-ac6c-4cab-9….js?v=4e2b4369:4241
+fulfilled @ 7d141737-ac6c-4cab-9….js?v=4e2b4369:4193
+Promise.then
+step @ 7d141737-ac6c-4cab-9….js?v=4e2b4369:4206
+(anonymous) @ 7d141737-ac6c-4cab-9….js?v=4e2b4369:4208
+__awaiter6 @ 7d141737-ac6c-4cab-9….js?v=4e2b4369:4190
+(anonymous) @ 7d141737-ac6c-4cab-9….js?v=4e2b4369:4231
+then @ 7d141737-ac6c-4cab-9…js.js?v=4e2b4369:90
+injected.js:27 📋 Database insert failed, adding to local state
+injected.js:27 ❌ Error adding staff: Error: Database not available - using demo mode
+    at handleAddStaff (Staff.jsx:335:17)
+(anonymous) @ injected.js:27
+handleAddStaff @ Staff.jsx:358
+await in handleAddStaff
+callCallback2 @ chunk-UPELNCPK.js?v=4e2b4369:3674
+invokeGuardedCallbackDev @ chunk-UPELNCPK.js?v=4e2b4369:3699
+invokeGuardedCallback @ chunk-UPELNCPK.js?v=4e2b4369:3733
+invokeGuardedCallbackAndCatchFirstError @ chunk-UPELNCPK.js?v=4e2b4369:3736
+executeDispatch @ chunk-UPELNCPK.js?v=4e2b4369:7014
+processDispatchQueueItemsInOrder @ chunk-UPELNCPK.js?v=4e2b4369:7034
+processDispatchQueue @ chunk-UPELNCPK.js?v=4e2b4369:7043
+dispatchEventsForPlugins @ chunk-UPELNCPK.js?v=4e2b4369:7051
+(anonymous) @ chunk-UPELNCPK.js?v=4e2b4369:7174
+batchedUpdates$1 @ chunk-UPELNCPK.js?v=4e2b4369:18913
+batchedUpdates @ chunk-UPELNCPK.js?v=4e2b4369:3579
+dispatchEventForPluginEventSystem @ chunk-UPELNCPK.js?v=4e2b4369:7173
+dispatchEventWithEnableCapturePhaseSelectiveHydrationWithoutDiscreteEventReplay @ chunk-UPELNCPK.js?v=4e2b4369:5478
+dispatchEvent @ chunk-UPELNCPK.js?v=4e2b4369:5472
+dispatchDiscreteEvent @ chunk-UPELNCPK.js?v=4e2b4369:5449
+injected.js:27 🚌 Fetching transport data for school: 1fd55bdb-517a-4213-a914-8ff59dbfe3ed
+injected.js:27 🚌 Fetching transport data for school: 1fd55bdb-517a-4213-a914-8ff59dbfe3ed
+injected.js:204  GET https://zvkfuljxidxtuqrmquso.supabase.co/rest/v1/maintenance?select=*&school_id=eq.1fd55bdb-517a-4213-a914-8ff59dbfe3ed&order=scheduled_date.asc 404 (Not Found)
+apply @ injected.js:204
+(anonymous) @ @supabase_supabase-js.js?v=4e2b4369:4220
+(anonymous) @ @supabase_supabase-js.js?v=4e2b4369:4241
+fulfilled @ @supabase_supabase-js.js?v=4e2b4369:4193
+Promise.then
+step @ @supabase_supabase-js.js?v=4e2b4369:4206
+(anonymous) @ @supabase_supabase-js.js?v=4e2b4369:4208
+__awaiter6 @ @supabase_supabase-js.js?v=4e2b4369:4190
+(anonymous) @ @supabase_supabase-js.js?v=4e2b4369:4231
+then @ @supabase_supabase-js.js?v=4e2b4369:90
+  GET https://zvkfuljxidxtuqrmquso.supabase.co/rest/v1/maintenance?select=*&school_id=eq.1fd55bdb-517a-4213-a914-8ff59dbfe3ed&order=scheduled_date.asc 404 (Not Found)
+apply @ injected.js:204
+(anonymous) @ 7d141737-ac6c-4cab-9….js?v=4e2b4369:4220
+(anonymous) @ 7d141737-ac6c-4cab-9….js?v=4e2b4369:4241
+fulfilled @ 7d141737-ac6c-4cab-9….js?v=4e2b4369:4193
+Promise.then
+step @ 7d141737-ac6c-4cab-9….js?v=4e2b4369:4206
+(anonymous) @ 7d141737-ac6c-4cab-9….js?v=4e2b4369:4208
+__awaiter6 @ 7d141737-ac6c-4cab-9….js?v=4e2b4369:4190
+(anonymous) @ 7d141737-ac6c-4cab-9….js?v=4e2b4369:4231
+then @ 7d141737-ac6c-4cab-9…js.js?v=4e2b4369:90
+  GET https://zvkfuljxidxtuqrmquso.supabase.co/rest/v1/maintenance?select=*&school_id=eq.1fd55bdb-517a-4213-a914-8ff59dbfe3ed&order=scheduled_date.asc 404 (Not Found)
+apply @ injected.js:204
+(anonymous) @ 7d141737-ac6c-4cab-9….js?v=4e2b4369:4220
+(anonymous) @ 7d141737-ac6c-4cab-9….js?v=4e2b4369:4241
+fulfilled @ 7d141737-ac6c-4cab-9….js?v=4e2b4369:4193
+Promise.then
+step @ 7d141737-ac6c-4cab-9….js?v=4e2b4369:4206
+(anonymous) @ 7d141737-ac6c-4cab-9….js?v=4e2b4369:4208
+__awaiter6 @ 7d141737-ac6c-4cab-9….js?v=4e2b4369:4190
+(anonymous) @ 7d141737-ac6c-4cab-9….js?v=4e2b4369:4231
+then @ 7d141737-ac6c-4cab-9…js.js?v=4e2b4369:90
+injected.js:27 ✅ Fetched 7 vehicles, 7 routes
+Transport.jsx:1253 Uncaught TypeError: Cannot read properties of undefined (reading 'fuelType')
+    at Transport.jsx:1253:83
+    at Array.map (<anonymous>)
+    at TransportDashboard (Transport.jsx:1224:33)
+    at renderWithHooks (chunk-UPELNCPK.js?v=4e2b4369:11548:26)
+    at updateFunctionComponent (chunk-UPELNCPK.js?v=4e2b4369:14582:28)
+    at beginWork (chunk-UPELNCPK.js?v=4e2b4369:15924:22)
+    at HTMLUnknownElement.callCallback2 (chunk-UPELNCPK.js?v=4e2b4369:3674:22)
+    at Object.invokeGuardedCallbackDev (chunk-UPELNCPK.js?v=4e2b4369:3699:24)
+    at invokeGuardedCallback (chunk-UPELNCPK.js?v=4e2b4369:3733:39)
+    at beginWork$1 (chunk-UPELNCPK.js?v=4e2b4369:19765:15)
+(anonymous) @ Transport.jsx:1253
+TransportDashboard @ Transport.jsx:1224
+renderWithHooks @ chunk-UPELNCPK.js?v=4e2b4369:11548
+updateFunctionComponent @ chunk-UPELNCPK.js?v=4e2b4369:14582
+beginWork @ chunk-UPELNCPK.js?v=4e2b4369:15924
+callCallback2 @ chunk-UPELNCPK.js?v=4e2b4369:3674
+invokeGuardedCallbackDev @ chunk-UPELNCPK.js?v=4e2b4369:3699
+invokeGuardedCallback @ chunk-UPELNCPK.js?v=4e2b4369:3733
+beginWork$1 @ chunk-UPELNCPK.js?v=4e2b4369:19765
+performUnitOfWork @ chunk-UPELNCPK.js?v=4e2b4369:19198
+workLoopSync @ chunk-UPELNCPK.js?v=4e2b4369:19137
+renderRootSync @ chunk-UPELNCPK.js?v=4e2b4369:19116
+performConcurrentWorkOnRoot @ chunk-UPELNCPK.js?v=4e2b4369:18678
+workLoop @ chunk-UPELNCPK.js?v=4e2b4369:197
+flushWork @ chunk-UPELNCPK.js?v=4e2b4369:176
+performWorkUntilDeadline @ chunk-UPELNCPK.js?v=4e2b4369:384
+Transport.jsx:1253 Uncaught TypeError: Cannot read properties of undefined (reading 'fuelType')
+    at Transport.jsx:1253:83
+    at Array.map (<anonymous>)
+    at TransportDashboard (Transport.jsx:1224:33)
+    at renderWithHooks (chunk-UPELNCPK.js?v=4e2b4369:11548:26)
+    at updateFunctionComponent (chunk-UPELNCPK.js?v=4e2b4369:14582:28)
+    at beginWork (chunk-UPELNCPK.js?v=4e2b4369:15924:22)
+    at HTMLUnknownElement.callCallback2 (chunk-UPELNCPK.js?v=4e2b4369:3674:22)
+    at Object.invokeGuardedCallbackDev (chunk-UPELNCPK.js?v=4e2b4369:3699:24)
+    at invokeGuardedCallback (chunk-UPELNCPK.js?v=4e2b4369:3733:39)
+    at beginWork$1 (chunk-UPELNCPK.js?v=4e2b4369:19765:15)
+(anonymous) @ Transport.jsx:1253
+TransportDashboard @ Transport.jsx:1224
+renderWithHooks @ chunk-UPELNCPK.js?v=4e2b4369:11548
+updateFunctionComponent @ chunk-UPELNCPK.js?v=4e2b4369:14582
+beginWork @ chunk-UPELNCPK.js?v=4e2b4369:15924
+callCallback2 @ chunk-UPELNCPK.js?v=4e2b4369:3674
+invokeGuardedCallbackDev @ chunk-UPELNCPK.js?v=4e2b4369:3699
+invokeGuardedCallback @ chunk-UPELNCPK.js?v=4e2b4369:3733
+beginWork$1 @ chunk-UPELNCPK.js?v=4e2b4369:19765
+performUnitOfWork @ chunk-UPELNCPK.js?v=4e2b4369:19198
+workLoopSync @ chunk-UPELNCPK.js?v=4e2b4369:19137
+renderRootSync @ chunk-UPELNCPK.js?v=4e2b4369:19116
+recoverFromConcurrentError @ chunk-UPELNCPK.js?v=4e2b4369:18736
+performConcurrentWorkOnRoot @ chunk-UPELNCPK.js?v=4e2b4369:18684
+workLoop @ chunk-UPELNCPK.js?v=4e2b4369:197
+flushWork @ chunk-UPELNCPK.js?v=4e2b4369:176
+performWorkUntilDeadline @ chunk-UPELNCPK.js?v=4e2b4369:384
+injected.js:27 The above error occurred in the <TransportDashboard> component:
+
+    at TransportDashboard (https://7d141737-ac6c-4cab-9614-b21b611b3ed8-00-2hg41d2ekxh72.worf.replit.dev/src/pages/admin/Transport.jsx:86:20)
+    at RenderedRoute (https://7d141737-ac6c-4cab-9614-b21b611b3ed8-00-2hg41d2ekxh72.worf.replit.dev/node_modules/.vite/deps/react-router-dom.js?v=4e2b4369:4088:5)
+    at Outlet (https://7d141737-ac6c-4cab-9614-b21b611b3ed8-00-2hg41d2ekxh72.worf.replit.dev/node_modules/.vite/deps/react-router-dom.js?v=4e2b4369:4494:26)
+    at div
+    at main
+    at div
+    at div
+    at AdminLayout (https://7d141737-ac6c-4cab-9614-b21b611b3ed8-00-2hg41d2ekxh72.worf.replit.dev/src/layouts/AdminLayout.jsx:46:29)
+    at ProtectedRoute (https://7d141737-ac6c-4cab-9614-b21b611b3ed8-00-2hg41d2ekxh72.worf.replit.dev/src/App.jsx:41:27)
+    at RenderedRoute (https://7d141737-ac6c-4cab-9614-b21b611b3ed8-00-2hg41d2ekxh72.worf.replit.dev/node_modules/.vite/deps/react-router-dom.js?v=4e2b4369:4088:5)
+    at Routes (https://7d141737-ac6c-4cab-9614-b21b611b3ed8-00-2hg41d2ekxh72.worf.replit.dev/node_modules/.vite/deps/react-router-dom.js?v=4e2b4369:4558:5)
+    at AppRoutes (https://7d141737-ac6c-4cab-9614-b21b611b3ed8-00-2hg41d2ekxh72.worf.replit.dev/src/App.jsx:73:31)
+    at div
+    at NotificationProvider (https://7d141737-ac6c-4cab-9614-b21b611b3ed8-00-2hg41d2ekxh72.worf.replit.dev/src/contexts/NotificationContext.jsx:32:40)
+    at AuthProvider (https://7d141737-ac6c-4cab-9614-b21b611b3ed8-00-2hg41d2ekxh72.worf.replit.dev/src/contexts/AuthContext.jsx:31:32)
+    at ErrorBoundary (https://7d141737-ac6c-4cab-9614-b21b611b3ed8-00-2hg41d2ekxh72.worf.replit.dev/src/components/ui/error-boundary.jsx:10:5)
+    at App
+    at Router (https://7d141737-ac6c-4cab-9614-b21b611b3ed8-00-2hg41d2ekxh72.worf.replit.dev/node_modules/.vite/deps/react-router-dom.js?v=4e2b4369:4501:15)
+    at BrowserRouter (https://7d141737-ac6c-4cab-9614-b21b611b3ed8-00-2hg41d2ekxh72.worf.replit.dev/node_modules/.vite/deps/react-router-dom.js?v=4e2b4369:5247:5)
+    at QueryClientProvider (https://7d141737-ac6c-4cab-9614-b21b611b3ed8-00-2hg41d2ekxh72.worf.replit.dev/node_modules/.vite/deps/@tanstack_react-query.js?v=4e2b4369:3022:3)
+
+React will try to recreate this component tree from scratch using the error boundary you provided, ErrorBoundary.
+(anonymous) @ injected.js:27
+(anonymous) @ injected.js:27
+(anonymous) @ injected.js:27
+(anonymous) @ injected.js:27
+(anonymous) @ injected.js:27
+(anonymous) @ injected.js:27
+(anonymous) @ injected.js:27
+(anonymous) @ injected.js:27
+(anonymous) @ injected.js:27
+(anonymous) @ injected.js:27
+(anonymous) @ injected.js:27
+(anonymous) @ injected.js:27
+(anonymous) @ injected.js:27
+(anonymous) @ injected.js:27
+(anonymous) @ injected.js:27
+logCapturedError @ chunk-UPELNCPK.js?v=4e2b4369:14032
+callback @ chunk-UPELNCPK.js?v=4e2b4369:14078
+callCallback @ chunk-UPELNCPK.js?v=4e2b4369:11248
+commitUpdateQueue @ chunk-UPELNCPK.js?v=4e2b4369:11265
+commitLayoutEffectOnFiber @ chunk-UPELNCPK.js?v=4e2b4369:17075
+commitLayoutMountEffects_complete @ chunk-UPELNCPK.js?v=4e2b4369:17980
+commitLayoutEffects_begin @ chunk-UPELNCPK.js?v=4e2b4369:17969
+commitLayoutEffects @ chunk-UPELNCPK.js?v=4e2b4369:17920
+commitRootImpl @ chunk-UPELNCPK.js?v=4e2b4369:19353
+commitRoot @ chunk-UPELNCPK.js?v=4e2b4369:19277
+finishConcurrentRender @ chunk-UPELNCPK.js?v=4e2b4369:18760
+performConcurrentWorkOnRoot @ chunk-UPELNCPK.js?v=4e2b4369:18718
+workLoop @ chunk-UPELNCPK.js?v=4e2b4369:197
+flushWork @ chunk-UPELNCPK.js?v=4e2b4369:176
+performWorkUntilDeadline @ chunk-UPELNCPK.js?v=4e2b4369:384
+injected.js:204  GET https://zvkfuljxidxtuqrmquso.supabase.co/rest/v1/maintenance?select=*&school_id=eq.1fd55bdb-517a-4213-a914-8ff59dbfe3ed&order=scheduled_date.asc 404 (Not Found)
+apply @ injected.js:204
+(anonymous) @ @supabase_supabase-js.js?v=4e2b4369:4220
+(anonymous) @ @supabase_supabase-js.js?v=4e2b4369:4241
+fulfilled @ @supabase_supabase-js.js?v=4e2b4369:4193
+Promise.then
+step @ @supabase_supabase-js.js?v=4e2b4369:4206
+(anonymous) @ @supabase_supabase-js.js?v=4e2b4369:4208
+__awaiter6 @ @supabase_supabase-js.js?v=4e2b4369:4190
+(anonymous) @ @supabase_supabase-js.js?v=4e2b4369:4231
+then @ @supabase_supabase-js.js?v=4e2b4369:90
+  GET https://zvkfuljxidxtuqrmquso.supabase.co/rest/v1/maintenance?select=*&school_id=eq.1fd55bdb-517a-4213-a914-8ff59dbfe3ed&order=scheduled_date.asc 404 (Not Found)
+apply @ injected.js:204
+(anonymous) @ 7d141737-ac6c-4cab-9….js?v=4e2b4369:4220
+(anonymous) @ 7d141737-ac6c-4cab-9….js?v=4e2b4369:4241
+fulfilled @ 7d141737-ac6c-4cab-9….js?v=4e2b4369:4193
+Promise.then
+step @ 7d141737-ac6c-4cab-9….js?v=4e2b4369:4206
+(anonymous) @ 7d141737-ac6c-4cab-9….js?v=4e2b4369:4208
+__awaiter6 @ 7d141737-ac6c-4cab-9….js?v=4e2b4369:4190
+(anonymous) @ 7d141737-ac6c-4cab-9….js?v=4e2b4369:4231
+then @ 7d141737-ac6c-4cab-9…js.js?v=4e2b4369:90
+  GET https://zvkfuljxidxtuqrmquso.supabase.co/rest/v1/maintenance?select=*&school_id=eq.1fd55bdb-517a-4213-a914-8ff59dbfe3ed&order=scheduled_date.asc 404 (Not Found)
+apply @ injected.js:204
+(anonymous) @ 7d141737-ac6c-4cab-9….js?v=4e2b4369:4220
+(anonymous) @ 7d141737-ac6c-4cab-9….js?v=4e2b4369:4241
+fulfilled @ 7d141737-ac6c-4cab-9….js?v=4e2b4369:4193
+Promise.then
+step @ 7d141737-ac6c-4cab-9….js?v=4e2b4369:4206
+(anonymous) @ 7d141737-ac6c-4cab-9….js?v=4e2b4369:4208
+__awaiter6 @ 7d141737-ac6c-4cab-9….js?v=4e2b4369:4190
+(anonymous) @ 7d141737-ac6c-4cab-9….js?v=4e2b4369:4231
+then @ 7d141737-ac6c-4cab-9…js.js?v=4e2b4369:90
+injected.js:27 ✅ Fetched 7 vehicles, 7 routes
+injected.js:27 🔧 Supabase Configuration: {url: 'https://zvkfuljxidxtuqrmquso.supabase.co', keyPresent: true, source: 'env'}
+injected.js:27 🔔 NotificationProvider: No user, clearing notifications
+injected.js:27 🔐 Initializing auth state...
+injected.js:27 🔔 NotificationProvider: No user, clearing notifications
+injected.js:27 🔐 Initializing auth state...
+injected.js:27 🔐 Auth state change: SIGNED_IN admin@littleangels.com
+injected.js:27 ✅ User signed in
+injected.js:27 ✅ Created user profile: {name: 'Dr. Margaret Wanjiru', role: 'admin', school_id: '1fd55bdb-517a-4213-a914-8ff59dbfe3ed'}
+injected.js:27 👥 Fetching staff for school: 1fd55bdb-517a-4213-a914-8ff59dbfe3ed
+injected.js:27 🔔 NotificationProvider: User detected, fetching notifications...
+injected.js:27 🔔 Fetching notifications for user: 4de6be47-47ba-4156-82b9-e3506f7afd49
+injected.js:27 🔔 Subscribing to notifications realtime...
+injected.js:27 👥 Fetching staff for school: 1fd55bdb-517a-4213-a914-8ff59dbfe3ed
+injected.js:27 ✅ Supabase connected successfully!
+injected.js:27 📧 Current session: User: admin@littleangels.com
+injected.js:27 👤 Found existing session for: admin@littleangels.com
+injected.js:27 ✅ Created user profile: {name: 'Dr. Margaret Wanjiru', role: 'admin', school_id: '1fd55bdb-517a-4213-a914-8ff59dbfe3ed'}
+injected.js:27 🔐 Auth initialization complete, setting isLoading to false
+injected.js:27 👥 Fetching staff for school: 1fd55bdb-517a-4213-a914-8ff59dbfe3ed
+injected.js:27 🔔 NotificationProvider: User detected, fetching notifications...
+injected.js:27 🔔 Fetching notifications for user: 4de6be47-47ba-4156-82b9-e3506f7afd49
+injected.js:27 🔔 Subscribing to notifications realtime...
+injected.js:27 👤 Found existing session for: admin@littleangels.com
+injected.js:27 ✅ Created user profile: {name: 'Dr. Margaret Wanjiru', role: 'admin', school_id: '1fd55bdb-517a-4213-a914-8ff59dbfe3ed'}
+injected.js:27 🔐 Auth initialization complete, setting isLoading to false
+injected.js:27 👥 Fetching staff for school: 1fd55bdb-517a-4213-a914-8ff59dbfe3ed
+injected.js:27 🔔 NotificationProvider: User detected, fetching notifications...
+injected.js:27 🔔 Fetching notifications for user: 4de6be47-47ba-4156-82b9-e3506f7afd49
+injected.js:27 🔔 Subscribing to notifications realtime...
+injected.js:27 🔐 Auth state change: INITIAL_SESSION admin@littleangels.com
+injected.js:27 ✅ Initial session loaded
+injected.js:27 ✅ Fetched 1 staff members
+injected.js:27 ✅ Fetched 3 notifications
+injected.js:27 📚 Fetching students for school: 1fd55bdb-517a-4213-a914-8ff59dbfe3ed
+injected.js:27 📚 Fetching students for school: 1fd55bdb-517a-4213-a914-8ff59dbfe3ed
+injected.js:27 ✅ Fetched 1 staff members
+injected.js:27 ✅ Fetched 3 notifications
+injected.js:27 ✅ Fetched 1 staff members
+injected.js:27 ✅ Fetched 3 notifications
+injected.js:27 🔔 Realtime subscription status: CLOSED
+injected.js:27 🔔 Realtime subscription status: CHANNEL_ERROR
+injected.js:27 ✅ Fetched 1 staff members
+injected.js:27 ✅ Fetched 100 students
+injected.js:27 ✅ Fetched 100 students
+injected.js:204  GET https://zvkfuljxidxtuqrmquso.supabase.co/rest/v1/chat_participants?select=chat_id%2Cchats%21inner%28id%2Cname%2Ctype%2Ccreated_at%2Clast_message_id%2Clast_message%3Amessages%21chats_last_message_id_fkey%28id%2Ccontent%2Ccreated_at%2Csender_id%2Cmessage_type%2Csender%3Ausers%21messages_sender_id_fkey%28name%29%29%29&user_id=eq.4de6be47-47ba-4156-82b9-e3506f7afd49&order=created_at.desc 400 (Bad Request)
+apply @ injected.js:204
+(anonymous) @ @supabase_supabase-js.js?v=4e2b4369:4220
+(anonymous) @ @supabase_supabase-js.js?v=4e2b4369:4241
+fulfilled @ @supabase_supabase-js.js?v=4e2b4369:4193
+Promise.then
+step @ @supabase_supabase-js.js?v=4e2b4369:4206
+(anonymous) @ @supabase_supabase-js.js?v=4e2b4369:4208
+__awaiter6 @ @supabase_supabase-js.js?v=4e2b4369:4190
+(anonymous) @ @supabase_supabase-js.js?v=4e2b4369:4231
+then @ @supabase_supabase-js.js?v=4e2b4369:90
+  GET https://zvkfuljxidxtuqrmquso.supabase.co/rest/v1/chat_participants?select=chat_id%2Cchats%21inner%28id%2Cname%2Ctype%2Ccreated_at%2Clast_message_id%2Clast_message%3Amessages%21chats_last_message_id_fkey%28id%2Ccontent%2Ccreated_at%2Csender_id%2Cmessage_type%2Csender%3Ausers%21messages_sender_id_fkey%28name%29%29%29&user_id=eq.4de6be47-47ba-4156-82b9-e3506f7afd49&order=created_at.desc 400 (Bad Request)
+apply @ injected.js:204
+(anonymous) @ @supabase_supabase-js.js:4220
+(anonymous) @ @supabase_supabase-js.js:4241
+fulfilled @ @supabase_supabase-js.js:4193
+Promise.then
+step @ @supabase_supabase-js.js:4206
+(anonymous) @ @supabase_supabase-js.js:4208
+__awaiter6 @ @supabase_supabase-js.js:4190
+(anonymous) @ @supabase_supabase-js.js:4231
+then @ @supabase_supabase-js.js:90
+injected.js:27 Error loading chats: {code: 'PGRST200', details: "Searched for a foreign key relationship between 'c…n the schema 'public', but no matches were found.", hint: null, message: "Could not find a relationship between 'chats' and 'messages' in the schema cache"}
+(anonymous) @ injected.js:27
+loadChats @ ChatList.jsx:89
+await in loadChats
+(anonymous) @ ChatList.jsx:33
+commitHookEffectListMount @ chunk-UPELNCPK.js?v=4e2b4369:16915
+commitPassiveMountOnFiber @ chunk-UPELNCPK.js?v=4e2b4369:18156
+commitPassiveMountEffects_complete @ chunk-UPELNCPK.js?v=4e2b4369:18129
+commitPassiveMountEffects_begin @ chunk-UPELNCPK.js?v=4e2b4369:18119
+commitPassiveMountEffects @ chunk-UPELNCPK.js?v=4e2b4369:18109
+flushPassiveEffectsImpl @ chunk-UPELNCPK.js?v=4e2b4369:19490
+flushPassiveEffects @ chunk-UPELNCPK.js?v=4e2b4369:19447
+(anonymous) @ chunk-UPELNCPK.js?v=4e2b4369:19328
+workLoop @ chunk-UPELNCPK.js?v=4e2b4369:197
+flushWork @ chunk-UPELNCPK.js?v=4e2b4369:176
+performWorkUntilDeadline @ chunk-UPELNCPK.js?v=4e2b4369:384
+injected.js:204  GET https://zvkfuljxidxtuqrmquso.supabase.co/rest/v1/chat_participants?select=chat_id%2Cchats%21inner%28id%2Cname%2Ctype%2Ccreated_at%2Clast_message_id%2Clast_message%3Amessages%21chats_last_message_id_fkey%28id%2Ccontent%2Ccreated_at%2Csender_id%2Cmessage_type%2Csender%3Ausers%21messages_sender_id_fkey%28name%29%29%29&user_id=eq.4de6be47-47ba-4156-82b9-e3506f7afd49&order=created_at.desc 400 (Bad Request)
+apply @ injected.js:204
+(anonymous) @ @supabase_supabase-js.js?v=4e2b4369:4220
+(anonymous) @ @supabase_supabase-js.js?v=4e2b4369:4241
+fulfilled @ @supabase_supabase-js.js?v=4e2b4369:4193
+Promise.then
+step @ @supabase_supabase-js.js?v=4e2b4369:4206
+(anonymous) @ @supabase_supabase-js.js?v=4e2b4369:4208
+__awaiter6 @ @supabase_supabase-js.js?v=4e2b4369:4190
+(anonymous) @ @supabase_supabase-js.js?v=4e2b4369:4231
+then @ @supabase_supabase-js.js?v=4e2b4369:90
+  GET https://zvkfuljxidxtuqrmquso.supabase.co/rest/v1/chat_participants?select=chat_id%2Cchats%21inner%28id%2Cname%2Ctype%2Ccreated_at%2Clast_message_id%2Clast_message%3Amessages%21chats_last_message_id_fkey%28id%2Ccontent%2Ccreated_at%2Csender_id%2Cmessage_type%2Csender%3Ausers%21messages_sender_id_fkey%28name%29%29%29&user_id=eq.4de6be47-47ba-4156-82b9-e3506f7afd49&order=created_at.desc 400 (Bad Request)
+apply @ injected.js:204
+(anonymous) @ @supabase_supabase-js.js:4220
+(anonymous) @ @supabase_supabase-js.js:4241
+fulfilled @ @supabase_supabase-js.js:4193
+Promise.then
+step @ @supabase_supabase-js.js:4206
+(anonymous) @ @supabase_supabase-js.js:4208
+__awaiter6 @ @supabase_supabase-js.js:4190
+(anonymous) @ @supabase_supabase-js.js:4231
+then @ @supabase_supabase-js.js:90
+injected.js:27 Error loading chats: {code: 'PGRST200', details: "Searched for a foreign key relationship between 'c…n the schema 'public', but no matches were found.", hint: null, message: "Could not find a relationship between 'chats' and 'messages' in the schema cache"}
+(anonymous) @ injected.js:27
+loadChats @ ChatList.jsx:89
+await in loadChats
+(anonymous) @ ChatList.jsx:33
+commitHookEffectListMount @ chunk-UPELNCPK.js?v=4e2b4369:16915
+invokePassiveEffectMountInDEV @ chunk-UPELNCPK.js?v=4e2b4369:18324
+invokeEffectsInDev @ chunk-UPELNCPK.js?v=4e2b4369:19701
+commitDoubleInvokeEffectsInDEV @ chunk-UPELNCPK.js?v=4e2b4369:19686
+flushPassiveEffectsImpl @ chunk-UPELNCPK.js?v=4e2b4369:19503
+flushPassiveEffects @ chunk-UPELNCPK.js?v=4e2b4369:19447
+(anonymous) @ chunk-UPELNCPK.js?v=4e2b4369:19328
+workLoop @ chunk-UPELNCPK.js?v=4e2b4369:197
+flushWork @ chunk-UPELNCPK.js?v=4e2b4369:176
+performWorkUntilDeadline @ chunk-UPELNCPK.js?v=4e2b4369:384
+injected.js:204  POST https://zvkfuljxidxtuqrmquso.supabase.co/rest/v1/chats?columns=%22name%22%2C%22type%22%2C%22created_by%22%2C%22school_id%22&select=* 500 (Internal Server Error)
+apply @ injected.js:204
+(anonymous) @ @supabase_supabase-js.js?v=4e2b4369:4220
+(anonymous) @ @supabase_supabase-js.js?v=4e2b4369:4241
+fulfilled @ @supabase_supabase-js.js?v=4e2b4369:4193
+Promise.then
+step @ @supabase_supabase-js.js?v=4e2b4369:4206
+(anonymous) @ @supabase_supabase-js.js?v=4e2b4369:4208
+__awaiter6 @ @supabase_supabase-js.js?v=4e2b4369:4190
+(anonymous) @ @supabase_supabase-js.js?v=4e2b4369:4231
+then @ @supabase_supabase-js.js?v=4e2b4369:90
+  POST https://zvkfuljxidxtuqrmquso.supabase.co/rest/v1/chats?columns=%22name%22%2C%22type%22%2C%22created_by%22%2C%22school_id%22&select=* 500 (Internal Server Error)
+apply @ injected.js:204
+(anonymous) @ @supabase_supabase-js.js:4220
+(anonymous) @ @supabase_supabase-js.js:4241
+fulfilled @ @supabase_supabase-js.js:4193
+Promise.then
+step @ @supabase_supabase-js.js:4206
+(anonymous) @ @supabase_supabase-js.js:4208
+__awaiter6 @ @supabase_supabase-js.js:4190
+(anonymous) @ @supabase_supabase-js.js:4231
+then @ @supabase_supabase-js.js:90
+injected.js:27 Error creating chat: {code: '42P17', details: null, hint: null, message: 'infinite recursion detected in policy for relation "chat_participants"'}
+(anonymous) @ injected.js:27
+createNewChat @ ChatList.jsx:144
+await in createNewChat
+onClick @ ChatList.jsx:344
+callCallback2 @ chunk-UPELNCPK.js?v=4e2b4369:3674
+invokeGuardedCallbackDev @ chunk-UPELNCPK.js?v=4e2b4369:3699
+invokeGuardedCallback @ chunk-UPELNCPK.js?v=4e2b4369:3733
+invokeGuardedCallbackAndCatchFirstError @ chunk-UPELNCPK.js?v=4e2b4369:3736
+executeDispatch @ chunk-UPELNCPK.js?v=4e2b4369:7014
+processDispatchQueueItemsInOrder @ chunk-UPELNCPK.js?v=4e2b4369:7034
+processDispatchQueue @ chunk-UPELNCPK.js?v=4e2b4369:7043
+dispatchEventsForPlugins @ chunk-UPELNCPK.js?v=4e2b4369:7051
+(anonymous) @ chunk-UPELNCPK.js?v=4e2b4369:7174
+batchedUpdates$1 @ chunk-UPELNCPK.js?v=4e2b4369:18913
+batchedUpdates @ chunk-UPELNCPK.js?v=4e2b4369:3579
+dispatchEventForPluginEventSystem @ chunk-UPELNCPK.js?v=4e2b4369:7173
+dispatchEventWithEnableCapturePhaseSelectiveHydrationWithoutDiscreteEventReplay @ chunk-UPELNCPK.js?v=4e2b4369:5478
+dispatchEvent @ chunk-UPELNCPK.js?v=4e2b4369:5472
+dispatchDiscreteEvent @ chunk-UPELNCPK.js?v=4e2b4369:5449
+injected.js:204  GET https://zvkfuljxidxtuqrmquso.supabase.co/rest/v1/notification_analytics?select=*&school_id=eq.1fd55bdb-517a-4213-a914-8ff59dbfe3ed 404 (Not Found)
+apply @ injected.js:204
+(anonymous) @ @supabase_supabase-js.js?v=4e2b4369:4220
+(anonymous) @ @supabase_supabase-js.js?v=4e2b4369:4241
+fulfilled @ @supabase_supabase-js.js?v=4e2b4369:4193
+Promise.then
+step @ @supabase_supabase-js.js?v=4e2b4369:4206
+(anonymous) @ @supabase_supabase-js.js?v=4e2b4369:4208
+__awaiter6 @ @supabase_supabase-js.js?v=4e2b4369:4190
+(anonymous) @ @supabase_supabase-js.js?v=4e2b4369:4231
+then @ @supabase_supabase-js.js?v=4e2b4369:90
+  GET https://zvkfuljxidxtuqrmquso.supabase.co/rest/v1/notification_analytics?select=*&school_id=eq.1fd55bdb-517a-4213-a914-8ff59dbfe3ed 404 (Not Found)
+apply @ injected.js:204
+(anonymous) @ @supabase_supabase-js.js:4220
+(anonymous) @ @supabase_supabase-js.js:4241
+fulfilled @ @supabase_supabase-js.js:4193
+Promise.then
+step @ @supabase_supabase-js.js:4206
+(anonymous) @ @supabase_supabase-js.js:4208
+__awaiter6 @ @supabase_supabase-js.js:4190
+(anonymous) @ @supabase_supabase-js.js:4231
+then @ @supabase_supabase-js.js:90
+injected.js:204  GET https://zvkfuljxidxtuqrmquso.supabase.co/rest/v1/notifications?select=*%2Csender%3Ausers%21notifications_sender_id_fkey%28name%2Crole%2Cavatar_url%29%2Cnotification_analytics%28view_count%2Cclick_count%2Cacknowledge_count%29%2Cnotification_recipients%28user_id%2Cstatus%2Cread_at%2Cacknowledged_at%29&school_id=eq.1fd55bdb-517a-4213-a914-8ff59dbfe3ed&order=created_at.desc 400 (Bad Request)
+apply @ injected.js:204
+(anonymous) @ @supabase_supabase-js.js?v=4e2b4369:4220
+(anonymous) @ @supabase_supabase-js.js?v=4e2b4369:4241
+fulfilled @ @supabase_supabase-js.js?v=4e2b4369:4193
+Promise.then
+step @ @supabase_supabase-js.js?v=4e2b4369:4206
+(anonymous) @ @supabase_supabase-js.js?v=4e2b4369:4208
+__awaiter6 @ @supabase_supabase-js.js?v=4e2b4369:4190
+(anonymous) @ @supabase_supabase-js.js?v=4e2b4369:4231
+then @ @supabase_supabase-js.js?v=4e2b4369:90
+  GET https://zvkfuljxidxtuqrmquso.supabase.co/rest/v1/notifications?select=*%2Csender%3Ausers%21notifications_sender_id_fkey%28name%2Crole%2Cavatar_url%29%2Cnotification_analytics%28view_count%2Cclick_count%2Cacknowledge_count%29%2Cnotification_recipients%28user_id%2Cstatus%2Cread_at%2Cacknowledged_at%29&school_id=eq.1fd55bdb-517a-4213-a914-8ff59dbfe3ed&order=created_at.desc 400 (Bad Request)
+apply @ injected.js:204
+(anonymous) @ @supabase_supabase-js.js:4220
+(anonymous) @ @supabase_supabase-js.js:4241
+fulfilled @ @supabase_supabase-js.js:4193
+Promise.then
+step @ @supabase_supabase-js.js:4206
+(anonymous) @ @supabase_supabase-js.js:4208
+__awaiter6 @ @supabase_supabase-js.js:4190
+(anonymous) @ @supabase_supabase-js.js:4231
+then @ @supabase_supabase-js.js:90
+injected.js:204  GET https://zvkfuljxidxtuqrmquso.supabase.co/rest/v1/notification_templates?select=*&school_id=eq.1fd55bdb-517a-4213-a914-8ff59dbfe3ed&order=created_at.desc 404 (Not Found)
+apply @ injected.js:204
+(anonymous) @ @supabase_supabase-js.js?v=4e2b4369:4220
+(anonymous) @ @supabase_supabase-js.js?v=4e2b4369:4241
+fulfilled @ @supabase_supabase-js.js?v=4e2b4369:4193
+Promise.then
+step @ @supabase_supabase-js.js?v=4e2b4369:4206
+(anonymous) @ @supabase_supabase-js.js?v=4e2b4369:4208
+__awaiter6 @ @supabase_supabase-js.js?v=4e2b4369:4190
+(anonymous) @ @supabase_supabase-js.js?v=4e2b4369:4231
+then @ @supabase_supabase-js.js?v=4e2b4369:90
+  GET https://zvkfuljxidxtuqrmquso.supabase.co/rest/v1/notification_templates?select=*&school_id=eq.1fd55bdb-517a-4213-a914-8ff59dbfe3ed&order=created_at.desc 404 (Not Found)
+apply @ injected.js:204
+(anonymous) @ @supabase_supabase-js.js:4220
+(anonymous) @ @supabase_supabase-js.js:4241
+fulfilled @ @supabase_supabase-js.js:4193
+Promise.then
+step @ @supabase_supabase-js.js:4206
+(anonymous) @ @supabase_supabase-js.js:4208
+__awaiter6 @ @supabase_supabase-js.js:4190
+(anonymous) @ @supabase_supabase-js.js:4231
+then @ @supabase_supabase-js.js:90
+injected.js:27 Error fetching analytics: {code: 'PGRST205', details: null, hint: "Perhaps you meant the table 'public.notifications'", message: "Could not find the table 'public.notification_analytics' in the schema cache"}
+(anonymous) @ injected.js:27
+fetchAnalytics @ Notifications.jsx:208
+await in fetchAnalytics
+(anonymous) @ Notifications.jsx:153
+commitHookEffectListMount @ chunk-UPELNCPK.js?v=4e2b4369:16915
+invokePassiveEffectMountInDEV @ chunk-UPELNCPK.js?v=4e2b4369:18324
+invokeEffectsInDev @ chunk-UPELNCPK.js?v=4e2b4369:19701
+commitDoubleInvokeEffectsInDEV @ chunk-UPELNCPK.js?v=4e2b4369:19686
+flushPassiveEffectsImpl @ chunk-UPELNCPK.js?v=4e2b4369:19503
+flushPassiveEffects @ chunk-UPELNCPK.js?v=4e2b4369:19447
+(anonymous) @ chunk-UPELNCPK.js?v=4e2b4369:19328
+workLoop @ chunk-UPELNCPK.js?v=4e2b4369:197
+flushWork @ chunk-UPELNCPK.js?v=4e2b4369:176
+performWorkUntilDeadline @ chunk-UPELNCPK.js?v=4e2b4369:384
+injected.js:27 Error fetching notifications: {code: 'PGRST200', details: "Searched for a foreign key relationship between 'n…n the schema 'public', but no matches were found.", hint: null, message: "Could not find a relationship between 'notifications' and 'users' in the schema cache"}
+(anonymous) @ injected.js:27
+fetchNotifications @ Notifications.jsx:175
+await in fetchNotifications
+(anonymous) @ Notifications.jsx:152
+commitHookEffectListMount @ chunk-UPELNCPK.js?v=4e2b4369:16915
+invokePassiveEffectMountInDEV @ chunk-UPELNCPK.js?v=4e2b4369:18324
+invokeEffectsInDev @ chunk-UPELNCPK.js?v=4e2b4369:19701
+commitDoubleInvokeEffectsInDEV @ chunk-UPELNCPK.js?v=4e2b4369:19686
+flushPassiveEffectsImpl @ chunk-UPELNCPK.js?v=4e2b4369:19503
+flushPassiveEffects @ chunk-UPELNCPK.js?v=4e2b4369:19447
+(anonymous) @ chunk-UPELNCPK.js?v=4e2b4369:19328
+workLoop @ chunk-UPELNCPK.js?v=4e2b4369:197
+flushWork @ chunk-UPELNCPK.js?v=4e2b4369:176
+performWorkUntilDeadline @ chunk-UPELNCPK.js?v=4e2b4369:384
+injected.js:27 Error fetching templates: {code: 'PGRST205', details: null, hint: "Perhaps you meant the table 'public.notifications'", message: "Could not find the table 'public.notification_templates' in the schema cache"}
+(anonymous) @ injected.js:27
+fetchTemplates @ Notifications.jsx:223
+await in fetchTemplates
+(anonymous) @ Notifications.jsx:154
+commitHookEffectListMount @ chunk-UPELNCPK.js?v=4e2b4369:16915
+commitPassiveMountOnFiber @ chunk-UPELNCPK.js?v=4e2b4369:18156
+commitPassiveMountEffects_complete @ chunk-UPELNCPK.js?v=4e2b4369:18129
+commitPassiveMountEffects_begin @ chunk-UPELNCPK.js?v=4e2b4369:18119
+commitPassiveMountEffects @ chunk-UPELNCPK.js?v=4e2b4369:18109
+flushPassiveEffectsImpl @ chunk-UPELNCPK.js?v=4e2b4369:19490
+flushPassiveEffects @ chunk-UPELNCPK.js?v=4e2b4369:19447
+(anonymous) @ chunk-UPELNCPK.js?v=4e2b4369:19328
+workLoop @ chunk-UPELNCPK.js?v=4e2b4369:197
+flushWork @ chunk-UPELNCPK.js?v=4e2b4369:176
+performWorkUntilDeadline @ chunk-UPELNCPK.js?v=4e2b4369:384
+injected.js:204  GET https://zvkfuljxidxtuqrmquso.supabase.co/rest/v1/user_notification_preferences?select=*&user_id=eq.4de6be47-47ba-4156-82b9-e3506f7afd49 404 (Not Found)
+apply @ injected.js:204
+(anonymous) @ @supabase_supabase-js.js?v=4e2b4369:4220
+(anonymous) @ @supabase_supabase-js.js?v=4e2b4369:4241
+fulfilled @ @supabase_supabase-js.js?v=4e2b4369:4193
+Promise.then
+step @ @supabase_supabase-js.js?v=4e2b4369:4206
+(anonymous) @ @supabase_supabase-js.js?v=4e2b4369:4208
+__awaiter6 @ @supabase_supabase-js.js?v=4e2b4369:4190
+(anonymous) @ @supabase_supabase-js.js?v=4e2b4369:4231
+then @ @supabase_supabase-js.js?v=4e2b4369:90
+  GET https://zvkfuljxidxtuqrmquso.supabase.co/rest/v1/user_notification_preferences?select=*&user_id=eq.4de6be47-47ba-4156-82b9-e3506f7afd49 404 (Not Found)
+apply @ injected.js:204
+(anonymous) @ @supabase_supabase-js.js:4220
+(anonymous) @ @supabase_supabase-js.js:4241
+fulfilled @ @supabase_supabase-js.js:4193
+Promise.then
+step @ @supabase_supabase-js.js:4206
+(anonymous) @ @supabase_supabase-js.js:4208
+__awaiter6 @ @supabase_supabase-js.js:4190
+(anonymous) @ @supabase_supabase-js.js:4231
+then @ @supabase_supabase-js.js:90
+injected.js:27 Error fetching preferences: {code: 'PGRST205', details: null, hint: "Perhaps you meant the table 'public.notifications'", message: "Could not find the table 'public.user_notification_preferences' in the schema cache"}
+(anonymous) @ injected.js:27
+fetchUserPreferences @ Notifications.jsx:244
+await in fetchUserPreferences
+(anonymous) @ Notifications.jsx:155
+commitHookEffectListMount @ chunk-UPELNCPK.js?v=4e2b4369:16915
+commitPassiveMountOnFiber @ chunk-UPELNCPK.js?v=4e2b4369:18156
+commitPassiveMountEffects_complete @ chunk-UPELNCPK.js?v=4e2b4369:18129
+commitPassiveMountEffects_begin @ chunk-UPELNCPK.js?v=4e2b4369:18119
+commitPassiveMountEffects @ chunk-UPELNCPK.js?v=4e2b4369:18109
+flushPassiveEffectsImpl @ chunk-UPELNCPK.js?v=4e2b4369:19490
+flushPassiveEffects @ chunk-UPELNCPK.js?v=4e2b4369:19447
+(anonymous) @ chunk-UPELNCPK.js?v=4e2b4369:19328
+workLoop @ chunk-UPELNCPK.js?v=4e2b4369:197
+flushWork @ chunk-UPELNCPK.js?v=4e2b4369:176
+performWorkUntilDeadline @ chunk-UPELNCPK.js?v=4e2b4369:384
+injected.js:204  GET https://zvkfuljxidxtuqrmquso.supabase.co/rest/v1/notification_analytics?select=*&school_id=eq.1fd55bdb-517a-4213-a914-8ff59dbfe3ed 404 (Not Found)
+apply @ injected.js:204
+(anonymous) @ @supabase_supabase-js.js?v=4e2b4369:4220
+(anonymous) @ @supabase_supabase-js.js?v=4e2b4369:4241
+fulfilled @ @supabase_supabase-js.js?v=4e2b4369:4193
+Promise.then
+step @ @supabase_supabase-js.js?v=4e2b4369:4206
+(anonymous) @ @supabase_supabase-js.js?v=4e2b4369:4208
+__awaiter6 @ @supabase_supabase-js.js?v=4e2b4369:4190
+(anonymous) @ @supabase_supabase-js.js?v=4e2b4369:4231
+then @ @supabase_supabase-js.js?v=4e2b4369:90
+  GET https://zvkfuljxidxtuqrmquso.supabase.co/rest/v1/notification_analytics?select=*&school_id=eq.1fd55bdb-517a-4213-a914-8ff59dbfe3ed 404 (Not Found)
+apply @ injected.js:204
+(anonymous) @ @supabase_supabase-js.js:4220
+(anonymous) @ @supabase_supabase-js.js:4241
+fulfilled @ @supabase_supabase-js.js:4193
+Promise.then
+step @ @supabase_supabase-js.js:4206
+(anonymous) @ @supabase_supabase-js.js:4208
+__awaiter6 @ @supabase_supabase-js.js:4190
+(anonymous) @ @supabase_supabase-js.js:4231
+then @ @supabase_supabase-js.js:90
+injected.js:204  GET https://zvkfuljxidxtuqrmquso.supabase.co/rest/v1/notifications?select=*%2Csender%3Ausers%21notifications_sender_id_fkey%28name%2Crole%2Cavatar_url%29%2Cnotification_analytics%28view_count%2Cclick_count%2Cacknowledge_count%29%2Cnotification_recipients%28user_id%2Cstatus%2Cread_at%2Cacknowledged_at%29&school_id=eq.1fd55bdb-517a-4213-a914-8ff59dbfe3ed&order=created_at.desc 400 (Bad Request)
+apply @ injected.js:204
+(anonymous) @ @supabase_supabase-js.js?v=4e2b4369:4220
+(anonymous) @ @supabase_supabase-js.js?v=4e2b4369:4241
+fulfilled @ @supabase_supabase-js.js?v=4e2b4369:4193
+Promise.then
+step @ @supabase_supabase-js.js?v=4e2b4369:4206
+(anonymous) @ @supabase_supabase-js.js?v=4e2b4369:4208
+__awaiter6 @ @supabase_supabase-js.js?v=4e2b4369:4190
+(anonymous) @ @supabase_supabase-js.js?v=4e2b4369:4231
+then @ @supabase_supabase-js.js?v=4e2b4369:90
+  GET https://zvkfuljxidxtuqrmquso.supabase.co/rest/v1/notifications?select=*%2Csender%3Ausers%21notifications_sender_id_fkey%28name%2Crole%2Cavatar_url%29%2Cnotification_analytics%28view_count%2Cclick_count%2Cacknowledge_count%29%2Cnotification_recipients%28user_id%2Cstatus%2Cread_at%2Cacknowledged_at%29&school_id=eq.1fd55bdb-517a-4213-a914-8ff59dbfe3ed&order=created_at.desc 400 (Bad Request)
+apply @ injected.js:204
+(anonymous) @ @supabase_supabase-js.js:4220
+(anonymous) @ @supabase_supabase-js.js:4241
+fulfilled @ @supabase_supabase-js.js:4193
+Promise.then
+step @ @supabase_supabase-js.js:4206
+(anonymous) @ @supabase_supabase-js.js:4208
+__awaiter6 @ @supabase_supabase-js.js:4190
+(anonymous) @ @supabase_supabase-js.js:4231
+then @ @supabase_supabase-js.js:90
+injected.js:204  GET https://zvkfuljxidxtuqrmquso.supabase.co/rest/v1/notification_templates?select=*&school_id=eq.1fd55bdb-517a-4213-a914-8ff59dbfe3ed&order=created_at.desc 404 (Not Found)
+apply @ injected.js:204
+(anonymous) @ @supabase_supabase-js.js?v=4e2b4369:4220
+(anonymous) @ @supabase_supabase-js.js?v=4e2b4369:4241
+fulfilled @ @supabase_supabase-js.js?v=4e2b4369:4193
+Promise.then
+step @ @supabase_supabase-js.js?v=4e2b4369:4206
+(anonymous) @ @supabase_supabase-js.js?v=4e2b4369:4208
+__awaiter6 @ @supabase_supabase-js.js?v=4e2b4369:4190
+(anonymous) @ @supabase_supabase-js.js?v=4e2b4369:4231
+then @ @supabase_supabase-js.js?v=4e2b4369:90
+  GET https://zvkfuljxidxtuqrmquso.supabase.co/rest/v1/notification_templates?select=*&school_id=eq.1fd55bdb-517a-4213-a914-8ff59dbfe3ed&order=created_at.desc 404 (Not Found)
+apply @ injected.js:204
+(anonymous) @ @supabase_supabase-js.js:4220
+(anonymous) @ @supabase_supabase-js.js:4241
+fulfilled @ @supabase_supabase-js.js:4193
+Promise.then
+step @ @supabase_supabase-js.js:4206
+(anonymous) @ @supabase_supabase-js.js:4208
+__awaiter6 @ @supabase_supabase-js.js:4190
+(anonymous) @ @supabase_supabase-js.js:4231
+then @ @supabase_supabase-js.js:90
+injected.js:27 Error fetching analytics: {code: 'PGRST205', details: null, hint: "Perhaps you meant the table 'public.notifications'", message: "Could not find the table 'public.notification_analytics' in the schema cache"}
+(anonymous) @ injected.js:27
+fetchAnalytics @ Notifications.jsx:208
+await in fetchAnalytics
+(anonymous) @ Notifications.jsx:153
+commitHookEffectListMount @ chunk-UPELNCPK.js?v=4e2b4369:16915
+commitPassiveMountOnFiber @ chunk-UPELNCPK.js?v=4e2b4369:18156
+commitPassiveMountEffects_complete @ chunk-UPELNCPK.js?v=4e2b4369:18129
+commitPassiveMountEffects_begin @ chunk-UPELNCPK.js?v=4e2b4369:18119
+commitPassiveMountEffects @ chunk-UPELNCPK.js?v=4e2b4369:18109
+flushPassiveEffectsImpl @ chunk-UPELNCPK.js?v=4e2b4369:19490
+flushPassiveEffects @ chunk-UPELNCPK.js?v=4e2b4369:19447
+(anonymous) @ chunk-UPELNCPK.js?v=4e2b4369:19328
+workLoop @ chunk-UPELNCPK.js?v=4e2b4369:197
+flushWork @ chunk-UPELNCPK.js?v=4e2b4369:176
+performWorkUntilDeadline @ chunk-UPELNCPK.js?v=4e2b4369:384
+injected.js:27 Error fetching notifications: {code: 'PGRST200', details: "Searched for a foreign key relationship between 'n…n the schema 'public', but no matches were found.", hint: null, message: "Could not find a relationship between 'notifications' and 'users' in the schema cache"}
+(anonymous) @ injected.js:27
+fetchNotifications @ Notifications.jsx:175
+await in fetchNotifications
+(anonymous) @ Notifications.jsx:152
+commitHookEffectListMount @ chunk-UPELNCPK.js?v=4e2b4369:16915
+commitPassiveMountOnFiber @ chunk-UPELNCPK.js?v=4e2b4369:18156
+commitPassiveMountEffects_complete @ chunk-UPELNCPK.js?v=4e2b4369:18129
+commitPassiveMountEffects_begin @ chunk-UPELNCPK.js?v=4e2b4369:18119
+commitPassiveMountEffects @ chunk-UPELNCPK.js?v=4e2b4369:18109
+flushPassiveEffectsImpl @ chunk-UPELNCPK.js?v=4e2b4369:19490
+flushPassiveEffects @ chunk-UPELNCPK.js?v=4e2b4369:19447
+(anonymous) @ chunk-UPELNCPK.js?v=4e2b4369:19328
+workLoop @ chunk-UPELNCPK.js?v=4e2b4369:197
+flushWork @ chunk-UPELNCPK.js?v=4e2b4369:176
+performWorkUntilDeadline @ chunk-UPELNCPK.js?v=4e2b4369:384
+injected.js:27 Error fetching templates: {code: 'PGRST205', details: null, hint: "Perhaps you meant the table 'public.notifications'", message: "Could not find the table 'public.notification_templates' in the schema cache"}
+(anonymous) @ injected.js:27
+fetchTemplates @ Notifications.jsx:223
+await in fetchTemplates
+(anonymous) @ Notifications.jsx:154
+commitHookEffectListMount @ chunk-UPELNCPK.js?v=4e2b4369:16915
+invokePassiveEffectMountInDEV @ chunk-UPELNCPK.js?v=4e2b4369:18324
+invokeEffectsInDev @ chunk-UPELNCPK.js?v=4e2b4369:19701
+commitDoubleInvokeEffectsInDEV @ chunk-UPELNCPK.js?v=4e2b4369:19686
+flushPassiveEffectsImpl @ chunk-UPELNCPK.js?v=4e2b4369:19503
+flushPassiveEffects @ chunk-UPELNCPK.js?v=4e2b4369:19447
+(anonymous) @ chunk-UPELNCPK.js?v=4e2b4369:19328
+workLoop @ chunk-UPELNCPK.js?v=4e2b4369:197
+flushWork @ chunk-UPELNCPK.js?v=4e2b4369:176
+performWorkUntilDeadline @ chunk-UPELNCPK.js?v=4e2b4369:384
+injected.js:204  GET https://zvkfuljxidxtuqrmquso.supabase.co/rest/v1/user_notification_preferences?select=*&user_id=eq.4de6be47-47ba-4156-82b9-e3506f7afd49 404 (Not Found)
+apply @ injected.js:204
+(anonymous) @ @supabase_supabase-js.js?v=4e2b4369:4220
+(anonymous) @ @supabase_supabase-js.js?v=4e2b4369:4241
+fulfilled @ @supabase_supabase-js.js?v=4e2b4369:4193
+Promise.then
+step @ @supabase_supabase-js.js?v=4e2b4369:4206
+(anonymous) @ @supabase_supabase-js.js?v=4e2b4369:4208
+__awaiter6 @ @supabase_supabase-js.js?v=4e2b4369:4190
+(anonymous) @ @supabase_supabase-js.js?v=4e2b4369:4231
+then @ @supabase_supabase-js.js?v=4e2b4369:90
+  GET https://zvkfuljxidxtuqrmquso.supabase.co/rest/v1/user_notification_preferences?select=*&user_id=eq.4de6be47-47ba-4156-82b9-e3506f7afd49 404 (Not Found)
+apply @ injected.js:204
+(anonymous) @ @supabase_supabase-js.js:4220
+(anonymous) @ @supabase_supabase-js.js:4241
+fulfilled @ @supabase_supabase-js.js:4193
+Promise.then
+step @ @supabase_supabase-js.js:4206
+(anonymous) @ @supabase_supabase-js.js:4208
+__awaiter6 @ @supabase_supabase-js.js:4190
+(anonymous) @ @supabase_supabase-js.js:4231
+then @ @supabase_supabase-js.js:90
+injected.js:27 Error fetching preferences: {code: 'PGRST205', details: null, hint: "Perhaps you meant the table 'public.notifications'", message: "Could not find the table 'public.user_notification_preferences' in the schema cache"}
+(anonymous) @ injected.js:27
+fetchUserPreferences @ Notifications.jsx:244
+await in fetchUserPreferences
+(anonymous) @ Notifications.jsx:155
+commitHookEffectListMount @ chunk-UPELNCPK.js?v=4e2b4369:16915
+invokePassiveEffectMountInDEV @ chunk-UPELNCPK.js?v=4e2b4369:18324
+invokeEffectsInDev @ chunk-UPELNCPK.js?v=4e2b4369:19701
+commitDoubleInvokeEffectsInDEV @ chunk-UPELNCPK.js?v=4e2b4369:19686
+flushPassiveEffectsImpl @ chunk-UPELNCPK.js?v=4e2b4369:19503
+flushPassiveEffects @ chunk-UPELNCPK.js?v=4e2b4369:19447
+(anonymous) @ chunk-UPELNCPK.js?v=4e2b4369:19328
+workLoop @ chunk-UPELNCPK.js?v=4e2b4369:197
+flushWork @ chunk-UPELNCPK.js?v=4e2b4369:176
+performWorkUntilDeadline @ chunk-UPELNCPK.js?v=4e2b4369:384
+injected.js:204  GET https://zvkfuljxidxtuqrmquso.supabase.co/rest/v1/advertisements?select=*&school_id=eq.1fd55bdb-517a-4213-a914-8ff59dbfe3ed 404 (Not Found)
+apply @ injected.js:204
+(anonymous) @ @supabase_supabase-js.js?v=4e2b4369:4220
+(anonymous) @ @supabase_supabase-js.js?v=4e2b4369:4241
+fulfilled @ @supabase_supabase-js.js?v=4e2b4369:4193
+Promise.then
+step @ @supabase_supabase-js.js?v=4e2b4369:4206
+(anonymous) @ @supabase_supabase-js.js?v=4e2b4369:4208
+__awaiter6 @ @supabase_supabase-js.js?v=4e2b4369:4190
+(anonymous) @ @supabase_supabase-js.js?v=4e2b4369:4231
+then @ @supabase_supabase-js.js?v=4e2b4369:90
+  GET https://zvkfuljxidxtuqrmquso.supabase.co/rest/v1/advertisements?select=*&school_id=eq.1fd55bdb-517a-4213-a914-8ff59dbfe3ed 404 (Not Found)
+apply @ injected.js:204
+(anonymous) @ @supabase_supabase-js.js:4220
+(anonymous) @ @supabase_supabase-js.js:4241
+fulfilled @ @supabase_supabase-js.js:4193
+Promise.then
+step @ @supabase_supabase-js.js:4206
+(anonymous) @ @supabase_supabase-js.js:4208
+__awaiter6 @ @supabase_supabase-js.js:4190
+(anonymous) @ @supabase_supabase-js.js:4231
+then @ @supabase_supabase-js.js:90
+injected.js:204  GET https://zvkfuljxidxtuqrmquso.supabase.co/rest/v1/advertisements?select=*&school_id=eq.1fd55bdb-517a-4213-a914-8ff59dbfe3ed 404 (Not Found)
+apply @ injected.js:204
+(anonymous) @ @supabase_supabase-js.js?v=4e2b4369:4220
+(anonymous) @ @supabase_supabase-js.js?v=4e2b4369:4241
+fulfilled @ @supabase_supabase-js.js?v=4e2b4369:4193
+Promise.then
+step @ @supabase_supabase-js.js?v=4e2b4369:4206
+(anonymous) @ @supabase_supabase-js.js?v=4e2b4369:4208
+__awaiter6 @ @supabase_supabase-js.js?v=4e2b4369:4190
+(anonymous) @ @supabase_supabase-js.js?v=4e2b4369:4231
+then @ @supabase_supabase-js.js?v=4e2b4369:90
+  GET https://zvkfuljxidxtuqrmquso.supabase.co/rest/v1/advertisements?select=*&school_id=eq.1fd55bdb-517a-4213-a914-8ff59dbfe3ed 404 (Not Found)
+apply @ injected.js:204
+(anonymous) @ @supabase_supabase-js.js:4220
+(anonymous) @ @supabase_supabase-js.js:4241
+fulfilled @ @supabase_supabase-js.js:4193
+Promise.then
+step @ @supabase_supabase-js.js:4206
+(anonymous) @ @supabase_supabase-js.js:4208
+__awaiter6 @ @supabase_supabase-js.js:4190
+(anonymous) @ @supabase_supabase-js.js:4231
+then @ @supabase_supabase-js.js:90
+injected.js:204  GET https://zvkfuljxidxtuqrmquso.supabase.co/rest/v1/notification_analytics?select=*&school_id=eq.1fd55bdb-517a-4213-a914-8ff59dbfe3ed 404 (Not Found)
+apply @ injected.js:204
+(anonymous) @ @supabase_supabase-js.js?v=4e2b4369:4220
+(anonymous) @ @supabase_supabase-js.js?v=4e2b4369:4241
+fulfilled @ @supabase_supabase-js.js?v=4e2b4369:4193
+Promise.then
+step @ @supabase_supabase-js.js?v=4e2b4369:4206
+(anonymous) @ @supabase_supabase-js.js?v=4e2b4369:4208
+__awaiter6 @ @supabase_supabase-js.js?v=4e2b4369:4190
+(anonymous) @ @supabase_supabase-js.js?v=4e2b4369:4231
+then @ @supabase_supabase-js.js?v=4e2b4369:90
+  GET https://zvkfuljxidxtuqrmquso.supabase.co/rest/v1/notification_analytics?select=*&school_id=eq.1fd55bdb-517a-4213-a914-8ff59dbfe3ed 404 (Not Found)
+apply @ injected.js:204
+(anonymous) @ @supabase_supabase-js.js:4220
+(anonymous) @ @supabase_supabase-js.js:4241
+fulfilled @ @supabase_supabase-js.js:4193
+Promise.then
+step @ @supabase_supabase-js.js:4206
+(anonymous) @ @supabase_supabase-js.js:4208
+__awaiter6 @ @supabase_supabase-js.js:4190
+(anonymous) @ @supabase_supabase-js.js:4231
+then @ @supabase_supabase-js.js:90
+injected.js:27 Error fetching analytics: {code: 'PGRST205', details: null, hint: "Perhaps you meant the table 'public.notifications'", message: "Could not find the table 'public.notification_analytics' in the schema cache"}
+(anonymous) @ injected.js:27
+fetchAnalytics @ Notifications.jsx:208
+await in fetchAnalytics
+(anonymous) @ Notifications.jsx:153
+commitHookEffectListMount @ chunk-UPELNCPK.js?v=4e2b4369:16915
+commitPassiveMountOnFiber @ chunk-UPELNCPK.js?v=4e2b4369:18156
+commitPassiveMountEffects_complete @ chunk-UPELNCPK.js?v=4e2b4369:18129
+commitPassiveMountEffects_begin @ chunk-UPELNCPK.js?v=4e2b4369:18119
+commitPassiveMountEffects @ chunk-UPELNCPK.js?v=4e2b4369:18109
+flushPassiveEffectsImpl @ chunk-UPELNCPK.js?v=4e2b4369:19490
+flushPassiveEffects @ chunk-UPELNCPK.js?v=4e2b4369:19447
+(anonymous) @ chunk-UPELNCPK.js?v=4e2b4369:19328
+workLoop @ chunk-UPELNCPK.js?v=4e2b4369:197
+flushWork @ chunk-UPELNCPK.js?v=4e2b4369:176
+performWorkUntilDeadline @ chunk-UPELNCPK.js?v=4e2b4369:384
+injected.js:204  GET https://zvkfuljxidxtuqrmquso.supabase.co/rest/v1/notifications?select=*%2Csender%3Ausers%21notifications_sender_id_fkey%28name%2Crole%2Cavatar_url%29%2Cnotification_analytics%28view_count%2Cclick_count%2Cacknowledge_count%29%2Cnotification_recipients%28user_id%2Cstatus%2Cread_at%2Cacknowledged_at%29&school_id=eq.1fd55bdb-517a-4213-a914-8ff59dbfe3ed&order=created_at.desc 400 (Bad Request)
+apply @ injected.js:204
+(anonymous) @ @supabase_supabase-js.js?v=4e2b4369:4220
+(anonymous) @ @supabase_supabase-js.js?v=4e2b4369:4241
+fulfilled @ @supabase_supabase-js.js?v=4e2b4369:4193
+Promise.then
+step @ @supabase_supabase-js.js?v=4e2b4369:4206
+(anonymous) @ @supabase_supabase-js.js?v=4e2b4369:4208
+__awaiter6 @ @supabase_supabase-js.js?v=4e2b4369:4190
+(anonymous) @ @supabase_supabase-js.js?v=4e2b4369:4231
+then @ @supabase_supabase-js.js?v=4e2b4369:90
+  GET https://zvkfuljxidxtuqrmquso.supabase.co/rest/v1/notifications?select=*%2Csender%3Ausers%21notifications_sender_id_fkey%28name%2Crole%2Cavatar_url%29%2Cnotification_analytics%28view_count%2Cclick_count%2Cacknowledge_count%29%2Cnotification_recipients%28user_id%2Cstatus%2Cread_at%2Cacknowledged_at%29&school_id=eq.1fd55bdb-517a-4213-a914-8ff59dbfe3ed&order=created_at.desc 400 (Bad Request)
+apply @ injected.js:204
+(anonymous) @ @supabase_supabase-js.js:4220
+(anonymous) @ @supabase_supabase-js.js:4241
+fulfilled @ @supabase_supabase-js.js:4193
+Promise.then
+step @ @supabase_supabase-js.js:4206
+(anonymous) @ @supabase_supabase-js.js:4208
+__awaiter6 @ @supabase_supabase-js.js:4190
+(anonymous) @ @supabase_supabase-js.js:4231
+then @ @supabase_supabase-js.js:90
+injected.js:27 Error fetching notifications: {code: 'PGRST200', details: "Searched for a foreign key relationship between 'n…n the schema 'public', but no matches were found.", hint: null, message: "Could not find a relationship between 'notifications' and 'users' in the schema cache"}
+(anonymous) @ injected.js:27
+fetchNotifications @ Notifications.jsx:175
+await in fetchNotifications
+(anonymous) @ Notifications.jsx:152
+commitHookEffectListMount @ chunk-UPELNCPK.js?v=4e2b4369:16915
+commitPassiveMountOnFiber @ chunk-UPELNCPK.js?v=4e2b4369:18156
+commitPassiveMountEffects_complete @ chunk-UPELNCPK.js?v=4e2b4369:18129
+commitPassiveMountEffects_begin @ chunk-UPELNCPK.js?v=4e2b4369:18119
+commitPassiveMountEffects @ chunk-UPELNCPK.js?v=4e2b4369:18109
+flushPassiveEffectsImpl @ chunk-UPELNCPK.js?v=4e2b4369:19490
+flushPassiveEffects @ chunk-UPELNCPK.js?v=4e2b4369:19447
+(anonymous) @ chunk-UPELNCPK.js?v=4e2b4369:19328
+workLoop @ chunk-UPELNCPK.js?v=4e2b4369:197
+flushWork @ chunk-UPELNCPK.js?v=4e2b4369:176
+performWorkUntilDeadline @ chunk-UPELNCPK.js?v=4e2b4369:384
+injected.js:204  GET https://zvkfuljxidxtuqrmquso.supabase.co/rest/v1/notification_templates?select=*&school_id=eq.1fd55bdb-517a-4213-a914-8ff59dbfe3ed&order=created_at.desc 404 (Not Found)
+apply @ injected.js:204
+(anonymous) @ @supabase_supabase-js.js?v=4e2b4369:4220
+(anonymous) @ @supabase_supabase-js.js?v=4e2b4369:4241
+fulfilled @ @supabase_supabase-js.js?v=4e2b4369:4193
+Promise.then
+step @ @supabase_supabase-js.js?v=4e2b4369:4206
+(anonymous) @ @supabase_supabase-js.js?v=4e2b4369:4208
+__awaiter6 @ @supabase_supabase-js.js?v=4e2b4369:4190
+(anonymous) @ @supabase_supabase-js.js?v=4e2b4369:4231
+then @ @supabase_supabase-js.js?v=4e2b4369:90
+  GET https://zvkfuljxidxtuqrmquso.supabase.co/rest/v1/notification_templates?select=*&school_id=eq.1fd55bdb-517a-4213-a914-8ff59dbfe3ed&order=created_at.desc 404 (Not Found)
+apply @ injected.js:204
+(anonymous) @ @supabase_supabase-js.js:4220
+(anonymous) @ @supabase_supabase-js.js:4241
+fulfilled @ @supabase_supabase-js.js:4193
+Promise.then
+step @ @supabase_supabase-js.js:4206
+(anonymous) @ @supabase_supabase-js.js:4208
+__awaiter6 @ @supabase_supabase-js.js:4190
+(anonymous) @ @supabase_supabase-js.js:4231
+then @ @supabase_supabase-js.js:90
+injected.js:27 Error fetching templates: {code: 'PGRST205', details: null, hint: "Perhaps you meant the table 'public.notifications'", message: "Could not find the table 'public.notification_templates' in the schema cache"}
+(anonymous) @ injected.js:27
+fetchTemplates @ Notifications.jsx:223
+await in fetchTemplates
+(anonymous) @ Notifications.jsx:154
+commitHookEffectListMount @ chunk-UPELNCPK.js?v=4e2b4369:16915
+commitPassiveMountOnFiber @ chunk-UPELNCPK.js?v=4e2b4369:18156
+commitPassiveMountEffects_complete @ chunk-UPELNCPK.js?v=4e2b4369:18129
+commitPassiveMountEffects_begin @ chunk-UPELNCPK.js?v=4e2b4369:18119
+commitPassiveMountEffects @ chunk-UPELNCPK.js?v=4e2b4369:18109
+flushPassiveEffectsImpl @ chunk-UPELNCPK.js?v=4e2b4369:19490
+flushPassiveEffects @ chunk-UPELNCPK.js?v=4e2b4369:19447
+(anonymous) @ chunk-UPELNCPK.js?v=4e2b4369:19328
+workLoop @ chunk-UPELNCPK.js?v=4e2b4369:197
+flushWork @ chunk-UPELNCPK.js?v=4e2b4369:176
+performWorkUntilDeadline @ chunk-UPELNCPK.js?v=4e2b4369:384
+injected.js:204  GET https://zvkfuljxidxtuqrmquso.supabase.co/rest/v1/user_notification_preferences?select=*&user_id=eq.4de6be47-47ba-4156-82b9-e3506f7afd49 404 (Not Found)
+apply @ injected.js:204
+(anonymous) @ @supabase_supabase-js.js?v=4e2b4369:4220
+(anonymous) @ @supabase_supabase-js.js?v=4e2b4369:4241
+fulfilled @ @supabase_supabase-js.js?v=4e2b4369:4193
+Promise.then
+step @ @supabase_supabase-js.js?v=4e2b4369:4206
+(anonymous) @ @supabase_supabase-js.js?v=4e2b4369:4208
+__awaiter6 @ @supabase_supabase-js.js?v=4e2b4369:4190
+(anonymous) @ @supabase_supabase-js.js?v=4e2b4369:4231
+then @ @supabase_supabase-js.js?v=4e2b4369:90
+  GET https://zvkfuljxidxtuqrmquso.supabase.co/rest/v1/user_notification_preferences?select=*&user_id=eq.4de6be47-47ba-4156-82b9-e3506f7afd49 404 (Not Found)
+apply @ injected.js:204
+(anonymous) @ @supabase_supabase-js.js:4220
+(anonymous) @ @supabase_supabase-js.js:4241
+fulfilled @ @supabase_supabase-js.js:4193
+Promise.then
+step @ @supabase_supabase-js.js:4206
+(anonymous) @ @supabase_supabase-js.js:4208
+__awaiter6 @ @supabase_supabase-js.js:4190
+(anonymous) @ @supabase_supabase-js.js:4231
+then @ @supabase_supabase-js.js:90
+injected.js:204  GET https://zvkfuljxidxtuqrmquso.supabase.co/rest/v1/notification_analytics?select=*&school_id=eq.1fd55bdb-517a-4213-a914-8ff59dbfe3ed 404 (Not Found)
+apply @ injected.js:204
+(anonymous) @ @supabase_supabase-js.js?v=4e2b4369:4220
+(anonymous) @ @supabase_supabase-js.js?v=4e2b4369:4241
+fulfilled @ @supabase_supabase-js.js?v=4e2b4369:4193
+Promise.then
+step @ @supabase_supabase-js.js?v=4e2b4369:4206
+(anonymous) @ @supabase_supabase-js.js?v=4e2b4369:4208
+__awaiter6 @ @supabase_supabase-js.js?v=4e2b4369:4190
+(anonymous) @ @supabase_supabase-js.js?v=4e2b4369:4231
+then @ @supabase_supabase-js.js?v=4e2b4369:90
+  GET https://zvkfuljxidxtuqrmquso.supabase.co/rest/v1/notification_analytics?select=*&school_id=eq.1fd55bdb-517a-4213-a914-8ff59dbfe3ed 404 (Not Found)
+apply @ injected.js:204
+(anonymous) @ @supabase_supabase-js.js:4220
+(anonymous) @ @supabase_supabase-js.js:4241
+fulfilled @ @supabase_supabase-js.js:4193
+Promise.then
+step @ @supabase_supabase-js.js:4206
+(anonymous) @ @supabase_supabase-js.js:4208
+__awaiter6 @ @supabase_supabase-js.js:4190
+(anonymous) @ @supabase_supabase-js.js:4231
+then @ @supabase_supabase-js.js:90
+injected.js:27 Error fetching preferences: {code: 'PGRST205', details: null, hint: "Perhaps you meant the table 'public.notifications'", message: "Could not find the table 'public.user_notification_preferences' in the schema cache"}
+(anonymous) @ injected.js:27
+fetchUserPreferences @ Notifications.jsx:244
+await in fetchUserPreferences
+(anonymous) @ Notifications.jsx:155
+commitHookEffectListMount @ chunk-UPELNCPK.js?v=4e2b4369:16915
+commitPassiveMountOnFiber @ chunk-UPELNCPK.js?v=4e2b4369:18156
+commitPassiveMountEffects_complete @ chunk-UPELNCPK.js?v=4e2b4369:18129
+commitPassiveMountEffects_begin @ chunk-UPELNCPK.js?v=4e2b4369:18119
+commitPassiveMountEffects @ chunk-UPELNCPK.js?v=4e2b4369:18109
+flushPassiveEffectsImpl @ chunk-UPELNCPK.js?v=4e2b4369:19490
+flushPassiveEffects @ chunk-UPELNCPK.js?v=4e2b4369:19447
+(anonymous) @ chunk-UPELNCPK.js?v=4e2b4369:19328
+workLoop @ chunk-UPELNCPK.js?v=4e2b4369:197
+flushWork @ chunk-UPELNCPK.js?v=4e2b4369:176
+performWorkUntilDeadline @ chunk-UPELNCPK.js?v=4e2b4369:384
+injected.js:27 Error fetching analytics: {code: 'PGRST205', details: null, hint: "Perhaps you meant the table 'public.notifications'", message: "Could not find the table 'public.notification_analytics' in the schema cache"}
+(anonymous) @ injected.js:27
+fetchAnalytics @ Notifications.jsx:208
+await in fetchAnalytics
+(anonymous) @ Notifications.jsx:153
+commitHookEffectListMount @ chunk-UPELNCPK.js?v=4e2b4369:16915
+invokePassiveEffectMountInDEV @ chunk-UPELNCPK.js?v=4e2b4369:18324
+invokeEffectsInDev @ chunk-UPELNCPK.js?v=4e2b4369:19701
+commitDoubleInvokeEffectsInDEV @ chunk-UPELNCPK.js?v=4e2b4369:19686
+flushPassiveEffectsImpl @ chunk-UPELNCPK.js?v=4e2b4369:19503
+flushPassiveEffects @ chunk-UPELNCPK.js?v=4e2b4369:19447
+(anonymous) @ chunk-UPELNCPK.js?v=4e2b4369:19328
+workLoop @ chunk-UPELNCPK.js?v=4e2b4369:197
+flushWork @ chunk-UPELNCPK.js?v=4e2b4369:176
+performWorkUntilDeadline @ chunk-UPELNCPK.js?v=4e2b4369:384
+injected.js:204  GET https://zvkfuljxidxtuqrmquso.supabase.co/rest/v1/notifications?select=*%2Csender%3Ausers%21notifications_sender_id_fkey%28name%2Crole%2Cavatar_url%29%2Cnotification_analytics%28view_count%2Cclick_count%2Cacknowledge_count%29%2Cnotification_recipients%28user_id%2Cstatus%2Cread_at%2Cacknowledged_at%29&school_id=eq.1fd55bdb-517a-4213-a914-8ff59dbfe3ed&order=created_at.desc 400 (Bad Request)
+apply @ injected.js:204
+(anonymous) @ @supabase_supabase-js.js?v=4e2b4369:4220
+(anonymous) @ @supabase_supabase-js.js?v=4e2b4369:4241
+fulfilled @ @supabase_supabase-js.js?v=4e2b4369:4193
+Promise.then
+step @ @supabase_supabase-js.js?v=4e2b4369:4206
+(anonymous) @ @supabase_supabase-js.js?v=4e2b4369:4208
+__awaiter6 @ @supabase_supabase-js.js?v=4e2b4369:4190
+(anonymous) @ @supabase_supabase-js.js?v=4e2b4369:4231
+then @ @supabase_supabase-js.js?v=4e2b4369:90
+  GET https://zvkfuljxidxtuqrmquso.supabase.co/rest/v1/notifications?select=*%2Csender%3Ausers%21notifications_sender_id_fkey%28name%2Crole%2Cavatar_url%29%2Cnotification_analytics%28view_count%2Cclick_count%2Cacknowledge_count%29%2Cnotification_recipients%28user_id%2Cstatus%2Cread_at%2Cacknowledged_at%29&school_id=eq.1fd55bdb-517a-4213-a914-8ff59dbfe3ed&order=created_at.desc 400 (Bad Request)
+apply @ injected.js:204
+(anonymous) @ @supabase_supabase-js.js:4220
+(anonymous) @ @supabase_supabase-js.js:4241
+fulfilled @ @supabase_supabase-js.js:4193
+Promise.then
+step @ @supabase_supabase-js.js:4206
+(anonymous) @ @supabase_supabase-js.js:4208
+__awaiter6 @ @supabase_supabase-js.js:4190
+(anonymous) @ @supabase_supabase-js.js:4231
+then @ @supabase_supabase-js.js:90
+injected.js:27 Error fetching notifications: {code: 'PGRST200', details: "Searched for a foreign key relationship between 'n…n the schema 'public', but no matches were found.", hint: null, message: "Could not find a relationship between 'notifications' and 'users' in the schema cache"}
+(anonymous) @ injected.js:27
+fetchNotifications @ Notifications.jsx:175
+await in fetchNotifications
+(anonymous) @ Notifications.jsx:152
+commitHookEffectListMount @ chunk-UPELNCPK.js?v=4e2b4369:16915
+invokePassiveEffectMountInDEV @ chunk-UPELNCPK.js?v=4e2b4369:18324
+invokeEffectsInDev @ chunk-UPELNCPK.js?v=4e2b4369:19701
+commitDoubleInvokeEffectsInDEV @ chunk-UPELNCPK.js?v=4e2b4369:19686
+flushPassiveEffectsImpl @ chunk-UPELNCPK.js?v=4e2b4369:19503
+flushPassiveEffects @ chunk-UPELNCPK.js?v=4e2b4369:19447
+(anonymous) @ chunk-UPELNCPK.js?v=4e2b4369:19328
+workLoop @ chunk-UPELNCPK.js?v=4e2b4369:197
+flushWork @ chunk-UPELNCPK.js?v=4e2b4369:176
+performWorkUntilDeadline @ chunk-UPELNCPK.js?v=4e2b4369:384
+injected.js:204  GET https://zvkfuljxidxtuqrmquso.supabase.co/rest/v1/notification_templates?select=*&school_id=eq.1fd55bdb-517a-4213-a914-8ff59dbfe3ed&order=created_at.desc 404 (Not Found)
+apply @ injected.js:204
+(anonymous) @ @supabase_supabase-js.js?v=4e2b4369:4220
+(anonymous) @ @supabase_supabase-js.js?v=4e2b4369:4241
+fulfilled @ @supabase_supabase-js.js?v=4e2b4369:4193
+Promise.then
+step @ @supabase_supabase-js.js?v=4e2b4369:4206
+(anonymous) @ @supabase_supabase-js.js?v=4e2b4369:4208
+__awaiter6 @ @supabase_supabase-js.js?v=4e2b4369:4190
+(anonymous) @ @supabase_supabase-js.js?v=4e2b4369:4231
+then @ @supabase_supabase-js.js?v=4e2b4369:90
+  GET https://zvkfuljxidxtuqrmquso.supabase.co/rest/v1/notification_templates?select=*&school_id=eq.1fd55bdb-517a-4213-a914-8ff59dbfe3ed&order=created_at.desc 404 (Not Found)
+apply @ injected.js:204
+(anonymous) @ @supabase_supabase-js.js:4220
+(anonymous) @ @supabase_supabase-js.js:4241
+fulfilled @ @supabase_supabase-js.js:4193
+Promise.then
+step @ @supabase_supabase-js.js:4206
+(anonymous) @ @supabase_supabase-js.js:4208
+__awaiter6 @ @supabase_supabase-js.js:4190
+(anonymous) @ @supabase_supabase-js.js:4231
+then @ @supabase_supabase-js.js:90
+injected.js:204  GET https://zvkfuljxidxtuqrmquso.supabase.co/rest/v1/user_notification_preferences?select=*&user_id=eq.4de6be47-47ba-4156-82b9-e3506f7afd49 404 (Not Found)
+apply @ injected.js:204
+(anonymous) @ @supabase_supabase-js.js?v=4e2b4369:4220
+(anonymous) @ @supabase_supabase-js.js?v=4e2b4369:4241
+fulfilled @ @supabase_supabase-js.js?v=4e2b4369:4193
+Promise.then
+step @ @supabase_supabase-js.js?v=4e2b4369:4206
+(anonymous) @ @supabase_supabase-js.js?v=4e2b4369:4208
+__awaiter6 @ @supabase_supabase-js.js?v=4e2b4369:4190
+(anonymous) @ @supabase_supabase-js.js?v=4e2b4369:4231
+then @ @supabase_supabase-js.js?v=4e2b4369:90
+  GET https://zvkfuljxidxtuqrmquso.supabase.co/rest/v1/user_notification_preferences?select=*&user_id=eq.4de6be47-47ba-4156-82b9-e3506f7afd49 404 (Not Found)
+apply @ injected.js:204
+(anonymous) @ @supabase_supabase-js.js:4220
+(anonymous) @ @supabase_supabase-js.js:4241
+fulfilled @ @supabase_supabase-js.js:4193
+Promise.then
+step @ @supabase_supabase-js.js:4206
+(anonymous) @ @supabase_supabase-js.js:4208
+__awaiter6 @ @supabase_supabase-js.js:4190
+(anonymous) @ @supabase_supabase-js.js:4231
+then @ @supabase_supabase-js.js:90
+injected.js:27 Error fetching templates: {code: 'PGRST205', details: null, hint: "Perhaps you meant the table 'public.notifications'", message: "Could not find the table 'public.notification_templates' in the schema cache"}
+(anonymous) @ injected.js:27
+fetchTemplates @ Notifications.jsx:223
+await in fetchTemplates
+(anonymous) @ Notifications.jsx:154
+commitHookEffectListMount @ chunk-UPELNCPK.js?v=4e2b4369:16915
+invokePassiveEffectMountInDEV @ chunk-UPELNCPK.js?v=4e2b4369:18324
+invokeEffectsInDev @ chunk-UPELNCPK.js?v=4e2b4369:19701
+commitDoubleInvokeEffectsInDEV @ chunk-UPELNCPK.js?v=4e2b4369:19686
+flushPassiveEffectsImpl @ chunk-UPELNCPK.js?v=4e2b4369:19503
+flushPassiveEffects @ chunk-UPELNCPK.js?v=4e2b4369:19447
+(anonymous) @ chunk-UPELNCPK.js?v=4e2b4369:19328
+workLoop @ chunk-UPELNCPK.js?v=4e2b4369:197
+flushWork @ chunk-UPELNCPK.js?v=4e2b4369:176
+performWorkUntilDeadline @ chunk-UPELNCPK.js?v=4e2b4369:384
+injected.js:27 Error fetching preferences: {code: 'PGRST205', details: null, hint: "Perhaps you meant the table 'public.notifications'", message: "Could not find the table 'public.user_notification_preferences' in the schema cache"}
+(anonymous) @ injected.js:27
+fetchUserPreferences @ Notifications.jsx:244
+await in fetchUserPreferences
+(anonymous) @ Notifications.jsx:155
+commitHookEffectListMount @ chunk-UPELNCPK.js?v=4e2b4369:16915
+invokePassiveEffectMountInDEV @ chunk-UPELNCPK.js?v=4e2b4369:18324
+invokeEffectsInDev @ chunk-UPELNCPK.js?v=4e2b4369:19701
+commitDoubleInvokeEffectsInDEV @ chunk-UPELNCPK.js?v=4e2b4369:19686
+flushPassiveEffectsImpl @ chunk-UPELNCPK.js?v=4e2b4369:19503
+flushPassiveEffects @ chunk-UPELNCPK.js?v=4e2b4369:19447
+(anonymous) @ chunk-UPELNCPK.js?v=4e2b4369:19328
+workLoop @ chunk-UPELNCPK.js?v=4e2b4369:197
+flushWork @ chunk-UPELNCPK.js?v=4e2b4369:176
+performWorkUntilDeadline @ chunk-UPELNCPK.js?v=4e2b4369:384
+Reports.jsx:915 Uncaught ReferenceError: exportToExcel is not defined
+    at ReportsDashboard (Reports.jsx:915:28)
+    at renderWithHooks (chunk-UPELNCPK.js?v=4e2b4369:11548:26)
+    at mountIndeterminateComponent (chunk-UPELNCPK.js?v=4e2b4369:14926:21)
+    at beginWork (chunk-UPELNCPK.js?v=4e2b4369:15914:22)
+    at HTMLUnknownElement.callCallback2 (chunk-UPELNCPK.js?v=4e2b4369:3674:22)
+    at Object.invokeGuardedCallbackDev (chunk-UPELNCPK.js?v=4e2b4369:3699:24)
+    at invokeGuardedCallback (chunk-UPELNCPK.js?v=4e2b4369:3733:39)
+    at beginWork$1 (chunk-UPELNCPK.js?v=4e2b4369:19765:15)
+    at performUnitOfWork (chunk-UPELNCPK.js?v=4e2b4369:19198:20)
+    at workLoopConcurrent (chunk-UPELNCPK.js?v=4e2b4369:19189:13)
+ReportsDashboard @ Reports.jsx:915
+renderWithHooks @ chunk-UPELNCPK.js?v=4e2b4369:11548
+mountIndeterminateComponent @ chunk-UPELNCPK.js?v=4e2b4369:14926
+beginWork @ chunk-UPELNCPK.js?v=4e2b4369:15914
+callCallback2 @ chunk-UPELNCPK.js?v=4e2b4369:3674
+invokeGuardedCallbackDev @ chunk-UPELNCPK.js?v=4e2b4369:3699
+invokeGuardedCallback @ chunk-UPELNCPK.js?v=4e2b4369:3733
+beginWork$1 @ chunk-UPELNCPK.js?v=4e2b4369:19765
+performUnitOfWork @ chunk-UPELNCPK.js?v=4e2b4369:19198
+workLoopConcurrent @ chunk-UPELNCPK.js?v=4e2b4369:19189
+renderRootConcurrent @ chunk-UPELNCPK.js?v=4e2b4369:19164
+performConcurrentWorkOnRoot @ chunk-UPELNCPK.js?v=4e2b4369:18678
+workLoop @ chunk-UPELNCPK.js?v=4e2b4369:197
+flushWork @ chunk-UPELNCPK.js?v=4e2b4369:176
+performWorkUntilDeadline @ chunk-UPELNCPK.js?v=4e2b4369:384
+Reports.jsx:915 Uncaught ReferenceError: exportToExcel is not defined
+    at ReportsDashboard (Reports.jsx:915:28)
+    at renderWithHooks (chunk-UPELNCPK.js?v=4e2b4369:11548:26)
+    at mountIndeterminateComponent (chunk-UPELNCPK.js?v=4e2b4369:14926:21)
+    at beginWork (chunk-UPELNCPK.js?v=4e2b4369:15914:22)
+    at HTMLUnknownElement.callCallback2 (chunk-UPELNCPK.js?v=4e2b4369:3674:22)
+    at Object.invokeGuardedCallbackDev (chunk-UPELNCPK.js?v=4e2b4369:3699:24)
+    at invokeGuardedCallback (chunk-UPELNCPK.js?v=4e2b4369:3733:39)
+    at beginWork$1 (chunk-UPELNCPK.js?v=4e2b4369:19765:15)
+    at performUnitOfWork (chunk-UPELNCPK.js?v=4e2b4369:19198:20)
+    at workLoopSync (chunk-UPELNCPK.js?v=4e2b4369:19137:13)
+ReportsDashboard @ Reports.jsx:915
+renderWithHooks @ chunk-UPELNCPK.js?v=4e2b4369:11548
+mountIndeterminateComponent @ chunk-UPELNCPK.js?v=4e2b4369:14926
+beginWork @ chunk-UPELNCPK.js?v=4e2b4369:15914
+callCallback2 @ chunk-UPELNCPK.js?v=4e2b4369:3674
+invokeGuardedCallbackDev @ chunk-UPELNCPK.js?v=4e2b4369:3699
+invokeGuardedCallback @ chunk-UPELNCPK.js?v=4e2b4369:3733
+beginWork$1 @ chunk-UPELNCPK.js?v=4e2b4369:19765
+performUnitOfWork @ chunk-UPELNCPK.js?v=4e2b4369:19198
+workLoopSync @ chunk-UPELNCPK.js?v=4e2b4369:19137
+renderRootSync @ chunk-UPELNCPK.js?v=4e2b4369:19116
+recoverFromConcurrentError @ chunk-UPELNCPK.js?v=4e2b4369:18736
+performConcurrentWorkOnRoot @ chunk-UPELNCPK.js?v=4e2b4369:18684
+workLoop @ chunk-UPELNCPK.js?v=4e2b4369:197
+flushWork @ chunk-UPELNCPK.js?v=4e2b4369:176
+performWorkUntilDeadline @ chunk-UPELNCPK.js?v=4e2b4369:384
+injected.js:27 The above error occurred in the <ReportsDashboard> component:
+
+    at ReportsDashboard (https://7d141737-ac6c-4cab-9614-b21b611b3ed8-00-2hg41d2ekxh72.worf.replit.dev/src/pages/admin/Reports.jsx:87:20)
+    at RenderedRoute (https://7d141737-ac6c-4cab-9614-b21b611b3ed8-00-2hg41d2ekxh72.worf.replit.dev/node_modules/.vite/deps/react-router-dom.js?v=4e2b4369:4088:5)
+    at Outlet (https://7d141737-ac6c-4cab-9614-b21b611b3ed8-00-2hg41d2ekxh72.worf.replit.dev/node_modules/.vite/deps/react-router-dom.js?v=4e2b4369:4494:26)
+    at div
+    at main
+    at div
+    at div
+    at AdminLayout (https://7d141737-ac6c-4cab-9614-b21b611b3ed8-00-2hg41d2ekxh72.worf.replit.dev/src/layouts/AdminLayout.jsx:46:29)
+    at ProtectedRoute (https://7d141737-ac6c-4cab-9614-b21b611b3ed8-00-2hg41d2ekxh72.worf.replit.dev/src/App.jsx:41:27)
+    at RenderedRoute (https://7d141737-ac6c-4cab-9614-b21b611b3ed8-00-2hg41d2ekxh72.worf.replit.dev/node_modules/.vite/deps/react-router-dom.js?v=4e2b4369:4088:5)
+    at Routes (https://7d141737-ac6c-4cab-9614-b21b611b3ed8-00-2hg41d2ekxh72.worf.replit.dev/node_modules/.vite/deps/react-router-dom.js?v=4e2b4369:4558:5)
+    at AppRoutes (https://7d141737-ac6c-4cab-9614-b21b611b3ed8-00-2hg41d2ekxh72.worf.replit.dev/src/App.jsx:73:31)
+    at div
+    at NotificationProvider (https://7d141737-ac6c-4cab-9614-b21b611b3ed8-00-2hg41d2ekxh72.worf.replit.dev/src/contexts/NotificationContext.jsx:32:40)
+    at AuthProvider (https://7d141737-ac6c-4cab-9614-b21b611b3ed8-00-2hg41d2ekxh72.worf.replit.dev/src/contexts/AuthContext.jsx:31:32)
+    at ErrorBoundary (https://7d141737-ac6c-4cab-9614-b21b611b3ed8-00-2hg41d2ekxh72.worf.replit.dev/src/components/ui/error-boundary.jsx:10:5)
+    at App
+    at Router (https://7d141737-ac6c-4cab-9614-b21b611b3ed8-00-2hg41d2ekxh72.worf.replit.dev/node_modules/.vite/deps/react-router-dom.js?v=4e2b4369:4501:15)
+    at BrowserRouter (https://7d141737-ac6c-4cab-9614-b21b611b3ed8-00-2hg41d2ekxh72.worf.replit.dev/node_modules/.vite/deps/react-router-dom.js?v=4e2b4369:5247:5)
+    at QueryClientProvider (https://7d141737-ac6c-4cab-9614-b21b611b3ed8-00-2hg41d2ekxh72.worf.replit.dev/node_modules/.vite/deps/@tanstack_react-query.js?v=4e2b4369:3022:3)
+
+React will try to recreate this component tree from scratch using the error boundary you provided, ErrorBoundary.
+(anonymous) @ injected.js:27
+(anonymous) @ injected.js:27
+(anonymous) @ injected.js:27
+(anonymous) @ injected.js:27
+(anonymous) @ injected.js:27
+(anonymous) @ injected.js:27
+(anonymous) @ injected.js:27
+(anonymous) @ injected.js:27
+(anonymous) @ injected.js:27
+(anonymous) @ injected.js:27
+(anonymous) @ injected.js:27
+(anonymous) @ injected.js:27
+(anonymous) @ injected.js:27
+(anonymous) @ injected.js:27
+(anonymous) @ injected.js:27
+logCapturedError @ chunk-UPELNCPK.js?v=4e2b4369:14032
+callback @ chunk-UPELNCPK.js?v=4e2b4369:14078
+callCallback @ chunk-UPELNCPK.js?v=4e2b4369:11248
+commitUpdateQueue @ chunk-UPELNCPK.js?v=4e2b4369:11265
+commitLayoutEffectOnFiber @ chunk-UPELNCPK.js?v=4e2b4369:17075
+commitLayoutMountEffects_complete @ chunk-UPELNCPK.js?v=4e2b4369:17980
+commitLayoutEffects_begin @ chunk-UPELNCPK.js?v=4e2b4369:17969
+commitLayoutEffects @ chunk-UPELNCPK.js?v=4e2b4369:17920
+commitRootImpl @ chunk-UPELNCPK.js?v=4e2b4369:19353
+commitRoot @ chunk-UPELNCPK.js?v=4e2b4369:19277
+finishConcurrentRender @ chunk-UPELNCPK.js?v=4e2b4369:18760
+performConcurrentWorkOnRoot @ chunk-UPELNCPK.js?v=4e2b4369:18718
+workLoop @ chunk-UPELNCPK.js?v=4e2b4369:197
+flushWork @ chunk-UPELNCPK.js?v=4e2b4369:176
+performWorkUntilDeadline @ chunk-UPELNCPK.js?v=4e2b4369:384

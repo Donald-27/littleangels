@@ -904,7 +904,7 @@ const TransportDashboard = () => {
 
   const MaintenanceDueIndicator = ({ vehicle }) => {
     const maintenance = typeof vehicle.maintenance_info === 'string' ? 
-      JSON.parse(vehicle.maintenance_info) : vehicle.maintenance_info;
+      JSON.parse(vehicle.maintenance_info) : (vehicle.maintenance_info || {});
     const nextService = new Date(maintenance.nextService);
     const today = new Date();
     const daysUntilDue = Math.ceil((nextService - today) / (1000 * 60 * 60 * 24));
@@ -1223,11 +1223,11 @@ const TransportDashboard = () => {
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
               {filteredVehicles.map((vehicle) => {
                 const maintenanceInfo = typeof vehicle.maintenance_info === 'string' ? 
-                  JSON.parse(vehicle.maintenance_info) : vehicle.maintenance_info;
+                  JSON.parse(vehicle.maintenance_info) : (vehicle.maintenance_info || {});
                 const specifications = typeof vehicle.specifications === 'string' ? 
-                  JSON.parse(vehicle.specifications) : vehicle.specifications;
+                  JSON.parse(vehicle.specifications) : (vehicle.specifications || {});
                 const features = typeof vehicle.features === 'string' ? 
-                  JSON.parse(vehicle.features) : vehicle.features;
+                  JSON.parse(vehicle.features) : (vehicle.features || []);
                 
                 return (
                   <Card key={vehicle.id} className="border-0 shadow-lg hover:shadow-xl transition-shadow">
@@ -1487,7 +1487,7 @@ const TransportDashboard = () => {
                     return nextService <= new Date(new Date().setDate(new Date().getDate() + 30));
                   }).map(vehicle => {
                     const maintenance = typeof vehicle.maintenance_info === 'string' ? 
-                      JSON.parse(vehicle.maintenance_info) : vehicle.maintenance_info;
+                      JSON.parse(vehicle.maintenance_info) : (vehicle.maintenance_info || {});
                     const nextService = new Date(maintenance.nextService);
                     const today = new Date();
                     const daysUntilDue = Math.ceil((nextService - today) / (1000 * 60 * 60 * 24));

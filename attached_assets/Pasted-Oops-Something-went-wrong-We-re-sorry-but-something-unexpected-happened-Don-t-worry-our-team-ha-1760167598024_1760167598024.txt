@@ -1,0 +1,30 @@
+Oops! Something went wrong
+We're sorry, but something unexpected happened. Don't worry, our team has been notified.
+
+Error Details (Development)
+TypeError: Cannot read properties of undefined (reading 'fuelType')
+    at TransportDashboard (https://7d141737-ac6c-4cab-9614-b21b611b3ed8-00-2hg41d2ekxh72.worf.replit.dev/src/pages/admin/Transport.jsx:86:20)
+    at RenderedRoute (https://7d141737-ac6c-4cab-9614-b21b611b3ed8-00-2hg41d2ekxh72.worf.replit.dev/node_modules/.vite/deps/react-router-dom.js?v=4e2b4369:4088:5)
+    at Outlet (https://7d141737-ac6c-4cab-9614-b21b611b3ed8-00-2hg41d2ekxh72.worf.replit.dev/node_modules/.vite/deps/react-router-dom.js?v=4e2b4369:4494:26)
+    at div
+    at main
+    at div
+    at div
+    at AdminLayout (https://7d141737-ac6c-4cab-9614-b21b611b3ed8-00-2hg41d2ekxh72.worf.replit.dev/src/layouts/AdminLayout.jsx:46:29)
+    at ProtectedRoute (https://7d141737-ac6c-4cab-9614-b21b611b3ed8-00-2hg41d2ekxh72.worf.replit.dev/src/App.jsx:41:27)
+    at RenderedRoute (https://7d141737-ac6c-4cab-9614-b21b611b3ed8-00-2hg41d2ekxh72.worf.replit.dev/node_modules/.vite/deps/react-router-dom.js?v=4e2b4369:4088:5)
+    at Routes (https://7d141737-ac6c-4cab-9614-b21b611b3ed8-00-2hg41d2ekxh72.worf.replit.dev/node_modules/.vite/deps/react-router-dom.js?v=4e2b4369:4558:5)
+    at AppRoutes (https://7d141737-ac6c-4cab-9614-b21b611b3ed8-00-2hg41d2ekxh72.worf.replit.dev/src/App.jsx:73:31)
+    at div
+    at NotificationProvider (https://7d141737-ac6c-4cab-9614-b21b611b3ed8-00-2hg41d2ekxh72.worf.replit.dev/src/contexts/NotificationContext.jsx:32:40)
+    at AuthProvider (https://7d141737-ac6c-4cab-9614-b21b611b3ed8-00-2hg41d2ekxh72.worf.replit.dev/src/contexts/AuthContext.jsx:31:32)
+    at ErrorBoundary (https://7d141737-ac6c-4cab-9614-b21b611b3ed8-00-2hg41d2ekxh72.worf.replit.dev/src/components/ui/error-boundary.jsx:10:5)
+    at App
+    at Router (https://7d141737-ac6c-4cab-9614-b21b611b3ed8-00-2hg41d2ekxh72.worf.replit.dev/node_modules/.vite/deps/react-router-dom.js?v=4e2b4369:4501:15)
+    at BrowserRouter (https://7d141737-ac6c-4cab-9614-b21b611b3ed8-00-2hg41d2ekxh72.worf.replit.dev/node_modules/.vite/deps/react-router-dom.js?v=4e2b4369:5247:5)
+    at QueryClientProvider (https://7d141737-ac6c-4cab-9614-b21b611b3ed8-00-2hg41d2ekxh72.worf.replit.dev/node_modules/.vite/deps/@tanstack_react-query.js?v=4e2b4369:3022:3)
+Try Again
+Go Home
+If this problem persists, please contact our support team.
+
+Error ID: MGLYBLLM

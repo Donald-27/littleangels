@@ -1,0 +1,246 @@
+The source list for the Content Security Policy directive 'default-src' contains an invalid source: ''unsafe-dynamic''. It will be ignored.
+The source list for the Content Security Policy directive 'default-src' contains an invalid source: ''unsafe-dynamic''. It will be ignored.
+The source list for the Content Security Policy directive 'default-src' contains an invalid source: ''unsafe-dynamic''. It will be ignored.
+The source list for the Content Security Policy directive 'default-src' contains an invalid source: ''unsafe-dynamic''. It will be ignored.
+The source list for the Content Security Policy directive 'default-src' contains an invalid source: ''unsafe-dynamic''. It will be ignored.
+The source list for the Content Security Policy directive 'default-src' contains an invalid source: ''unsafe-dynamic''. It will be ignored.
+The source list for the Content Security Policy directive 'default-src' contains an invalid source: ''unsafe-dynamic''. It will be ignored.
+The source list for the Content Security Policy directive 'default-src' contains an invalid source: ''unsafe-dynamic''. It will be ignored.
+The source list for the Content Security Policy directive 'default-src' contains an invalid source: ''unsafe-dynamic''. It will be ignored.
+The Content-Security-Policy directive 'default-src' contains 'report-uri' as a source expression. Did you want to add it as a directive and forget a semicolon?
+The Content-Security-Policy directive 'default-src' contains 'report-uri' as a source expression. Did you want to add it as a directive and forget a semicolon?
+The Content-Security-Policy directive 'default-src' contains 'report-uri' as a source expression. Did you want to add it as a directive and forget a semicolon?
+The Content-Security-Policy directive 'default-src' contains 'report-uri' as a source expression. Did you want to add it as a directive and forget a semicolon?
+The Content-Security-Policy directive 'default-src' contains 'report-uri' as a source expression. Did you want to add it as a directive and forget a semicolon?
+The Content-Security-Policy directive 'default-src' contains 'report-uri' as a source expression. Did you want to add it as a directive and forget a semicolon?
+The Content-Security-Policy directive 'default-src' contains 'report-uri' as a source expression. Did you want to add it as a directive and forget a semicolon?
+The Content-Security-Policy directive 'default-src' contains 'report-uri' as a source expression. Did you want to add it as a directive and forget a semicolon?
+The Content-Security-Policy directive 'default-src' contains 'report-uri' as a source expression. Did you want to add it as a directive and forget a semicolon?
+The source list for Content Security Policy directive 'default-src' contains a source with an invalid path: '/api/4509669501698048/security/?sentry_key=7eb3d90eb4660416caf507087367e67e'. The query component, including the '?', will be ignored.
+The source list for Content Security Policy directive 'default-src' contains a source with an invalid path: '/api/4509669501698048/security/?sentry_key=7eb3d90eb4660416caf507087367e67e'. The query component, including the '?', will be ignored.
+The source list for Content Security Policy directive 'default-src' contains a source with an invalid path: '/api/4509669501698048/security/?sentry_key=7eb3d90eb4660416caf507087367e67e'. The query component, including the '?', will be ignored.
+The source list for Content Security Policy directive 'default-src' contains a source with an invalid path: '/api/4509669501698048/security/?sentry_key=7eb3d90eb4660416caf507087367e67e'. The query component, including the '?', will be ignored.
+The source list for Content Security Policy directive 'default-src' contains a source with an invalid path: '/api/4509669501698048/security/?sentry_key=7eb3d90eb4660416caf507087367e67e'. The query component, including the '?', will be ignored.
+The source list for Content Security Policy directive 'default-src' contains a source with an invalid path: '/api/4509669501698048/security/?sentry_key=7eb3d90eb4660416caf507087367e67e'. The query component, including the '?', will be ignored.
+The source list for Content Security Policy directive 'default-src' contains a source with an invalid path: '/api/4509669501698048/security/?sentry_key=7eb3d90eb4660416caf507087367e67e'. The query component, including the '?', will be ignored.
+The source list for Content Security Policy directive 'default-src' contains a source with an invalid path: '/api/4509669501698048/security/?sentry_key=7eb3d90eb4660416caf507087367e67e'. The query component, including the '?', will be ignored.
+The source list for Content Security Policy directive 'default-src' contains a source with an invalid path: '/api/4509669501698048/security/?sentry_key=7eb3d90eb4660416caf507087367e67e'. The query component, including the '?', will be ignored.
+littleangels:1 The source list for the Content Security Policy directive 'default-src' contains an invalid source: ''unsafe-dynamic''. It will be ignored.
+littleangels:1 The Content-Security-Policy directive 'default-src' contains 'report-uri' as a source expression. Did you want to add it as a directive and forget a semicolon?
+littleangels:1 The source list for Content Security Policy directive 'default-src' contains a source with an invalid path: '/api/4509669501698048/security/?sentry_key=7eb3d90eb4660416caf507087367e67e'. The query component, including the '?', will be ignored.
+ stallwart: failed ping 1
+ stallwart: failed ping 2
+_app-4f38a9c7d036feda.js:28 
+      /////////////////////
+   ///////////////////////////
+  ////////@@@@@@@//////////////
+  ////////@@@@@@@//////////////
+  ////////@@@@@@@//////////////        Curious and driven?
+  ///////////////@@@@@@@///////        Work with us!
+  ///////////////@@@@@@@///////
+  ///////////////@@@@@@@///////        https://join.replit.com/hack.with.us
+  ////////@@@@@@@//////////////
+  ////////@@@@@@@//////////////
+  ////////@@@@@@#//////////////
+   ///////////////////////////
+      /////////////////////
+      
+_app-4f38a9c7d036feda.js:28 [LaunchDarkly] LaunchDarkly client initialized
+ [Intervention] Slow network is detected. See https://www.chromestatus.com/feature/5636954674692096 for more details. Fallback font will be used while loading: https://replit.com/public/fonts/replit-icons.woff
+ Error while parsing the 'sandbox' attribute: 'allow-downloads-without-user-activation' is an invalid sandbox flag.
+_ @ framework-feb8d59901280d4c.js:1
+ Unrecognized feature: 'ambient-light-sensor'.
+_ @ framework-feb8d59901280d4c.js:1
+ Unrecognized feature: 'battery'.
+_ @ framework-feb8d59901280d4c.js:1
+ Unrecognized feature: 'execution-while-not-rendered'.
+_ @ framework-feb8d59901280d4c.js:1
+ Unrecognized feature: 'execution-while-out-of-viewport'.
+_ @ framework-feb8d59901280d4c.js:1
+ Unrecognized feature: 'layout-animations'.
+_ @ framework-feb8d59901280d4c.js:1
+ Unrecognized feature: 'legacy-image-formats'.
+_ @ framework-feb8d59901280d4c.js:1
+ Unrecognized feature: 'navigation-override'.
+_ @ framework-feb8d59901280d4c.js:1
+ Unrecognized feature: 'oversized-images'.
+_ @ framework-feb8d59901280d4c.js:1
+ Unrecognized feature: 'publickey-credentials'.
+_ @ framework-feb8d59901280d4c.js:1
+ Unrecognized feature: 'speaker-selection'.
+_ @ framework-feb8d59901280d4c.js:1
+ Unrecognized feature: 'unoptimized-images'.
+_ @ framework-feb8d59901280d4c.js:1
+ Unrecognized feature: 'unsized-media'.
+_ @ framework-feb8d59901280d4c.js:1
+ Unrecognized feature: 'pointer-lock'.
+_ @ framework-feb8d59901280d4c.js:1
+ Allow attribute will take precedence over 'allowfullscreen'.
+_ @ framework-feb8d59901280d4c.js:1
+ Allow attribute will take precedence over 'allowpaymentrequest'.
+_ @ framework-feb8d59901280d4c.js:1
+workspace_iframe.html?initialPath=%2F&id=%3Ar4k%3A:32 Error while parsing the 'sandbox' attribute: 'allow-downloads-without-user-activation' is an invalid sandbox flag.
+workspace_iframe.html?initialPath=%2F&id=%3Ar4k%3A:32 Unrecognized feature: 'ambient-light-sensor'.
+workspace_iframe.html?initialPath=%2F&id=%3Ar4k%3A:32 Unrecognized feature: 'battery'.
+workspace_iframe.html?initialPath=%2F&id=%3Ar4k%3A:32 Unrecognized feature: 'execution-while-not-rendered'.
+workspace_iframe.html?initialPath=%2F&id=%3Ar4k%3A:32 Unrecognized feature: 'execution-while-out-of-viewport'.
+workspace_iframe.html?initialPath=%2F&id=%3Ar4k%3A:32 Unrecognized feature: 'layout-animations'.
+workspace_iframe.html?initialPath=%2F&id=%3Ar4k%3A:32 Unrecognized feature: 'legacy-image-formats'.
+workspace_iframe.html?initialPath=%2F&id=%3Ar4k%3A:32 Unrecognized feature: 'navigation-override'.
+workspace_iframe.html?initialPath=%2F&id=%3Ar4k%3A:32 Unrecognized feature: 'oversized-images'.
+workspace_iframe.html?initialPath=%2F&id=%3Ar4k%3A:32 Unrecognized feature: 'publickey-credentials'.
+workspace_iframe.html?initialPath=%2F&id=%3Ar4k%3A:32 Unrecognized feature: 'speaker-selection'.
+workspace_iframe.html?initialPath=%2F&id=%3Ar4k%3A:32 Unrecognized feature: 'unoptimized-images'.
+workspace_iframe.html?initialPath=%2F&id=%3Ar4k%3A:32 Unrecognized feature: 'unsized-media'.
+workspace_iframe.html?initialPath=%2F&id=%3Ar4k%3A:32 Allow attribute will take precedence over 'allowfullscreen'.
+workspace_iframe.html?initialPath=%2F&id=%3Ar4k%3A:32 Allow attribute will take precedence over 'allowpaymentrequest'.
+injected.js:27 🔧 Supabase Configuration: [object Object]
+injected.js:27 🔔 NotificationProvider: No user, clearing notifications
+injected.js:27 🔐 Initializing auth state...
+injected.js:27 🔔 NotificationProvider: No user, clearing notifications
+injected.js:27 🔐 Initializing auth state...
+littleangels:1 Banner not shown: beforeinstallpromptevent.preventDefault() called. The page must call beforeinstallpromptevent.prompt() to show the banner.
+injected.js:27 🔐 Auth state change: TOKEN_REFRESHED admin@littleangels.com
+injected.js:27 ✅ Token refreshed
+injected.js:27 ✅ Supabase connected successfully!
+injected.js:27 📧 Current session: User: admin@littleangels.com
+injected.js:27 👤 Found existing session for: admin@littleangels.com
+injected.js:27 ✅ Created user profile: [object Object]
+injected.js:27 🔐 Auth initialization complete, setting isLoading to false
+injected.js:27 🔔 NotificationProvider: User detected, fetching notifications...
+injected.js:27 🔔 Fetching notifications for user: 4de6be47-47ba-4156-82b9-e3506f7afd49
+injected.js:27 🔔 Subscribing to notifications realtime...
+injected.js:27 👤 Found existing session for: admin@littleangels.com
+injected.js:27 ✅ Created user profile: [object Object]
+injected.js:27 🔐 Auth initialization complete, setting isLoading to false
+injected.js:27 🔔 NotificationProvider: User detected, fetching notifications...
+injected.js:27 🔔 Fetching notifications for user: 4de6be47-47ba-4156-82b9-e3506f7afd49
+injected.js:27 🔔 Subscribing to notifications realtime...
+injected.js:27 🔐 Auth state change: INITIAL_SESSION admin@littleangels.com
+injected.js:27 ✅ Initial session loaded
+injected.js:27 ✅ Fetched 3 notifications
+injected.js:27 🔔 Realtime subscription status: CLOSED
+injected.js:27 🔔 Realtime subscription status: CHANNEL_ERROR
+injected.js:27 ✅ Fetched 3 notifications
+stallwart.build.js:1 stallwart: failed ping 1
+stallwart.build.js:1 stallwart: failed ping 1
+stallwart.build.js:1 stallwart: failed ping 2
+stallwart.build.js:1 stallwart: failed ping 3
+stallwart.build.js:1 stallwart: failed ping 4
+stallwart.build.js:1 stallwart: failed ping 5
+stallwart.build.js:1 stallwart: session stalled
+injected.js:27 🔐 Auth state change: SIGNED_IN admin@littleangels.com
+injected.js:27 ✅ User signed in
+injected.js:27 ✅ Created user profile: [object Object]
+injected.js:27 🔔 NotificationProvider: User detected, fetching notifications...
+injected.js:27 🔔 Fetching notifications for user: 4de6be47-47ba-4156-82b9-e3506f7afd49
+injected.js:27 🔔 Subscribing to notifications realtime...
+injected.js:27 🔔 Realtime subscription status: SUBSCRIBED
+injected.js:27 ✅ Fetched 3 notifications
+injected.js:27 🔐 Auth state change: SIGNED_IN admin@littleangels.com
+injected.js:27 ✅ User signed in
+injected.js:27 ✅ Created user profile: [object Object]
+injected.js:27 🔔 NotificationProvider: User detected, fetching notifications...
+injected.js:27 🔔 Fetching notifications for user: 4de6be47-47ba-4156-82b9-e3506f7afd49
+injected.js:27 🔔 Subscribing to notifications realtime...
+injected.js:27 ✅ Fetched 3 notifications
+injected.js:27 📊 Loading comprehensive dashboard data for school: 1fd55bdb-517a-4213-a914-8ff59dbfe3ed
+injected.js:27 📊 Loading comprehensive dashboard data for school: 1fd55bdb-517a-4213-a914-8ff59dbfe3ed
+zvkfuljxidxtuqrmquso.supabase.co/rest/v1/vehicles?select=id%2Clast_gps_update&school_id=eq.1fd55bdb-517a-4213-a914-8ff59dbfe3ed&status=eq.active:1  Failed to load resource: the server responded with a status of 400 ()
+zvkfuljxidxtuqrmquso.supabase.co/rest/v1/trips?select=*&school_id=eq.1fd55bdb-517a-4213-a914-8ff59dbfe3ed&status=eq.active:1  Failed to load resource: the server responded with a status of 400 ()
+zvkfuljxidxtuqrmquso.supabase.co/rest/v1/maintenance_logs?select=*&school_id=eq.1fd55bdb-517a-4213-a914-8ff59dbfe3ed&status=eq.pending:1  Failed to load resource: the server responded with a status of 404 ()
+zvkfuljxidxtuqrmquso.supabase.co/rest/v1/trips?select=*&school_id=eq.1fd55bdb-517a-4213-a914-8ff59dbfe3ed&status=eq.active:1  Failed to load resource: the server responded with a status of 400 ()
+zvkfuljxidxtuqrmquso.supabase.co/rest/v1/alerts?select=*&school_id=eq.1fd55bdb-517a-4213-a914-8ff59dbfe3ed&resolved=eq.false&order=created_at.desc&limit=10:1  Failed to load resource: the server responded with a status of 404 ()
+zvkfuljxidxtuqrmquso.supabase.co/rest/v1/gps_data?select=*&school_id=eq.1fd55bdb-517a-4213-a914-8ff59dbfe3ed&order=timestamp.desc&limit=50:1  Failed to load resource: the server responded with a status of 404 ()
+zvkfuljxidxtuqrmquso.supabase.co/rest/v1/vehicles?select=id%2Clast_gps_update&school_id=eq.1fd55bdb-517a-4213-a914-8ff59dbfe3ed&status=eq.active:1  Failed to load resource: the server responded with a status of 400 ()
+zvkfuljxidxtuqrmquso.supabase.co/rest/v1/maintenance_logs?select=*&school_id=eq.1fd55bdb-517a-4213-a914-8ff59dbfe3ed&status=eq.pending:1  Failed to load resource: the server responded with a status of 404 ()
+zvkfuljxidxtuqrmquso.supabase.co/rest/v1/gps_data?select=*&school_id=eq.1fd55bdb-517a-4213-a914-8ff59dbfe3ed&order=timestamp.desc&limit=50:1  Failed to load resource: the server responded with a status of 404 ()
+zvkfuljxidxtuqrmquso.supabase.co/rest/v1/alerts?select=*&school_id=eq.1fd55bdb-517a-4213-a914-8ff59dbfe3ed&resolved=eq.false&order=created_at.desc&limit=10:1  Failed to load resource: the server responded with a status of 404 ()
+zvkfuljxidxtuqrmquso.supabase.co/rest/v1/tasks?select=*&school_id=eq.1fd55bdb-517a-4213-a914-8ff59dbfe3ed&completed=eq.false&limit=5:1  Failed to load resource: the server responded with a status of 404 ()
+zvkfuljxidxtuqrmquso.supabase.co/rest/v1/tasks?select=*&school_id=eq.1fd55bdb-517a-4213-a914-8ff59dbfe3ed&completed=eq.false&limit=5:1  Failed to load resource: the server responded with a status of 404 ()
+zvkfuljxidxtuqrmquso.supabase.co/rest/v1/audit_logs?select=*%2Cstudent%3Astudents%28name%29%2Cuser%3Ausers%28name%29%2Croute%3Aroutes%28name%29&school_id=eq.1fd55bdb-517a-4213-a914-8ff59dbfe3ed&order=created_at.desc&limit=8:1  Failed to load resource: the server responded with a status of 404 ()
+chunk-UPELNCPK.js?v=4e2b4369:1232 Error: <polyline> attribute points: Expected number, "NaN,100".
+setValueForProperty @ chunk-UPELNCPK.js?v=4e2b4369:1232
+injected.js:27 Warning: Received NaN for the `%s` attribute. If this is expected, cast the value to a string.%s cx 
+    at 7d141737-ac6c-4cab-9614-b21b611b3ed8-00-2hg41d2ekxh72.worf.replit.dev/__replco/circle
+    at 7d141737-ac6c-4cab-9614-b21b611b3ed8-00-2hg41d2ekxh72.worf.replit.dev/__replco/svg
+    at 7d141737-ac6c-4cab-9614-b21b611b3ed8-00-2hg41d2ekxh72.worf.replit.dev/__replco/div
+    at LineChartSimple (Dashboard.jsx:78:28)
+    at 7d141737-ac6c-4cab-9614-b21b611b3ed8-00-2hg41d2ekxh72.worf.replit.dev/__replco/div
+    at 7d141737-ac6c-4cab-9614-b21b611b3ed8-00-2hg41d2ekxh72.worf.replit.dev/__replco/div
+    at 7d141737-ac6c-4cab-9614-b21b611b3ed8-00-2hg41d2ekxh72.worf.replit.dev/__replco/div
+    at _c9 (card.jsx:61:41)
+    at BeautifulCardContent (beautiful-card.jsx:55:33)
+    at 7d141737-ac6c-4cab-9614-b21b611b3ed8-00-2hg41d2ekxh72.worf.replit.dev/__replco/div
+    at _c (card.jsx:4:34)
+    at BeautifulCard (beautiful-card.jsx:5:3)
+    at 7d141737-ac6c-4cab-9614-b21b611b3ed8-00-2hg41d2ekxh72.worf.replit.dev/__replco/div
+    at 7d141737-ac6c-4cab-9614-b21b611b3ed8-00-2hg41d2ekxh72.worf.replit.dev/__replco/div
+    at 7d141737-ac6c-4cab-9614-b21b611b3ed8-00-2hg41d2ekxh72.worf.replit.dev/__replco/div
+    at AdminDashboard (Dashboard.jsx:165:20)
+    at RenderedRoute (react-router-dom.js?v=4e2b4369:4088:5)
+    at Outlet (react-router-dom.js?v=4e2b4369:4494:26)
+    at 7d141737-ac6c-4cab-9614-b21b611b3ed8-00-2hg41d2ekxh72.worf.replit.dev/__replco/div
+    at 7d141737-ac6c-4cab-9614-b21b611b3ed8-00-2hg41d2ekxh72.worf.replit.dev/__replco/main
+    at 7d141737-ac6c-4cab-9614-b21b611b3ed8-00-2hg41d2ekxh72.worf.replit.dev/__replco/div
+    at 7d141737-ac6c-4cab-9614-b21b611b3ed8-00-2hg41d2ekxh72.worf.replit.dev/__replco/div
+    at AdminLayout (AdminLayout.jsx:29:29)
+    at ProtectedRoute (App.jsx:32:27)
+    at RenderedRoute (react-router-dom.js?v=4e2b4369:4088:5)
+    at Routes (react-router-dom.js?v=4e2b4369:4558:5)
+    at AppRoutes (App.jsx:51:31)
+    at 7d141737-ac6c-4cab-9614-b21b611b3ed8-00-2hg41d2ekxh72.worf.replit.dev/__replco/div
+    at NotificationProvider (NotificationContext.jsx:17:40)
+    at AuthProvider (AuthContext.jsx:16:32)
+    at ErrorBoundary (error-boundary.jsx:8:5)
+    at 7d141737-ac6c-4cab-9614-b21b611b3ed8-00-2hg41d2ekxh72.worf.replit.dev/__replco/App
+    at Router (react-router-dom.js?v=4e2b4369:4501:15)
+    at BrowserRouter (react-router-dom.js?v=4e2b4369:5247:5)
+    at QueryClientProvider (@tanstack_react-query.js?v=4e2b4369:3022:3)
+(anonymous) @ injected.js:27
+Error: <circle> attribute cx: Expected length, "NaN".
+Error: <circle> attribute cx: Expected length, "NaN".
+Error: <circle> attribute cx: Expected length, "NaN".
+Error: <circle> attribute cx: Expected length, "NaN".
+Error: <circle> attribute cx: Expected length, "NaN".
+Error: <circle> attribute cx: Expected length, "NaN".
+Error: <circle> attribute cx: Expected length, "NaN".
+zvkfuljxidxtuqrmquso.supabase.co/rest/v1/audit_logs?select=*%2Cstudent%3Astudents%28name%29%2Cuser%3Ausers%28name%29%2Croute%3Aroutes%28name%29&school_id=eq.1fd55bdb-517a-4213-a914-8ff59dbfe3ed&order=created_at.desc&limit=8:1  Failed to load resource: the server responded with a status of 404 ()
+injected.js:27 🔧 Supabase Configuration: Object
+injected.js:27 🔔 NotificationProvider: No user, clearing notifications
+injected.js:27 🔐 Initializing auth state...
+injected.js:27 🔔 NotificationProvider: No user, clearing notifications
+injected.js:27 🔐 Initializing auth state...
+injected.js:27 ✅ Supabase connected successfully!
+injected.js:27 📧 Current session: User: admin@littleangels.com
+injected.js:27 👤 Found existing session for: admin@littleangels.com
+injected.js:27 ✅ Created user profile: Object
+injected.js:27 🔐 Auth initialization complete, setting isLoading to false
+injected.js:27 🔔 NotificationProvider: User detected, fetching notifications...
+injected.js:27 🔔 Fetching notifications for user: 4de6be47-47ba-4156-82b9-e3506f7afd49
+injected.js:27 🔔 Subscribing to notifications realtime...
+injected.js:27 👤 Found existing session for: admin@littleangels.com
+injected.js:27 ✅ Created user profile: Object
+injected.js:27 🔐 Auth initialization complete, setting isLoading to false
+injected.js:27 🔔 NotificationProvider: User detected, fetching notifications...
+injected.js:27 🔔 Fetching notifications for user: 4de6be47-47ba-4156-82b9-e3506f7afd49
+injected.js:27 🔔 Subscribing to notifications realtime...
+injected.js:27 🔐 Auth state change: INITIAL_SESSION admin@littleangels.com
+injected.js:27 ✅ Initial session loaded
+injected.js:27 ✅ Fetched 3 notifications
+injected.js:27 ✅ Fetched 3 notifications
+injected.js:27 🔔 Realtime subscription status: CLOSED
+injected.js:27 🔔 Realtime subscription status: CHANNEL_ERROR
+injected.js:27 📚 Fetching students for school: 1fd55bdb-517a-4213-a914-8ff59dbfe3ed
+injected.js:27 📚 Fetching students for school: 1fd55bdb-517a-4213-a914-8ff59dbfe3ed
+injected.js:27 ✅ Fetched 100 students
+injected.js:27 ✅ Fetched 100 students
+injected.js:27 📝 Adding student: Object
+zvkfuljxidxtuqrmquso.supabase.co/rest/v1/students?columns=%22student_id%22%2C%22name%22%2C%22date_of_birth%22%2C%22grade%22%2C%22class%22%2C%22gender%22%2C%22address%22%2C%22medical_info%22%2C%22emergency_contact%22%2C%22parent_name%22%2C%22parent_phone%22%2C%22parent_email%22%2C%22needs_transport%22%2C%22transport_notes%22%2C%22school_id%22%2C%22is_active%22%2C%22created_at%22%2C%22updated_at%22&select=*:1  Failed to load resource: the server responded with a status of 400 ()
+injected.js:27 📋 Database insert failed, adding to local state
+injected.js:27 ❌ Error adding student: Error: Database not available - using demo mode
+    at handleAddStudent (Students.jsx:263:17)
+(anonymous) @ injected.js:27
+zvkfuljxidxtuqrmquso.supabase.co/rest/v1/students?id=eq.25b38ad6-7ad7-46aa-9382-e0e5de1b7a00:1  Failed to load resource: the server responded with a status of 409 ()
+injected.js:27 ❌ Error deleting student: Object
+(anonymous) @ injected.js:27

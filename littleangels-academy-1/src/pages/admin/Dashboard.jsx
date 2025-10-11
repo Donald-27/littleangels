@@ -173,6 +173,13 @@ const AdminDashboard = () => {
     attendanceRate: 0,
     activeTrips: 0,
     totalStaff: 0,
+    staffByRole: {
+      admin: 0,
+      teacher: 0,
+      driver: 0,
+      accounts: 0,
+      support: 0
+    },
     maintenanceAlerts: 0,
     pendingPayments: 0,
     efficiency: 0,
@@ -213,7 +220,7 @@ const AdminDashboard = () => {
         {
           event: '*',
           schema: 'public',
-          tables: ['students', 'attendance', 'payments', 'vehicles', 'trips'],
+          tables: ['students', 'attendance', 'payments', 'vehicles', 'trips', 'users'],
           filter: `school_id=eq.${user.school_id}`
         },
         (payload) => {
@@ -470,7 +477,7 @@ const AdminDashboard = () => {
         supabase.from('students').select('*', { count: 'exact', head: true }).eq('school_id', schoolId),
         supabase.from('vehicles').select('*', { count: 'exact', head: true }).eq('school_id', schoolId),
         supabase.from('routes').select('*', { count: 'exact', head: true }).eq('school_id', schoolId),
-        supabase.from('users').select('*', { count: 'exact', head: true }).eq('school_id', schoolId).in('role', ['teacher', 'driver', 'admin']),
+        supabase.from('users').select('id, role').eq('school_id', schoolId),
         supabase.from('trips').select('*', { count: 'exact', head: true }).eq('school_id', schoolId).eq('status', 'active'),
         supabase.from('payments').select('*').eq('school_id', schoolId),
         supabase.from('attendance').select('*').eq('school_id', schoolId).gte('date', new Date().toISOString().split('T')[0]),
@@ -479,16 +486,57 @@ const AdminDashboard = () => {
         supabase.from('alerts').select('*').eq('school_id', schoolId).eq('resolved', false).order('created_at', { ascending: false }).limit(10)
       ]);
 
+      // Process staff data with role breakdown
+      const staffData = staffResult.data || [];
+      const staffByRole = {
+        admin: 0,
+        teacher: 0,
+        driver: 0,
+        accounts: 0,
+        support: 0,
+        staff: 0
+      };
+      
+      staffData.forEach(user => {
+        const role = (user.role || '').toLowerCase();
+        if (role === 'admin' || role === 'administrator') staffByRole.admin++;
+        else if (role === 'teacher') staffByRole.teacher++;
+        else if (role === 'driver') staffByRole.driver++;
+        else if (role === 'accounts') staffByRole.accounts++;
+        else if (role === 'support' || role === 'staff') staffByRole.support++;
+      });
+      
+      // Log all query results for debugging
+      console.log('📊 Query Results:', {
+        students: studentsResult,
+        vehicles: vehiclesResult,
+        routes: routesResult,
+        staff: staffResult,
+        staffByRole,
+        trips: tripsResult,
+        payments: paymentsResult?.data?.length || 0,
+        attendance: attendanceResult?.data?.length || 0
+      });
+
       const studentsCount = studentsResult.count || 0;
       const vehiclesCount = vehiclesResult.count || 0;
       const routesCount = routesResult.count || 0;  
-      const staffCount = staffResult.count || 0;
+      const staffCount = staffData.length;
       const tripsCount = tripsResult.count || 0;
       const payments = paymentsResult.data || [];
       const attendanceToday = attendanceResult.data || [];
       const maintenanceLogs = maintenanceResult.data || [];
       const gpsData = gpsDataResult.data || [];
       const systemAlerts = alertsResult.data || [];
+      
+      console.log('📈 Calculated Counts:', {
+        studentsCount,
+        vehiclesCount,
+        routesCount,
+        staffCount,
+        staffByRole,
+        tripsCount
+      });
 
       // Enhanced calculations with real data
       const present = (attendanceToday || []).filter(a => a.status === 'present').length;
@@ -533,6 +581,7 @@ const AdminDashboard = () => {
         attendanceRate: Math.round(attendanceRate * 100) / 100,
         activeTrips: tripsCount || 0,
         totalStaff: staffCount || 0,
+        staffByRole,
         maintenanceAlerts,
         pendingPayments,
         efficiency,

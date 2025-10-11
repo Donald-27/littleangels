@@ -185,9 +185,9 @@ CREATE TRIGGER update_message_delivered_trigger
     FOR EACH ROW
     EXECUTE FUNCTION update_message_delivered();
 
--- Add foreign key constraint for last_message_id
-ALTER TABLE chats ADD CONSTRAINT fk_chats_last_message 
-    FOREIGN KEY (last_message_id) REFERENCES messages(id);
+-- Add foreign key constraint for last_message_id (commented out initially to avoid circular dependency)
+-- ALTER TABLE chats ADD CONSTRAINT fk_chats_last_message 
+--     FOREIGN KEY (last_message_id) REFERENCES messages(id);
 
 -- Create function to get unread message count
 CREATE OR REPLACE FUNCTION get_unread_message_count(user_uuid UUID, chat_uuid UUID)
@@ -223,28 +223,34 @@ INSERT INTO chats (name, type, created_by, school_id) VALUES
 ('Grade 3 Parents', 'group', (SELECT id FROM users WHERE role = 'parent' LIMIT 1), (SELECT id FROM schools LIMIT 1)),
 ('Transport Updates', 'channel', (SELECT id FROM users WHERE role = 'admin' LIMIT 1), (SELECT id FROM schools LIMIT 1));
 
--- Add all users as participants in school announcements
+-- Add all users as participants in school announcements (with proper enum casting)
 INSERT INTO chat_participants (chat_id, user_id, role)
 SELECT 
     (SELECT id FROM chats WHERE name = 'School Announcements' LIMIT 1),
     id,
-    CASE WHEN role = 'admin' THEN 'admin' ELSE 'member' END
+    CASE 
+        WHEN role = 'admin' THEN 'admin'::participant_role 
+        ELSE 'member'::participant_role 
+    END
 FROM users;
 
--- Add parents to grade 3 parents chat
+-- Add parents to grade 3 parents chat (with proper enum casting)
 INSERT INTO chat_participants (chat_id, user_id, role)
 SELECT 
     (SELECT id FROM chats WHERE name = 'Grade 3 Parents' LIMIT 1),
     id,
-    'member'
+    'member'::participant_role
 FROM users 
 WHERE role = 'parent';
 
--- Add transport-related users to transport updates
+-- Add transport-related users to transport updates (with proper enum casting)
 INSERT INTO chat_participants (chat_id, user_id, role)
 SELECT 
     (SELECT id FROM chats WHERE name = 'Transport Updates' LIMIT 1),
     id,
-    CASE WHEN role IN ('admin', 'driver') THEN 'admin' ELSE 'member' END
+    CASE 
+        WHEN role IN ('admin', 'driver') THEN 'admin'::participant_role 
+        ELSE 'member'::participant_role 
+    END
 FROM users 
 WHERE role IN ('admin', 'driver', 'parent');
